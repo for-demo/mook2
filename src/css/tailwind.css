@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 基礎共用 */
+@layer base {
+  @font-face {
+    font-family: "Inter";
+    font-weight: 400;
+    src: url("@/fonts/Inter-Regular.ttf") format("woff2");
+  }
+  @font-face {
+    font-family: "Inter";
+    font-weight: 600;
+    src: url("@/fonts/Inter-SemiBold.ttf") format("woff2");
+  }
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 300;
+    src: url("@/fonts/NotoSansTC-Light.otf") format("woff2");
+  }
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 400;
+    src: url("@/fonts/NotoSansTC-Regular.otf") format("woff2");
+  }
+  @font-face {
+    font-family: "NotoSansTC";
+    font-weight: 700;
+    src: url("@/fonts/NotoSansTC-Bold.otf") format("woff2");
+  }
+
+  body {
+    @apply antialiased;
+  }
+}
+
+@layer components {
+  .navbar .navItem:not(:first-child) a span {
+    @apply xl:border-l xl:border-l-gray-200;
+  }
+
+  .openMenu {
+    @apply !translate-x-0 !visible;
+  }
+
+  .openMenuShadow {
+    @apply !opacity-70 !visible;
+  }
+
+  .show {
+    @apply !opacity-100 !visible;
+  }
+}

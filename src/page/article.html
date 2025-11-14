@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>article</title>
+</head>
+
+<body>
+  <!-- header -->
+  <%= require('html-loader!../components/header.html').default %>
+    <main class="container mx-auto xl:pb-[72px] xl:pt-6 pt-4 pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]">
+      <!-- 麵包屑 -->
+      <nav class="flex px-5 xl:px-0">
+        <ol class="inline-flex items-center space-x-[6px]">
+          <li class="inline-flex items-center">
+            <a class="inline-flex items-center text-sm leading-[20px] text-light-dark whitespace-nowrap" href="#">
+              景點+
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg class="fill-light-dark" width="16" height="16" viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#kft993jrqa)">
+                  <path
+                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z" />
+                </g>
+                <defs>
+                  <clipPath id="kft993jrqa">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <a class="ml-[6px] inline-flex items-center text-sm leading-[20px] text-secondary line-clamp-1"
+                href="#">阿勃勒花海滿版大爆發！低垂黃金花瀑美炸河畔秘境</a>
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <!-- 麵包屑 start -->
+
+      <!-- AD -->
+      <div class="xl:max-w-[970px] max-w-[300px] mx-auto xl:mt-5 mt-4 overflow-hidden">
+        <a href="#">
+          <!-- pc 圖片 -->
+          <img class="xl:block hidden xl:aspect-[970/250] aspect-[251/167]" src="../images/Ad-01.jpg" loading="lazy"
+            alt="" />
+          <!-- mb 圖片 -->
+          <img class="xl:hidden aspect-[300/250]" src="../images/Ad-03.jpg" loading="lazy" alt="" />
+        </a>
+      </div>
+
+      <!-- main article -->
+      <section class="max-w-[800px] mx-auto xl:mt-8 mt-10 xl:px-0 px-5">
+        <h1 class="xl:text-[32px] text-[22px] xl:leading-[48px] leading-[30px] font-bold">
+          阿勃勒花海滿版大爆發！低垂黃金花瀑美炸河畔秘境阿勃勒花海滿版大爆發！低垂黃金花瀑美炸河畔秘境
+        </h1>
+        <div
+          class="flex flex-col-reverse mt-2 space-y-1 space-y-reverse xl:mt-5 xl:justify-between xl:flex-row xl:space-y-0">
+          <p class="text-light-dark xl:text-base text-xs leading-[20px]">
+            2022-07-12 18:10:00
+          </p>
+          <ul class="flex divide-x divide-secondary">
+            <!-- 分類 (可跑迴圈) -->
+            <li class="px-1 xl:last:!pr-0 first:!pl-0 leading-none">
+              <a class="text-secondary xl:text-base text-xs xl:leading-[20px] leading-[18px]" href="#">文章分類</a>
+            </li>
+            <li class="px-1 xl:last:!pr-0 first:!pl-0 leading-none">
+              <a class="text-secondary xl:text-base text-xs xl:leading-[20px] leading-[18px]" href="#">分類</a>
+            </li>
+          </ul>
+        </div>
+
+        <!-- tag group -->
+        <div class="mt-2 xl:mt-5">
+          <ul class="flex overflow-x-auto flex-wrap items-center">
+            <!-- tag (可跑迴圈) -->
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <!-- tag end -->
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+            <li class="mr-3 mb-2 xl:flex-initial flex-0 xl:mb-0">
+              <a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+                href="#">#Tag字</a>
+            </li>
+          </ul>
+        </div>
+        <!-- tag group end -->
+
+        <div class="article">
+          <p>文／景點+ Ellen整理報導</p>
+          <br />
+          <h2>動物園睡一晚</h2>
+          <p>
+            四面環海的台灣，蘊藏著豐富的海蝕洞洞穴奇觀，位在台東縣東河鄉的金樽遊憩區，藏著一處巨大海蝕洞天然形成的貓頭造型，加上退潮時地面積水拍出倒影，可愛模樣可說是在IG上爆紅的秘境景點。
+          </p>
+          <br />
+
+          <div class="img">
+            <figure>
+              <img src="../images/article-01.jpg" alt="" />
+              <figcaption>從貓洞看出去的夕陽海景。(圖／imma_pon)</figcaption>
+            </figure>
+          </div>
+          <br />
+
+          <h2>長鼻浣熊萌萌報到</h2>
+          <p>
+            金樽遊憩區位於台11線道路旁，由小海灣、離岸礁和海岸崖壁等地景組成，因海灣形似酒杯而被稱作為「金樽」，同時綿延三公里長的沙灘，有一處台灣唯一正在生成的陸連島，而貓洞就藏在這座島上。
+          </p>
+          <br />
+
+          <div class="img">
+            <figure>
+              <img src="../images/article-02.jpg" alt="" />
+              <figcaption>
+                沙灘上的金樽陸連島。(圖／台東縣觀光旅遊局)
+              </figcaption>
+            </figure>
+          </div>
+
+          <br />
+          <p>
+            想到貓洞秘境，可以先導航到金樽漁港把車停好，繞過堤防走下海灘，約步行10至20分鐘就會看到礁岩群，而貓洞就隱身在這裡，圓圓的貓臉和尖尖豎起的耳朵，讓人忍不住瘋狂拍照，從洞口看出去就是大海，十分療癒。
+          </p>
+
+          <br />
+          <!-- 影片 需用 class 保持等比縮放 -->
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/6UbFvAlqv58?controls=0" title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
+          </div>
+
+          <br />
+          <br />
+
+          <div class="img">
+            <figure>
+              <img src="../images/article-03.jpg" alt="" />
+              <figcaption>
+                金樽陸連島藏著可愛的貓洞。(圖／liulianshen)
+              </figcaption>
+            </figure>
+          </div>
+          <br />
+          <br />
+
+          <div class="img">
+            <figure>
+              <img src="../images/article-04.jpg" alt="" />
+              <figcaption>俯瞰金樽陸連島。(圖／台東縣觀光旅遊局)</figcaption>
+            </figure>
+          </div>
+          <br />
+          <br />
+          <p>
+            出發時記得可以先查好漲退潮的時間，不然好不容易走到貓洞，卻無法靠近拍照，同時走在有些銳利的礁岩上，建議穿著防水防滑的鞋子、注意行走安全。另外金樽休憩區旁設有眺望台及咖啡店，也可以點杯咖啡，坐在眺望台觀賞遠方陸連島的海岸風情。
+          </p>
+          <br />
+          <p>【Info】</p>
+          <p>金樽遊憩區</p>
+          <p>地址：台東縣東河鄉金樽港口以南有一段約二公里長的沙灘</p>
+          <p>時間：24小時</p>
+        </div>
+      </section>
+      <!-- main article end -->
+
+      <!-- banner -->
+      <div class="xl:max-w-[970px] max-w-[300px] mx-auto xl:mt-8 mt-10 overflow-hidden">
+        <a href="#">
+          <!-- pc 圖片 -->
+          <img class="xl:block hidden xl:aspect-[970/250] aspect-[251/167]" src="../images/Ad-01.jpg" loading="lazy"
+            alt="" />
+          <!-- mb 圖片 -->
+          <img class="xl:hidden aspect-[300/250]" src="../images/Ad-03.jpg" loading="lazy" alt="" />
+        </a>
+      </div>
+      <!-- banner end -->
+
+      <!-- 分頁 -->
+      <div class="mt-8">
+        <ul class="flex justify-center items-center space-x-2">
+          <!-- 上一頁 -->
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary"
+              href="#">
+              <svg fill="currentColor" width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#5i0gogcqya)">
+                  <path
+                    d="M16.03 4.47a.75.75 0 0 1 .073.976l-.073.084L9.561 12l6.47 6.47a.75.75 0 0 1 .072.976l-.073.084a.75.75 0 0 1-.976.073l-.084-.073-7-7a.75.75 0 0 1-.073-.976l.073-.084 7-7a.75.75 0 0 1 1.06 0z" />
+                </g>
+                <defs>
+                  <clipPath id="5i0gogcqya">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <!-- 上一頁 end -->
+
+          <!-- active 樣式 class 加上 !text-primary !border-primary -->
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary !text-primary !border-primary"
+              href="#">
+              1
+            </a>
+          </li>
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+              href="#">
+              2
+            </a>
+          </li>
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+              href="#">
+              3
+            </a>
+          </li>
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+              href="#">
+              4
+            </a>
+          </li>
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+              href="#">
+              5
+            </a>
+          </li>
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+              href="#">
+              6
+            </a>
+          </li>
+          <li>
+            <span class="inline-flex items-center justify-center text-light-dark text-sm w-[22px] h-[22px]">
+              ...
+            </span>
+          </li>
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+              href="#">
+              999
+            </a>
+          </li>
+
+          <!-- 下一頁 -->
+          <li>
+            <a class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary"
+              href="#">
+              <svg fill="currentColor" width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#kft993jrqa)">
+                  <path
+                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z" />
+                </g>
+                <defs>
+                  <clipPath id="kft993jrqa">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <!-- 下一頁 end -->
+        </ul>
+      </div>
+      <!-- 分頁 end -->
+
+      <!-- 延伸閱讀 -->
+      <section class="px-5">
+        <div class="bg-light max-w-[800px] xl:mt-8 mt-10 mx-auto xl:px-14 xl:py-10 p-6">
+          <p class="inline-flex items-center text-secondary xl:text-[22px] text-xl leading-[30px] space-x-2">
+            <svg width="20" height="20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M7.292 3.249v-1.25a.63.63 0 0 0-.625-.625.63.63 0 0 0-.625.625v1.3c.208-.025.4-.05.625-.05h.625zM13.959 3.299v-1.3a.63.63 0 0 0-.625-.625.63.63 0 0 0-.625.625v1.25h.625c.225 0 .416.025.625.05z"
+                fill="#235378" />
+              <path
+                d="M13.958 3.299v1.2a.63.63 0 0 1-.625.625.63.63 0 0 1-.625-.625v-1.25H7.292v1.25a.63.63 0 0 1-.625.625.63.63 0 0 1-.625-.625v-1.2C3.583 3.524 2.5 5.107 2.5 7.416v7.083c0 2.5 1.25 4.167 4.167 4.167h6.666c2.917 0 4.167-1.667 4.167-4.167V7.416c0-2.309-1.083-3.892-3.542-4.117zM10 14.291H6.667a.63.63 0 0 1-.625-.625.63.63 0 0 1 .625-.625H10a.63.63 0 0 1 .625.625.63.63 0 0 1-.625.625zm3.333-4.167H6.667a.63.63 0 0 1-.625-.625.63.63 0 0 1 .625-.625h6.666a.63.63 0 0 1 .625.625.63.63 0 0 1-.625.625z"
+                fill="#235378" />
+            </svg>
+            <span>延伸閱讀</span>
+          </p>
+          <ul class="mt-4 space-y-3 xl:mt-6">
+            <!-- list (可跑迴圈) -->
+            <li class="pb-3 border-b border-gray-200">
+              <a class="text-dark leading-[24px] xl:line-clamp-1 line-clamp-2 duration-200 hover:text-primary-dark"
+                href="#">10層樓高木構生命樹！環樹步道夢工廠壯觀新景點
+                10層樓高木構生命樹！環樹步道夢工廠壯觀新景點</a>
+            </li>
+            <!-- list end -->
+            <li class="pb-3 border-b border-gray-200">
+              <a class="text-dark leading-[24px] xl:line-clamp-1 line-clamp-2 duration-200 hover:text-primary-dark"
+                href="#">10層樓高木構生命樹！環樹步道夢工廠壯觀新景點
+                10層樓高木構生命樹！環樹步道夢工廠壯觀新景點</a>
+            </li>
+            <li class="pb-3 border-b border-gray-200">
+              <a class="text-dark leading-[24px] xl:line-clamp-1 line-clamp-2 duration-200 hover:text-primary-dark"
+                href="#">10層樓高木構生命樹！環樹步道夢工廠壯觀新景點
+                10層樓高木構生命樹！環樹步道夢工廠壯觀新景點</a>
+            </li>
+            <li class="pb-3 border-b border-gray-200">
+              <a class="text-dark leading-[24px] xl:line-clamp-1 line-clamp-2 duration-200 hover:text-primary-dark"
+                href="#">10層樓高木構生命樹！環樹步道夢工廠壯觀新景點
+                10層樓高木構生命樹！環樹步道夢工廠壯觀新景點</a>
+            </li>
+            <li class="pb-3 border-b border-gray-200">
+              <a class="text-dark leading-[24px] xl:line-clamp-1 line-clamp-2 duration-200 hover:text-primary-dark"
+                href="#">10層樓高木構生命樹！環樹步道夢工廠壯觀新景點
+                10層樓高木構生命樹！環樹步道夢工廠壯觀新景點</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- 延伸閱讀 end -->
+
+      <!-- 你可能也喜歡 -->
+      <section class="max-w-[800px] mx-auto mt-8 xl:px-0 px-5">
+        <h2 class="inline-flex items-center space-x-1">
+          <svg width="20" height="20" viewBox="0 0 20 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10 1.999a8.336 8.336 0 0 0-8.333 8.333c0 4.6 3.733 8.334 8.333 8.334s8.333-3.734 8.333-8.334S14.6 2 10 2zm.275 12.5c-.15.05-.409.05-.559 0-1.3-.442-4.216-2.3-4.216-5.45A2.506 2.506 0 0 1 8 6.532c.816 0 1.541.392 2 1.009a2.493 2.493 0 0 1 2-1.009c1.383 0 2.5 1.125 2.5 2.517 0 3.15-2.917 5.008-4.225 5.45z"
+              fill="#1C1B19" />
+          </svg>
+          <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark">你可能也喜歡</span>
+        </h2>
+        <ul class="flex overflow-x-auto flex-nowrap pt-6 space-x-6 xl:grid xl:grid-cols-3 xl:gap-6 xl:space-x-0">
+          <!-- list (可跑迴圈) -->
+          <li>
+            <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+              href="#">
+              <img class="aspect-[251/167] object-cover w-full" src="../images/img-15.jpg" loading="lazy" alt="" />
+              <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
+                  1. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                  出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                </div>
+              </div>
+            </a>
+          </li>
+          <!-- list end (可跑迴圈) -->
+          <li>
+            <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+              href="#">
+              <img class="aspect-[251/167] object-cover w-full" src="../images/img-22.jpg" loading="lazy" alt="" />
+              <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
+                  2. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                  出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+              href="#">
+              <img class="aspect-[251/167] object-cover w-full" src="../images/img-02.jpg" loading="lazy" alt="" />
+              <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
+                  3. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                  出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+              href="#">
+              <img class="aspect-[251/167] object-cover w-full" src="../images/img-22.jpg" loading="lazy" alt="" />
+              <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
+                  4. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                  出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+              href="#">
+              <img class="aspect-[251/167] object-cover w-full" src="../images/img-02.jpg" loading="lazy" alt="" />
+              <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
+                  5. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                  出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                </div>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+              href="#">
+              <img class="aspect-[251/167] object-cover w-full" src="../images/img-15.jpg" loading="lazy" alt="" />
+              <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
+                  6. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                  出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- 你可能也喜歡 end -->
+
+      <!-- AD -->
+      <div class="xl:hidden max-w-[300px] mx-auto mt-10">
+        <a href="#">
+          <img class="xl:hidden" src="../images/Ad-05.jpg" loading="lazy" alt="" />
+        </a>
+      </div>
+    </main>
+
+    <!-- footer -->
+    <%= require('html-loader!../components/footer.html').default %>
+
+      <!-- gotop -->
+      <%= require('html-loader!../components/gotop.html').default %>
+</body>
+
+</html>

@@ -1,0 +1,1339 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>list</title>
+  </head>
+
+  <body>
+    <!-- header -->
+    <%= require('html-loader!../components/header.html').default %>
+    <main
+      class="container mx-auto xl:pb-[72px] xl:pt-6 pt-4 pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]"
+    >
+      <!-- 麵包屑 -->
+      <nav class="flex xl:px-0 px-5">
+        <ol class="inline-flex items-center space-x-[6px]">
+          <li class="inline-flex items-center">
+            <a
+              class="inline-flex items-center text-sm leading-[20px] text-light-dark whitespace-nowrap"
+              href="#"
+            >
+              景點+
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="fill-light-dark"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#kft993jrqa)">
+                  <path
+                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="kft993jrqa">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <a
+                class="ml-[6px] inline-flex items-center text-sm leading-[20px] text-secondary line-clamp-1"
+                href="#"
+              >
+                <h1>文章分類：全部</h1>
+              </a>
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <!-- 麵包屑 start -->
+
+      <!-- 景編精選 -->
+      <section class="xl:mt-5 mt-4 xl:px-0 px-5">
+        <h2 class="inline-flex items-center space-x-1">
+          <svg
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M11.997 2.25c.986 0 1.75.744 2.23 1.717l1.586 3.199c.042.085.146.216.311.338.165.123.321.187.417.203l2.87.48c1.05.177 1.953.696 2.248 1.62.294.922-.14 1.869-.895 2.625l-.001.001-2.23 2.249a1.073 1.073 0 0 0-.23.443c-.06.208-.064.393-.039.506l.639 2.783c.266 1.164.186 2.355-.669 2.983-.858.631-2.016.343-3.039-.266l-2.69-1.607a1.034 1.034 0 0 0-.504-.111c-.222 0-.406.052-.512.113l-.002.002-2.685 1.602c-1.022.612-2.179.895-3.037.264-.854-.629-.938-1.817-.671-2.98l.638-2.783a1.114 1.114 0 0 0-.038-.506 1.073 1.073 0 0 0-.23-.443l-2.233-2.25c-.75-.757-1.182-1.703-.89-2.624.292-.924 1.193-1.444 2.244-1.62l2.869-.481c.09-.016.245-.079.409-.202a1.06 1.06 0 0 0 .31-.34l.003-.005 1.585-3.195c.485-.972 1.25-1.715 2.236-1.715z"
+              fill="#000"
+            />
+          </svg>
+          <span
+            class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark"
+            >景編精選</span
+          >
+        </h2>
+        <div class="splide scene">
+          <!-- 左右按鈕 -->
+          <div class="splide__arrows splide__arrows--ltr">
+            <button
+              class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !left-[-25px] xl:!flex !hidden splide__arrow splide__arrow--prev"
+              type="button"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#kft993jrqa)">
+                  <path
+                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                    fill="#000"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="kft993jrqa">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+            <button
+              class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !right-[-25px] xl:!flex !hidden splide__arrow splide__arrow--next"
+              type="button"
+            >
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#kft993jrqa)">
+                  <path
+                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                    fill="#000"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="kft993jrqa">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </button>
+          </div>
+          <div class="splide__track xl:pt-6 pt-4">
+            <ul class="splide__list">
+              <!-- 景編精選卡片 (可跑迴圈) -->
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-01.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      1. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <!-- 景編精選卡片 end -->
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-02.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      2. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-03.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      3. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-04.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      4. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-05.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      5. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-06.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      6. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-07.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      7. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="splide__slide !w-auto">
+                <a
+                  class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
+                  href="#"
+                >
+                  <img
+                    class="aspect-[251/167] object-cover w-full"
+                    src="../images/img-08.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
+                    <div
+                      class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]"
+                    >
+                      8. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                    </div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <!-- 景編精選 end -->
+
+      <!-- AD -->
+      <div
+        class="xl:max-w-[970px] max-w-[300px] mx-auto xl:mt-5 mt-4 overflow-hidden"
+      >
+        <a href="#">
+          <!-- pc 圖片 -->
+          <img
+            class="xl:block hidden xl:aspect-[970/250] aspect-[251/167]"
+            src="../images/Ad-01.jpg"
+            loading="lazy"
+            alt=""
+          />
+          <!-- mb 圖片 -->
+          <img
+            class="xl:hidden aspect-[300/250]"
+            src="../images/Ad-03.jpg"
+            loading="lazy"
+            alt=""
+          />
+        </a>
+      </div>
+
+      <!-- 文章列表 -->
+      <section
+        class="mt-8 flex xl:flex-row flex-col xl:px-0 px-5 xl:space-x-[72px] xl:space-y-0 space-y-10"
+      >
+        <!-- 左側主題 -->
+        <div>
+          <div class="flex flex-col xl:space-y-8 space-y-6">
+            <!-- 文章卡片 start (可跑迴圈) -->
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-18.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <!-- tag (可跑迴圈) -->
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <!-- tag end -->
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <!-- 文章卡片 end -->
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-19.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-20.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-17.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-16.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+
+            <!-- AD -->
+            <div class="xl:max-w-[730px] max-w-[300px] mx-auto">
+              <a href="#">
+                <!-- pc 圖片 -->
+                <img
+                  class="xl:block hidden"
+                  src="../images/Ad-02.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+                <!-- mb 圖片 -->
+                <img
+                  class="xl:hidden"
+                  src="../images/Ad-05.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-15.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-14.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-13.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-12.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="../images/img-11.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 分頁 -->
+          <div class="mt-8">
+            <ul class="flex items-center justify-center space-x-2">
+              <!-- 上一頁 -->
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary"
+                  href="#"
+                >
+                  <svg
+                    fill="currentColor"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#5i0gogcqya)">
+                      <path
+                        d="M16.03 4.47a.75.75 0 0 1 .073.976l-.073.084L9.561 12l6.47 6.47a.75.75 0 0 1 .072.976l-.073.084a.75.75 0 0 1-.976.073l-.084-.073-7-7a.75.75 0 0 1-.073-.976l.073-.084 7-7a.75.75 0 0 1 1.06 0z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="5i0gogcqya">
+                        <path fill="#fff" d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <!-- 上一頁 end -->
+
+              <!-- active 樣式 class 加上 !text-primary !border-primary -->
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary !text-primary !border-primary"
+                  href="#"
+                >
+                  1
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  2
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  3
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  4
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  5
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  6
+                </a>
+              </li>
+              <li>
+                <span
+                  class="inline-flex items-center justify-center text-light-dark text-sm w-[22px] h-[22px]"
+                >
+                  ...
+                </span>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  999
+                </a>
+              </li>
+
+              <!-- 下一頁 -->
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary"
+                  href="#"
+                >
+                  <svg
+                    fill="currentColor"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#kft993jrqa)">
+                      <path
+                        d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="kft993jrqa">
+                        <path fill="#fff" d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <!-- 下一頁 end -->
+            </ul>
+          </div>
+          <!-- 分頁 end -->
+        </div>
+
+        <!-- 右側主題 -->
+        <div class="flex flex-col space-y-8 xl:max-w-[300px] mx-auto">
+          <!-- AD -->
+          <div class="mx-auto">
+            <!-- pc 圖片 -->
+            <a href="#">
+              <img
+                class="xl:block hidden xl:aspect-[300/598] aspect-[251/167]"
+                src="../images/Ad-07.jpg"
+                loading="lazy"
+                alt=""
+              />
+              <!-- mb 圖片 -->
+              <img
+                class="xl:hidden aspect-[300/250]"
+                src="../images/Ad-05.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- AD -->
+          <div class="mx-auto">
+            <a href="#">
+              <img src="../images/Ad-05.jpg" loading="lazy" alt="" />
+            </a>
+          </div>
+          <div>
+            <h2 class="inline-flex items-center space-x-1">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.39 18.49V8.33c0-.4.12-.79.34-1.12l2.73-4.06c.43-.65 1.5-1.11 2.41-.77.98.33 1.63 1.43 1.42 2.41l-.52 3.27c-.04.3.04.57.21.78.17.19.42.31.69.31h4.11c.79 0 1.47.32 1.87.88.38.54.45 1.24.2 1.95l-2.46 7.49c-.31 1.24-1.66 2.25-3 2.25h-3.9c-.67 0-1.61-.23-2.04-.66l-1.28-.99c-.49-.37-.78-.96-.78-1.58zM5.21 6.38H4.18C2.63 6.38 2 6.98 2 8.46v10.06c0 1.48.63 2.08 2.18 2.08h1.03c1.55 0 2.18-.6 2.18-2.08V8.46c0-1.48-.63-2.08-2.18-2.08z"
+                  fill="#000"
+                />
+              </svg>
+              <span
+                class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark"
+                >熱門文章</span
+              >
+            </h2>
+            <div class="grid grid-cols-1 xl:space-y-4 space-y-6 mt-4">
+              <!-- 熱門文章 start  (可跑迴圈) -->
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-10.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <!-- 熱門文章 end -->
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-08.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-07.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-06.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-05.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-04.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-03.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="../images/img-02.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+
+              <!-- AD -->
+              <div class="mx-auto xl:mt-8 mt-10">
+                <a href="#">
+                  <img src="../images/Ad-03.jpg" loading="lazy" alt="" />
+                </a>
+              </div>
+
+              <!-- AD -->
+              <div class="mx-auto xl:mt-8 mt-10">
+                <a href="#">
+                  <img src="../images/Ad-08.jpg" loading="lazy" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 文章列表 end -->
+    </main>
+
+    <!-- footer -->
+    <%= require('html-loader!../components/footer.html').default %>
+
+    <!-- gotop -->
+    <%= require('html-loader!../components/gotop.html').default %>
+  </body>
+</html>

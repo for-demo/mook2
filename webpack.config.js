@@ -1,0 +1,101 @@
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const path = require("path");
+
+// const modeEnv = process.env.NODE_ENV === 'production' ? 'production' : 'development'
+
+module.exports = {
+  mode: "development",
+  entry: {
+    index: "./src/js/index.js",
+    list: "./src/js/list.js",
+    tagList: "./src/js/tagList.js",
+    article: "./src/js/article.js",
+  },
+  output: {
+    path: path.resolve(__dirname, "dist"),
+    // filename: 'main.[hash].bundle.js',
+    filename: "js/[name].js",
+    asyncChunks: true,
+    assetModuleFilename: "images/[name][ext]",
+    // assetModuleFilename: "images/[contenthash][ext][query]",
+    // assetModuleFilename: "src/assets/images/[name].[ext]",
+  },
+  devServer: {
+    static: {
+      directory: path.join(__dirname, "dist"),
+    },
+    hot: true,
+    port: 3000,
+  },
+  resolve: {
+    alias: {
+      // page: path.resolve(__dirname, "src/page/"),
+      // css: path.resolve(__dirname, "src/css/"),
+      // images: path.resolve(__dirname, "src/images/"),
+      // fonts: path.resolve(__dirname, "src/fonts/"),
+      "@": path.resolve(__dirname, "src"),
+    },
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/i,
+        use: [MiniCssExtractPlugin.loader, "css-loader", "postcss-loader"],
+      },
+      {
+        test: /\.m?js$/,
+        exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+        },
+      },
+      {
+        test: /\.(woff|woff2|eot|ttf|otf|)$/,
+        generator: {
+          filename: "fonts/[name][ext]",
+        },
+      },
+      {
+        test: /\.(png|jpg|gif|svg)$/i,
+        type: "asset",
+        generator: {
+          filename: "images/[name][ext]",
+          // filename: "images/[contenthash][ext][query]",
+          publicPath: "./",
+        },
+      },
+    ],
+  },
+  // devtool: 'source-map',
+  plugins: [
+    new HtmlWebpackPlugin({
+      chunks: ["vendor", "index"],
+      filename: "index.html",
+      template: "src/page/index.html",
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ["vendor", "list"],
+      filename: "list.html",
+      template: "src/page/list.html",
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ["vendor", "tagList"],
+      filename: "tagList.html",
+      template: "src/page/tagList.html",
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ["vendor", "article"],
+      filename: "article.html",
+      template: "src/page/article.html",
+    }),
+    new MiniCssExtractPlugin({
+      // filename: 'main.[hash].css'
+      // filename: 'css/main.css'
+      filename: "css/[name].css",
+      // chunkFilename: 'css/vendor.css'
+    }),
+    new CleanWebpackPlugin(),
+  ],
+};

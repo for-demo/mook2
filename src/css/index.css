@@ -1,0 +1,39 @@
+@import url("./tailwind.css");
+
+.main-banner .splide__pagination {
+  @apply bottom-[-22px] space-x-3;
+}
+
+.main-banner .splide__pagination__page {
+  @apply bg-gray-500 !w-[8px] !h-[8px];
+}
+
+.main-banner .splide__pagination__page.is-active {
+  @apply bg-gray-800 !scale-100;
+}
+
+@screen xl {
+  .main-banner .splide__pagination {
+    @apply bottom-[-22px] space-x-4;
+  }
+
+  .main-banner .splide__pagination__page {
+    @apply !w-[10px] !h-[10px] !m-0;
+  }
+
+  .video iframe {
+    @apply object-cover;
+  }
+}
+
+.video iframe {
+  @apply object-none w-full h-full;
+}
+
+.news > *:not(:nth-child(3n + 3)) {
+  @apply pr-8;
+}
+
+.news > *:nth-child(3n + 3) {
+  @apply pl-8;
+}
