@@ -3,10 +3,11 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
-// const modeEnv = process.env.NODE_ENV === 'production' ? 'production' : 'development'
+// 判斷是否為生產環境
+const isProduction = process.env.NODE_ENV === 'production';
 
 module.exports = {
-  mode: "development",
+  mode: isProduction ? "production" : "development",
   entry: {
     index: "./src/js/index.js",
     list: "./src/js/list.js",
@@ -21,6 +22,7 @@ module.exports = {
     assetModuleFilename: "images/[name][ext]",
     // assetModuleFilename: "images/[contenthash][ext][query]",
     // assetModuleFilename: "src/assets/images/[name].[ext]",
+    publicPath: isProduction ? "/mook2/" : "/",
   },
   devServer: {
     static: {
@@ -63,7 +65,6 @@ module.exports = {
         generator: {
           filename: "images/[name][ext]",
           // filename: "images/[contenthash][ext][query]",
-          publicPath: "./",
         },
       },
     ],
