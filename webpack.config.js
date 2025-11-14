@@ -40,6 +40,9 @@ module.exports = {
       "@": path.resolve(__dirname, "src"),
     },
   },
+  optimization: {
+    minimize: false, // 禁用代碼壓縮，保持可讀性
+  },
   module: {
     rules: [
       {
