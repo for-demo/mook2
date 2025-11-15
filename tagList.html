@@ -1,1 +1,1161 @@
-<!doctype html><html lang="zh-tw"><head><meta charset="UTF-8"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><meta name="viewport" content="width=device-width,initial-scale=1"/><title>tagList</title><script defer="defer" src="/mook2/js/tagList.js"></script><link href="/mook2/css/tagList.css" rel="stylesheet"></head><body><header class="bg-white"><div class="grid grid-cols-1"><div class="fixed top-0 w-full z-50 bg-white border border-gray-200"><div class="max-w-[1100px] mx-auto flex justify-between xl:pt-4 xl:pb-4 xl:px-0 px-4 py-3"><div class="flex xl:space-x-[34px] items-center justify-between xl:w-auto w-full"><a class="inline-block xl:max-w-[110px] max-w-[88px]" href="https://www.mook.com.tw/" target="_blank"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAyIiBoZWlnaHQ9Ijc0IiB2aWV3Qm94PSIwIDAgMjAyIDc0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPHBhdGggZD0iTTE5NS40NjIgMTEuNzMyaC02LjAzOVY1LjczYTIuODQgMi44NCAwIDAgMC0yLjg2LTIuODQzIDIuODQgMi44NCAwIDAgMC0yLjg2MSAyLjg0M3Y2aC02LjAzOGEyLjg0IDIuODQgMCAwIDAtMi44NjEgMi44NDMgMi44NCAyLjg0IDAgMCAwIDIuODYxIDIuODQzaDYuMDM4djYuMDAxYTIuODQgMi44NCAwIDAgMCAyLjg2MSAyLjg0MyAyLjg0IDIuODQgMCAwIDAgMi44Ni0yLjg0M3YtNmg2LjAzOWEyLjg0IDIuODQgMCAwIDAgMi44Ni0yLjg0NCAyLjg0IDIuODQgMCAwIDAtMi44Ni0yLjg0MnoiIGZpbGw9IiNGMjlDOTciLz4KICAgIDxwYXRoIGQ9Ik03MC45MiA1Ny42MmMtLjQ1NCAwLS45MDguMDkxLTEuMzYyLjI3Mi0uNDU0LjE4LTEuMDkuNDk2LTEuOTA3LjkwMmEzOC4yODkgMzguMjg5IDAgMCAxLTQuNTQgMi4xMmMtMS4wOS40NTItMi44NiAxLjAzOC01LjI2NyAxLjc2LTEuNzcuNTQyLTIuNjc5IDEuNDQ0LTIuNjc5IDIuNzA4IDAgMS43Ni44MTcgMi42NjIgMi40NTIgMi42NjIgMS4xOCAwIDQuMDg2LTEuMDM4IDguNTM2LTMuMTU5IDQuNTQtMi4xMiA2Ljc2NS0zLjg4IDYuNzY1LTUuMzI0IDAtLjU0MS0uMTgyLTEuMDM4LS41OS0xLjM5OWEyLjAzNyAyLjAzNyAwIDAgMC0xLjQwOC0uNTQxek0xMDguMTk2IDYzLjYyMmMtLjYzNS0uNDUxLTEuNTg5LS45MDMtMi45OTYtMS4zOTktMi45OTctMS4wMzgtNS4xMzEtMS44OTUtNi40NDgtMi41MjctMi40NTEtMS4yMTgtNC4xNzctMS44MDQtNS4xNzUtMS44MDRhMS45MiAxLjkyIDAgMCAwLTEuNDA4LjU4NmMtLjM2My40MDYtLjU0NS45MDItLjU0NSAxLjUzNHMuMjczIDEuMjE4Ljg2MyAxLjc2Yy41OS41NDEgMS40MDcgMS4xMjggMi41ODggMS43MTUgNS40NDggMi43OTcgOS4yNjIgNC4xOTYgMTEuNjY4IDQuMTk2IDEuNTkgMCAyLjQwNy0uODU3IDIuNDA3LTIuNTcyIDAtLjU0MS0uMzE4LTEuMDgzLS45NTQtMS40ODl6TTU3LjI1NCAzNi41NDljLTEuNTQ0IDAtMi4yNy42NzctMi4yNyAyLjA3NSAwIDEuMzU0LjcyNiAyLjAzIDIuMjcgMi4wM2g0OS44NTNjMS41ODkgMCAyLjM2MS0uNjc2IDIuMzYxLTIuMDMgMC0xLjM5OC0uNzcyLTIuMDc1LTIuMzYxLTIuMDc1aC0yMi40M1YzMy4zaDEzLjA3N2MxLjkwNy4xMzUgMy4yNjktLjI3IDQuMTc3LTEuMTczLjg2Mi0uOTAzIDEuMjI2LTIuMzAxIDEuMDg5LTQuMTUxVjIwLjI2Yy4xMzctMS45NC0uMjI3LTMuMzQtMS4wODktNC4yNDItLjg2My0uOTAyLTIuMjI1LTEuMjYzLTQuMDg3LTEuMDgzSDY2LjU2M2MtMS44MTctLjE4LTMuMTc5LjE4LTQuMDQxIDEuMDgzLS44NjMuODU4LTEuMjcyIDIuMzAyLTEuMjcyIDQuMjQydjcuNzE2Yy0uMTM2IDEuODk1LjI3MyAzLjI0OCAxLjEzNSA0LjEwNi44NjMuODU3IDIuMjcgMS4yNjMgNC4xMzIgMS4yNjNoMTIuOTR2My4yMDRINTcuMjU0em05LjE3MS0xNi4wMThjMC0uNjMyLjEzNi0xLjA4My40MDktMS4zNTQuMjcyLS4yNy43MjYtLjQwNiAxLjMxNy0uNDA2aDI3Ljk2OGMuNjM2IDAgMS4wNDQuMTM1IDEuMzE3LjQwNi4yNzIuMjcuNDA4LjcyMi40MDggMS4zNTR2MS41NzlINjYuMzh2LTEuNThoLjA0NXptMS43MjYgOC45NzljLS42MzYgMC0xLjA0NS0uMTM2LTEuMzE3LS40MDYtLjI3My0uMjcxLS40MDktLjcyMi0uNDA5LTEuMzU0VjI1LjlIOTcuODl2MS44NWMwIC42MzItLjEzNiAxLjA4My0uMzYzIDEuMzU0LS4yMjcuMjctLjcyNy40MDYtMS4zNjIuNDA2SDY4LjE1eiIgZmlsbD0iIzIzNTM3OCIvPgogICAgPHBhdGggZD0iTTEwMy4xNTcgNTEuNTN2LTMuMjA0YzAtMS42MjUtLjQwOS0yLjc5OC0xLjE4MS0zLjUycy0yLjA0My0xLjA4My0zLjY3Ny0xLjA4M0g2Ni4wMTdjLTEuNjgtLjA5LTIuOTA2LjIyNi0zLjcyMyAxLjAzOC0uODE4Ljc2Ny0xLjE4MSAxLjk4NS0xLjE4MSAzLjU2NXYzLjIwM2MwIDMuMDY5IDEuNjM1IDQuNjAzIDQuOTA0IDQuNjAzaDE0LjIxdjUuMTg5Yy0uMDQ0Ljc2Ny0uMjcyIDEuMzk4LS42MzUgMS44MDUtLjQwOC40NS0uOTA4LjY3Ni0xLjYzNC42NzZoLTIuNjM0Yy0xLjU4OSAwLTIuNDA2Ljg1OC0yLjQwNiAyLjU3MiAwIDEuNjI1Ljk5OSAyLjQzNyAyLjk1MSAyLjQzN2gzLjk1YzEuODYyLS4wNDUgMy4yNy0uNTg3IDQuMTMyLTEuNTguODYzLS45OTIgMS4yNzEtMi41MjYgMS4yNzEtNC42MDJ2LTYuNTg3aDEzLjEyMmMxLjYzNC4wOSAyLjg2LS4yNzEgMy42NzgtMS4wODQuNzI2LS42MzEgMS4xMzUtMS44NSAxLjEzNS0zLjQyOXptLTUuNDQ5LjEzNWMtLjI3Mi4zNi0uNjguNTQxLTEuMjcxLjU0MUg2Ny44MzNjLTEuMTggMC0xLjcyNi0uNzIyLTEuNzI2LTIuMjU2IDAtMS41MzQuNTktMi4yNTYgMS43MjYtMi4yNTZoMjguNjA0Yy41OSAwIC45OTkuMTggMS4yNzEuNTQxLjI3My4zNjEuNDA5Ljk0OC40MDkgMS43NiAwIC43NjctLjEzNiAxLjMwOS0uNDA5IDEuNjd6TTEzMC41MzUgNTguNzQ5Yy0uNDU0LS45OTMtLjk5OS0xLjQ5LTEuNjgtMS40OS0uNTkgMC0xLjA0NC4xODEtMS40MDguNDk3LS4zNjMuMzE2LS41NDQuODEyLS41NDQgMS40NDQgMCAuMzE2LjA0NS40OTYuMDQ1LjU4Ny40OTkgMi44NDIuNzcyIDQuODI4LjkwOCA1Ljk1Ni4xODIgMS44OTUuOTU0IDIuODg4IDIuMjcgMi44ODguNzI3IDAgMS4zMTctLjIyNiAxLjc3MS0uNjMyLjQ1NC0uNDUxLjU5LS45OTMuNDU0LTEuNzE1bC0uNDk5LTIuNzUyYy0uNDU0LTIuMjExLS44NjMtMy43OS0xLjMxNy00Ljc4M3pNMTIyLjkwNyA1Ny41M2MtLjYzNSAwLTEuMDkuMjI2LTEuNDA3LjYzMi0uMzE4LjQwNi0uNTkxIDEuMDM4LS44NjMgMS44NWwtMS44MTYgNi4zNjJjMCAxLjUzNS43MjYgMi4yNTcgMi4yMjUgMi4yNTcuNjM1IDAgMS4xMzUtLjI3MSAxLjU4OS0uOTAzLjQwOC0uNTg3LjgxNy0xLjQ4OSAxLjIyNi0yLjc5Ny40OTktMS40OS44NjItMy4yNSAxLjEzNS01LjIzNS4wOTEtLjY3Ni0uMDkxLTEuMjE4LS40NTQtMS42MjQtLjQwOS0uMzYxLS45NTQtLjU0MS0xLjYzNS0uNTQxek0xMzMuNzEzIDU4LjQ3OGwuMjI3IDEuMTczLjY4MSAyLjUyN2MuNSAxLjcxNS45OTkgMy4yMDQgMS4zNjIgNC4yODcuMjczLjgxMi45NTQgMS4yMTggMS45MDcgMS4yMTguNzI3IDAgMS4zMTctLjE4IDEuNjgtLjQ5Ni40MDktLjM2MS41NDUtLjg1OC40NTQtMS41MzRsLS4xODEtMS4yMTktLjc3Mi0yLjc1MmMtLjU0NS0xLjc2LTEuMDktMy4wMjMtMS42MzUtMy44OC0uNTQ1LS44MTMtMS4wODktMS4yNjQtMS43MjUtMS4yNjQtLjYzNiAwLTEuMTgxLjE4LTEuNTg5LjQ5NmExLjQ4NiAxLjQ4NiAwIDAgMC0uNDA5IDEuNDQ0ek0xNzAuODA4IDI1LjQ0OWgtOS4zNTN2LTguNzU0YzAtMS44MDUtLjgxOC0yLjcwNy0yLjQwNy0yLjcwN3MtMi40MDYuOTAyLTIuNDA2IDIuNzA3djI1LjA0M2gtMi44NjFjLTEuNzctLjEzNi0zLjA4Ny4yMjUtMy44NTkgMS4wMzgtLjc3Mi44MTItMS4xOCAyLjE2NS0xLjE4IDQuMDE1VjYyLjQ1YzAgLjU4NiAwIDEuMjYzLjA5IDEuODUuMTM3IDEuMDM4LjQ1NSAxLjg1Ljk5OSAyLjM5MS44MTguNzY3IDIuMTM0IDEuMTczIDMuOTUgMS4xNzNoMTMuMDMxYy4yMjcgMCAuNDU0LjA0Ni42ODEuMDQ2IDEuNDA4IDAgMi40OTgtLjM2MSAzLjE3OS0xLjA4My44MTctLjgxMyAxLjIyNS0yLjE2NiAxLjIyNS00LjAxNlY0Ni44ODJjLjA5MS0xLjgwNS0uMjcyLTMuMTE0LTEuMDg5LTMuODgtLjgxNy0uODEzLTIuMTM0LTEuMjItMy45NS0xLjIyaC01LjQwM3YtMTEuMjhoOS4zNTNjMi4wNDMgMCAzLjA0Mi0uODEyIDMuMDQyLTIuNDM2IDAtMS43Ni0xLjA0NC0yLjYxNy0zLjA0Mi0yLjYxN3ptLTUuNTg1IDIwLjkzNmMuNTkgMCAxLjA0NC4xOCAxLjQwOC40OTcuMzYzLjM2LjQ5OS44MTIuNDk5IDEuNDQ0djEzLjA0YzAgLjU4Ni0uMTgyIDEuMDgzLS40OTkgMS40NDQtLjMxOC4zNi0uODE4LjU0MS0xLjQwOC41NDFoLTkuODA3Yy0uNTkgMC0xLjA0NC0uMTgtMS40MDctLjQ5Ni0uMzY0LS4zMTYtLjUtLjgxMi0uNS0xLjQ0NFY0OC40MTZjMC0uNTg3LjE4Mi0xLjA4My41LTEuNDQ0LjMxNy0uMzYxLjc3MS0uNTQxIDEuNDA3LS41NDFoOS44MDd2LS4wNDZ6TTE0Mi42NTggNTUuOTUxYy0uNTkxIDAtMS4wOS4xOC0xLjQ1My40OTctLjM2My4zMTUtLjU0NS43NjctLjU0NSAxLjM1MyAwIC4zMTYuMTM2Ljg1Ny40MDkgMS42MjVsMS4xOCAzLjUyYy40NTQgMS4zMDguODYzIDIuMjEgMS4zMTcgMi43OTcuNDU0LjU4Ni45NTMuOTAyIDEuNDk4LjkwMi42ODEgMCAxLjIyNi0uMTggMS41ODktLjQ5Ni4zMTgtLjMxNi40NTQtLjcyMi41LTEuMDM4LjA0NS0uNDUxLjA0NS0uOTAzLS4wNDYtMS4yNjMtLjE4MS0uODEzLS42ODEtMi4wNzYtMS4zNjItMy44MzYtMS4wOS0yLjc1Mi0yLjA4OC00LjA2LTMuMDg3LTQuMDZ6IiBmaWxsPSIjMjM1Mzc4Ii8+CiAgICA8cGF0aCBkPSJNMjUuNjk4IDQzLjcyM2MtNC4wNCAwLTcuMzU1LTMuMjk0LTcuMzU1LTcuMzEgMC00LjAxNSAzLjMxNC03LjMxIDcuMzU1LTcuMzFzNy4zNTYgMy4yOTQgNy4zNTYgNy4zMS0zLjMxNSA3LjMxLTcuMzU2IDcuMzF6TTQyLjYzNCAzN2MwLTEwLjE5OC03LjQ5Mi0xNy4zNzItMTYuOTM2LTE3LjM3Mi05LjQ0NCAwLTE2Ljg5IDcuMTc0LTE2Ljg5IDE3LjM3MiAwIDYuNTQzIDUuNDk0IDE1LjI1MSAxNi45MzYgMjUuNjNDMzcuMTQgNTIuMjUgNDIuNjM0IDQzLjU0MiA0Mi42MzQgMzd6TTI1LjY5OCAxMy45ODhjMTEuODUgMCAyMi41NjYgOS4wMjQgMjIuNTY2IDIyLjk2NyAwIDkuMjk1LTcuNTM3IDIwLjMwNS0yMi41NjYgMzMuMDc0QzEwLjY3IDU3LjMwNSAzLjEzMyA0Ni4yOTUgMy4xMzMgMzdjMC0xMy45NDMgMTAuNzE1LTIzLjAxMiAyMi41NjUtMjMuMDEyeiIgZmlsbD0iI0YyOUM5NyIvPgogICAgPHBhdGggZD0iTTEzMi42MjMgMjEuNzA0YTYuMTQzIDYuMTQzIDAgMCAwLTYuMTc0IDYuMTgxYzAgMy40MyAyLjc2OSA2LjE4MiA2LjIyIDYuMTgyIDMuNDA1IDAgNi4yMi0yLjc1MiA2LjIyLTYuMTgyYTYuMjUgNi4yNSAwIDAgMC02LjI2Ni02LjE4MXptMCAxMC40NjhjLTIuNDA2IDAtNC4zNTgtMS45NC00LjM1OC00LjMzMiAwLTIuMzkxIDEuOTUyLTQuMzMxIDQuMzEzLTQuMzMxIDIuNDA2IDAgNC4zNTkgMS45NCA0LjM1OSA0LjMzMS4wNDUgMi4zOTItMS45NTMgNC4zNzctNC4zMTQgNC4zMzJ6IiBmaWxsPSIjMjM1Mzc4Ii8+CiAgICA8cGF0aCBkPSJNMTQ2LjU2MiAxOC41aC03Ljc2NGMtLjA5LS42MzItLjE4MS0xLjI2My0uMjI3LTEuOTQtLjA5LTEuMDM4LS44NjItMS44MDUtMS45MDctMS44MDVoLTguMDgxYy0xLjA5IDAtMS44NjIuNzIyLTEuOTUzIDEuODA1LS4wNDUuNjMyLS4xMzYgMS4yNjMtLjIyNyAxLjk0SDExOC42MzljLS43NzIgMC0xLjI3MS40OTYtMS4yNzEgMS4yNjN2MTYuMTA5YzAgLjkwMi40OTkgMS4zOTkgMS40MDcgMS4zOTloMTIuMTIzdjQuMjQxaC04Ljc2M2MtMS43NyAwLTIuNjc5Ljc2Ny0yLjY3OSAyLjI1NiAwIDEuNTM0LjkwOSAyLjM0NyAyLjY3OSAyLjM0N2g4LjY3MnY0LjE5NmgtLjI3MmMtMy4xMzMuMTgtNi4xNzUuMjctOS4wMzUuMjctMi40NTIgMC0zLjcyMy44NTgtMy43MjMgMi41NzMgMCAuODEyLjIyNyAxLjQ4OS43MjYgMS45NC40OTkuNDUxIDEuMTguNjMyIDIuMDg5LjU4N2wyMi4yOTMtMS40YzIuMzYxLS4xMzUgMy41NDEtLjkwMiAzLjU0MS0yLjM5IDAtLjc2OC0uMjI3LTEuMzU0LS42MzYtMS43Ni0uNDA4LS40MDctLjk5OC0uNjMyLTEuNzctLjU4N2wtOS4wMzYuNDk2di0zLjkyNWg4LjA4MmMxLjc3MSAwIDIuNjc5LS43NjcgMi42NzktMi4zNDcgMC0xLjQ4OS0uOTA4LTIuMjU2LTIuNjc5LTIuMjU2aC04LjA4MnYtNC4xOTZoMTEuNTMzYy45MDggMCAxLjQwNy0uNDk3IDEuNDA3LTEuMzk5VjE5LjljMC0uOTAzLS40OTktMS4zOTktMS4zNjItMS4zOTl6bS0xMy45MzkgMTcuMTQ2Yy00LjIyMiAwLTcuNzY0LTMuNDI5LTcuODA5LTcuNjI1IDAtNC4zMzIgMy40MDUtNy44MDYgNy42MjgtNy44NTIgNC4yMjItLjA5IDcuOTQ1IDMuMjk0IDcuOTQ1IDcuNzE2LjA0NiA0LjI0Mi0zLjQ1IDcuNzE2LTcuNzY0IDcuNzYxem0xMC4zOTgtMTEuNjQxYTEuMzM0IDEuMzM0IDAgMCAxLTEuMzYyLTEuMzU0YzAtLjc2Ny41OS0xLjM1MyAxLjM2Mi0xLjM1My43NzIgMCAxLjM2Mi41ODYgMS4zNjIgMS4zNTNzLS41OSAxLjM1NC0xLjM2MiAxLjM1NHoiIGZpbGw9IiMyMzUzNzgiLz4KPC9zdmc+Cg==" alt=""/></a><div class="relative shadow xl:block hidden"><input id="pcSeach" class="bg-white w-[250px] h-11 rounded border border-gray-200 pl-4 pr-[52px] py-3 text-sm leading-[20px] outline-none focus:border-primary-dark focus-visible:border-primary-dark" placeholder="請輸入關鍵字"/> <button class="absolute right-6 top-1/2 -translate-y-1/2" type="button"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCMzMzM1bHZjbm5hKSI+CiAgICAgICAgPG1hc2sgaWQ9ImFxanlrNzZwcGIiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjMiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40NzcgMy40NzdoMTYuMzYyVjE5Ljg0SDMuNDc3VjMuNDc3eiIgZmlsbD0iI2ZmZiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2FxanlrNzZwcGIpIj4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42NTggNC43MzdhNi45MjkgNi45MjkgMCAwIDAtNi45MjEgNi45MiA2LjkzIDYuOTMgMCAwIDAgNi45MjEgNi45MjJjMy44MTYgMCA2LjkyLTMuMTA1IDYuOTItNi45MjFhNi45MjggNi45MjggMCAwIDAtNi45Mi02LjkyMXptMCAxNS4xMDJjLTQuNTExIDAtOC4xODEtMy42Ny04LjE4MS04LjE4MSAwLTQuNTEyIDMuNjctOC4xODEgOC4xODEtOC4xODEgNC41MTEgMCA4LjE4MSAzLjY3IDguMTgxIDguMTggMCA0LjUxMi0zLjY3IDguMTgyLTguMTggOC4xODJ6IiBmaWxsPSIjMDAwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxtYXNrIGlkPSJsaXVzZG1lZGxjIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiPgogICAgICAgICAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjcyNCAxNy4xNzNoNC44MzVWMjJoLTQuODM1di00LjgyN3oiIGZpbGw9IiNmZmYiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPGcgbWFzaz0idXJsKCNsaXVzZG1lZGxjKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODM4IDIyYS43MjMuNzIzIDAgMCAxLS41MS0uMjFsLTMuMzkyLTMuMzgzYS43MjIuNzIyIDAgMCAxIDEuMDItMS4wMjNsMy4zOTIgMy4zODNhLjcyMS43MjEgMCAwIDEtLjUxIDEuMjMzeiIgZmlsbD0iIzAwMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iMzMzNWx2Y25uYSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/></button><div id="searchMenu" class="absolute top-full left-0 bg-white border border-gray-200 rounded shadow xl:w-[325px] mt-2 hidden px-8 py-4 z-10"><p class="text-dark text-lg leading-[24px]">熱門關鍵字</p><div class="mt-4 flex flex-wrap"><a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">美食</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">花海</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">防疫新生活</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">電影</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">東京車站</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">白熊咖啡廳</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">自助旅行</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">台東</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">熱氣球</a></div></div><div id="searchMenuShadow" class="fixed inset-0 z-0 hidden"></div></div><div class="xl:hidden flex space-x-6"><button id="searchButton" class="w-6 h-6" type="button"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCMzMzM1bHZjbm5hKSI+CiAgICAgICAgPG1hc2sgaWQ9ImFxanlrNzZwcGIiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjMiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40NzcgMy40NzdoMTYuMzYyVjE5Ljg0SDMuNDc3VjMuNDc3eiIgZmlsbD0iI2ZmZiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2FxanlrNzZwcGIpIj4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42NTggNC43MzdhNi45MjkgNi45MjkgMCAwIDAtNi45MjEgNi45MiA2LjkzIDYuOTMgMCAwIDAgNi45MjEgNi45MjJjMy44MTYgMCA2LjkyLTMuMTA1IDYuOTItNi45MjFhNi45MjggNi45MjggMCAwIDAtNi45Mi02LjkyMXptMCAxNS4xMDJjLTQuNTExIDAtOC4xODEtMy42Ny04LjE4MS04LjE4MSAwLTQuNTEyIDMuNjctOC4xODEgOC4xODEtOC4xODEgNC41MTEgMCA4LjE4MSAzLjY3IDguMTgxIDguMTggMCA0LjUxMi0zLjY3IDguMTgyLTguMTggOC4xODJ6IiBmaWxsPSIjMDAwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxtYXNrIGlkPSJsaXVzZG1lZGxjIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiPgogICAgICAgICAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjcyNCAxNy4xNzNoNC44MzVWMjJoLTQuODM1di00LjgyN3oiIGZpbGw9IiNmZmYiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPGcgbWFzaz0idXJsKCNsaXVzZG1lZGxjKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODM4IDIyYS43MjMuNzIzIDAgMCAxLS41MS0uMjFsLTMuMzkyLTMuMzgzYS43MjIuNzIyIDAgMCAxIDEuMDItMS4wMjNsMy4zOTIgMy4zODNhLjcyMS43MjEgMCAwIDEtLjUxIDEuMjMzeiIgZmlsbD0iIzAwMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iMzMzNWx2Y25uYSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/></button> <button id="menuButton" class="w-6 h-6" type="button"><img id="hamburgerIcon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNxZnowazJpdXdhKSIgZmlsbD0iIzAwMCI+CiAgICAgICAgPHBhdGggZD0iTTQgNi43MjZhLjc1Ljc1IDAgMCAxIC42NDgtLjc0M2wuMTAyLS4wMDdoMTVhLjc1Ljc1IDAgMCAxIC4xMDIgMS40OTNsLS4xMDIuMDA3aC0xNWEuNzUuNzUgMCAwIDEtLjc1LS43NXpNNCAxMS43NWEuNzUuNzUgMCAwIDEgLjY0OC0uNzQzTDQuNzUgMTFoMTVhLjc1Ljc1IDAgMCAxIC4xMDIgMS40OTNsLS4xMDIuMDA3aC0xNWEuNzUuNzUgMCAwIDEtLjc1LS43NXpNNCAxNi43NWEuNzUuNzUgMCAwIDEgLjY0OC0uNzQzTDQuNzUgMTZoMTVhLjc1Ljc1IDAgMCAxIC4xMDIgMS40OTNsLS4xMDIuMDA3aC0xNWEuNzUuNzUgMCAwIDEtLjc1LS43NXoiLz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0icWZ6MGsyaXV3YSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/> <img id="closeIcon" class="hidden" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNrdXlmbXRzNnRhKSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgICAgICA8cGF0aCBkPSJNMTkgNSA1IDE5TTE5IDE5IDUgNSIvPgogICAgPC9nPgogICAgPGRlZnM+CiAgICAgICAgPGNsaXBQYXRoIGlkPSJrdXlmbXRzNnRhIj4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICA8L2RlZnM+Cjwvc3ZnPgo=" alt=""/></button></div><div id="mbSearchMenu" class="fixed top-0 left-0 bg-light hidden w-full h-full z-40"><div class="bg-white px-4 py-2 flex items-center space-x-4"><div class="relative w-[85%]"><input id="mbSeach" class="bg-white w-full h-11 rounded border border-gray-200 pl-6 pr-[52px] py-3 focus:outline-primary-dark" placeholder="請輸入關鍵字"/> <button class="absolute right-6 top-1/2 -translate-y-1/2" type="button"><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCMzMzM1bHZjbm5hKSI+CiAgICAgICAgPG1hc2sgaWQ9ImFxanlrNzZwcGIiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjMiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40NzcgMy40NzdoMTYuMzYyVjE5Ljg0SDMuNDc3VjMuNDc3eiIgZmlsbD0iI2ZmZiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2FxanlrNzZwcGIpIj4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42NTggNC43MzdhNi45MjkgNi45MjkgMCAwIDAtNi45MjEgNi45MiA2LjkzIDYuOTMgMCAwIDAgNi45MjEgNi45MjJjMy44MTYgMCA2LjkyLTMuMTA1IDYuOTItNi45MjFhNi45MjggNi45MjggMCAwIDAtNi45Mi02LjkyMXptMCAxNS4xMDJjLTQuNTExIDAtOC4xODEtMy42Ny04LjE4MS04LjE4MSAwLTQuNTEyIDMuNjctOC4xODEgOC4xODEtOC4xODEgNC41MTEgMCA4LjE4MSAzLjY3IDguMTgxIDguMTggMCA0LjUxMi0zLjY3IDguMTgyLTguMTggOC4xODJ6IiBmaWxsPSIjMDAwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxtYXNrIGlkPSJsaXVzZG1lZGxjIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiPgogICAgICAgICAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjcyNCAxNy4xNzNoNC44MzVWMjJoLTQuODM1di00LjgyN3oiIGZpbGw9IiNmZmYiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPGcgbWFzaz0idXJsKCNsaXVzZG1lZGxjKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODM4IDIyYS43MjMuNzIzIDAgMCAxLS41MS0uMjFsLTMuMzkyLTMuMzgzYS43MjIuNzIyIDAgMCAxIDEuMDItMS4wMjNsMy4zOTIgMy4zODNhLjcyMS43MjEgMCAwIDEtLjUxIDEuMjMzeiIgZmlsbD0iIzAwMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iMzMzNWx2Y25uYSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/></button></div><button id="cancelButton" class="text-dark text-sm w-[10%]" type="button">取消</button></div><div class="bg-light border border-gray-200 p-4 flex-auto h-full"><p class="text-dark">熱門關鍵字</p><div class="mt-4 flex flex-wrap"><a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">美食</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">花海</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">防疫新生活</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">電影</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">東京車站</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">白熊咖啡廳</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">自助旅行</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">台東</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">熱氣球</a></div></div></div></div><div class="xl:flex hidden items-center space-x-4"><div class="flex items-center"><a class="px-4 py-3 text-sm leading-[20px] rounded-full duration-200 hover:bg-gray-100" href="https://www.mook.com.tw/" target="_blank">MOOK</a> <a class="px-4 py-3 text-smleading-[20px] rounded-full duration-200 hover:bg-gray-100" href="https://blog.mook.com.tw" target="_blank">Blog玩家</a> <a class="px-4 py-3 text-smleading-[20px] rounded-full duration-200 hover:bg-gray-100" href="https://blog.mook.com.tw/book" target="_blank">墨刻Book</a></div><div class="grid grid-cols-4 space-x-2 text-center max-w-[192px] mx-auto"><a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://www.facebook.com/tripass.net" target="_blank"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m17.214 14.25.622-3.62h-3.89V8.282c0-.99.543-1.956 2.285-1.956H18V3.245S16.395 3 14.86 3c-3.204 0-5.298 1.734-5.298 4.872v2.758H6v3.62h3.562V23h4.383v-8.75h3.269z"/></svg> </a><a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://www.instagram.com/mook_travel_plus/" target="_blank"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.651 1.573c-1.117.053-1.88.231-2.547.494-.69.269-1.275.63-1.857 1.214a5.143 5.143 0 0 0-1.208 1.86c-.258.67-.434 1.433-.483 2.55-.05 1.118-.06 1.478-.055 4.33.006 2.85.018 3.208.073 4.328.053 1.117.23 1.88.493 2.547.269.69.63 1.275 1.214 1.857.584.583 1.17.94 1.863 1.208.667.258 1.431.434 2.549.483 1.117.049 1.477.06 4.328.055 2.85-.006 3.21-.018 4.33-.071 1.119-.054 1.878-.233 2.545-.493.69-.27 1.276-.63 1.858-1.215.582-.585.94-1.17 1.207-1.862.259-.668.434-1.432.483-2.549.049-1.12.06-1.478.055-4.33-.006-2.85-.018-3.208-.072-4.327-.053-1.12-.23-1.88-.492-2.548a5.156 5.156 0 0 0-1.215-1.857 5.125 5.125 0 0 0-1.862-1.208c-.668-.258-1.431-.434-2.55-.483-1.117-.048-1.476-.06-4.328-.055-2.852.006-3.209.018-4.329.072zm.123 18.982c-1.024-.044-1.58-.215-1.95-.357a3.27 3.27 0 0 1-1.21-.783 3.234 3.234 0 0 1-.787-1.206c-.144-.37-.317-.926-.365-1.95-.052-1.106-.063-1.438-.069-4.241-.006-2.804.005-3.135.053-4.242.044-1.023.215-1.58.357-1.95.19-.491.417-.84.783-1.209a3.241 3.241 0 0 1 1.206-.788c.37-.144.926-.316 1.95-.365 1.106-.052 1.438-.063 4.241-.069 2.803-.006 3.136.005 4.243.053 1.023.045 1.58.214 1.95.357.49.19.84.416 1.209.783.369.367.596.716.788 1.207.145.369.316.924.365 1.948.052 1.107.064 1.44.07 4.242.004 2.803-.006 3.135-.054 4.242-.045 1.024-.214 1.58-.357 1.95-.19.49-.417.84-.784 1.21a3.243 3.243 0 0 1-1.206.787c-.37.144-.925.316-1.948.365-1.107.052-1.439.063-4.243.07-2.804.005-3.134-.006-4.242-.054m8.56-14.167a1.26 1.26 0 1 0 2.522-.005 1.26 1.26 0 0 0-2.522.005zm-9.725 5.623a5.391 5.391 0 1 0 10.783-.021 5.392 5.392 0 1 0-10.783.02zm1.891-.004a3.5 3.5 0 1 1 7-.014 3.5 3.5 0 0 1-7 .014z"/></svg> </a><a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://www.youtube.com/channel/UCVrNFlaSYxbEKVAMFW6o5FQ" target="_blank"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4H7C4 4 2 6 2 9v6c0 3 2 5 5 5h10c3 0 5-2 5-5V9c0-3-2-5-5-5zm-3.11 9.03-2.47 1.48c-1 .6-1.82.14-1.82-1.03v-2.97c0-1.17.82-1.63 1.82-1.03l2.47 1.48c.95.58.95 1.5 0 2.07z"/></svg> </a><a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://line.me/R/ti/p/%40hsj8845q" target="_blank"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.118C22 6.642 17.515 3 12 3S2 6.642 2 11.118c0 4.008 3.558 7.369 8.361 8.006.328.075.768.215.88.496.104.253.066.646.029.908 0 0-.122.702-.14.852l-.003.01c-.048.261-.181.977.873.533 1.067-.45 5.758-3.39 7.856-5.805 1.451-1.592 2.144-3.202 2.144-5zm-3.324 2.584a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.711a.188.188 0 0 0-.187-.188h-2.809a.188.188 0 0 0-.187.188v4.354c0 .103.084.187.187.187h2.809v.01zM8.47 13.515a.188.188 0 0 1-.187.187h-2.81a.188.188 0 0 1-.186-.187V9.152c0-.103.084-.188.187-.188h.711c.103 0 .188.085.188.188v3.464h1.91c.103 0 .187.084.187.187v.712zm1.498-4.56h-.711a.188.188 0 0 0-.188.187v4.364c0 .103.085.187.188.187h.711a.188.188 0 0 0 .187-.187V9.142c.01-.103-.074-.187-.187-.187zm4.12 0h.712c.103 0 .187.084.177.197v4.363a.188.188 0 0 1-.187.187h-.702c-.01 0-.016-.002-.023-.004a.068.068 0 0 0-.024-.005h-.047l-.009-.01a.113.113 0 0 1-.047-.046l-2.004-2.697v2.594a.188.188 0 0 1-.187.187h-.711a.188.188 0 0 1-.188-.187V9.17c0-.103.085-.187.188-.187h.777c0 .01.01.01.01.01h.008c0 .009.01.009.01.009h.01l.008.01h.01l.019.018c.003.004.007.006.01.008.005.003.008.005.008.01l1.995 2.697V9.142c0-.103.084-.187.187-.187z"/></svg></a></div></div></div></div><div id="navbarWrapper" class="xl:h-auto h-full xl:visible invisible !border-b border-gray-200 xl:mt-[80px] mt-0 xl:bg-white bg-light xl:static fixed top-0 right-0 xl:w-auto w-4/5 z-20 xl:duration-0 duration-200 xl:translate-x-0 translate-x-full xl:before:content-none before:content-[''] before:w-screen before:h-full before:absolute before:inset-0"><div class="navbar splide max-w-[1100px] mx-auto flex items-center xl:h-auto h-full"><div class="splide__arrows splide__arrows--ltr"><button class="!bg-transparent !bg-gradient-to-l from-transparent to-white !rounded-none !opacity-100 !w-24 !h-10 !left-0 xl:!flex !justify-start !hidden disabled:!hidden splide__arrow splide__arrow--prev" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#kft993jrqa)"><path d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z" fill="#000"/></g><defs><clipPath id="kft993jrqa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg></button> <button class="!bg-transparent !bg-gradient-to-r from-transparent to-white !rounded-none !opacity-100 !w-24 !h-10 !right-0 xl:!flex !justify-end !hidden disabled:!hidden splide__arrow splide__arrow--next" type="button"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#kft993jrqa)"><path d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z" fill="#000"/></g><defs><clipPath id="kft993jrqa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg></button></div><div class="splide__track xl:w-auto w-full xl:!overflow-hidden !overflow-y-auto xl:h-auto h-full"><ul class="splide__list relative xl:!pt-0 !pt-14 xl:!pb-0 xl:!overflow-y-visible !overflow-y-auto xl:h-auto"><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark !text-primary-dark" href="#"><span class="xl:pr-5 inline-block">1. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">2. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">3. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">4. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">5. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">6. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">7. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">8. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">9. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">10. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">11. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">12. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">13. 熱話題</span></a></li><li class="splide__slide navItem xl:px-0 px-8 z-0"><a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"><span class="xl:px-5 inline-block">14. 熱話題</span></a></li><li style="position:sticky;position:-webkit-sticky" class="xl:hidden flex items-center justify-center space-x-6 py-[6px] sticky bottom-0 bg-primary-dark w-full z-10"><a class="p-[6px]" href="https://www.facebook.com/tripass.net" target="_blank"><svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m17.214 14.25.622-3.62h-3.89V8.282c0-.99.543-1.956 2.285-1.956H18V3.245S16.395 3 14.86 3c-3.204 0-5.298 1.734-5.298 4.872v2.758H6v3.62h3.562V23h4.383v-8.75h3.269z"/></svg> </a><a class="p-[6px]" href="https://www.instagram.com/mook_travel_plus/" target="_blank"><svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M7.651 1.573c-1.117.053-1.88.231-2.547.494-.69.269-1.275.63-1.857 1.214a5.143 5.143 0 0 0-1.208 1.86c-.258.67-.434 1.433-.483 2.55-.05 1.118-.06 1.478-.055 4.33.006 2.85.018 3.208.073 4.328.053 1.117.23 1.88.493 2.547.269.69.63 1.275 1.214 1.857.584.583 1.17.94 1.863 1.208.667.258 1.431.434 2.549.483 1.117.049 1.477.06 4.328.055 2.85-.006 3.21-.018 4.33-.071 1.119-.054 1.878-.233 2.545-.493.69-.27 1.276-.63 1.858-1.215.582-.585.94-1.17 1.207-1.862.259-.668.434-1.432.483-2.549.049-1.12.06-1.478.055-4.33-.006-2.85-.018-3.208-.072-4.327-.053-1.12-.23-1.88-.492-2.548a5.156 5.156 0 0 0-1.215-1.857 5.125 5.125 0 0 0-1.862-1.208c-.668-.258-1.431-.434-2.55-.483-1.117-.048-1.476-.06-4.328-.055-2.852.006-3.209.018-4.329.072zm.123 18.982c-1.024-.044-1.58-.215-1.95-.357a3.27 3.27 0 0 1-1.21-.783 3.234 3.234 0 0 1-.787-1.206c-.144-.37-.317-.926-.365-1.95-.052-1.106-.063-1.438-.069-4.241-.006-2.804.005-3.135.053-4.242.044-1.023.215-1.58.357-1.95.19-.491.417-.84.783-1.209a3.241 3.241 0 0 1 1.206-.788c.37-.144.926-.316 1.95-.365 1.106-.052 1.438-.063 4.241-.069 2.803-.006 3.136.005 4.243.053 1.023.045 1.58.214 1.95.357.49.19.84.416 1.209.783.369.367.596.716.788 1.207.145.369.316.924.365 1.948.052 1.107.064 1.44.07 4.242.004 2.803-.006 3.135-.054 4.242-.045 1.024-.214 1.58-.357 1.95-.19.49-.417.84-.784 1.21a3.243 3.243 0 0 1-1.206.787c-.37.144-.925.316-1.948.365-1.107.052-1.439.063-4.243.07-2.804.005-3.134-.006-4.242-.054m8.56-14.167a1.26 1.26 0 1 0 2.522-.005 1.26 1.26 0 0 0-2.522.005zm-9.725 5.623a5.391 5.391 0 1 0 10.783-.021 5.392 5.392 0 1 0-10.783.02zm1.891-.004a3.5 3.5 0 1 1 7-.014 3.5 3.5 0 0 1-7 .014z"/></svg> </a><a class="p-[6px]" href="https://www.youtube.com/channel/UCVrNFlaSYxbEKVAMFW6o5FQ" target="_blank"><svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17 4H7C4 4 2 6 2 9v6c0 3 2 5 5 5h10c3 0 5-2 5-5V9c0-3-2-5-5-5zm-3.11 9.03-2.47 1.48c-1 .6-1.82.14-1.82-1.03v-2.97c0-1.17.82-1.63 1.82-1.03l2.47 1.48c.95.58.95 1.5 0 2.07z"/></svg> </a><a class="p-[6px]" href="https://line.me/R/ti/p/%40hsj8845q" target="_blank"><svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.118C22 6.642 17.515 3 12 3S2 6.642 2 11.118c0 4.008 3.558 7.369 8.361 8.006.328.075.768.215.88.496.104.253.066.646.029.908 0 0-.122.702-.14.852l-.003.01c-.048.261-.181.977.873.533 1.067-.45 5.758-3.39 7.856-5.805 1.451-1.592 2.144-3.202 2.144-5zm-3.324 2.584a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.711a.188.188 0 0 0-.187-.188h-2.809a.188.188 0 0 0-.187.188v4.354c0 .103.084.187.187.187h2.809v.01zM8.47 13.515a.188.188 0 0 1-.187.187h-2.81a.188.188 0 0 1-.186-.187V9.152c0-.103.084-.188.187-.188h.711c.103 0 .188.085.188.188v3.464h1.91c.103 0 .187.084.187.187v.712zm1.498-4.56h-.711a.188.188 0 0 0-.188.187v4.364c0 .103.085.187.188.187h.711a.188.188 0 0 0 .187-.187V9.142c.01-.103-.074-.187-.187-.187zm4.12 0h.712c.103 0 .187.084.177.197v4.363a.188.188 0 0 1-.187.187h-.702c-.01 0-.016-.002-.023-.004a.068.068 0 0 0-.024-.005h-.047l-.009-.01a.113.113 0 0 1-.047-.046l-2.004-2.697v2.594a.188.188 0 0 1-.187.187h-.711a.188.188 0 0 1-.188-.187V9.17c0-.103.085-.187.188-.187h.777c0 .01.01.01.01.01h.008c0 .009.01.009.01.009h.01l.008.01h.01l.019.018c.003.004.007.006.01.008.005.003.008.005.008.01l1.995 2.697V9.142c0-.103.084-.187.187-.187z"/></svg></a></li></ul></div></div></div><div id="menuShadow" class="invisible opacity-0 bg-black w-full h-full fixed inset-0 duration-200 z-0"></div></div></header><main class="container mx-auto xl:pb-[72px] xl:pt-6 pt-4 pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]"><nav class="flex xl:px-0 px-5"><ol class="inline-flex items-center space-x-[6px]"><li class="inline-flex items-center"><a class="inline-flex items-center text-sm leading-[20px] text-light-dark whitespace-nowrap" href="#">景點+</a></li><li><div class="flex items-center"><svg class="fill-light-dark" width="16" height="16" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#kft993jrqa)"><path d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"/></g><defs><clipPath id="kft993jrqa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg> <a class="ml-[6px] inline-flex items-center text-sm leading-[20px] text-secondary line-clamp-1" href="#"><h1>Tag：花海</h1></a></div></li></ol></nav><div class="mx-auto xl:mt-5 mt-4 relative overflow-hidden"><a href="#"><img class="object-cover w-full h-full xl:aspect-[1100/120] aspect-[390/100] xl:max-w-[1100px] max-w-[390px] xl:max-h-[120px] max-h-[100px]" src="./images/img-21.jpg" loading="lazy" alt=""/><div class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center text-[26px] text-white font-bold backdrop-blur-lg bg-blend-multiply bg-banner">花海</div></a></div><div class="mt-5 xl:px-0 px-5"><ul class="flex xl:flex-wrap flex-nowrap items-center overflow-x-auto space-x-3"><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li><li class="xl:flex-initial flex-0"><a class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white" href="#">#Tag字</a></li></ul></div><section class="xl:mt-8 mt-10 flex xl:flex-row flex-col xl:px-0 px-5 xl:space-x-[72px] xl:space-y-0 space-y-10"><div><div class="flex flex-col xl:space-y-8 space-y-6"><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-18.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-19.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-20.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-17.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-16.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="xl:max-w-[730px] max-w-[300px] mx-auto"><a href="#"><img class="xl:block hidden" src="./images/Ad-02.jpg" loading="lazy" alt=""/> <img class="xl:hidden" src="./images/Ad-05.jpg" loading="lazy" alt=""/></a></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-15.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-14.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-13.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-12.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div><div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"><a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#"><img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-11.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a><p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。</p></div></div></div><div class="mt-8"><ul class="flex items-center justify-center space-x-2"><li><a class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary" href="#"><svg fill="currentColor" width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#5i0gogcqya)"><path d="M16.03 4.47a.75.75 0 0 1 .073.976l-.073.084L9.561 12l6.47 6.47a.75.75 0 0 1 .072.976l-.073.084a.75.75 0 0 1-.976.073l-.084-.073-7-7a.75.75 0 0 1-.073-.976l.073-.084 7-7a.75.75 0 0 1 1.06 0z"/></g><defs><clipPath id="5i0gogcqya"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg></a></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary !text-primary !border-primary" href="#">1</a></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary" href="#">2</a></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary" href="#">3</a></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary" href="#">4</a></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary" href="#">5</a></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary" href="#">6</a></li><li><span class="inline-flex items-center justify-center text-light-dark text-sm w-[22px] h-[22px]">...</span></li><li><a class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary" href="#">999</a></li><li><a class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary" href="#"><svg fill="currentColor" width="12" height="12" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#kft993jrqa)"><path d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"/></g><defs><clipPath id="kft993jrqa"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs></svg></a></li></ul></div></div><div class="flex flex-col space-y-8 xl:max-w-[300px] mx-auto"><div class="mx-auto"><a href="#"><img class="xl:block hidden xl:aspect-[300/598] aspect-[251/167]" src="./images/Ad-07.jpg" loading="lazy" alt=""/> <img class="xl:hidden aspect-[300/250]" src="./images/Ad-05.jpg" loading="lazy" alt=""/></a></div><div class="mx-auto"><a href="#"><img src="./images/Ad-05.jpg" loading="lazy" alt=""/></a></div><div><h2 class="inline-flex items-center space-x-1"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.39 18.49V8.33c0-.4.12-.79.34-1.12l2.73-4.06c.43-.65 1.5-1.11 2.41-.77.98.33 1.63 1.43 1.42 2.41l-.52 3.27c-.04.3.04.57.21.78.17.19.42.31.69.31h4.11c.79 0 1.47.32 1.87.88.38.54.45 1.24.2 1.95l-2.46 7.49c-.31 1.24-1.66 2.25-3 2.25h-3.9c-.67 0-1.61-.23-2.04-.66l-1.28-.99c-.49-.37-.78-.96-.78-1.58zM5.21 6.38H4.18C2.63 6.38 2 6.98 2 8.46v10.06c0 1.48.63 2.08 2.18 2.08h1.03c1.55 0 2.18-.6 2.18-2.08V8.46c0-1.48-.63-2.08-2.18-2.08z" fill="#000"/></svg> <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark">熱門文章</span></h2><div class="grid grid-cols-1 xl:space-y-4 space-y-6 mt-4"><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-10.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-08.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-07.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-06.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-05.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-04.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-03.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"><a class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block" href="#"><img class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125" src="./images/img-02.jpg" loading="lazy" alt=""/></a><div class="flex-1"><div class="flex flex-wrap divide-x divide-secondary"><a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">玩樂</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">美食</a> <a class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0" href="#">國內</a></div><a class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1" href="#">南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！</a></div></div><div class="mx-auto xl:mt-8 mt-10"><a href="#"><img src="./images/Ad-03.jpg" loading="lazy" alt=""/></a></div><div class="mx-auto xl:mt-8 mt-10"><a href="#"><img src="./images/Ad-08.jpg" loading="lazy" alt=""/></a></div></div></div></div></section></main><footer class="bg-light py-6 border-t border-t-gray-200"><div class="container mx-auto"><div class="grid xl:grid-cols-4 grid-cols-2 xl:space-y-0 text-center divide-x divide-gray-200 mx-auto xl:max-w-[380px] max-w-[172px]"><a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2" href="#">關於我們</a> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2" href="#">企業合作</a> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2 xl:!border-l !border-0" href="#">著作權聲明</a> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2" href="#">隱私權聲明</a></div><div class="grid grid-cols-4 text-center max-w-[192px] mx-auto mt-4"><a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="m17.214 14.25.622-3.62h-3.89V8.282c0-.99.543-1.956 2.285-1.956H18V3.245S16.395 3 14.86 3c-3.204 0-5.298 1.734-5.298 4.872v2.758H6v3.62h3.562V23h4.383v-8.75h3.269z"/></svg> </a><a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.651 1.573c-1.117.053-1.88.231-2.547.494-.69.269-1.275.63-1.857 1.214a5.143 5.143 0 0 0-1.208 1.86c-.258.67-.434 1.433-.483 2.55-.05 1.118-.06 1.478-.055 4.33.006 2.85.018 3.208.073 4.328.053 1.117.23 1.88.493 2.547.269.69.63 1.275 1.214 1.857.584.583 1.17.94 1.863 1.208.667.258 1.431.434 2.549.483 1.117.049 1.477.06 4.328.055 2.85-.006 3.21-.018 4.33-.071 1.119-.054 1.878-.233 2.545-.493.69-.27 1.276-.63 1.858-1.215.582-.585.94-1.17 1.207-1.862.259-.668.434-1.432.483-2.549.049-1.12.06-1.478.055-4.33-.006-2.85-.018-3.208-.072-4.327-.053-1.12-.23-1.88-.492-2.548a5.156 5.156 0 0 0-1.215-1.857 5.125 5.125 0 0 0-1.862-1.208c-.668-.258-1.431-.434-2.55-.483-1.117-.048-1.476-.06-4.328-.055-2.852.006-3.209.018-4.329.072zm.123 18.982c-1.024-.044-1.58-.215-1.95-.357a3.27 3.27 0 0 1-1.21-.783 3.234 3.234 0 0 1-.787-1.206c-.144-.37-.317-.926-.365-1.95-.052-1.106-.063-1.438-.069-4.241-.006-2.804.005-3.135.053-4.242.044-1.023.215-1.58.357-1.95.19-.491.417-.84.783-1.209a3.241 3.241 0 0 1 1.206-.788c.37-.144.926-.316 1.95-.365 1.106-.052 1.438-.063 4.241-.069 2.803-.006 3.136.005 4.243.053 1.023.045 1.58.214 1.95.357.49.19.84.416 1.209.783.369.367.596.716.788 1.207.145.369.316.924.365 1.948.052 1.107.064 1.44.07 4.242.004 2.803-.006 3.135-.054 4.242-.045 1.024-.214 1.58-.357 1.95-.19.49-.417.84-.784 1.21a3.243 3.243 0 0 1-1.206.787c-.37.144-.925.316-1.948.365-1.107.052-1.439.063-4.243.07-2.804.005-3.134-.006-4.242-.054m8.56-14.167a1.26 1.26 0 1 0 2.522-.005 1.26 1.26 0 0 0-2.522.005zm-9.725 5.623a5.391 5.391 0 1 0 10.783-.021 5.392 5.392 0 1 0-10.783.02zm1.891-.004a3.5 3.5 0 1 1 7-.014 3.5 3.5 0 0 1-7 .014z"/></svg> </a><a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M17 4H7C4 4 2 6 2 9v6c0 3 2 5 5 5h10c3 0 5-2 5-5V9c0-3-2-5-5-5zm-3.11 9.03-2.47 1.48c-1 .6-1.82.14-1.82-1.03v-2.97c0-1.17.82-1.63 1.82-1.03l2.47 1.48c.95.58.95 1.5 0 2.07z"/></svg> </a><a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"><svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.118C22 6.642 17.515 3 12 3S2 6.642 2 11.118c0 4.008 3.558 7.369 8.361 8.006.328.075.768.215.88.496.104.253.066.646.029.908 0 0-.122.702-.14.852l-.003.01c-.048.261-.181.977.873.533 1.067-.45 5.758-3.39 7.856-5.805 1.451-1.592 2.144-3.202 2.144-5zm-3.324 2.584a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.711a.188.188 0 0 0-.187-.188h-2.809a.188.188 0 0 0-.187.188v4.354c0 .103.084.187.187.187h2.809v.01zM8.47 13.515a.188.188 0 0 1-.187.187h-2.81a.188.188 0 0 1-.186-.187V9.152c0-.103.084-.188.187-.188h.711c.103 0 .188.085.188.188v3.464h1.91c.103 0 .187.084.187.187v.712zm1.498-4.56h-.711a.188.188 0 0 0-.188.187v4.364c0 .103.085.187.188.187h.711a.188.188 0 0 0 .187-.187V9.142c.01-.103-.074-.187-.187-.187zm4.12 0h.712c.103 0 .187.084.177.197v4.363a.188.188 0 0 1-.187.187h-.702c-.01 0-.016-.002-.023-.004a.068.068 0 0 0-.024-.005h-.047l-.009-.01a.113.113 0 0 1-.047-.046l-2.004-2.697v2.594a.188.188 0 0 1-.187.187h-.711a.188.188 0 0 1-.188-.187V9.17c0-.103.085-.187.188-.187h.777c0 .01.01.01.01.01h.008c0 .009.01.009.01.009h.01l.008.01h.01l.019.018c.003.004.007.006.01.008.005.003.008.005.008.01l1.995 2.697V9.142c0-.103.084-.187.187-.187z"/></svg></a></div><p class="text-gray-500 text-sm leading-[18px] text-center mt-4">2022 景點+ All Rights Reserved</p></div></footer><button id="gotop" class="fixed right-6 bottom-8 bg-white flex items-center justify-center rounded-full w-[36px] h-[36px] border border-gray-200 shadow-16 opacity-0 invisible duration-200" type="button"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.025 21.5a.75.75 0 0 1-.743-.648l-.007-.102v-15a.75.75 0 0 1 1.493-.102l.007.102v15a.75.75 0 0 1-.75.75z" fill="#000"/><path d="M6.532 12.33a.75.75 0 0 1-1.135-.975l.073-.084 6.023-6.05a.75.75 0 0 1 .98-.073l.083.073 6.025 6.05a.75.75 0 0 1-.979 1.131l-.083-.073-5.494-5.516-5.493 5.516zM4.25 3.75a.75.75 0 0 1 .648-.743L5 3h14a.75.75 0 0 1 .102 1.493L19 4.5H5a.75.75 0 0 1-.75-.75z" fill="#000"/></svg></button></body></html>
+<!DOCTYPE html>
+<html lang="zh-tw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>tagList</title>
+  <script defer src="./js/tagList.js"></script><link href="./css/tagList.css" rel="stylesheet"></head>
+
+  <body>
+    <!-- header -->
+    <header class="bg-white"> <div class="grid grid-cols-1"> <div class="fixed top-0 w-full z-50 bg-white border border-gray-200"> <div class="max-w-[1100px] mx-auto flex justify-between xl:pt-4 xl:pb-4 xl:px-0 px-4 py-3"> <div class="flex xl:space-x-[34px] items-center justify-between xl:w-auto w-full"> <a class="inline-block xl:max-w-[110px] max-w-[88px]" href="https://www.mook.com.tw/" target="_blank"> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAyIiBoZWlnaHQ9Ijc0IiB2aWV3Qm94PSIwIDAgMjAyIDc0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogICAgPHBhdGggZD0iTTE5NS40NjIgMTEuNzMyaC02LjAzOVY1LjczYTIuODQgMi44NCAwIDAgMC0yLjg2LTIuODQzIDIuODQgMi44NCAwIDAgMC0yLjg2MSAyLjg0M3Y2aC02LjAzOGEyLjg0IDIuODQgMCAwIDAtMi44NjEgMi44NDMgMi44NCAyLjg0IDAgMCAwIDIuODYxIDIuODQzaDYuMDM4djYuMDAxYTIuODQgMi44NCAwIDAgMCAyLjg2MSAyLjg0MyAyLjg0IDIuODQgMCAwIDAgMi44Ni0yLjg0M3YtNmg2LjAzOWEyLjg0IDIuODQgMCAwIDAgMi44Ni0yLjg0NCAyLjg0IDIuODQgMCAwIDAtMi44Ni0yLjg0MnoiIGZpbGw9IiNGMjlDOTciLz4KICAgIDxwYXRoIGQ9Ik03MC45MiA1Ny42MmMtLjQ1NCAwLS45MDguMDkxLTEuMzYyLjI3Mi0uNDU0LjE4LTEuMDkuNDk2LTEuOTA3LjkwMmEzOC4yODkgMzguMjg5IDAgMCAxLTQuNTQgMi4xMmMtMS4wOS40NTItMi44NiAxLjAzOC01LjI2NyAxLjc2LTEuNzcuNTQyLTIuNjc5IDEuNDQ0LTIuNjc5IDIuNzA4IDAgMS43Ni44MTcgMi42NjIgMi40NTIgMi42NjIgMS4xOCAwIDQuMDg2LTEuMDM4IDguNTM2LTMuMTU5IDQuNTQtMi4xMiA2Ljc2NS0zLjg4IDYuNzY1LTUuMzI0IDAtLjU0MS0uMTgyLTEuMDM4LS41OS0xLjM5OWEyLjAzNyAyLjAzNyAwIDAgMC0xLjQwOC0uNTQxek0xMDguMTk2IDYzLjYyMmMtLjYzNS0uNDUxLTEuNTg5LS45MDMtMi45OTYtMS4zOTktMi45OTctMS4wMzgtNS4xMzEtMS44OTUtNi40NDgtMi41MjctMi40NTEtMS4yMTgtNC4xNzctMS44MDQtNS4xNzUtMS44MDRhMS45MiAxLjkyIDAgMCAwLTEuNDA4LjU4NmMtLjM2My40MDYtLjU0NS45MDItLjU0NSAxLjUzNHMuMjczIDEuMjE4Ljg2MyAxLjc2Yy41OS41NDEgMS40MDcgMS4xMjggMi41ODggMS43MTUgNS40NDggMi43OTcgOS4yNjIgNC4xOTYgMTEuNjY4IDQuMTk2IDEuNTkgMCAyLjQwNy0uODU3IDIuNDA3LTIuNTcyIDAtLjU0MS0uMzE4LTEuMDgzLS45NTQtMS40ODl6TTU3LjI1NCAzNi41NDljLTEuNTQ0IDAtMi4yNy42NzctMi4yNyAyLjA3NSAwIDEuMzU0LjcyNiAyLjAzIDIuMjcgMi4wM2g0OS44NTNjMS41ODkgMCAyLjM2MS0uNjc2IDIuMzYxLTIuMDMgMC0xLjM5OC0uNzcyLTIuMDc1LTIuMzYxLTIuMDc1aC0yMi40M1YzMy4zaDEzLjA3N2MxLjkwNy4xMzUgMy4yNjktLjI3IDQuMTc3LTEuMTczLjg2Mi0uOTAzIDEuMjI2LTIuMzAxIDEuMDg5LTQuMTUxVjIwLjI2Yy4xMzctMS45NC0uMjI3LTMuMzQtMS4wODktNC4yNDItLjg2My0uOTAyLTIuMjI1LTEuMjYzLTQuMDg3LTEuMDgzSDY2LjU2M2MtMS44MTctLjE4LTMuMTc5LjE4LTQuMDQxIDEuMDgzLS44NjMuODU4LTEuMjcyIDIuMzAyLTEuMjcyIDQuMjQydjcuNzE2Yy0uMTM2IDEuODk1LjI3MyAzLjI0OCAxLjEzNSA0LjEwNi44NjMuODU3IDIuMjcgMS4yNjMgNC4xMzIgMS4yNjNoMTIuOTR2My4yMDRINTcuMjU0em05LjE3MS0xNi4wMThjMC0uNjMyLjEzNi0xLjA4My40MDktMS4zNTQuMjcyLS4yNy43MjYtLjQwNiAxLjMxNy0uNDA2aDI3Ljk2OGMuNjM2IDAgMS4wNDQuMTM1IDEuMzE3LjQwNi4yNzIuMjcuNDA4LjcyMi40MDggMS4zNTR2MS41NzlINjYuMzh2LTEuNThoLjA0NXptMS43MjYgOC45NzljLS42MzYgMC0xLjA0NS0uMTM2LTEuMzE3LS40MDYtLjI3My0uMjcxLS40MDktLjcyMi0uNDA5LTEuMzU0VjI1LjlIOTcuODl2MS44NWMwIC42MzItLjEzNiAxLjA4My0uMzYzIDEuMzU0LS4yMjcuMjctLjcyNy40MDYtMS4zNjIuNDA2SDY4LjE1eiIgZmlsbD0iIzIzNTM3OCIvPgogICAgPHBhdGggZD0iTTEwMy4xNTcgNTEuNTN2LTMuMjA0YzAtMS42MjUtLjQwOS0yLjc5OC0xLjE4MS0zLjUycy0yLjA0My0xLjA4My0zLjY3Ny0xLjA4M0g2Ni4wMTdjLTEuNjgtLjA5LTIuOTA2LjIyNi0zLjcyMyAxLjAzOC0uODE4Ljc2Ny0xLjE4MSAxLjk4NS0xLjE4MSAzLjU2NXYzLjIwM2MwIDMuMDY5IDEuNjM1IDQuNjAzIDQuOTA0IDQuNjAzaDE0LjIxdjUuMTg5Yy0uMDQ0Ljc2Ny0uMjcyIDEuMzk4LS42MzUgMS44MDUtLjQwOC40NS0uOTA4LjY3Ni0xLjYzNC42NzZoLTIuNjM0Yy0xLjU4OSAwLTIuNDA2Ljg1OC0yLjQwNiAyLjU3MiAwIDEuNjI1Ljk5OSAyLjQzNyAyLjk1MSAyLjQzN2gzLjk1YzEuODYyLS4wNDUgMy4yNy0uNTg3IDQuMTMyLTEuNTguODYzLS45OTIgMS4yNzEtMi41MjYgMS4yNzEtNC42MDJ2LTYuNTg3aDEzLjEyMmMxLjYzNC4wOSAyLjg2LS4yNzEgMy42NzgtMS4wODQuNzI2LS42MzEgMS4xMzUtMS44NSAxLjEzNS0zLjQyOXptLTUuNDQ5LjEzNWMtLjI3Mi4zNi0uNjguNTQxLTEuMjcxLjU0MUg2Ny44MzNjLTEuMTggMC0xLjcyNi0uNzIyLTEuNzI2LTIuMjU2IDAtMS41MzQuNTktMi4yNTYgMS43MjYtMi4yNTZoMjguNjA0Yy41OSAwIC45OTkuMTggMS4yNzEuNTQxLjI3My4zNjEuNDA5Ljk0OC40MDkgMS43NiAwIC43NjctLjEzNiAxLjMwOS0uNDA5IDEuNjd6TTEzMC41MzUgNTguNzQ5Yy0uNDU0LS45OTMtLjk5OS0xLjQ5LTEuNjgtMS40OS0uNTkgMC0xLjA0NC4xODEtMS40MDguNDk3LS4zNjMuMzE2LS41NDQuODEyLS41NDQgMS40NDQgMCAuMzE2LjA0NS40OTYuMDQ1LjU4Ny40OTkgMi44NDIuNzcyIDQuODI4LjkwOCA1Ljk1Ni4xODIgMS44OTUuOTU0IDIuODg4IDIuMjcgMi44ODguNzI3IDAgMS4zMTctLjIyNiAxLjc3MS0uNjMyLjQ1NC0uNDUxLjU5LS45OTMuNDU0LTEuNzE1bC0uNDk5LTIuNzUyYy0uNDU0LTIuMjExLS44NjMtMy43OS0xLjMxNy00Ljc4M3pNMTIyLjkwNyA1Ny41M2MtLjYzNSAwLTEuMDkuMjI2LTEuNDA3LjYzMi0uMzE4LjQwNi0uNTkxIDEuMDM4LS44NjMgMS44NWwtMS44MTYgNi4zNjJjMCAxLjUzNS43MjYgMi4yNTcgMi4yMjUgMi4yNTcuNjM1IDAgMS4xMzUtLjI3MSAxLjU4OS0uOTAzLjQwOC0uNTg3LjgxNy0xLjQ4OSAxLjIyNi0yLjc5Ny40OTktMS40OS44NjItMy4yNSAxLjEzNS01LjIzNS4wOTEtLjY3Ni0uMDkxLTEuMjE4LS40NTQtMS42MjQtLjQwOS0uMzYxLS45NTQtLjU0MS0xLjYzNS0uNTQxek0xMzMuNzEzIDU4LjQ3OGwuMjI3IDEuMTczLjY4MSAyLjUyN2MuNSAxLjcxNS45OTkgMy4yMDQgMS4zNjIgNC4yODcuMjczLjgxMi45NTQgMS4yMTggMS45MDcgMS4yMTguNzI3IDAgMS4zMTctLjE4IDEuNjgtLjQ5Ni40MDktLjM2MS41NDUtLjg1OC40NTQtMS41MzRsLS4xODEtMS4yMTktLjc3Mi0yLjc1MmMtLjU0NS0xLjc2LTEuMDktMy4wMjMtMS42MzUtMy44OC0uNTQ1LS44MTMtMS4wODktMS4yNjQtMS43MjUtMS4yNjQtLjYzNiAwLTEuMTgxLjE4LTEuNTg5LjQ5NmExLjQ4NiAxLjQ4NiAwIDAgMC0uNDA5IDEuNDQ0ek0xNzAuODA4IDI1LjQ0OWgtOS4zNTN2LTguNzU0YzAtMS44MDUtLjgxOC0yLjcwNy0yLjQwNy0yLjcwN3MtMi40MDYuOTAyLTIuNDA2IDIuNzA3djI1LjA0M2gtMi44NjFjLTEuNzctLjEzNi0zLjA4Ny4yMjUtMy44NTkgMS4wMzgtLjc3Mi44MTItMS4xOCAyLjE2NS0xLjE4IDQuMDE1VjYyLjQ1YzAgLjU4NiAwIDEuMjYzLjA5IDEuODUuMTM3IDEuMDM4LjQ1NSAxLjg1Ljk5OSAyLjM5MS44MTguNzY3IDIuMTM0IDEuMTczIDMuOTUgMS4xNzNoMTMuMDMxYy4yMjcgMCAuNDU0LjA0Ni42ODEuMDQ2IDEuNDA4IDAgMi40OTgtLjM2MSAzLjE3OS0xLjA4My44MTctLjgxMyAxLjIyNS0yLjE2NiAxLjIyNS00LjAxNlY0Ni44ODJjLjA5MS0xLjgwNS0uMjcyLTMuMTE0LTEuMDg5LTMuODgtLjgxNy0uODEzLTIuMTM0LTEuMjItMy45NS0xLjIyaC01LjQwM3YtMTEuMjhoOS4zNTNjMi4wNDMgMCAzLjA0Mi0uODEyIDMuMDQyLTIuNDM2IDAtMS43Ni0xLjA0NC0yLjYxNy0zLjA0Mi0yLjYxN3ptLTUuNTg1IDIwLjkzNmMuNTkgMCAxLjA0NC4xOCAxLjQwOC40OTcuMzYzLjM2LjQ5OS44MTIuNDk5IDEuNDQ0djEzLjA0YzAgLjU4Ni0uMTgyIDEuMDgzLS40OTkgMS40NDQtLjMxOC4zNi0uODE4LjU0MS0xLjQwOC41NDFoLTkuODA3Yy0uNTkgMC0xLjA0NC0uMTgtMS40MDctLjQ5Ni0uMzY0LS4zMTYtLjUtLjgxMi0uNS0xLjQ0NFY0OC40MTZjMC0uNTg3LjE4Mi0xLjA4My41LTEuNDQ0LjMxNy0uMzYxLjc3MS0uNTQxIDEuNDA3LS41NDFoOS44MDd2LS4wNDZ6TTE0Mi42NTggNTUuOTUxYy0uNTkxIDAtMS4wOS4xOC0xLjQ1My40OTctLjM2My4zMTUtLjU0NS43NjctLjU0NSAxLjM1MyAwIC4zMTYuMTM2Ljg1Ny40MDkgMS42MjVsMS4xOCAzLjUyYy40NTQgMS4zMDguODYzIDIuMjEgMS4zMTcgMi43OTcuNDU0LjU4Ni45NTMuOTAyIDEuNDk4LjkwMi42ODEgMCAxLjIyNi0uMTggMS41ODktLjQ5Ni4zMTgtLjMxNi40NTQtLjcyMi41LTEuMDM4LjA0NS0uNDUxLjA0NS0uOTAzLS4wNDYtMS4yNjMtLjE4MS0uODEzLS42ODEtMi4wNzYtMS4zNjItMy44MzYtMS4wOS0yLjc1Mi0yLjA4OC00LjA2LTMuMDg3LTQuMDZ6IiBmaWxsPSIjMjM1Mzc4Ii8+CiAgICA8cGF0aCBkPSJNMjUuNjk4IDQzLjcyM2MtNC4wNCAwLTcuMzU1LTMuMjk0LTcuMzU1LTcuMzEgMC00LjAxNSAzLjMxNC03LjMxIDcuMzU1LTcuMzFzNy4zNTYgMy4yOTQgNy4zNTYgNy4zMS0zLjMxNSA3LjMxLTcuMzU2IDcuMzF6TTQyLjYzNCAzN2MwLTEwLjE5OC03LjQ5Mi0xNy4zNzItMTYuOTM2LTE3LjM3Mi05LjQ0NCAwLTE2Ljg5IDcuMTc0LTE2Ljg5IDE3LjM3MiAwIDYuNTQzIDUuNDk0IDE1LjI1MSAxNi45MzYgMjUuNjNDMzcuMTQgNTIuMjUgNDIuNjM0IDQzLjU0MiA0Mi42MzQgMzd6TTI1LjY5OCAxMy45ODhjMTEuODUgMCAyMi41NjYgOS4wMjQgMjIuNTY2IDIyLjk2NyAwIDkuMjk1LTcuNTM3IDIwLjMwNS0yMi41NjYgMzMuMDc0QzEwLjY3IDU3LjMwNSAzLjEzMyA0Ni4yOTUgMy4xMzMgMzdjMC0xMy45NDMgMTAuNzE1LTIzLjAxMiAyMi41NjUtMjMuMDEyeiIgZmlsbD0iI0YyOUM5NyIvPgogICAgPHBhdGggZD0iTTEzMi42MjMgMjEuNzA0YTYuMTQzIDYuMTQzIDAgMCAwLTYuMTc0IDYuMTgxYzAgMy40MyAyLjc2OSA2LjE4MiA2LjIyIDYuMTgyIDMuNDA1IDAgNi4yMi0yLjc1MiA2LjIyLTYuMTgyYTYuMjUgNi4yNSAwIDAgMC02LjI2Ni02LjE4MXptMCAxMC40NjhjLTIuNDA2IDAtNC4zNTgtMS45NC00LjM1OC00LjMzMiAwLTIuMzkxIDEuOTUyLTQuMzMxIDQuMzEzLTQuMzMxIDIuNDA2IDAgNC4zNTkgMS45NCA0LjM1OSA0LjMzMS4wNDUgMi4zOTItMS45NTMgNC4zNzctNC4zMTQgNC4zMzJ6IiBmaWxsPSIjMjM1Mzc4Ii8+CiAgICA8cGF0aCBkPSJNMTQ2LjU2MiAxOC41aC03Ljc2NGMtLjA5LS42MzItLjE4MS0xLjI2My0uMjI3LTEuOTQtLjA5LTEuMDM4LS44NjItMS44MDUtMS45MDctMS44MDVoLTguMDgxYy0xLjA5IDAtMS44NjIuNzIyLTEuOTUzIDEuODA1LS4wNDUuNjMyLS4xMzYgMS4yNjMtLjIyNyAxLjk0SDExOC42MzljLS43NzIgMC0xLjI3MS40OTYtMS4yNzEgMS4yNjN2MTYuMTA5YzAgLjkwMi40OTkgMS4zOTkgMS40MDcgMS4zOTloMTIuMTIzdjQuMjQxaC04Ljc2M2MtMS43NyAwLTIuNjc5Ljc2Ny0yLjY3OSAyLjI1NiAwIDEuNTM0LjkwOSAyLjM0NyAyLjY3OSAyLjM0N2g4LjY3MnY0LjE5NmgtLjI3MmMtMy4xMzMuMTgtNi4xNzUuMjctOS4wMzUuMjctMi40NTIgMC0zLjcyMy44NTgtMy43MjMgMi41NzMgMCAuODEyLjIyNyAxLjQ4OS43MjYgMS45NC40OTkuNDUxIDEuMTguNjMyIDIuMDg5LjU4N2wyMi4yOTMtMS40YzIuMzYxLS4xMzUgMy41NDEtLjkwMiAzLjU0MS0yLjM5IDAtLjc2OC0uMjI3LTEuMzU0LS42MzYtMS43Ni0uNDA4LS40MDctLjk5OC0uNjMyLTEuNzctLjU4N2wtOS4wMzYuNDk2di0zLjkyNWg4LjA4MmMxLjc3MSAwIDIuNjc5LS43NjcgMi42NzktMi4zNDcgMC0xLjQ4OS0uOTA4LTIuMjU2LTIuNjc5LTIuMjU2aC04LjA4MnYtNC4xOTZoMTEuNTMzYy45MDggMCAxLjQwNy0uNDk3IDEuNDA3LTEuMzk5VjE5LjljMC0uOTAzLS40OTktMS4zOTktMS4zNjItMS4zOTl6bS0xMy45MzkgMTcuMTQ2Yy00LjIyMiAwLTcuNzY0LTMuNDI5LTcuODA5LTcuNjI1IDAtNC4zMzIgMy40MDUtNy44MDYgNy42MjgtNy44NTIgNC4yMjItLjA5IDcuOTQ1IDMuMjk0IDcuOTQ1IDcuNzE2LjA0NiA0LjI0Mi0zLjQ1IDcuNzE2LTcuNzY0IDcuNzYxem0xMC4zOTgtMTEuNjQxYTEuMzM0IDEuMzM0IDAgMCAxLTEuMzYyLTEuMzU0YzAtLjc2Ny41OS0xLjM1MyAxLjM2Mi0xLjM1My43NzIgMCAxLjM2Mi41ODYgMS4zNjIgMS4zNTNzLS41OSAxLjM1NC0xLjM2MiAxLjM1NHoiIGZpbGw9IiMyMzUzNzgiLz4KPC9zdmc+Cg==" alt=""/> </a> <div class="relative shadow xl:block hidden"> <input id="pcSeach" class="bg-white w-[250px] h-11 rounded border border-gray-200 pl-4 pr-[52px] py-3 text-sm leading-[20px] outline-none focus:border-primary-dark focus-visible:border-primary-dark" type="text" placeholder="請輸入關鍵字"/> <button class="absolute right-6 top-1/2 -translate-y-1/2" type="button"> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCMzMzM1bHZjbm5hKSI+CiAgICAgICAgPG1hc2sgaWQ9ImFxanlrNzZwcGIiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjMiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40NzcgMy40NzdoMTYuMzYyVjE5Ljg0SDMuNDc3VjMuNDc3eiIgZmlsbD0iI2ZmZiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2FxanlrNzZwcGIpIj4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42NTggNC43MzdhNi45MjkgNi45MjkgMCAwIDAtNi45MjEgNi45MiA2LjkzIDYuOTMgMCAwIDAgNi45MjEgNi45MjJjMy44MTYgMCA2LjkyLTMuMTA1IDYuOTItNi45MjFhNi45MjggNi45MjggMCAwIDAtNi45Mi02LjkyMXptMCAxNS4xMDJjLTQuNTExIDAtOC4xODEtMy42Ny04LjE4MS04LjE4MSAwLTQuNTEyIDMuNjctOC4xODEgOC4xODEtOC4xODEgNC41MTEgMCA4LjE4MSAzLjY3IDguMTgxIDguMTggMCA0LjUxMi0zLjY3IDguMTgyLTguMTggOC4xODJ6IiBmaWxsPSIjMDAwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxtYXNrIGlkPSJsaXVzZG1lZGxjIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiPgogICAgICAgICAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjcyNCAxNy4xNzNoNC44MzVWMjJoLTQuODM1di00LjgyN3oiIGZpbGw9IiNmZmYiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPGcgbWFzaz0idXJsKCNsaXVzZG1lZGxjKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODM4IDIyYS43MjMuNzIzIDAgMCAxLS41MS0uMjFsLTMuMzkyLTMuMzgzYS43MjIuNzIyIDAgMCAxIDEuMDItMS4wMjNsMy4zOTIgMy4zODNhLjcyMS43MjEgMCAwIDEtLjUxIDEuMjMzeiIgZmlsbD0iIzAwMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iMzMzNWx2Y25uYSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/> </button> <div id="searchMenu" class="absolute top-full left-0 bg-white border border-gray-200 rounded shadow xl:w-[325px] mt-2 hidden px-8 py-4 z-10"> <p class="text-dark text-lg leading-[24px]">熱門關鍵字</p> <div class="mt-4 flex flex-wrap"> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">美食</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">花海</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">防疫新生活</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">電影</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">東京車站</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">白熊咖啡廳</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">自助旅行</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">台東</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">熱氣球</a> </div> </div> <div id="searchMenuShadow" class="fixed inset-0 z-0 hidden"></div> </div> <div class="xl:hidden flex space-x-6"> <button id="searchButton" class="w-6 h-6" type="button"> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCMzMzM1bHZjbm5hKSI+CiAgICAgICAgPG1hc2sgaWQ9ImFxanlrNzZwcGIiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjMiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40NzcgMy40NzdoMTYuMzYyVjE5Ljg0SDMuNDc3VjMuNDc3eiIgZmlsbD0iI2ZmZiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2FxanlrNzZwcGIpIj4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42NTggNC43MzdhNi45MjkgNi45MjkgMCAwIDAtNi45MjEgNi45MiA2LjkzIDYuOTMgMCAwIDAgNi45MjEgNi45MjJjMy44MTYgMCA2LjkyLTMuMTA1IDYuOTItNi45MjFhNi45MjggNi45MjggMCAwIDAtNi45Mi02LjkyMXptMCAxNS4xMDJjLTQuNTExIDAtOC4xODEtMy42Ny04LjE4MS04LjE4MSAwLTQuNTEyIDMuNjctOC4xODEgOC4xODEtOC4xODEgNC41MTEgMCA4LjE4MSAzLjY3IDguMTgxIDguMTggMCA0LjUxMi0zLjY3IDguMTgyLTguMTggOC4xODJ6IiBmaWxsPSIjMDAwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxtYXNrIGlkPSJsaXVzZG1lZGxjIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiPgogICAgICAgICAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjcyNCAxNy4xNzNoNC44MzVWMjJoLTQuODM1di00LjgyN3oiIGZpbGw9IiNmZmYiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPGcgbWFzaz0idXJsKCNsaXVzZG1lZGxjKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODM4IDIyYS43MjMuNzIzIDAgMCAxLS41MS0uMjFsLTMuMzkyLTMuMzgzYS43MjIuNzIyIDAgMCAxIDEuMDItMS4wMjNsMy4zOTIgMy4zODNhLjcyMS43MjEgMCAwIDEtLjUxIDEuMjMzeiIgZmlsbD0iIzAwMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iMzMzNWx2Y25uYSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/> </button> <button id="menuButton" class="w-6 h-6" type="button"> <img id="hamburgerIcon" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNxZnowazJpdXdhKSIgZmlsbD0iIzAwMCI+CiAgICAgICAgPHBhdGggZD0iTTQgNi43MjZhLjc1Ljc1IDAgMCAxIC42NDgtLjc0M2wuMTAyLS4wMDdoMTVhLjc1Ljc1IDAgMCAxIC4xMDIgMS40OTNsLS4xMDIuMDA3aC0xNWEuNzUuNzUgMCAwIDEtLjc1LS43NXpNNCAxMS43NWEuNzUuNzUgMCAwIDEgLjY0OC0uNzQzTDQuNzUgMTFoMTVhLjc1Ljc1IDAgMCAxIC4xMDIgMS40OTNsLS4xMDIuMDA3aC0xNWEuNzUuNzUgMCAwIDEtLjc1LS43NXpNNCAxNi43NWEuNzUuNzUgMCAwIDEgLjY0OC0uNzQzTDQuNzUgMTZoMTVhLjc1Ljc1IDAgMCAxIC4xMDIgMS40OTNsLS4xMDIuMDA3aC0xNWEuNzUuNzUgMCAwIDEtLjc1LS43NXoiLz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0icWZ6MGsyaXV3YSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/> <img id="closeIcon" class="hidden" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCNrdXlmbXRzNnRhKSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIj4KICAgICAgICA8cGF0aCBkPSJNMTkgNSA1IDE5TTE5IDE5IDUgNSIvPgogICAgPC9nPgogICAgPGRlZnM+CiAgICAgICAgPGNsaXBQYXRoIGlkPSJrdXlmbXRzNnRhIj4KICAgICAgICAgICAgPHBhdGggZmlsbD0iI2ZmZiIgZD0iTTAgMGgyNHYyNEgweiIvPgogICAgICAgIDwvY2xpcFBhdGg+CiAgICA8L2RlZnM+Cjwvc3ZnPgo=" alt=""/> </button> </div> <div id="mbSearchMenu" class="fixed top-0 left-0 bg-light hidden w-full h-full z-40"> <div class="bg-white px-4 py-2 flex items-center space-x-4"> <div class="relative w-[85%]"> <input id="mbSeach" class="bg-white w-full h-11 rounded border border-gray-200 pl-6 pr-[52px] py-3 focus:outline-primary-dark" type="text" placeholder="請輸入關鍵字"/> <button class="absolute right-6 top-1/2 -translate-y-1/2" type="button"> <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAiIGhlaWdodD0iMjAiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KICAgIDxnIGNsaXAtcGF0aD0idXJsKCMzMzM1bHZjbm5hKSI+CiAgICAgICAgPG1hc2sgaWQ9ImFxanlrNzZwcGIiIHN0eWxlPSJtYXNrLXR5cGU6YWxwaGEiIG1hc2tVbml0cz0idXNlclNwYWNlT25Vc2UiIHg9IjMiIHk9IjMiIHdpZHRoPSIxNyIgaGVpZ2h0PSIxNyI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMy40NzcgMy40NzdoMTYuMzYyVjE5Ljg0SDMuNDc3VjMuNDc3eiIgZmlsbD0iI2ZmZiIvPgogICAgICAgIDwvbWFzaz4KICAgICAgICA8ZyBtYXNrPSJ1cmwoI2FxanlrNzZwcGIpIj4KICAgICAgICAgICAgPHBhdGggZmlsbC1ydWxlPSJldmVub2RkIiBjbGlwLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik0xMS42NTggNC43MzdhNi45MjkgNi45MjkgMCAwIDAtNi45MjEgNi45MiA2LjkzIDYuOTMgMCAwIDAgNi45MjEgNi45MjJjMy44MTYgMCA2LjkyLTMuMTA1IDYuOTItNi45MjFhNi45MjggNi45MjggMCAwIDAtNi45Mi02LjkyMXptMCAxNS4xMDJjLTQuNTExIDAtOC4xODEtMy42Ny04LjE4MS04LjE4MSAwLTQuNTEyIDMuNjctOC4xODEgOC4xODEtOC4xODEgNC41MTEgMCA4LjE4MSAzLjY3IDguMTgxIDguMTggMCA0LjUxMi0zLjY3IDguMTgyLTguMTggOC4xODJ6IiBmaWxsPSIjMDAwIi8+CiAgICAgICAgPC9nPgogICAgICAgIDxtYXNrIGlkPSJsaXVzZG1lZGxjIiBzdHlsZT0ibWFzay10eXBlOmFscGhhIiBtYXNrVW5pdHM9InVzZXJTcGFjZU9uVXNlIiB4PSIxNiIgeT0iMTciIHdpZHRoPSI2IiBoZWlnaHQ9IjUiPgogICAgICAgICAgICA8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE2LjcyNCAxNy4xNzNoNC44MzVWMjJoLTQuODM1di00LjgyN3oiIGZpbGw9IiNmZmYiLz4KICAgICAgICA8L21hc2s+CiAgICAgICAgPGcgbWFzaz0idXJsKCNsaXVzZG1lZGxjKSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMjAuODM4IDIyYS43MjMuNzIzIDAgMCAxLS41MS0uMjFsLTMuMzkyLTMuMzgzYS43MjIuNzIyIDAgMCAxIDEuMDItMS4wMjNsMy4zOTIgMy4zODNhLjcyMS43MjEgMCAwIDEtLjUxIDEuMjMzeiIgZmlsbD0iIzAwMCIvPgogICAgICAgIDwvZz4KICAgIDwvZz4KICAgIDxkZWZzPgogICAgICAgIDxjbGlwUGF0aCBpZD0iMzMzNWx2Y25uYSI+CiAgICAgICAgICAgIDxwYXRoIGZpbGw9IiNmZmYiIGQ9Ik0wIDBoMjR2MjRIMHoiLz4KICAgICAgICA8L2NsaXBQYXRoPgogICAgPC9kZWZzPgo8L3N2Zz4K" alt=""/> </button> </div> <button id="cancelButton" class="text-dark text-sm w-[10%]" type="button"> 取消 </button> </div> <div class="bg-light border border-gray-200 p-4 flex-auto h-full"> <p class="text-dark">熱門關鍵字</p> <div class="mt-4 flex flex-wrap"> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">美食</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">花海</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">防疫新生活</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">電影</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">東京車站</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">白熊咖啡廳</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">自助旅行</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">台東</a> <a class="bg-gray-200 text-light-dark text-sm leading-[18px] px-3 py-[7px] rounded duration-200 hover:bg-gray-300 mr-4 mb-4" href="#">熱氣球</a> </div> </div> </div> </div> <div class="xl:flex hidden items-center space-x-4"> <div class="flex items-center"> <a class="px-4 py-3 text-sm leading-[20px] rounded-full duration-200 hover:bg-gray-100" href="https://www.mook.com.tw/" target="_blank">MOOK</a> <a class="px-4 py-3 text-smleading-[20px] rounded-full duration-200 hover:bg-gray-100" href="https://blog.mook.com.tw" target="_blank">Blog玩家</a> <a class="px-4 py-3 text-smleading-[20px] rounded-full duration-200 hover:bg-gray-100" href="https://blog.mook.com.tw/book" target="_blank">墨刻Book</a> </div> <div class="grid grid-cols-4 space-x-2 text-center max-w-[192px] mx-auto"> <a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://www.facebook.com/tripass.net" target="_blank"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="m17.214 14.25.622-3.62h-3.89V8.282c0-.99.543-1.956 2.285-1.956H18V3.245S16.395 3 14.86 3c-3.204 0-5.298 1.734-5.298 4.872v2.758H6v3.62h3.562V23h4.383v-8.75h3.269z"/> </svg> </a> <a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://www.instagram.com/mook_travel_plus/" target="_blank"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.651 1.573c-1.117.053-1.88.231-2.547.494-.69.269-1.275.63-1.857 1.214a5.143 5.143 0 0 0-1.208 1.86c-.258.67-.434 1.433-.483 2.55-.05 1.118-.06 1.478-.055 4.33.006 2.85.018 3.208.073 4.328.053 1.117.23 1.88.493 2.547.269.69.63 1.275 1.214 1.857.584.583 1.17.94 1.863 1.208.667.258 1.431.434 2.549.483 1.117.049 1.477.06 4.328.055 2.85-.006 3.21-.018 4.33-.071 1.119-.054 1.878-.233 2.545-.493.69-.27 1.276-.63 1.858-1.215.582-.585.94-1.17 1.207-1.862.259-.668.434-1.432.483-2.549.049-1.12.06-1.478.055-4.33-.006-2.85-.018-3.208-.072-4.327-.053-1.12-.23-1.88-.492-2.548a5.156 5.156 0 0 0-1.215-1.857 5.125 5.125 0 0 0-1.862-1.208c-.668-.258-1.431-.434-2.55-.483-1.117-.048-1.476-.06-4.328-.055-2.852.006-3.209.018-4.329.072zm.123 18.982c-1.024-.044-1.58-.215-1.95-.357a3.27 3.27 0 0 1-1.21-.783 3.234 3.234 0 0 1-.787-1.206c-.144-.37-.317-.926-.365-1.95-.052-1.106-.063-1.438-.069-4.241-.006-2.804.005-3.135.053-4.242.044-1.023.215-1.58.357-1.95.19-.491.417-.84.783-1.209a3.241 3.241 0 0 1 1.206-.788c.37-.144.926-.316 1.95-.365 1.106-.052 1.438-.063 4.241-.069 2.803-.006 3.136.005 4.243.053 1.023.045 1.58.214 1.95.357.49.19.84.416 1.209.783.369.367.596.716.788 1.207.145.369.316.924.365 1.948.052 1.107.064 1.44.07 4.242.004 2.803-.006 3.135-.054 4.242-.045 1.024-.214 1.58-.357 1.95-.19.49-.417.84-.784 1.21a3.243 3.243 0 0 1-1.206.787c-.37.144-.925.316-1.948.365-1.107.052-1.439.063-4.243.07-2.804.005-3.134-.006-4.242-.054m8.56-14.167a1.26 1.26 0 1 0 2.522-.005 1.26 1.26 0 0 0-2.522.005zm-9.725 5.623a5.391 5.391 0 1 0 10.783-.021 5.392 5.392 0 1 0-10.783.02zm1.891-.004a3.5 3.5 0 1 1 7-.014 3.5 3.5 0 0 1-7 .014z"/> </svg> </a> <a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://www.youtube.com/channel/UCVrNFlaSYxbEKVAMFW6o5FQ" target="_blank"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 4H7C4 4 2 6 2 9v6c0 3 2 5 5 5h10c3 0 5-2 5-5V9c0-3-2-5-5-5zm-3.11 9.03-2.47 1.48c-1 .6-1.82.14-1.82-1.03v-2.97c0-1.17.82-1.63 1.82-1.03l2.47 1.48c.95.58.95 1.5 0 2.07z"/> </svg> </a> <a class="group bg-gray-100 flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="https://line.me/R/ti/p/%40hsj8845q" target="_blank"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.118C22 6.642 17.515 3 12 3S2 6.642 2 11.118c0 4.008 3.558 7.369 8.361 8.006.328.075.768.215.88.496.104.253.066.646.029.908 0 0-.122.702-.14.852l-.003.01c-.048.261-.181.977.873.533 1.067-.45 5.758-3.39 7.856-5.805 1.451-1.592 2.144-3.202 2.144-5zm-3.324 2.584a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.711a.188.188 0 0 0-.187-.188h-2.809a.188.188 0 0 0-.187.188v4.354c0 .103.084.187.187.187h2.809v.01zM8.47 13.515a.188.188 0 0 1-.187.187h-2.81a.188.188 0 0 1-.186-.187V9.152c0-.103.084-.188.187-.188h.711c.103 0 .188.085.188.188v3.464h1.91c.103 0 .187.084.187.187v.712zm1.498-4.56h-.711a.188.188 0 0 0-.188.187v4.364c0 .103.085.187.188.187h.711a.188.188 0 0 0 .187-.187V9.142c.01-.103-.074-.187-.187-.187zm4.12 0h.712c.103 0 .187.084.177.197v4.363a.188.188 0 0 1-.187.187h-.702c-.01 0-.016-.002-.023-.004a.068.068 0 0 0-.024-.005h-.047l-.009-.01a.113.113 0 0 1-.047-.046l-2.004-2.697v2.594a.188.188 0 0 1-.187.187h-.711a.188.188 0 0 1-.188-.187V9.17c0-.103.085-.187.188-.187h.777c0 .01.01.01.01.01h.008c0 .009.01.009.01.009h.01l.008.01h.01l.019.018c.003.004.007.006.01.008.005.003.008.005.008.01l1.995 2.697V9.142c0-.103.084-.187.187-.187z"/> </svg> </a> </div> </div> </div> </div> <div id="navbarWrapper" class="xl:h-auto h-full xl:visible invisible !border-b border-gray-200 xl:mt-[80px] mt-0 xl:bg-white bg-light xl:static fixed top-0 right-0 xl:w-auto w-4/5 z-20 xl:duration-0 duration-200 xl:translate-x-0 translate-x-full xl:before:content-none before:content-[''] before:w-screen before:h-full before:absolute before:inset-0"> <div class="navbar splide max-w-[1100px] mx-auto flex items-center xl:h-auto h-full"> <div class="splide__arrows splide__arrows--ltr"> <button class="!bg-transparent !bg-gradient-to-l from-transparent to-white !rounded-none !opacity-100 !w-24 !h-10 !left-0 xl:!flex !justify-start !hidden disabled:!hidden splide__arrow splide__arrow--prev" type="button"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#kft993jrqa)"> <path d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z" fill="#000"/> </g> <defs> <clipPath id="kft993jrqa"> <path fill="#fff" d="M0 0h24v24H0z"/> </clipPath> </defs> </svg> </button> <button class="!bg-transparent !bg-gradient-to-r from-transparent to-white !rounded-none !opacity-100 !w-24 !h-10 !right-0 xl:!flex !justify-end !hidden disabled:!hidden splide__arrow splide__arrow--next" type="button"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <g clip-path="url(#kft993jrqa)"> <path d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z" fill="#000"/> </g> <defs> <clipPath id="kft993jrqa"> <path fill="#fff" d="M0 0h24v24H0z"/> </clipPath> </defs> </svg> </button> </div> <div class="splide__track xl:w-auto w-full xl:!overflow-hidden !overflow-y-auto xl:h-auto h-full"> <ul class="splide__list relative xl:!pt-0 !pt-14 xl:!pb-0 xl:!overflow-y-visible !overflow-y-auto xl:h-auto"> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark !text-primary-dark" href="#"> <span class="xl:pr-5 inline-block">1. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">2. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">3. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">4. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">5. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">6. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">7. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">8. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">9. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">10. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">11. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">12. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">13. 熱話題</span> </a> </li> <li class="splide__slide navItem xl:px-0 px-8 z-0"> <a class="xl:inline-block block py-4 text-dark text-base xl:leading-[20px] leading-[24px] border-b-2 xl:border-b-transparent border-gray-200 duration-200 hover:text-primary-dark hover:xl:border-b-primary-dark" href="#"> <span class="xl:px-5 inline-block">14. 熱話題</span> </a> </li> <li style="position:sticky;position:-webkit-sticky" class="xl:hidden flex items-center justify-center space-x-6 py-[6px] sticky bottom-0 bg-primary-dark w-full z-10"> <a class="p-[6px]" href="https://www.facebook.com/tripass.net" target="_blank"> <svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="m17.214 14.25.622-3.62h-3.89V8.282c0-.99.543-1.956 2.285-1.956H18V3.245S16.395 3 14.86 3c-3.204 0-5.298 1.734-5.298 4.872v2.758H6v3.62h3.562V23h4.383v-8.75h3.269z"/> </svg> </a> <a class="p-[6px]" href="https://www.instagram.com/mook_travel_plus/" target="_blank"> <svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M7.651 1.573c-1.117.053-1.88.231-2.547.494-.69.269-1.275.63-1.857 1.214a5.143 5.143 0 0 0-1.208 1.86c-.258.67-.434 1.433-.483 2.55-.05 1.118-.06 1.478-.055 4.33.006 2.85.018 3.208.073 4.328.053 1.117.23 1.88.493 2.547.269.69.63 1.275 1.214 1.857.584.583 1.17.94 1.863 1.208.667.258 1.431.434 2.549.483 1.117.049 1.477.06 4.328.055 2.85-.006 3.21-.018 4.33-.071 1.119-.054 1.878-.233 2.545-.493.69-.27 1.276-.63 1.858-1.215.582-.585.94-1.17 1.207-1.862.259-.668.434-1.432.483-2.549.049-1.12.06-1.478.055-4.33-.006-2.85-.018-3.208-.072-4.327-.053-1.12-.23-1.88-.492-2.548a5.156 5.156 0 0 0-1.215-1.857 5.125 5.125 0 0 0-1.862-1.208c-.668-.258-1.431-.434-2.55-.483-1.117-.048-1.476-.06-4.328-.055-2.852.006-3.209.018-4.329.072zm.123 18.982c-1.024-.044-1.58-.215-1.95-.357a3.27 3.27 0 0 1-1.21-.783 3.234 3.234 0 0 1-.787-1.206c-.144-.37-.317-.926-.365-1.95-.052-1.106-.063-1.438-.069-4.241-.006-2.804.005-3.135.053-4.242.044-1.023.215-1.58.357-1.95.19-.491.417-.84.783-1.209a3.241 3.241 0 0 1 1.206-.788c.37-.144.926-.316 1.95-.365 1.106-.052 1.438-.063 4.241-.069 2.803-.006 3.136.005 4.243.053 1.023.045 1.58.214 1.95.357.49.19.84.416 1.209.783.369.367.596.716.788 1.207.145.369.316.924.365 1.948.052 1.107.064 1.44.07 4.242.004 2.803-.006 3.135-.054 4.242-.045 1.024-.214 1.58-.357 1.95-.19.49-.417.84-.784 1.21a3.243 3.243 0 0 1-1.206.787c-.37.144-.925.316-1.948.365-1.107.052-1.439.063-4.243.07-2.804.005-3.134-.006-4.242-.054m8.56-14.167a1.26 1.26 0 1 0 2.522-.005 1.26 1.26 0 0 0-2.522.005zm-9.725 5.623a5.391 5.391 0 1 0 10.783-.021 5.392 5.392 0 1 0-10.783.02zm1.891-.004a3.5 3.5 0 1 1 7-.014 3.5 3.5 0 0 1-7 .014z"/> </svg> </a> <a class="p-[6px]" href="https://www.youtube.com/channel/UCVrNFlaSYxbEKVAMFW6o5FQ" target="_blank"> <svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path d="M17 4H7C4 4 2 6 2 9v6c0 3 2 5 5 5h10c3 0 5-2 5-5V9c0-3-2-5-5-5zm-3.11 9.03-2.47 1.48c-1 .6-1.82.14-1.82-1.03v-2.97c0-1.17.82-1.63 1.82-1.03l2.47 1.48c.95.58.95 1.5 0 2.07z"/> </svg> </a> <a class="p-[6px]" href="https://line.me/R/ti/p/%40hsj8845q" target="_blank"> <svg class="fill-white" width="20" height="20" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.118C22 6.642 17.515 3 12 3S2 6.642 2 11.118c0 4.008 3.558 7.369 8.361 8.006.328.075.768.215.88.496.104.253.066.646.029.908 0 0-.122.702-.14.852l-.003.01c-.048.261-.181.977.873.533 1.067-.45 5.758-3.39 7.856-5.805 1.451-1.592 2.144-3.202 2.144-5zm-3.324 2.584a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.711a.188.188 0 0 0-.187-.188h-2.809a.188.188 0 0 0-.187.188v4.354c0 .103.084.187.187.187h2.809v.01zM8.47 13.515a.188.188 0 0 1-.187.187h-2.81a.188.188 0 0 1-.186-.187V9.152c0-.103.084-.188.187-.188h.711c.103 0 .188.085.188.188v3.464h1.91c.103 0 .187.084.187.187v.712zm1.498-4.56h-.711a.188.188 0 0 0-.188.187v4.364c0 .103.085.187.188.187h.711a.188.188 0 0 0 .187-.187V9.142c.01-.103-.074-.187-.187-.187zm4.12 0h.712c.103 0 .187.084.177.197v4.363a.188.188 0 0 1-.187.187h-.702c-.01 0-.016-.002-.023-.004a.068.068 0 0 0-.024-.005h-.047l-.009-.01a.113.113 0 0 1-.047-.046l-2.004-2.697v2.594a.188.188 0 0 1-.187.187h-.711a.188.188 0 0 1-.188-.187V9.17c0-.103.085-.187.188-.187h.777c0 .01.01.01.01.01h.008c0 .009.01.009.01.009h.01l.008.01h.01l.019.018c.003.004.007.006.01.008.005.003.008.005.008.01l1.995 2.697V9.142c0-.103.084-.187.187-.187z"/> </svg> </a> </li> </ul> </div> </div> </div> <div id="menuShadow" class="invisible opacity-0 bg-black w-full h-full fixed inset-0 duration-200 z-0"></div> </div> </header> 
+    <main
+      class="container mx-auto xl:pb-[72px] xl:pt-6 pt-4 pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]"
+    >
+      <!-- 麵包屑 -->
+      <nav class="flex xl:px-0 px-5">
+        <ol class="inline-flex items-center space-x-[6px]">
+          <li class="inline-flex items-center">
+            <a
+              class="inline-flex items-center text-sm leading-[20px] text-light-dark whitespace-nowrap"
+              href="#"
+            >
+              景點+
+            </a>
+          </li>
+          <li>
+            <div class="flex items-center">
+              <svg
+                class="fill-light-dark"
+                width="16"
+                height="16"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#kft993jrqa)">
+                  <path
+                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="kft993jrqa">
+                    <path fill="#fff" d="M0 0h24v24H0z" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <a
+                class="ml-[6px] inline-flex items-center text-sm leading-[20px] text-secondary line-clamp-1"
+                href="#"
+              >
+                <h1>Tag：花海</h1>
+              </a>
+            </div>
+          </li>
+        </ol>
+      </nav>
+      <!-- 麵包屑 start -->
+
+      <!-- banner -->
+      <div class="mx-auto xl:mt-5 mt-4 relative overflow-hidden">
+        <a href="#">
+          <img
+            class="object-cover w-full h-full xl:aspect-[1100/120] aspect-[390/100] xl:max-w-[1100px] max-w-[390px] xl:max-h-[120px] max-h-[100px]"
+            src="./images/img-21.jpg"
+            loading="lazy"
+            alt=""
+          />
+          <div
+            class="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full flex items-center justify-center text-[26px] text-white font-bold backdrop-blur-lg bg-blend-multiply bg-banner"
+          >
+            花海
+          </div>
+        </a>
+      </div>
+      <!-- banner end -->
+
+      <!-- tag group -->
+      <div class="mt-5 xl:px-0 px-5">
+        <ul
+          class="flex xl:flex-wrap flex-nowrap items-center overflow-x-auto space-x-3"
+        >
+          <!-- tag (可跑迴圈) -->
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <!-- tag end -->
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+          <li class="xl:flex-initial flex-0">
+            <a
+              class="text-primary-dark text-sm leading-[18px] px-3 py-[6px] border border-primary rounded-full bg-[#ffecec] inline-block duration-200 hover:bg-primary-dark hover:text-white"
+              href="#"
+              >#Tag字</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- tag group end -->
+
+      <!-- 文章列表 -->
+      <section
+        class="xl:mt-8 mt-10 flex xl:flex-row flex-col xl:px-0 px-5 xl:space-x-[72px] xl:space-y-0 space-y-10"
+      >
+        <!-- 左側主題 -->
+        <div>
+          <div class="flex flex-col xl:space-y-8 space-y-6">
+            <!-- 文章卡片 start -->
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-18.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <!-- tag (可跑迴圈) -->
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <!-- tag end -->
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <!-- 文章卡片 end -->
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-19.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-20.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-17.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-16.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+
+            <!-- AD -->
+            <div class="xl:max-w-[730px] max-w-[300px] mx-auto">
+              <a href="#">
+                <!-- pc 圖片 -->
+                <img
+                  class="xl:block hidden"
+                  src="./images/Ad-02.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+                <!-- mb 圖片 -->
+                <img
+                  class="xl:hidden"
+                  src="./images/Ad-05.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+            </div>
+
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-15.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-14.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-13.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-12.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+            <div
+              class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0 last:!pb-0"
+            >
+              <a
+                class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start"
+                href="#"
+              >
+                <img
+                  class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                  src="./images/img-11.jpg"
+                  loading="lazy"
+                  alt=""
+                />
+              </a>
+              <div class="flex-1">
+                <div class="flex flex-wrap divide-x divide-secondary">
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >玩樂</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >美食</a
+                  >
+                  <a
+                    class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
+                    href="#"
+                    >國內</a
+                  >
+                </div>
+                <a
+                  class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                  href="#"
+                >
+                  南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                </a>
+                <p
+                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2"
+                >
+                  想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <!-- 分頁 -->
+          <div class="mt-8">
+            <ul class="flex items-center justify-center space-x-2">
+              <!-- 上一頁 -->
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary"
+                  href="#"
+                >
+                  <svg
+                    fill="currentColor"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#5i0gogcqya)">
+                      <path
+                        d="M16.03 4.47a.75.75 0 0 1 .073.976l-.073.084L9.561 12l6.47 6.47a.75.75 0 0 1 .072.976l-.073.084a.75.75 0 0 1-.976.073l-.084-.073-7-7a.75.75 0 0 1-.073-.976l.073-.084 7-7a.75.75 0 0 1 1.06 0z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="5i0gogcqya">
+                        <path fill="#fff" d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <!-- 上一頁 end -->
+
+              <!-- active 樣式 class 加上 !text-primary !border-primary -->
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary !text-primary !border-primary"
+                  href="#"
+                >
+                  1
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  2
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  3
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  4
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  5
+                </a>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  6
+                </a>
+              </li>
+              <li>
+                <span
+                  class="inline-flex items-center justify-center text-light-dark text-sm w-[22px] h-[22px]"
+                >
+                  ...
+                </span>
+              </li>
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark text-sm leading-[20px] w-[22px] h-[22px] border border-transparent rounded-sm duration-200 hover:text-primary"
+                  href="#"
+                >
+                  999
+                </a>
+              </li>
+
+              <!-- 下一頁 -->
+              <li>
+                <a
+                  class="inline-flex items-center justify-center text-light-dark w-[22px] h-[22px] duration-200 hover:text-primary"
+                  href="#"
+                >
+                  <svg
+                    fill="currentColor"
+                    width="12"
+                    height="12"
+                    viewBox="0 0 24 24"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g clip-path="url(#kft993jrqa)">
+                      <path
+                        d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                      />
+                    </g>
+                    <defs>
+                      <clipPath id="kft993jrqa">
+                        <path fill="#fff" d="M0 0h24v24H0z" />
+                      </clipPath>
+                    </defs>
+                  </svg>
+                </a>
+              </li>
+              <!-- 下一頁 end -->
+            </ul>
+          </div>
+          <!-- 分頁 end -->
+        </div>
+
+        <!-- 右側主題 -->
+        <div class="flex flex-col space-y-8 xl:max-w-[300px] mx-auto">
+          <!-- AD -->
+          <div class="mx-auto">
+            <!-- pc 圖片 -->
+            <a href="#">
+              <img
+                class="xl:block hidden xl:aspect-[300/598] aspect-[251/167]"
+                src="./images/Ad-07.jpg"
+                loading="lazy"
+                alt=""
+              />
+              <!-- mb 圖片 -->
+              <img
+                class="xl:hidden aspect-[300/250]"
+                src="./images/Ad-05.jpg"
+                loading="lazy"
+                alt=""
+              />
+            </a>
+          </div>
+          <!-- AD -->
+          <div class="mx-auto">
+            <a href="#">
+              <img src="./images/Ad-05.jpg" loading="lazy" alt="" />
+            </a>
+          </div>
+          <div>
+            <h2 class="inline-flex items-center space-x-1">
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8.39 18.49V8.33c0-.4.12-.79.34-1.12l2.73-4.06c.43-.65 1.5-1.11 2.41-.77.98.33 1.63 1.43 1.42 2.41l-.52 3.27c-.04.3.04.57.21.78.17.19.42.31.69.31h4.11c.79 0 1.47.32 1.87.88.38.54.45 1.24.2 1.95l-2.46 7.49c-.31 1.24-1.66 2.25-3 2.25h-3.9c-.67 0-1.61-.23-2.04-.66l-1.28-.99c-.49-.37-.78-.96-.78-1.58zM5.21 6.38H4.18C2.63 6.38 2 6.98 2 8.46v10.06c0 1.48.63 2.08 2.18 2.08h1.03c1.55 0 2.18-.6 2.18-2.08V8.46c0-1.48-.63-2.08-2.18-2.08z"
+                  fill="#000"
+                />
+              </svg>
+              <span
+                class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark"
+                >熱門文章</span
+              >
+            </h2>
+            <div class="grid grid-cols-1 xl:space-y-4 space-y-6 mt-4">
+              <!-- 熱門文章 start -->
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-10.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <!-- tag (可跑迴圈) -->
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <!-- tag end -->
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <!-- 熱門文章 end -->
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-08.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-07.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-06.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-05.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-04.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-03.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+              <div
+                class="flex items-center space-x-4 xl:pb-4 pb-6 border-b border-gray-200 last:!border-0"
+              >
+                <a
+                  class="xl:max-w-[120px] max-w-[125px] flex-1 overflow-hidden rounded inline-block"
+                  href="#"
+                >
+                  <img
+                    class="xl:aspect-[120/80] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
+                    src="./images/img-02.jpg"
+                    loading="lazy"
+                    alt=""
+                  />
+                </a>
+                <div class="flex-1">
+                  <div class="flex flex-wrap divide-x divide-secondary">
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >玩樂</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >美食</a
+                    >
+                    <a
+                      class="inline-block text-secondary text-xs leading-[18px] px-1 first:!pl-0"
+                      href="#"
+                      >國內</a
+                    >
+                  </div>
+                  <a
+                    class="inline-block text-dark xl:text-sm text-base xl:leading-[20px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1"
+                    href="#"
+                  >
+                    南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
+                  </a>
+                </div>
+              </div>
+
+              <!-- AD -->
+              <div class="mx-auto xl:mt-8 mt-10">
+                <a href="#">
+                  <img src="./images/Ad-03.jpg" loading="lazy" alt="" />
+                </a>
+              </div>
+
+              <!-- AD -->
+              <div class="mx-auto xl:mt-8 mt-10">
+                <a href="#">
+                  <img src="./images/Ad-08.jpg" loading="lazy" alt="" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 文章列表 end -->
+    </main>
+
+    <!-- footer -->
+    <footer class="bg-light py-6 border-t border-t-gray-200"> <div class="container mx-auto"> <div class="grid xl:grid-cols-4 grid-cols-2 xl:space-y-0 text-center divide-x divide-gray-200 mx-auto xl:max-w-[380px] max-w-[172px]"> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2" href="#">關於我們</a> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2" href="#">企業合作</a> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2 xl:!border-l !border-0" href="#">著作權聲明</a> <a class="text-gray-800 text-sm leading-[20px] xl:mt-0 mt-2" href="#">隱私權聲明</a> </div> <div class="grid grid-cols-4 text-center max-w-[192px] mx-auto mt-4"> <a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="m17.214 14.25.622-3.62h-3.89V8.282c0-.99.543-1.956 2.285-1.956H18V3.245S16.395 3 14.86 3c-3.204 0-5.298 1.734-5.298 4.872v2.758H6v3.62h3.562V23h4.383v-8.75h3.269z"/> </svg> </a> <a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M7.651 1.573c-1.117.053-1.88.231-2.547.494-.69.269-1.275.63-1.857 1.214a5.143 5.143 0 0 0-1.208 1.86c-.258.67-.434 1.433-.483 2.55-.05 1.118-.06 1.478-.055 4.33.006 2.85.018 3.208.073 4.328.053 1.117.23 1.88.493 2.547.269.69.63 1.275 1.214 1.857.584.583 1.17.94 1.863 1.208.667.258 1.431.434 2.549.483 1.117.049 1.477.06 4.328.055 2.85-.006 3.21-.018 4.33-.071 1.119-.054 1.878-.233 2.545-.493.69-.27 1.276-.63 1.858-1.215.582-.585.94-1.17 1.207-1.862.259-.668.434-1.432.483-2.549.049-1.12.06-1.478.055-4.33-.006-2.85-.018-3.208-.072-4.327-.053-1.12-.23-1.88-.492-2.548a5.156 5.156 0 0 0-1.215-1.857 5.125 5.125 0 0 0-1.862-1.208c-.668-.258-1.431-.434-2.55-.483-1.117-.048-1.476-.06-4.328-.055-2.852.006-3.209.018-4.329.072zm.123 18.982c-1.024-.044-1.58-.215-1.95-.357a3.27 3.27 0 0 1-1.21-.783 3.234 3.234 0 0 1-.787-1.206c-.144-.37-.317-.926-.365-1.95-.052-1.106-.063-1.438-.069-4.241-.006-2.804.005-3.135.053-4.242.044-1.023.215-1.58.357-1.95.19-.491.417-.84.783-1.209a3.241 3.241 0 0 1 1.206-.788c.37-.144.926-.316 1.95-.365 1.106-.052 1.438-.063 4.241-.069 2.803-.006 3.136.005 4.243.053 1.023.045 1.58.214 1.95.357.49.19.84.416 1.209.783.369.367.596.716.788 1.207.145.369.316.924.365 1.948.052 1.107.064 1.44.07 4.242.004 2.803-.006 3.135-.054 4.242-.045 1.024-.214 1.58-.357 1.95-.19.49-.417.84-.784 1.21a3.243 3.243 0 0 1-1.206.787c-.37.144-.925.316-1.948.365-1.107.052-1.439.063-4.243.07-2.804.005-3.134-.006-4.242-.054m8.56-14.167a1.26 1.26 0 1 0 2.522-.005 1.26 1.26 0 0 0-2.522.005zm-9.725 5.623a5.391 5.391 0 1 0 10.783-.021 5.392 5.392 0 1 0-10.783.02zm1.891-.004a3.5 3.5 0 1 1 7-.014 3.5 3.5 0 0 1-7 .014z"/> </svg> </a> <a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M17 4H7C4 4 2 6 2 9v6c0 3 2 5 5 5h10c3 0 5-2 5-5V9c0-3-2-5-5-5zm-3.11 9.03-2.47 1.48c-1 .6-1.82.14-1.82-1.03v-2.97c0-1.17.82-1.63 1.82-1.03l2.47 1.48c.95.58.95 1.5 0 2.07z"/> </svg> </a> <a class="group bg-gray-200 mx-auto flex items-center justify-center rounded-full w-9 h-9 duration-200 hover:bg-primary" href="#"> <svg class="fill-gray-500 group-hover:fill-white" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path fill-rule="evenodd" clip-rule="evenodd" d="M22 11.118C22 6.642 17.515 3 12 3S2 6.642 2 11.118c0 4.008 3.558 7.369 8.361 8.006.328.075.768.215.88.496.104.253.066.646.029.908 0 0-.122.702-.14.852l-.003.01c-.048.261-.181.977.873.533 1.067-.45 5.758-3.39 7.856-5.805 1.451-1.592 2.144-3.202 2.144-5zm-3.324 2.584a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.712a.188.188 0 0 0-.187-.187h-1.91v-.74h1.91a.188.188 0 0 0 .187-.187v-.711a.188.188 0 0 0-.187-.188h-2.809a.188.188 0 0 0-.187.188v4.354c0 .103.084.187.187.187h2.809v.01zM8.47 13.515a.188.188 0 0 1-.187.187h-2.81a.188.188 0 0 1-.186-.187V9.152c0-.103.084-.188.187-.188h.711c.103 0 .188.085.188.188v3.464h1.91c.103 0 .187.084.187.187v.712zm1.498-4.56h-.711a.188.188 0 0 0-.188.187v4.364c0 .103.085.187.188.187h.711a.188.188 0 0 0 .187-.187V9.142c.01-.103-.074-.187-.187-.187zm4.12 0h.712c.103 0 .187.084.177.197v4.363a.188.188 0 0 1-.187.187h-.702c-.01 0-.016-.002-.023-.004a.068.068 0 0 0-.024-.005h-.047l-.009-.01a.113.113 0 0 1-.047-.046l-2.004-2.697v2.594a.188.188 0 0 1-.187.187h-.711a.188.188 0 0 1-.188-.187V9.17c0-.103.085-.187.188-.187h.777c0 .01.01.01.01.01h.008c0 .009.01.009.01.009h.01l.008.01h.01l.019.018c.003.004.007.006.01.008.005.003.008.005.008.01l1.995 2.697V9.142c0-.103.084-.187.187-.187z"/> </svg> </a> </div> <p class="text-gray-500 text-sm leading-[18px] text-center mt-4"> 2022 景點+ All Rights Reserved </p> </div> </footer> 
+
+    <!-- gotop -->
+    <button id="gotop" class="fixed right-6 bottom-8 bg-white flex items-center justify-center rounded-full w-[36px] h-[36px] border border-gray-200 shadow-16 opacity-0 invisible duration-200" type="button"> <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M12.025 21.5a.75.75 0 0 1-.743-.648l-.007-.102v-15a.75.75 0 0 1 1.493-.102l.007.102v15a.75.75 0 0 1-.75.75z" fill="#000"/> <path d="M6.532 12.33a.75.75 0 0 1-1.135-.975l.073-.084 6.023-6.05a.75.75 0 0 1 .98-.073l.083.073 6.025 6.05a.75.75 0 0 1-.979 1.131l-.083-.073-5.494-5.516-5.493 5.516zM4.25 3.75a.75.75 0 0 1 .648-.743L5 3h14a.75.75 0 0 1 .102 1.493L19 4.5H5a.75.75 0 0 1-.75-.75z" fill="#000"/> </svg> </button> 
+  </body>
+</html>

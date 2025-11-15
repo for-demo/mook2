@@ -378,27 +378,27 @@ Ensure the default browser behavior of the `hidden` attribute.
   @font-face {
     font-family: "Inter";
     font-weight: 400;
-    src: url(/mook2/fonts/Inter-Regular.ttf) format("woff2");
+    src: url(./fonts/Inter-Regular.ttf) format("woff2");
   }
   @font-face {
     font-family: "Inter";
     font-weight: 600;
-    src: url(/mook2/fonts/Inter-SemiBold.ttf) format("woff2");
+    src: url(./fonts/Inter-SemiBold.ttf) format("woff2");
   }
   @font-face {
     font-family: "NotoSansTC";
     font-weight: 300;
-    src: url(/mook2/fonts/NotoSansTC-Light.otf) format("woff2");
+    src: url(./fonts/NotoSansTC-Light.otf) format("woff2");
   }
   @font-face {
     font-family: "NotoSansTC";
     font-weight: 400;
-    src: url(/mook2/fonts/NotoSansTC-Regular.otf) format("woff2");
+    src: url(./fonts/NotoSansTC-Regular.otf) format("woff2");
   }
   @font-face {
     font-family: "NotoSansTC";
     font-weight: 700;
-    src: url(/mook2/fonts/NotoSansTC-Bold.otf) format("woff2");
+    src: url(./fonts/NotoSansTC-Bold.otf) format("woff2");
   }
 
   body {
