@@ -22,7 +22,7 @@ module.exports = {
     assetModuleFilename: "images/[name][ext]",
     // assetModuleFilename: "images/[contenthash][ext][query]",
     // assetModuleFilename: "src/assets/images/[name].[ext]",
-    publicPath: "./",
+    publicPath: isProduction ? "./" : "/",
   },
   devServer: {
     static: {
@@ -30,6 +30,8 @@ module.exports = {
     },
     hot: true,
     port: 3000,
+    open: true,
+    openPage: 'index.html',
   },
   resolve: {
     alias: {
