@@ -1,21 +1,3 @@
-<svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#3335lvcnna)">
-        <mask id="aqjyk76ppb" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="17" height="17">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.477 3.477h16.362V19.84H3.477V3.477z" fill="#fff"/>
-        </mask>
-        <g mask="url(#aqjyk76ppb)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.658 4.737a6.929 6.929 0 0 0-6.921 6.92 6.93 6.93 0 0 0 6.921 6.922c3.816 0 6.92-3.105 6.92-6.921a6.928 6.928 0 0 0-6.92-6.921zm0 15.102c-4.511 0-8.181-3.67-8.181-8.181 0-4.512 3.67-8.181 8.181-8.181 4.511 0 8.181 3.67 8.181 8.18 0 4.512-3.67 8.182-8.18 8.182z" fill="#000"/>
-        </g>
-        <mask id="liusdmedlc" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="17" width="6" height="5">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.724 17.173h4.835V22h-4.835v-4.827z" fill="#fff"/>
-        </mask>
-        <g mask="url(#liusdmedlc)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.838 22a.723.723 0 0 1-.51-.21l-3.392-3.383a.722.722 0 0 1 1.02-1.023l3.392 3.383a.721.721 0 0 1-.51 1.233z" fill="#000"/>
-        </g>
-    </g>
-    <defs>
-        <clipPath id="3335lvcnna">
-            <path fill="#fff" d="M0 0h24v24H0z"/>
-        </clipPath>
-    </defs>
+<svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.2357 7.45118C13.2357 4.25665 10.6457 1.66677 7.45117 1.66667C4.25658 1.66667 1.66667 4.25659 1.66667 7.45118C1.66677 10.6457 4.25665 13.2357 7.45117 13.2357C10.6456 13.2356 13.2356 10.6456 13.2357 7.45118ZM14.9023 7.45118C14.9023 9.20837 14.2923 10.8224 13.2747 12.0964L16.4225 15.2442C16.748 15.5696 16.748 16.0971 16.4225 16.4225C16.0971 16.748 15.5696 16.748 15.2441 16.4225L12.0964 13.2748C10.8224 14.2923 9.20836 14.9023 7.45117 14.9024C3.33617 14.9024 0.000106112 11.5662 0 7.45118C0 3.33611 3.33611 0 7.45117 0C11.5661 0.000103296 14.9023 3.33618 14.9023 7.45118Z" fill="#828282"/>
 </svg>

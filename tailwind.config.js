@@ -4,8 +4,19 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     fontFamily: {
-      sans: ["Inter", "NotoSansTC", ...defaultTheme.fontFamily.sans],
-      inter: ["Inter", ...defaultTheme.fontFamily.sans],
+      sans: [
+        "Arial",
+        "Microsoft JhengHei",
+        "Inter",
+        "NotoSansTC",
+        ...defaultTheme.fontFamily.sans,
+      ],
+      inter: [
+        "Arial",
+        "Microsoft JhengHei",
+        "Inter",
+        ...defaultTheme.fontFamily.sans,
+      ],
     },
     screens: {
       xl: "1100px",
@@ -17,12 +28,12 @@ module.exports = {
       },
       colors: {
         primary: {
-          light: "#fbdcdb",
+          light: "#ffecec",
           DEFAULT: "#f29c97",
           dark: "#eb635c",
         },
         secondary: {
-          light: "#81c3d7",
+          light: "#ecf8fc",
           DEFAULT: "#235378",
         },
         error: {
@@ -34,7 +45,9 @@ module.exports = {
         gray: {
           100: "#f5f5f5",
           200: "#e1e1e1",
+          300: "#c3c3c3",
           500: "#828282",
+          600: "#696969",
           800: "#2d2d2d",
         },
         dark: {

@@ -51,4 +51,23 @@
   .show {
     @apply !opacity-100 !visible;
   }
+
+  .gradient-arrow-prev {
+    background: linear-gradient(to left, transparent 0%, transparent 30%, #235378 70%) !important;
+  }
+
+  .gradient-arrow-next {
+    background: linear-gradient(to right, transparent 0%, transparent 30%, #235378 70%) !important;
+  }
+
+  /* Header 滾動收縮效果 */
+  @media (min-width: 1280px) {
+    #mainHeader.scrolled > div {
+      @apply !py-1.5;
+    }
+
+    #mainHeader.scrolled .logoImg {
+      @apply !max-w-[100px];
+    }
+  }
 }

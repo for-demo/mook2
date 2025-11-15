@@ -30,8 +30,7 @@ module.exports = {
     },
     hot: true,
     port: 3000,
-    open: true,
-    openPage: 'index.html',
+    open: ['index.html'],
   },
   resolve: {
     alias: {
