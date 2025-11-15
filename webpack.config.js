@@ -22,7 +22,7 @@ module.exports = {
     assetModuleFilename: "images/[name][ext]",
     // assetModuleFilename: "images/[contenthash][ext][query]",
     // assetModuleFilename: "src/assets/images/[name].[ext]",
-    publicPath: isProduction ? "/mook2/" : "/",
+    publicPath: "./",
   },
   devServer: {
     static: {
