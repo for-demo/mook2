@@ -2157,6 +2157,16 @@ var navbarSplide = new (splide_min_default())(".navbar", {
   }
 });
 navbarSplide.mount(); // 導覽列 end
+// Header 滾動收縮效果
+
+var mainHeader = document.querySelector("#mainHeader");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    mainHeader.classList.add("scrolled");
+  } else {
+    mainHeader.classList.remove("scrolled");
+  }
+}); // Header 滾動收縮效果 end
 // EXTERNAL MODULE: ./src/images/Ad-01.jpg
 var Ad_01 = __webpack_require__(809);
 // EXTERNAL MODULE: ./src/images/Ad-03.jpg

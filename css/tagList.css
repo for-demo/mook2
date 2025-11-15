@@ -569,6 +569,12 @@ Ensure the default browser behavior of the `hidden` attribute.
 .top-full {
   top: 100%;
 }
+.\!left-\[25px\] {
+  left: 25px !important;
+}
+.\!right-\[25px\] {
+  right: 25px !important;
+}
 .\!left-\[-25px\] {
   left: -25px !important;
 }
@@ -687,9 +693,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .aspect-\[300\/250\] {
   aspect-ratio: 300 / 250;
 }
-.aspect-\[390\/220\] {
-  aspect-ratio: 390 / 220;
-}
 .aspect-\[350\/232\] {
   aspect-ratio: 350 / 232;
 }
@@ -728,6 +731,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .h-\[56px\] {
   height: 56px;
+}
+.max-h-\[600px\] {
+  max-height: 600px;
 }
 .max-h-\[100px\] {
   max-height: 100px;
@@ -1979,12 +1985,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .hover\:xl\:bg-opacity-\[32\%\]:hover {
     --tw-bg-opacity: 32%;
-  }
-}
-@media (min-width: 640px) {
-
-  .sm\:aspect-\[1100\/425\] {
-    aspect-ratio: 1100 / 425;
   }
 }
 
