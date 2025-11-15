@@ -79,3 +79,15 @@ const navbarSplide = new Splide(".navbar", {
 
 navbarSplide.mount();
 // 導覽列 end
+
+// Header 滾動收縮效果
+const mainHeader = document.querySelector("#mainHeader");
+
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    mainHeader.classList.add("scrolled");
+  } else {
+    mainHeader.classList.remove("scrolled");
+  }
+});
+// Header 滾動收縮效果 end
