@@ -1,329 +1,2129 @@
-/*
- * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is neither made for production nor for readable output files.
- * It uses "eval()" calls to create a separate source file in the browser devtools.
- * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
- * or disable the default devtool with "devtool: false".
- * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
- */
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/js/components/header.js":
-/*!*************************************!*\
-  !*** ./src/js/components/header.js ***!
-  \*************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _css_plugins_splide_min_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/css/plugins/splide.min.css */ \"./src/css/plugins/splide.min.css\");\n/* harmony import */ var _plugins_splide_min_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../plugins/splide.min.js */ \"./src/js/plugins/splide.min.js\");\n/* harmony import */ var _plugins_splide_min_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_plugins_splide_min_js__WEBPACK_IMPORTED_MODULE_1__);\n\n\nvar bodyClass = document.querySelector(\"body\").classList;\nvar menuButton = document.querySelector(\"#menuButton\");\nvar searchButton = document.querySelector(\"#searchButton\");\nvar menuShadow = document.querySelector(\"#menuShadow\");\nvar searchButtonClass = searchButton.classList;\nvar navbarClass = document.querySelector(\"#navbarWrapper\").classList;\nvar menuShadowClass = document.querySelector(\"#menuShadow\").classList;\nvar hamburgerIconClass = document.querySelector(\"#hamburgerIcon\").classList;\nvar closeIconClass = document.querySelector(\"#closeIcon\").classList;\nvar pcSeach = document.querySelector(\"#pcSeach\");\nvar searchMenuClass = document.querySelector(\"#searchMenu\").classList;\nvar searchMenuShadow = document.querySelector(\"#searchMenuShadow\");\nvar searchMenuShadowClass = document.querySelector(\"#searchMenuShadow\").classList;\nvar mbSearchMenuClass = document.querySelector(\"#mbSearchMenu\").classList;\nvar cancelButton = document.querySelector(\"#cancelButton\"); // mb 選單按鈕\n\nmenuButton.addEventListener(\"click\", function () {\n  searchButtonClass.toggle(\"hidden\");\n  navbarClass.toggle(\"openMenu\");\n  bodyClass.toggle(\"overflow-hidden\");\n  menuShadowClass.toggle(\"openMenuShadow\");\n  menuShadowClass.toggle(\"!z-10\");\n  hamburgerIconClass.toggle(\"!hidden\");\n  closeIconClass.toggle(\"!block\");\n}); // mb 選單按鈕 end\n// mb 陰影\n\nmenuShadow.addEventListener(\"click\", function () {\n  searchButtonClass.toggle(\"hidden\");\n  navbarClass.toggle(\"openMenu\");\n  bodyClass.toggle(\"overflow-hidden\");\n  menuShadowClass.toggle(\"openMenuShadow\");\n  menuShadowClass.toggle(\"!z-10\");\n  hamburgerIconClass.toggle(\"!hidden\");\n  closeIconClass.toggle(\"!block\");\n}); // mb 陰影 end\n// pc 搜尋\n\npcSeach.addEventListener(\"focus\", function () {\n  searchMenuClass.add(\"!block\");\n  searchMenuShadowClass.add(\"!block\");\n}); // pc 搜尋陰影\n\nsearchMenuShadow.addEventListener(\"click\", function () {\n  searchMenuClass.remove(\"!block\");\n  searchMenuShadowClass.remove(\"!block\");\n}); // pc 搜尋 end\n// mb 搜尋\n\nsearchButton.addEventListener(\"click\", function () {\n  mbSearchMenuClass.add(\"!block\");\n});\ncancelButton.addEventListener(\"click\", function () {\n  mbSearchMenuClass.remove(\"!block\");\n}); // mb 搜尋 end\n// 導覽列\n\nvar navbarSplide = new (_plugins_splide_min_js__WEBPACK_IMPORTED_MODULE_1___default())(\".navbar\", {\n  autoWidth: true,\n  perMove: 16,\n  drag: \"free\",\n  pagination: false,\n  breakpoints: {\n    1100: {\n      destroy: true\n    }\n  }\n});\nnavbarSplide.mount(); // 導覽列 end\n\n//# sourceURL=webpack://webpack-demo/./src/js/components/header.js?");
-
-/***/ }),
-
-/***/ "./src/js/plugins/splide.min.js":
-/*!**************************************!*\
-  !*** ./src/js/plugins/splide.min.js ***!
-  \**************************************/
+/***/ 459:
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { \"@babel/helpers - typeof\"; return _typeof = \"function\" == typeof Symbol && \"symbol\" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && \"function\" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? \"symbol\" : typeof obj; }, _typeof(obj); }\n\nfunction _defineProperties(n, t) {\n  for (var e = 0; e < t.length; e++) {\n    var i = t[e];\n    i.enumerable = i.enumerable || !1, i.configurable = !0, \"value\" in i && (i.writable = !0), Object.defineProperty(n, i.key, i);\n  }\n}\n\nfunction _createClass(n, t, e) {\n  return t && _defineProperties(n.prototype, t), e && _defineProperties(n, e), Object.defineProperty(n, \"prototype\", {\n    writable: !1\n  }), n;\n}\n\n!function (n, t) {\n  \"object\" == ( false ? 0 : _typeof(exports)) && \"undefined\" != \"object\" ? module.exports = t() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (t),\n\t\t__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?\n\t\t(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :\n\t\t__WEBPACK_AMD_DEFINE_FACTORY__),\n\t\t__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : 0;\n}(this, function () {\n  \"use strict\";\n\n  var d = \"(prefers-reduced-motion: reduce)\",\n      R = 4,\n      W = 5,\n      n = {\n    CREATED: 1,\n    MOUNTED: 2,\n    IDLE: 3,\n    MOVING: R,\n    SCROLLING: W,\n    DRAGGING: 6,\n    DESTROYED: 7\n  };\n\n  function x(n) {\n    n.length = 0;\n  }\n\n  function _(n, t, e) {\n    return Array.prototype.slice.call(n, t, e);\n  }\n\n  function D(n) {\n    return n.bind.apply(n, [null].concat(_(arguments, 1)));\n  }\n\n  function G() {}\n\n  var v = setTimeout;\n\n  function p(n) {\n    return requestAnimationFrame(n);\n  }\n\n  function t(n, t) {\n    return _typeof(t) === n;\n  }\n\n  function X(n) {\n    return !r(n) && t(\"object\", n);\n  }\n\n  var o = Array.isArray,\n      w = D(t, \"function\"),\n      M = D(t, \"string\"),\n      z = D(t, \"undefined\");\n\n  function r(n) {\n    return null === n;\n  }\n\n  function g(n) {\n    return n instanceof HTMLElement;\n  }\n\n  function m(n) {\n    return o(n) ? n : [n];\n  }\n\n  function y(n, t) {\n    m(n).forEach(t);\n  }\n\n  function b(n, t) {\n    return -1 < n.indexOf(t);\n  }\n\n  function E(n, t) {\n    return n.push.apply(n, m(t)), n;\n  }\n\n  function L(t, n, e) {\n    t && y(n, function (n) {\n      n && t.classList[e ? \"add\" : \"remove\"](n);\n    });\n  }\n\n  function C(n, t) {\n    L(n, M(t) ? t.split(\" \") : t, !0);\n  }\n\n  function P(n, t) {\n    y(t, n.appendChild.bind(n));\n  }\n\n  function k(n, e) {\n    y(n, function (n) {\n      var t = (e || n).parentNode;\n      t && t.insertBefore(n, e);\n    });\n  }\n\n  function B(n, t) {\n    return g(n) && (n.msMatchesSelector || n.matches).call(n, t);\n  }\n\n  function S(n, t) {\n    n = n ? _(n.children) : [];\n    return t ? n.filter(function (n) {\n      return B(n, t);\n    }) : n;\n  }\n\n  function A(n, t) {\n    return t ? S(n, t)[0] : n.firstElementChild;\n  }\n\n  var h = Object.keys;\n\n  function N(n, t, e) {\n    if (n) for (var i = h(n), i = e ? i.reverse() : i, o = 0; o < i.length; o++) {\n      var r = i[o];\n      if (\"__proto__\" !== r && !1 === t(n[r], r)) break;\n    }\n    return n;\n  }\n\n  function T(i) {\n    return _(arguments, 1).forEach(function (e) {\n      N(e, function (n, t) {\n        i[t] = e[t];\n      });\n    }), i;\n  }\n\n  function O(e) {\n    return _(arguments, 1).forEach(function (n) {\n      N(n, function (n, t) {\n        o(n) ? e[t] = n.slice() : X(n) ? e[t] = O({}, X(e[t]) ? e[t] : {}, n) : e[t] = n;\n      });\n    }), e;\n  }\n\n  function I(t, n) {\n    m(n || h(t)).forEach(function (n) {\n      delete t[n];\n    });\n  }\n\n  function F(n, e) {\n    y(n, function (t) {\n      y(e, function (n) {\n        t && t.removeAttribute(n);\n      });\n    });\n  }\n\n  function j(e, t, i) {\n    X(t) ? N(t, function (n, t) {\n      j(e, t, n);\n    }) : y(e, function (n) {\n      r(i) || \"\" === i ? F(n, t) : n.setAttribute(t, String(i));\n    });\n  }\n\n  function H(n, t, e) {\n    n = document.createElement(n);\n    return t && (M(t) ? C : j)(n, t), e && P(e, n), n;\n  }\n\n  function Y(n, t, e) {\n    if (z(e)) return getComputedStyle(n)[t];\n    r(e) || (n.style[t] = \"\" + e);\n  }\n\n  function q(n, t) {\n    Y(n, \"display\", t);\n  }\n\n  function U(n) {\n    n.setActive && n.setActive() || n.focus({\n      preventScroll: !0\n    });\n  }\n\n  function K(n, t) {\n    return n.getAttribute(t);\n  }\n\n  function J(n, t) {\n    return n && n.classList.contains(t);\n  }\n\n  function Q(n) {\n    return n.getBoundingClientRect();\n  }\n\n  function V(n) {\n    y(n, function (n) {\n      n && n.parentNode && n.parentNode.removeChild(n);\n    });\n  }\n\n  function Z(n) {\n    return A(new DOMParser().parseFromString(n, \"text/html\").body);\n  }\n\n  function $(n, t) {\n    n.preventDefault(), t && (n.stopPropagation(), n.stopImmediatePropagation());\n  }\n\n  function nn(n, t) {\n    return n && n.querySelector(t);\n  }\n\n  function tn(n, t) {\n    return t ? _(n.querySelectorAll(t)) : [];\n  }\n\n  function en(n, t) {\n    L(n, t, !1);\n  }\n\n  function on(n) {\n    return n.timeStamp;\n  }\n\n  function rn(n) {\n    return M(n) ? n : n ? n + \"px\" : \"\";\n  }\n\n  var un = \"splide\",\n      i = \"data-\" + un;\n\n  function sn(n, t) {\n    if (!n) throw new Error(\"[\" + un + \"] \" + (t || \"\"));\n  }\n\n  var cn = Math.min,\n      an = Math.max,\n      fn = Math.floor,\n      ln = Math.ceil,\n      dn = Math.abs;\n\n  function pn(n, t, e) {\n    return dn(n - t) < e;\n  }\n\n  function hn(n, t, e, i) {\n    var o = cn(t, e),\n        e = an(t, e);\n    return i ? o < n && n < e : o <= n && n <= e;\n  }\n\n  function vn(n, t, e) {\n    var i = cn(t, e),\n        e = an(t, e);\n    return cn(an(i, n), e);\n  }\n\n  function gn(n) {\n    return (0 < n) - (n < 0);\n  }\n\n  function mn(t, n) {\n    return y(n, function (n) {\n      t = t.replace(\"%s\", \"\" + n);\n    }), t;\n  }\n\n  function yn(n) {\n    return n < 10 ? \"0\" + n : \"\" + n;\n  }\n\n  var bn = {};\n\n  function wn() {\n    var s = [];\n\n    function e(n, e, i) {\n      y(n, function (t) {\n        t && y(e, function (n) {\n          n.split(\" \").forEach(function (n) {\n            n = n.split(\".\");\n            i(t, n[0], n[1]);\n          });\n        });\n      });\n    }\n\n    return {\n      bind: function bind(n, t, r, u) {\n        e(n, t, function (n, t, e) {\n          var i = (\"addEventListener\" in n),\n              o = i ? n.removeEventListener.bind(n, t, r, u) : n.removeListener.bind(n, r);\n          i ? n.addEventListener(t, r, u) : n.addListener(r), s.push([n, t, e, r, o]);\n        });\n      },\n      unbind: function unbind(n, t, o) {\n        e(n, t, function (t, e, i) {\n          s = s.filter(function (n) {\n            return !!(n[0] !== t || n[1] !== e || n[2] !== i || o && n[3] !== o) || (n[4](), !1);\n          });\n        });\n      },\n      dispatch: function dispatch(n, t, e) {\n        var i;\n        return \"function\" == typeof CustomEvent ? i = new CustomEvent(t, {\n          bubbles: !0,\n          detail: e\n        }) : (i = document.createEvent(\"CustomEvent\")).initCustomEvent(t, !0, !1, e), n.dispatchEvent(i), i;\n      },\n      destroy: function destroy() {\n        s.forEach(function (n) {\n          n[4]();\n        }), x(s);\n      }\n    };\n  }\n\n  var En = \"mounted\",\n      Sn = \"move\",\n      xn = \"moved\",\n      _n = \"shifted\",\n      Cn = \"click\",\n      Pn = \"active\",\n      kn = \"inactive\",\n      Ln = \"visible\",\n      An = \"hidden\",\n      Dn = \"slide:keydown\",\n      Mn = \"refresh\",\n      zn = \"updated\",\n      Nn = \"resize\",\n      Tn = \"resized\",\n      On = \"scroll\",\n      In = \"scrolled\",\n      u = \"destroy\",\n      Fn = \"navigation:mounted\",\n      jn = \"autoplay:play\",\n      Rn = \"autoplay:pause\",\n      Wn = \"lazyload:loaded\";\n\n  function Gn(n) {\n    var e = n ? n.event.bus : document.createDocumentFragment(),\n        i = wn();\n    return n && n.event.on(u, i.destroy), T(i, {\n      bus: e,\n      on: function on(n, t) {\n        i.bind(e, m(n).join(\" \"), function (n) {\n          t.apply(t, o(n.detail) ? n.detail : []);\n        });\n      },\n      off: D(i.unbind, e),\n      emit: function emit(n) {\n        i.dispatch(e, n, _(arguments, 1));\n      }\n    });\n  }\n\n  function Xn(t, n, e, i) {\n    var o,\n        r,\n        u = Date.now,\n        s = 0,\n        c = !0,\n        a = 0;\n\n    function f() {\n      if (!c) {\n        if (s = t ? cn((u() - o) / t, 1) : 1, e && e(s), 1 <= s && (n(), o = u(), i && ++a >= i)) return l();\n        p(f);\n      }\n    }\n\n    function l() {\n      c = !0;\n    }\n\n    function d() {\n      r && cancelAnimationFrame(r), c = !(r = s = 0);\n    }\n\n    return {\n      start: function start(n) {\n        n || d(), o = u() - (n ? s * t : 0), c = !1, p(f);\n      },\n      rewind: function rewind() {\n        o = u(), s = 0, e && e(s);\n      },\n      pause: l,\n      cancel: d,\n      set: function set(n) {\n        t = n;\n      },\n      isPaused: function isPaused() {\n        return c;\n      }\n    };\n  }\n\n  function s(n) {\n    var t = n;\n    return {\n      set: function set(n) {\n        t = n;\n      },\n      is: function is(n) {\n        return b(m(n), t);\n      }\n    };\n  }\n\n  var e = \"Arrow\",\n      Bn = e + \"Left\",\n      Hn = e + \"Right\",\n      c = e + \"Up\",\n      a = e + \"Down\",\n      Yn = \"ttb\",\n      f = {\n    width: [\"height\"],\n    left: [\"top\", \"right\"],\n    right: [\"bottom\", \"left\"],\n    x: [\"y\"],\n    X: [\"Y\"],\n    Y: [\"X\"],\n    ArrowLeft: [c, Hn],\n    ArrowRight: [a, Bn]\n  };\n  var qn = \"role\",\n      Un = \"tabindex\",\n      e = \"aria-\",\n      Kn = e + \"controls\",\n      Jn = e + \"current\",\n      Qn = e + \"selected\",\n      Vn = e + \"label\",\n      Zn = e + \"labelledby\",\n      $n = e + \"hidden\",\n      nt = e + \"orientation\",\n      tt = e + \"roledescription\",\n      l = e + \"live\",\n      et = e + \"busy\",\n      it = e + \"atomic\",\n      ot = [qn, Un, \"disabled\", Kn, Jn, Vn, Zn, $n, nt, tt],\n      rt = un,\n      ut = un + \"__track\",\n      st = un + \"__list\",\n      ct = un + \"__slide\",\n      at = ct + \"--clone\",\n      ft = ct + \"__container\",\n      lt = un + \"__arrows\",\n      dt = un + \"__arrow\",\n      pt = dt + \"--prev\",\n      ht = dt + \"--next\",\n      vt = un + \"__pagination\",\n      gt = vt + \"__page\",\n      mt = un + \"__progress\" + \"__bar\",\n      yt = un + \"__toggle\",\n      bt = un + \"__sr\",\n      wt = \"is-active\",\n      Et = \"is-prev\",\n      St = \"is-next\",\n      xt = \"is-visible\",\n      _t = \"is-loading\",\n      Ct = \"is-focus-in\",\n      Pt = [wt, xt, Et, St, _t, Ct];\n  var kt = \"touchstart mousedown\",\n      Lt = \"touchmove mousemove\",\n      At = \"touchend touchcancel mouseup click\";\n  var Dt = \"slide\",\n      Mt = \"loop\",\n      zt = \"fade\";\n\n  function Nt(o, e, t, r) {\n    var i,\n        n = Gn(o),\n        u = n.on,\n        s = n.emit,\n        c = n.bind,\n        a = o.Components,\n        f = o.root,\n        l = o.options,\n        d = l.isNavigation,\n        p = l.updateOnMove,\n        h = l.i18n,\n        v = l.pagination,\n        g = l.slideFocus,\n        m = a.Direction.resolve,\n        y = K(r, \"style\"),\n        b = K(r, Vn),\n        w = -1 < t,\n        E = A(r, \".\" + ft),\n        S = tn(r, l.focusableNodes || \"\");\n\n    function x() {\n      var n = o.splides.map(function (n) {\n        n = n.splide.Components.Slides.getAt(e);\n        return n ? n.slide.id : \"\";\n      }).join(\" \");\n      j(r, Vn, mn(h.slideX, (w ? t : e) + 1)), j(r, Kn, n), j(r, qn, g ? \"button\" : \"\"), g && F(r, tt);\n    }\n\n    function _() {\n      i || C();\n    }\n\n    function C() {\n      var n, t;\n      i || (n = o.index, (t = P()) !== J(r, wt) && (L(r, wt, t), j(r, Jn, d && t || \"\"), s(t ? Pn : kn, k)), function () {\n        var n = function () {\n          if (o.is(zt)) return P();\n          var n = Q(a.Elements.track),\n              t = Q(r),\n              e = m(\"left\", !0),\n              i = m(\"right\", !0);\n          return fn(n[e]) <= ln(t[e]) && fn(t[i]) <= ln(n[i]);\n        }(),\n            t = !n && (!P() || w);\n\n        o.state.is([R, W]) || j(r, $n, t || \"\");\n        j(S, Un, t ? -1 : \"\"), g && j(r, Un, t ? -1 : 0);\n        n !== J(r, xt) && (L(r, xt, n), s(n ? Ln : An, k));\n        n || document.activeElement !== r || (n = a.Slides.getAt(o.index)) && U(n.slide);\n      }(), L(r, Et, e === n - 1), L(r, St, e === n + 1));\n    }\n\n    function P() {\n      var n = o.index;\n      return n === e || l.cloneStatus && n === t;\n    }\n\n    var k = {\n      index: e,\n      slideIndex: t,\n      slide: r,\n      container: E,\n      isClone: w,\n      mount: function mount() {\n        w || (r.id = f.id + \"-slide\" + yn(e + 1), j(r, qn, v ? \"tabpanel\" : \"group\"), j(r, tt, h.slide), j(r, Vn, b || mn(h.slideLabel, [e + 1, o.length]))), c(r, \"click\", D(s, Cn, k)), c(r, \"keydown\", D(s, Dn, k)), u([xn, _n, In], C), u(Fn, x), p && u(Sn, _);\n      },\n      destroy: function destroy() {\n        i = !0, n.destroy(), en(r, Pt), F(r, ot), j(r, \"style\", y), j(r, Vn, b || \"\");\n      },\n      update: C,\n      style: function style(n, t, e) {\n        Y(e && E || r, n, t);\n      },\n      isWithin: function isWithin(n, t) {\n        return n = dn(n - e), (n = !w && (l.rewind || o.is(Mt)) ? cn(n, o.length - n) : n) <= t;\n      }\n    };\n    return k;\n  }\n\n  var Tt = i + \"-interval\";\n  var Ot = {\n    passive: !1,\n    capture: !0\n  };\n  var It = {\n    Spacebar: \" \",\n    Right: Hn,\n    Left: Bn,\n    Up: c,\n    Down: a\n  };\n\n  function Ft(n) {\n    return n = M(n) ? n : n.key, It[n] || n;\n  }\n\n  var jt = \"keydown\";\n  var Rt = i + \"-lazy\",\n      Wt = Rt + \"-srcset\",\n      Gt = \"[\" + Rt + \"], [\" + Wt + \"]\";\n  var Xt = [\" \", \"Enter\"];\n  var Bt = Object.freeze({\n    __proto__: null,\n    Media: function Media(i, n, o) {\n      var r = i.state,\n          t = o.breakpoints || {},\n          u = o.reducedMotion || {},\n          e = wn(),\n          s = [];\n\n      function c(n) {\n        n && e.destroy();\n      }\n\n      function a(n, t) {\n        t = matchMedia(t);\n        e.bind(t, \"change\", f), s.push([n, t]);\n      }\n\n      function f() {\n        var n = r.is(7),\n            t = o.direction,\n            e = s.reduce(function (n, t) {\n          return O(n, t[1].matches ? t[0] : {});\n        }, {});\n        I(o), l(e), o.destroy ? i.destroy(\"completely\" === o.destroy) : n ? (c(!0), i.mount()) : t !== o.direction && i.refresh();\n      }\n\n      function l(n, t) {\n        O(o, n), t && O(Object.getPrototypeOf(o), n), r.is(1) || i.emit(zn, o);\n      }\n\n      return {\n        setup: function setup() {\n          var e = \"min\" === o.mediaQuery;\n          h(t).sort(function (n, t) {\n            return e ? +n - +t : +t - +n;\n          }).forEach(function (n) {\n            a(t[n], \"(\" + (e ? \"min\" : \"max\") + \"-width:\" + n + \"px)\");\n          }), a(u, d), f();\n        },\n        destroy: c,\n        reduce: function reduce(n) {\n          matchMedia(d).matches && (n ? O(o, u) : I(o, h(u)));\n        },\n        set: l\n      };\n    },\n    Direction: function Direction(n, t, o) {\n      return {\n        resolve: function resolve(n, t, e) {\n          var i = \"rtl\" !== (e = e || o.direction) || t ? e === Yn ? 0 : -1 : 1;\n          return f[n] && f[n][i] || n.replace(/width|left|right/i, function (n, t) {\n            n = f[n.toLowerCase()][i] || n;\n            return 0 < t ? n.charAt(0).toUpperCase() + n.slice(1) : n;\n          });\n        },\n        orient: function orient(n) {\n          return n * (\"rtl\" === o.direction ? 1 : -1);\n        }\n      };\n    },\n    Elements: function Elements(n, t, e) {\n      var i,\n          o,\n          r,\n          u = Gn(n),\n          s = u.on,\n          c = u.bind,\n          a = n.root,\n          f = e.i18n,\n          l = {},\n          d = [],\n          p = [],\n          h = [];\n\n      function v() {\n        i = y(\".\" + ut), o = A(i, \".\" + st), sn(i && o, \"A track/list element is missing.\"), E(d, S(o, \".\" + ct + \":not(.\" + at + \")\")), N({\n          arrows: lt,\n          pagination: vt,\n          prev: pt,\n          next: ht,\n          bar: mt,\n          toggle: yt\n        }, function (n, t) {\n          l[t] = y(\".\" + n);\n        }), T(l, {\n          root: a,\n          track: i,\n          list: o,\n          slides: d\n        }), function () {\n          var n = a.id || function (n) {\n            return \"\" + n + yn(bn[n] = (bn[n] || 0) + 1);\n          }(un),\n              t = e.role;\n\n          a.id = n, i.id = i.id || n + \"-track\", o.id = o.id || n + \"-list\", !K(a, qn) && \"SECTION\" !== a.tagName && t && j(a, qn, t);\n          j(a, tt, f.carousel), j(o, qn, \"presentation\");\n        }(), m();\n      }\n\n      function g(n) {\n        var t = ot.concat(\"style\");\n        x(d), en(a, p), en(i, h), F([i, o], t), F(a, n ? t : [\"style\", tt]);\n      }\n\n      function m() {\n        en(a, p), en(i, h), p = b(rt), h = b(ut), C(a, p), C(i, h), j(a, Vn, e.label), j(a, Zn, e.labelledby);\n      }\n\n      function y(n) {\n        n = nn(a, n);\n        return n && function (n, t) {\n          if (w(n.closest)) return n.closest(t);\n\n          for (var e = n; e && 1 === e.nodeType && !B(e, t);) {\n            e = e.parentElement;\n          }\n\n          return e;\n        }(n, \".\" + rt) === a ? n : void 0;\n      }\n\n      function b(n) {\n        return [n + \"--\" + e.type, n + \"--\" + e.direction, e.drag && n + \"--draggable\", e.isNavigation && n + \"--nav\", n === rt && wt];\n      }\n\n      return T(l, {\n        setup: v,\n        mount: function mount() {\n          s(Mn, g), s(Mn, v), s(zn, m), c(document, kt + \" keydown\", function (n) {\n            r = \"keydown\" === n.type;\n          }, {\n            capture: !0\n          }), c(a, \"focusin\", function () {\n            L(a, Ct, !!r);\n          });\n        },\n        destroy: g\n      });\n    },\n    Slides: function Slides(i, o, r) {\n      var n = Gn(i),\n          t = n.on,\n          u = n.emit,\n          s = n.bind,\n          c = (n = o.Elements).slides,\n          a = n.list,\n          f = [];\n\n      function e() {\n        c.forEach(function (n, t) {\n          d(n, t, -1);\n        });\n      }\n\n      function l() {\n        h(function (n) {\n          n.destroy();\n        }), x(f);\n      }\n\n      function d(n, t, e) {\n        n = Nt(i, t, e, n);\n        n.mount(), f.push(n);\n      }\n\n      function p(n) {\n        return n ? v(function (n) {\n          return !n.isClone;\n        }) : f;\n      }\n\n      function h(n, t) {\n        p(t).forEach(n);\n      }\n\n      function v(t) {\n        return f.filter(w(t) ? t : function (n) {\n          return M(t) ? B(n.slide, t) : b(m(t), n.index);\n        });\n      }\n\n      return {\n        mount: function mount() {\n          e(), t(Mn, l), t(Mn, e), t([En, Mn], function () {\n            f.sort(function (n, t) {\n              return n.index - t.index;\n            });\n          });\n        },\n        destroy: l,\n        update: function update() {\n          h(function (n) {\n            n.update();\n          });\n        },\n        register: d,\n        get: p,\n        getIn: function getIn(n) {\n          var t = o.Controller,\n              e = t.toIndex(n),\n              i = t.hasFocus() ? 1 : r.perPage;\n          return v(function (n) {\n            return hn(n.index, e, e + i - 1);\n          });\n        },\n        getAt: function getAt(n) {\n          return v(n)[0];\n        },\n        add: function add(n, o) {\n          y(n, function (n) {\n            var t, e, i;\n            g(n = M(n) ? Z(n) : n) && ((t = c[o]) ? k(n, t) : P(a, n), C(n, r.classes.slide), n = n, e = D(u, Nn), n = tn(n, \"img\"), (i = n.length) ? n.forEach(function (n) {\n              s(n, \"load error\", function () {\n                --i || e();\n              });\n            }) : e());\n          }), u(Mn);\n        },\n        remove: function remove(n) {\n          V(v(n).map(function (n) {\n            return n.slide;\n          })), u(Mn);\n        },\n        forEach: h,\n        filter: v,\n        style: function style(t, e, i) {\n          h(function (n) {\n            n.style(t, e, i);\n          });\n        },\n        getLength: function getLength(n) {\n          return (n ? c : f).length;\n        },\n        isEnough: function isEnough() {\n          return f.length > r.perPage;\n        }\n      };\n    },\n    Layout: function Layout(n, t, e) {\n      var i,\n          o,\n          r = (c = Gn(n)).on,\n          u = c.bind,\n          s = c.emit,\n          c = t.Slides,\n          a = t.Direction.resolve,\n          f = (t = t.Elements).root,\n          l = t.track,\n          d = t.list,\n          p = c.getAt,\n          h = c.style;\n\n      function v() {\n        o = null, i = e.direction === Yn, Y(f, \"maxWidth\", rn(e.width)), Y(l, a(\"paddingLeft\"), m(!1)), Y(l, a(\"paddingRight\"), m(!0)), g();\n      }\n\n      function g() {\n        var n = Q(f);\n        o && o.width === n.width && o.height === n.height || (Y(l, \"height\", function () {\n          var n = \"\";\n          i && (sn(n = y(), \"height or heightRatio is missing.\"), n = \"calc(\" + n + \" - \" + m(!1) + \" - \" + m(!0) + \")\");\n          return n;\n        }()), h(a(\"marginRight\"), rn(e.gap)), h(\"width\", e.autoWidth ? null : rn(e.fixedWidth) || (i ? \"\" : b())), h(\"height\", rn(e.fixedHeight) || (i ? e.autoHeight ? null : b() : y()), !0), o = n, s(Tn));\n      }\n\n      function m(n) {\n        var t = e.padding,\n            n = a(n ? \"right\" : \"left\");\n        return t && rn(t[n] || (X(t) ? 0 : t)) || \"0px\";\n      }\n\n      function y() {\n        return rn(e.height || Q(d).width * e.heightRatio);\n      }\n\n      function b() {\n        var n = rn(e.gap);\n        return \"calc((100%\" + (n && \" + \" + n) + \")/\" + (e.perPage || 1) + (n && \" - \" + n) + \")\";\n      }\n\n      function w(n, t) {\n        var e = p(n);\n\n        if (e) {\n          n = Q(e.slide)[a(\"right\")], e = Q(d)[a(\"left\")];\n          return dn(n - e) + (t ? 0 : E());\n        }\n\n        return 0;\n      }\n\n      function E() {\n        var n = p(0);\n        return n && parseFloat(Y(n.slide, a(\"marginRight\"))) || 0;\n      }\n\n      return {\n        mount: function mount() {\n          var n, t, e;\n          v(), u(window, \"resize load\", (n = D(s, Nn), function () {\n            e || (e = Xn(t || 0, function () {\n              n(), e = null;\n            }, null, 1)).start();\n          })), r([zn, Mn], v), r(Nn, g);\n        },\n        listSize: function listSize() {\n          return Q(d)[a(\"width\")];\n        },\n        slideSize: function slideSize(n, t) {\n          return (n = p(n || 0)) ? Q(n.slide)[a(\"width\")] + (t ? 0 : E()) : 0;\n        },\n        sliderSize: function sliderSize() {\n          return w(n.length - 1, !0) - w(-1, !0);\n        },\n        totalSize: w,\n        getPadding: function getPadding(n) {\n          return parseFloat(Y(l, a(\"padding\" + (n ? \"Right\" : \"Left\")))) || 0;\n        }\n      };\n    },\n    Clones: function Clones(s, e, c) {\n      var n,\n          t = Gn(s),\n          i = t.on,\n          o = t.emit,\n          a = e.Elements,\n          f = e.Slides,\n          r = e.Direction.resolve,\n          l = [];\n\n      function u() {\n        (n = h()) && (function (o) {\n          var r = f.get().slice(),\n              u = r.length;\n\n          if (u) {\n            for (; r.length < o;) {\n              E(r, r);\n            }\n\n            E(r.slice(-o), r.slice(0, o)).forEach(function (n, t) {\n              var e = t < o,\n                  i = function (n, t) {\n                n = n.cloneNode(!0);\n                return C(n, c.classes.clone), n.id = s.root.id + \"-clone\" + yn(t + 1), n;\n              }(n.slide, t);\n\n              e ? k(i, r[0].slide) : P(a.list, i), E(l, i), f.register(i, t - o + (e ? 0 : u), n.index);\n            });\n          }\n        }(n), o(Nn));\n      }\n\n      function d() {\n        V(l), x(l);\n      }\n\n      function p() {\n        n < h() && o(Mn);\n      }\n\n      function h() {\n        var n,\n            t = c.clones;\n        return s.is(Mt) ? t || (t = (n = c[r(\"fixedWidth\")] && e.Layout.slideSize(0)) && ln(Q(a.track)[r(\"width\")] / n) || c[r(\"autoWidth\")] && s.length || 2 * c.perPage) : t = 0, t;\n      }\n\n      return {\n        mount: function mount() {\n          u(), i(Mn, d), i(Mn, u), i([zn, Nn], p);\n        },\n        destroy: d\n      };\n    },\n    Move: function Move(i, s, o) {\n      var u,\n          n = Gn(i),\n          t = n.on,\n          c = n.emit,\n          a = i.state.set,\n          r = (n = s.Layout).slideSize,\n          e = n.getPadding,\n          f = n.totalSize,\n          l = n.listSize,\n          d = n.sliderSize,\n          p = (n = s.Direction).resolve,\n          h = n.orient,\n          v = (n = s.Elements).list,\n          g = n.track;\n\n      function m() {\n        s.Controller.isBusy() || (s.Scroll.cancel(), y(i.index), s.Slides.update());\n      }\n\n      function y(n) {\n        b(x(n, !0));\n      }\n\n      function b(n, t) {\n        i.is(zt) || (t = t ? n : function (n) {\n          {\n            var t, e;\n            i.is(Mt) && (t = S(n), e = t > s.Controller.getEnd(), (t < 0 || e) && (n = w(n, e)));\n          }\n          return n;\n        }(n), Y(v, \"transform\", \"translate\" + p(\"X\") + \"(\" + t + \"px)\"), n !== t && c(_n));\n      }\n\n      function w(n, t) {\n        var e = n - C(t),\n            i = d();\n        return n -= h(i * (ln(dn(e) / i) || 1)) * (t ? 1 : -1);\n      }\n\n      function E() {\n        b(_()), u.cancel();\n      }\n\n      function S(n) {\n        for (var t = s.Slides.get(), e = 0, i = 1 / 0, o = 0; o < t.length; o++) {\n          var r = t[o].index,\n              u = dn(x(r, !0) - n);\n          if (!(u <= i)) break;\n          i = u, e = r;\n        }\n\n        return e;\n      }\n\n      function x(n, t) {\n        var e = h(f(n - 1) - (e = n, \"center\" === (n = o.focus) ? (l() - r(e, !0)) / 2 : +n * r(e) || 0));\n        return t ? function (n) {\n          o.trimSpace && i.is(Dt) && (n = vn(n, 0, h(d() - l())));\n          return n;\n        }(e) : e;\n      }\n\n      function _() {\n        var n = p(\"left\");\n        return Q(v)[n] - Q(g)[n] + h(e(!1));\n      }\n\n      function C(n) {\n        return x(n ? s.Controller.getEnd() : 0, !!o.trimSpace);\n      }\n\n      return {\n        mount: function mount() {\n          u = s.Transition, t([En, Tn, zn, Mn], m);\n        },\n        move: function move(n, t, e, i) {\n          var o, r;\n          n !== t && (o = e < n, r = h(w(_(), o)), o ? 0 <= r : r <= v[p(\"scrollWidth\")] - Q(g)[p(\"width\")]) && (E(), b(w(_(), e < n), !0)), a(R), c(Sn, t, e, n), u.start(t, function () {\n            a(3), c(xn, t, e, n), i && i();\n          });\n        },\n        jump: y,\n        translate: b,\n        shift: w,\n        cancel: E,\n        toIndex: S,\n        toPosition: x,\n        getPosition: _,\n        getLimit: C,\n        exceededLimit: function exceededLimit(n, t) {\n          t = z(t) ? _() : t;\n          var e = !0 !== n && h(t) < h(C(!1)),\n              t = !1 !== n && h(t) > h(C(!0));\n          return e || t;\n        },\n        reposition: m\n      };\n    },\n    Controller: function Controller(r, o, u) {\n      var s,\n          c,\n          a,\n          n = Gn(r).on,\n          f = o.Move,\n          l = f.getPosition,\n          i = f.getLimit,\n          d = f.toPosition,\n          t = o.Slides,\n          p = t.isEnough,\n          e = t.getLength,\n          h = r.is(Mt),\n          v = r.is(Dt),\n          g = D(E, !1),\n          m = D(E, !0),\n          y = u.start || 0,\n          b = y;\n\n      function w() {\n        s = e(!0), c = u.perMove, a = u.perPage;\n        var n = vn(y, 0, s - 1);\n        n !== y && (y = n, f.reposition());\n      }\n\n      function E(n, t) {\n        var e = c || (L() ? 1 : a),\n            e = S(y + e * (n ? -1 : 1), y, !(c || L()));\n        return -1 === e && v && !pn(l(), i(!n), 1) ? n ? 0 : _() : t ? e : x(e);\n      }\n\n      function S(n, t, e) {\n        var i, o;\n        return p() ? (i = _(), (o = function (n) {\n          if (v && \"move\" === u.trimSpace && n !== y) for (var t = l(); t === d(n, !0) && hn(n, 0, r.length - 1, !u.rewind);) {\n            n < y ? --n : ++n;\n          }\n          return n;\n        }(n)) !== n && (t = n, n = o, e = !1), n < 0 || i < n ? n = c || !hn(0, n, t, !0) && !hn(i, t, n, !0) ? h ? e ? n < 0 ? -(s % a || a) : s : n : u.rewind ? n < 0 ? i : 0 : -1 : C(P(n)) : e && n !== t && (n = C(P(t) + (n < t ? -1 : 1)))) : n = -1, n;\n      }\n\n      function x(n) {\n        return h ? (n + s) % s || 0 : n;\n      }\n\n      function _() {\n        return an(s - (L() || h && c ? 1 : a), 0);\n      }\n\n      function C(n) {\n        return vn(L() ? n : a * n, 0, _());\n      }\n\n      function P(n) {\n        return L() ? n : fn((n >= _() ? s - 1 : n) / a);\n      }\n\n      function k(n) {\n        n !== y && (b = y, y = n);\n      }\n\n      function L() {\n        return !z(u.focus) || u.isNavigation;\n      }\n\n      function A() {\n        return r.state.is([R, W]) && !!u.waitForTransition;\n      }\n\n      return {\n        mount: function mount() {\n          w(), n([zn, Mn], w);\n        },\n        go: function go(n, t, e) {\n          var i;\n          A() || -1 < (n = x(i = function (n) {\n            var t = y;\n            {\n              var e, i;\n              M(n) ? (i = n.match(/([+\\-<>])(\\d+)?/) || [], e = i[1], i = i[2], \"+\" === e || \"-\" === e ? t = S(y + +(\"\" + e + (+i || 1)), y) : \">\" === e ? t = i ? C(+i) : g(!0) : \"<\" === e && (t = m(!0))) : t = h ? n : vn(n, 0, _());\n            }\n            return t;\n          }(n))) && (t || n !== y) && (k(n), f.move(i, n, b, e));\n        },\n        scroll: function scroll(n, t, e, i) {\n          o.Scroll.scroll(n, t, e, function () {\n            k(x(f.toIndex(l()))), i && i();\n          });\n        },\n        getNext: g,\n        getPrev: m,\n        getAdjacent: E,\n        getEnd: _,\n        setIndex: k,\n        getIndex: function getIndex(n) {\n          return n ? b : y;\n        },\n        toIndex: C,\n        toPage: P,\n        toDest: function toDest(n) {\n          return n = f.toIndex(n), v ? vn(n, 0, _()) : n;\n        },\n        hasFocus: L,\n        isBusy: A\n      };\n    },\n    Arrows: function Arrows(o, n, t) {\n      var e,\n          i,\n          r = Gn(o),\n          u = r.on,\n          s = r.bind,\n          c = r.emit,\n          a = t.classes,\n          f = t.i18n,\n          l = n.Elements,\n          d = n.Controller,\n          p = l.arrows,\n          h = l.track,\n          v = p,\n          g = l.prev,\n          m = l.next,\n          y = {};\n\n      function b() {\n        !function () {\n          var n = t.arrows;\n          !n || g && m || (v = p || H(\"div\", a.arrows), g = x(!0), m = x(!1), e = !0, P(v, [g, m]), p || k(v, h));\n          g && m && (T(y, {\n            prev: g,\n            next: m\n          }), q(v, n ? \"\" : \"none\"), C(v, i = lt + \"--\" + t.direction), n && (u([xn, Mn, In], _), s(m, \"click\", D(S, \">\")), s(g, \"click\", D(S, \"<\")), _(), j([g, m], Kn, h.id), c(\"arrows:mounted\", g, m)));\n        }(), u(zn, w);\n      }\n\n      function w() {\n        E(), b();\n      }\n\n      function E() {\n        r.destroy(), en(v, i), e ? (V(p ? [g, m] : v), g = m = null) : F([g, m], ot);\n      }\n\n      function S(n) {\n        d.go(n, !0);\n      }\n\n      function x(n) {\n        return Z('<button class=\"' + a.arrow + \" \" + (n ? a.prev : a.next) + '\" type=\"button\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 40 40\" width=\"40\" height=\"40\" focusable=\"false\"><path d=\"' + (t.arrowPath || \"m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z\") + '\" />');\n      }\n\n      function _() {\n        var n = o.index,\n            t = d.getPrev(),\n            e = d.getNext(),\n            i = -1 < t && n < t ? f.last : f.prev,\n            n = -1 < e && e < n ? f.first : f.next;\n        g.disabled = t < 0, m.disabled = e < 0, j(g, Vn, i), j(m, Vn, n), c(\"arrows:updated\", g, m, t, e);\n      }\n\n      return {\n        arrows: y,\n        mount: b,\n        destroy: E\n      };\n    },\n    Autoplay: function Autoplay(n, t, e) {\n      var i,\n          o,\n          r = Gn(n),\n          u = r.on,\n          s = r.bind,\n          c = r.emit,\n          a = Xn(e.interval, n.go.bind(n, \">\"), function (n) {\n        var t = l.bar;\n        t && Y(t, \"width\", 100 * n + \"%\"), c(\"autoplay:playing\", n);\n      }),\n          f = a.isPaused,\n          l = t.Elements,\n          d = (n = t.Elements).root,\n          p = n.toggle,\n          h = e.autoplay,\n          v = \"pause\" === h;\n\n      function g() {\n        f() && t.Slides.isEnough() && (a.start(!e.resetProgress), o = i = v = !1, b(), c(jn));\n      }\n\n      function m(n) {\n        v = !!(n = void 0 === n ? !0 : n), b(), f() || (a.pause(), c(Rn));\n      }\n\n      function y() {\n        v || (i || o ? m(!1) : g());\n      }\n\n      function b() {\n        p && (L(p, wt, !v), j(p, Vn, e.i18n[v ? \"play\" : \"pause\"]));\n      }\n\n      function w(n) {\n        n = t.Slides.getAt(n);\n        a.set(n && +K(n.slide, Tt) || e.interval);\n      }\n\n      return {\n        mount: function mount() {\n          h && (function () {\n            e.pauseOnHover && s(d, \"mouseenter mouseleave\", function (n) {\n              i = \"mouseenter\" === n.type, y();\n            });\n            e.pauseOnFocus && s(d, \"focusin focusout\", function (n) {\n              o = \"focusin\" === n.type, y();\n            });\n            p && s(p, \"click\", function () {\n              v ? g() : m(!0);\n            });\n            u([Sn, On, Mn], a.rewind), u(Sn, w);\n          }(), p && j(p, Kn, l.track.id), v || g(), b());\n        },\n        destroy: a.cancel,\n        play: g,\n        pause: m,\n        isPaused: f\n      };\n    },\n    Cover: function Cover(n, t, e) {\n      var i = Gn(n).on;\n\n      function o(e) {\n        t.Slides.forEach(function (n) {\n          var t = A(n.container || n.slide, \"img\");\n          t && t.src && r(e, t, n);\n        });\n      }\n\n      function r(n, t, e) {\n        e.style(\"background\", n ? 'center/cover no-repeat url(\"' + t.src + '\")' : \"\", !0), q(t, n ? \"none\" : \"\");\n      }\n\n      return {\n        mount: function mount() {\n          e.cover && (i(Wn, D(r, !0)), i([En, zn, Mn], D(o, !0)));\n        },\n        destroy: D(o, !1)\n      };\n    },\n    Scroll: function Scroll(r, s, u) {\n      var c,\n          a,\n          n = Gn(r),\n          t = n.on,\n          f = n.emit,\n          l = r.state.set,\n          d = s.Move,\n          p = d.getPosition,\n          h = d.getLimit,\n          v = d.exceededLimit,\n          g = d.translate,\n          m = 1;\n\n      function y(n, t, e, i, o) {\n        var r = p();\n        E(), e && (e = s.Layout.sliderSize(), u = gn(n) * e * fn(dn(n) / e) || 0, n = d.toPosition(s.Controller.toDest(n % e)) + u);\n        var u = pn(r, n, 1);\n        m = 1, t = u ? 0 : t || an(dn(n - r) / 1.5, 800), a = i, c = Xn(t, b, D(w, r, n, o), 1), l(W), f(On), c.start();\n      }\n\n      function b() {\n        l(3), a && a(), f(In);\n      }\n\n      function w(n, t, e, i) {\n        var o = p(),\n            n = (n + (t - n) * (n = i, (i = u.easingFunc) ? i(n) : 1 - Math.pow(1 - n, 4)) - o) * m;\n        g(o + n), r.is(Dt) && !e && v() && (m *= .6, dn(n) < 10 && y(h(v(!0)), 600, !1, a, !0));\n      }\n\n      function E() {\n        c && c.cancel();\n      }\n\n      function e() {\n        c && !c.isPaused() && (E(), b());\n      }\n\n      return {\n        mount: function mount() {\n          t(Sn, E), t([zn, Mn], e);\n        },\n        destroy: E,\n        scroll: y,\n        cancel: e\n      };\n    },\n    Drag: function Drag(r, i, u) {\n      var s,\n          t,\n          o,\n          c,\n          a,\n          f,\n          l,\n          d,\n          n = Gn(r),\n          e = n.on,\n          p = n.emit,\n          h = n.bind,\n          v = n.unbind,\n          g = r.state,\n          m = i.Move,\n          y = i.Scroll,\n          b = i.Controller,\n          w = i.Elements.track,\n          E = i.Media.reduce,\n          S = (n = i.Direction).resolve,\n          x = n.orient,\n          _ = m.getPosition,\n          C = m.exceededLimit,\n          P = !1;\n\n      function k() {\n        var n = u.drag;\n        j(!n), c = \"free\" === n;\n      }\n\n      function L(n) {\n        var t, e, i;\n        f = !1, l || (t = F(n), e = n.target, i = u.noDrag, B(e, \".\" + gt + \", .\" + dt) || i && B(e, i) || !t && n.button || (b.isBusy() ? $(n, !0) : (d = t ? w : window, a = g.is([R, W]), o = null, h(d, Lt, A, Ot), h(d, At, D, Ot), m.cancel(), y.cancel(), z(n))));\n      }\n\n      function A(n) {\n        var t, e, i, o;\n        g.is(6) || (g.set(6), p(\"drag\")), n.cancelable && (a ? (m.translate(s + N(n) / (P && r.is(Dt) ? 5 : 1)), e = 200 < T(n), i = P !== (P = C()), (e || i) && z(n), f = !0, p(\"dragging\"), $(n)) : dn(N(o = n)) > dn(N(o, !0)) && (t = n, e = u.dragMinThreshold, i = X(e), o = i && e.mouse || 0, e = (i ? e.touch : +e) || 10, a = dn(N(t)) > (F(t) ? e : o), $(n)));\n      }\n\n      function D(n) {\n        g.is(6) && (g.set(3), p(\"dragged\")), a && (function (n) {\n          var t = function (n) {\n            if (r.is(Mt) || !P) {\n              var t = T(n);\n              if (t && t < 200) return N(n) / t;\n            }\n\n            return 0;\n          }(n),\n              e = function (n) {\n            return _() + gn(n) * cn(dn(n) * (u.flickPower || 600), c ? 1 / 0 : i.Layout.listSize() * (u.flickMaxPages || 1));\n          }(t),\n              n = u.rewind && u.rewindByDrag;\n\n          E(!1), c ? b.scroll(e, 0, u.snap) : r.is(zt) ? b.go(x(gn(t)) < 0 ? n ? \"<\" : \"-\" : n ? \">\" : \"+\") : r.is(Dt) && P && n ? b.go(C(!0) ? \">\" : \"<\") : b.go(b.toDest(e), !0);\n          E(!0);\n        }(n), $(n)), v(d, Lt, A), v(d, At, D), a = !1;\n      }\n\n      function M(n) {\n        !l && f && $(n, !0);\n      }\n\n      function z(n) {\n        o = t, t = n, s = _();\n      }\n\n      function N(n, t) {\n        return I(n, t) - I(O(n), t);\n      }\n\n      function T(n) {\n        return on(n) - on(O(n));\n      }\n\n      function O(n) {\n        return t === n && o || t;\n      }\n\n      function I(n, t) {\n        return (F(n) ? n.changedTouches[0] : n)[\"page\" + S(t ? \"Y\" : \"X\")];\n      }\n\n      function F(n) {\n        return \"undefined\" != typeof TouchEvent && n instanceof TouchEvent;\n      }\n\n      function j(n) {\n        l = n;\n      }\n\n      return {\n        mount: function mount() {\n          h(w, Lt, G, Ot), h(w, At, G, Ot), h(w, kt, L, Ot), h(w, \"click\", M, {\n            capture: !0\n          }), h(w, \"dragstart\", $), e([En, zn], k);\n        },\n        disable: j,\n        isDragging: function isDragging() {\n          return a;\n        }\n      };\n    },\n    Keyboard: function Keyboard(t, n, e) {\n      var i,\n          o,\n          r = Gn(t),\n          u = r.on,\n          s = r.bind,\n          c = r.unbind,\n          a = t.root,\n          f = n.Direction.resolve;\n\n      function l() {\n        var n = e.keyboard;\n        n && (i = \"global\" === n ? window : a, s(i, jt, h));\n      }\n\n      function d() {\n        c(i, jt);\n      }\n\n      function p() {\n        var n = o;\n        o = !0, v(function () {\n          o = n;\n        });\n      }\n\n      function h(n) {\n        o || ((n = Ft(n)) === f(Bn) ? t.go(\"<\") : n === f(Hn) && t.go(\">\"));\n      }\n\n      return {\n        mount: function mount() {\n          l(), u(zn, d), u(zn, l), u(Sn, p);\n        },\n        destroy: d,\n        disable: function disable(n) {\n          o = n;\n        }\n      };\n    },\n    LazyLoad: function LazyLoad(e, n, o) {\n      var t = Gn(e),\n          i = t.on,\n          r = t.off,\n          u = t.bind,\n          s = t.emit,\n          c = \"sequential\" === o.lazyLoad,\n          a = [En, Mn, xn, In],\n          f = [];\n\n      function l() {\n        x(f), n.Slides.forEach(function (i) {\n          tn(i.slide, Gt).forEach(function (n) {\n            var t = K(n, Rt),\n                e = K(n, Wt);\n            t === n.src && e === n.srcset || (t = o.classes.spinner, e = A(e = n.parentElement, \".\" + t) || H(\"span\", t, e), f.push([n, i, e]), n.src || q(n, \"none\"));\n          });\n        }), c && v();\n      }\n\n      function d() {\n        (f = f.filter(function (n) {\n          var t = o.perPage * ((o.preloadPages || 1) + 1) - 1;\n          return !n[1].isWithin(e.index, t) || p(n);\n        })).length || r(a);\n      }\n\n      function p(n) {\n        var t = n[0];\n        C(n[1].slide, _t), u(t, \"load error\", D(h, n)), j(t, \"src\", K(t, Rt)), j(t, \"srcset\", K(t, Wt)), F(t, Rt), F(t, Wt);\n      }\n\n      function h(n, t) {\n        var e = n[0],\n            i = n[1];\n        en(i.slide, _t), \"error\" !== t.type && (V(n[2]), q(e, \"\"), s(Wn, e, i), s(Nn)), c && v();\n      }\n\n      function v() {\n        f.length && p(f.shift());\n      }\n\n      return {\n        mount: function mount() {\n          o.lazyLoad && (l(), i(Mn, l), c || i(a, d));\n        },\n        destroy: D(x, f)\n      };\n    },\n    Pagination: function Pagination(f, n, l) {\n      var d,\n          p,\n          t = Gn(f),\n          e = t.on,\n          i = t.emit,\n          h = t.bind,\n          v = n.Slides,\n          g = n.Elements,\n          o = n.Controller,\n          m = o.hasFocus,\n          r = o.getIndex,\n          u = o.go,\n          s = n.Direction.resolve,\n          y = [];\n\n      function c() {\n        d && (V(g.pagination ? _(d.children) : d), en(d, p), x(y), d = null), t.destroy();\n      }\n\n      function b(n) {\n        u(\">\" + n, !0);\n      }\n\n      function w(n, t) {\n        var e = y.length,\n            i = Ft(t),\n            o = E(),\n            r = -1;\n        i === s(Hn, !1, o) ? r = ++n % e : i === s(Bn, !1, o) ? r = (--n + e) % e : \"Home\" === i ? r = 0 : \"End\" === i && (r = e - 1);\n        e = y[r];\n        e && (U(e.button), u(\">\" + r), $(t, !0));\n      }\n\n      function E() {\n        return l.paginationDirection || l.direction;\n      }\n\n      function a(n) {\n        return y[o.toPage(n)];\n      }\n\n      function S() {\n        var n,\n            t = a(r(!0)),\n            e = a(r());\n        t && (en(n = t.button, wt), F(n, Qn), j(n, Un, -1)), e && (C(n = e.button, wt), j(n, Qn, !0), j(n, Un, \"\")), i(\"pagination:updated\", {\n          list: d,\n          items: y\n        }, t, e);\n      }\n\n      return {\n        items: y,\n        mount: function n() {\n          c(), e([zn, Mn], n), l.pagination && v.isEnough() && (e([Sn, On, In], S), function () {\n            var n = f.length,\n                t = l.classes,\n                e = l.i18n,\n                i = l.perPage,\n                o = m() ? n : ln(n / i);\n            C(d = g.pagination || H(\"ul\", t.pagination, g.track.parentElement), p = vt + \"--\" + E()), j(d, qn, \"tablist\"), j(d, Vn, e.select), j(d, nt, E() === Yn ? \"vertical\" : \"\");\n\n            for (var r = 0; r < o; r++) {\n              var u = H(\"li\", null, d),\n                  s = H(\"button\", {\n                \"class\": t.page,\n                type: \"button\"\n              }, u),\n                  c = v.getIn(r).map(function (n) {\n                return n.slide.id;\n              }),\n                  a = !m() && 1 < i ? e.pageX : e.slideX;\n              h(s, \"click\", D(b, r)), l.paginationKeyboard && h(s, \"keydown\", D(w, r)), j(u, qn, \"presentation\"), j(s, qn, \"tab\"), j(s, Kn, c.join(\" \")), j(s, Vn, mn(a, r + 1)), j(s, Un, -1), y.push({\n                li: u,\n                button: s,\n                page: r\n              });\n            }\n          }(), S(), i(\"pagination:mounted\", {\n            list: d,\n            items: y\n          }, a(f.index)));\n        },\n        destroy: c,\n        getAt: a,\n        update: S\n      };\n    },\n    Sync: function Sync(e, n, t) {\n      var i = t.isNavigation,\n          o = t.slideFocus,\n          r = [];\n\n      function u() {\n        var n, t;\n        e.splides.forEach(function (n) {\n          n.isParent || (c(e, n.splide), c(n.splide, e));\n        }), i && (n = Gn(e), (t = n.on)(Cn, f), t(Dn, l), t([En, zn], a), r.push(n), n.emit(Fn, e.splides));\n      }\n\n      function s() {\n        r.forEach(function (n) {\n          n.destroy();\n        }), x(r);\n      }\n\n      function c(n, i) {\n        n = Gn(n);\n        n.on(Sn, function (n, t, e) {\n          i.go(i.is(Mt) ? e : n);\n        }), r.push(n);\n      }\n\n      function a() {\n        j(n.Elements.list, nt, t.direction === Yn ? \"vertical\" : \"\");\n      }\n\n      function f(n) {\n        e.go(n.index);\n      }\n\n      function l(n, t) {\n        b(Xt, Ft(t)) && (f(n), $(t));\n      }\n\n      return {\n        setup: function setup() {\n          e.options = {\n            slideFocus: z(o) ? i : o\n          };\n        },\n        mount: u,\n        destroy: s,\n        remount: function remount() {\n          s(), u();\n        }\n      };\n    },\n    Wheel: function Wheel(u, s, c) {\n      var n = Gn(u).bind,\n          a = 0;\n\n      function t(n) {\n        var t, e, i, o, r;\n        n.cancelable && (r = (t = n.deltaY) < 0, e = on(n), i = c.wheelMinThreshold || 0, o = c.wheelSleep || 0, dn(t) > i && o < e - a && (u.go(r ? \"<\" : \">\"), a = e), r = r, c.releaseWheel && !u.state.is(R) && -1 === s.Controller.getAdjacent(r) || $(n));\n      }\n\n      return {\n        mount: function mount() {\n          c.wheel && n(s.Elements.track, \"wheel\", t, Ot);\n        }\n      };\n    },\n    Live: function Live(n, t, e) {\n      var i = Gn(n).on,\n          o = t.Elements.track,\n          r = e.live && !e.isNavigation,\n          u = H(\"span\", bt),\n          s = Xn(90, D(c, !1));\n\n      function c(n) {\n        j(o, et, n), n ? (P(o, u), s.start()) : V(u);\n      }\n\n      function a(n) {\n        r && j(o, l, n ? \"off\" : \"polite\");\n      }\n\n      return {\n        mount: function mount() {\n          r && (a(!t.Autoplay.isPaused()), j(o, it, !0), u.textContent = \"…\", i(jn, D(a, !0)), i(Rn, D(a, !1)), i([xn, In], D(c, !0)));\n        },\n        disable: a,\n        destroy: function destroy() {\n          F(o, [l, it, et]), V(u);\n        }\n      };\n    }\n  }),\n      Ht = {\n    type: \"slide\",\n    role: \"region\",\n    speed: 400,\n    perPage: 1,\n    cloneStatus: !0,\n    arrows: !0,\n    pagination: !0,\n    paginationKeyboard: !0,\n    interval: 5e3,\n    pauseOnHover: !0,\n    pauseOnFocus: !0,\n    resetProgress: !0,\n    easing: \"cubic-bezier(0.25, 1, 0.5, 1)\",\n    drag: !0,\n    direction: \"ltr\",\n    trimSpace: !0,\n    focusableNodes: \"a, button, textarea, input, select, iframe\",\n    live: !0,\n    classes: {\n      slide: ct,\n      clone: at,\n      arrows: lt,\n      arrow: dt,\n      prev: pt,\n      next: ht,\n      pagination: vt,\n      page: gt,\n      spinner: un + \"__spinner\"\n    },\n    i18n: {\n      prev: \"Previous slide\",\n      next: \"Next slide\",\n      first: \"Go to first slide\",\n      last: \"Go to last slide\",\n      slideX: \"Go to slide %s\",\n      pageX: \"Go to page %s\",\n      play: \"Start autoplay\",\n      pause: \"Pause autoplay\",\n      carousel: \"carousel\",\n      slide: \"slide\",\n      select: \"Select a slide to show\",\n      slideLabel: \"%s of %s\"\n    },\n    reducedMotion: {\n      speed: 0,\n      rewindSpeed: 0,\n      autoplay: \"pause\"\n    }\n  };\n\n  function Yt(n, i, t) {\n    var e = Gn(n).on;\n    return {\n      mount: function mount() {\n        e([En, Mn], function () {\n          v(function () {\n            i.Slides.style(\"transition\", \"opacity \" + t.speed + \"ms \" + t.easing);\n          });\n        });\n      },\n      start: function start(n, t) {\n        var e = i.Elements.track;\n        Y(e, \"height\", rn(Q(e).height)), v(function () {\n          t(), Y(e, \"height\", \"\");\n        });\n      },\n      cancel: G\n    };\n  }\n\n  function qt(r, n, u) {\n    var s,\n        t = Gn(r).bind,\n        c = n.Move,\n        a = n.Controller,\n        f = n.Scroll,\n        e = n.Elements.list,\n        l = D(Y, e, \"transition\");\n\n    function i() {\n      l(\"\"), f.cancel();\n    }\n\n    return {\n      mount: function mount() {\n        t(e, \"transitionend\", function (n) {\n          n.target === e && s && (i(), s());\n        });\n      },\n      start: function start(n, t) {\n        var e = c.toPosition(n, !0),\n            i = c.getPosition(),\n            o = function (n) {\n          var t = u.rewindSpeed;\n\n          if (r.is(Dt) && t) {\n            var e = a.getIndex(!0),\n                i = a.getEnd();\n            if (0 === e && i <= n || i <= e && 0 === n) return t;\n          }\n\n          return u.speed;\n        }(n);\n\n        1 <= dn(e - i) && 1 <= o ? u.useScroll ? f.scroll(e, o, !1, t) : (l(\"transform \" + o + \"ms \" + u.easing), c.translate(e, !0), s = t) : (c.jump(n), t());\n      },\n      cancel: i\n    };\n  }\n\n  a = function () {\n    function e(n, t) {\n      this.event = Gn(), this.Components = {}, this.state = s(1), this.splides = [], this._o = {}, this._E = {};\n      n = M(n) ? nn(document, n) : n;\n      sn(n, n + \" is invalid.\"), t = O({\n        label: K(this.root = n, Vn) || \"\",\n        labelledby: K(n, Zn) || \"\"\n      }, Ht, e.defaults, t || {});\n\n      try {\n        O(t, JSON.parse(K(n, i)));\n      } catch (n) {\n        sn(!1, \"Invalid JSON\");\n      }\n\n      this._o = Object.create(O({}, t));\n    }\n\n    var n = e.prototype;\n    return n.mount = function (n, t) {\n      var e = this,\n          i = this.state,\n          o = this.Components;\n      return sn(i.is([1, 7]), \"Already mounted!\"), i.set(1), this._C = o, this._T = t || this._T || (this.is(zt) ? Yt : qt), this._E = n || this._E, N(T({}, Bt, this._E, {\n        Transition: this._T\n      }), function (n, t) {\n        n = n(e, o, e._o);\n        (o[t] = n).setup && n.setup();\n      }), N(o, function (n) {\n        n.mount && n.mount();\n      }), this.emit(En), C(this.root, \"is-initialized\"), i.set(3), this.emit(\"ready\"), this;\n    }, n.sync = function (n) {\n      return this.splides.push({\n        splide: n\n      }), n.splides.push({\n        splide: this,\n        isParent: !0\n      }), this.state.is(3) && (this._C.Sync.remount(), n.Components.Sync.remount()), this;\n    }, n.go = function (n) {\n      return this._C.Controller.go(n), this;\n    }, n.on = function (n, t) {\n      return this.event.on(n, t), this;\n    }, n.off = function (n) {\n      return this.event.off(n), this;\n    }, n.emit = function (n) {\n      var t;\n      return (t = this.event).emit.apply(t, [n].concat(_(arguments, 1))), this;\n    }, n.add = function (n, t) {\n      return this._C.Slides.add(n, t), this;\n    }, n.remove = function (n) {\n      return this._C.Slides.remove(n), this;\n    }, n.is = function (n) {\n      return this._o.type === n;\n    }, n.refresh = function () {\n      return this.emit(Mn), this;\n    }, n.destroy = function (t) {\n      void 0 === t && (t = !0);\n      var n = this.event,\n          e = this.state;\n      return e.is(1) ? Gn(this).on(\"ready\", this.destroy.bind(this, t)) : (N(this._C, function (n) {\n        n.destroy && n.destroy(t);\n      }, !0), n.emit(u), n.destroy(), t && x(this.splides), e.set(7)), this;\n    }, _createClass(e, [{\n      key: \"options\",\n      get: function get() {\n        return this._o;\n      },\n      set: function set(n) {\n        this._C.Media.set(n, !0);\n      }\n    }, {\n      key: \"length\",\n      get: function get() {\n        return this._C.Slides.getLength(!0);\n      }\n    }, {\n      key: \"index\",\n      get: function get() {\n        return this._C.Controller.getIndex();\n      }\n    }]), e;\n  }();\n\n  return a.defaults = {}, a.STATES = n, a;\n});\n\n//# sourceURL=webpack://webpack-demo/./src/js/plugins/splide.min.js?");
+var __WEBPACK_AMD_DEFINE_FACTORY__, __WEBPACK_AMD_DEFINE_RESULT__;function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" == typeof Symbol && "symbol" == typeof Symbol.iterator ? function (obj) { return typeof obj; } : function (obj) { return obj && "function" == typeof Symbol && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }, _typeof(obj); }
+
+function _defineProperties(n, t) {
+  for (var e = 0; e < t.length; e++) {
+    var i = t[e];
+    i.enumerable = i.enumerable || !1, i.configurable = !0, "value" in i && (i.writable = !0), Object.defineProperty(n, i.key, i);
+  }
+}
+
+function _createClass(n, t, e) {
+  return t && _defineProperties(n.prototype, t), e && _defineProperties(n, e), Object.defineProperty(n, "prototype", {
+    writable: !1
+  }), n;
+}
+
+!function (n, t) {
+  "object" == ( false ? 0 : _typeof(exports)) && "undefined" != "object" ? module.exports = t() :  true ? !(__WEBPACK_AMD_DEFINE_FACTORY__ = (t),
+		__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
+		(__WEBPACK_AMD_DEFINE_FACTORY__.call(exports, __webpack_require__, exports, module)) :
+		__WEBPACK_AMD_DEFINE_FACTORY__),
+		__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__)) : 0;
+}(this, function () {
+  "use strict";
+
+  var d = "(prefers-reduced-motion: reduce)",
+      R = 4,
+      W = 5,
+      n = {
+    CREATED: 1,
+    MOUNTED: 2,
+    IDLE: 3,
+    MOVING: R,
+    SCROLLING: W,
+    DRAGGING: 6,
+    DESTROYED: 7
+  };
+
+  function x(n) {
+    n.length = 0;
+  }
+
+  function _(n, t, e) {
+    return Array.prototype.slice.call(n, t, e);
+  }
+
+  function D(n) {
+    return n.bind.apply(n, [null].concat(_(arguments, 1)));
+  }
+
+  function G() {}
+
+  var v = setTimeout;
+
+  function p(n) {
+    return requestAnimationFrame(n);
+  }
+
+  function t(n, t) {
+    return _typeof(t) === n;
+  }
+
+  function X(n) {
+    return !r(n) && t("object", n);
+  }
+
+  var o = Array.isArray,
+      w = D(t, "function"),
+      M = D(t, "string"),
+      z = D(t, "undefined");
+
+  function r(n) {
+    return null === n;
+  }
+
+  function g(n) {
+    return n instanceof HTMLElement;
+  }
+
+  function m(n) {
+    return o(n) ? n : [n];
+  }
+
+  function y(n, t) {
+    m(n).forEach(t);
+  }
+
+  function b(n, t) {
+    return -1 < n.indexOf(t);
+  }
+
+  function E(n, t) {
+    return n.push.apply(n, m(t)), n;
+  }
+
+  function L(t, n, e) {
+    t && y(n, function (n) {
+      n && t.classList[e ? "add" : "remove"](n);
+    });
+  }
+
+  function C(n, t) {
+    L(n, M(t) ? t.split(" ") : t, !0);
+  }
+
+  function P(n, t) {
+    y(t, n.appendChild.bind(n));
+  }
+
+  function k(n, e) {
+    y(n, function (n) {
+      var t = (e || n).parentNode;
+      t && t.insertBefore(n, e);
+    });
+  }
+
+  function B(n, t) {
+    return g(n) && (n.msMatchesSelector || n.matches).call(n, t);
+  }
+
+  function S(n, t) {
+    n = n ? _(n.children) : [];
+    return t ? n.filter(function (n) {
+      return B(n, t);
+    }) : n;
+  }
+
+  function A(n, t) {
+    return t ? S(n, t)[0] : n.firstElementChild;
+  }
+
+  var h = Object.keys;
+
+  function N(n, t, e) {
+    if (n) for (var i = h(n), i = e ? i.reverse() : i, o = 0; o < i.length; o++) {
+      var r = i[o];
+      if ("__proto__" !== r && !1 === t(n[r], r)) break;
+    }
+    return n;
+  }
+
+  function T(i) {
+    return _(arguments, 1).forEach(function (e) {
+      N(e, function (n, t) {
+        i[t] = e[t];
+      });
+    }), i;
+  }
+
+  function O(e) {
+    return _(arguments, 1).forEach(function (n) {
+      N(n, function (n, t) {
+        o(n) ? e[t] = n.slice() : X(n) ? e[t] = O({}, X(e[t]) ? e[t] : {}, n) : e[t] = n;
+      });
+    }), e;
+  }
+
+  function I(t, n) {
+    m(n || h(t)).forEach(function (n) {
+      delete t[n];
+    });
+  }
+
+  function F(n, e) {
+    y(n, function (t) {
+      y(e, function (n) {
+        t && t.removeAttribute(n);
+      });
+    });
+  }
+
+  function j(e, t, i) {
+    X(t) ? N(t, function (n, t) {
+      j(e, t, n);
+    }) : y(e, function (n) {
+      r(i) || "" === i ? F(n, t) : n.setAttribute(t, String(i));
+    });
+  }
+
+  function H(n, t, e) {
+    n = document.createElement(n);
+    return t && (M(t) ? C : j)(n, t), e && P(e, n), n;
+  }
+
+  function Y(n, t, e) {
+    if (z(e)) return getComputedStyle(n)[t];
+    r(e) || (n.style[t] = "" + e);
+  }
+
+  function q(n, t) {
+    Y(n, "display", t);
+  }
+
+  function U(n) {
+    n.setActive && n.setActive() || n.focus({
+      preventScroll: !0
+    });
+  }
+
+  function K(n, t) {
+    return n.getAttribute(t);
+  }
+
+  function J(n, t) {
+    return n && n.classList.contains(t);
+  }
+
+  function Q(n) {
+    return n.getBoundingClientRect();
+  }
+
+  function V(n) {
+    y(n, function (n) {
+      n && n.parentNode && n.parentNode.removeChild(n);
+    });
+  }
+
+  function Z(n) {
+    return A(new DOMParser().parseFromString(n, "text/html").body);
+  }
+
+  function $(n, t) {
+    n.preventDefault(), t && (n.stopPropagation(), n.stopImmediatePropagation());
+  }
+
+  function nn(n, t) {
+    return n && n.querySelector(t);
+  }
+
+  function tn(n, t) {
+    return t ? _(n.querySelectorAll(t)) : [];
+  }
+
+  function en(n, t) {
+    L(n, t, !1);
+  }
+
+  function on(n) {
+    return n.timeStamp;
+  }
+
+  function rn(n) {
+    return M(n) ? n : n ? n + "px" : "";
+  }
+
+  var un = "splide",
+      i = "data-" + un;
+
+  function sn(n, t) {
+    if (!n) throw new Error("[" + un + "] " + (t || ""));
+  }
+
+  var cn = Math.min,
+      an = Math.max,
+      fn = Math.floor,
+      ln = Math.ceil,
+      dn = Math.abs;
+
+  function pn(n, t, e) {
+    return dn(n - t) < e;
+  }
+
+  function hn(n, t, e, i) {
+    var o = cn(t, e),
+        e = an(t, e);
+    return i ? o < n && n < e : o <= n && n <= e;
+  }
+
+  function vn(n, t, e) {
+    var i = cn(t, e),
+        e = an(t, e);
+    return cn(an(i, n), e);
+  }
+
+  function gn(n) {
+    return (0 < n) - (n < 0);
+  }
+
+  function mn(t, n) {
+    return y(n, function (n) {
+      t = t.replace("%s", "" + n);
+    }), t;
+  }
+
+  function yn(n) {
+    return n < 10 ? "0" + n : "" + n;
+  }
+
+  var bn = {};
+
+  function wn() {
+    var s = [];
+
+    function e(n, e, i) {
+      y(n, function (t) {
+        t && y(e, function (n) {
+          n.split(" ").forEach(function (n) {
+            n = n.split(".");
+            i(t, n[0], n[1]);
+          });
+        });
+      });
+    }
+
+    return {
+      bind: function bind(n, t, r, u) {
+        e(n, t, function (n, t, e) {
+          var i = ("addEventListener" in n),
+              o = i ? n.removeEventListener.bind(n, t, r, u) : n.removeListener.bind(n, r);
+          i ? n.addEventListener(t, r, u) : n.addListener(r), s.push([n, t, e, r, o]);
+        });
+      },
+      unbind: function unbind(n, t, o) {
+        e(n, t, function (t, e, i) {
+          s = s.filter(function (n) {
+            return !!(n[0] !== t || n[1] !== e || n[2] !== i || o && n[3] !== o) || (n[4](), !1);
+          });
+        });
+      },
+      dispatch: function dispatch(n, t, e) {
+        var i;
+        return "function" == typeof CustomEvent ? i = new CustomEvent(t, {
+          bubbles: !0,
+          detail: e
+        }) : (i = document.createEvent("CustomEvent")).initCustomEvent(t, !0, !1, e), n.dispatchEvent(i), i;
+      },
+      destroy: function destroy() {
+        s.forEach(function (n) {
+          n[4]();
+        }), x(s);
+      }
+    };
+  }
+
+  var En = "mounted",
+      Sn = "move",
+      xn = "moved",
+      _n = "shifted",
+      Cn = "click",
+      Pn = "active",
+      kn = "inactive",
+      Ln = "visible",
+      An = "hidden",
+      Dn = "slide:keydown",
+      Mn = "refresh",
+      zn = "updated",
+      Nn = "resize",
+      Tn = "resized",
+      On = "scroll",
+      In = "scrolled",
+      u = "destroy",
+      Fn = "navigation:mounted",
+      jn = "autoplay:play",
+      Rn = "autoplay:pause",
+      Wn = "lazyload:loaded";
+
+  function Gn(n) {
+    var e = n ? n.event.bus : document.createDocumentFragment(),
+        i = wn();
+    return n && n.event.on(u, i.destroy), T(i, {
+      bus: e,
+      on: function on(n, t) {
+        i.bind(e, m(n).join(" "), function (n) {
+          t.apply(t, o(n.detail) ? n.detail : []);
+        });
+      },
+      off: D(i.unbind, e),
+      emit: function emit(n) {
+        i.dispatch(e, n, _(arguments, 1));
+      }
+    });
+  }
+
+  function Xn(t, n, e, i) {
+    var o,
+        r,
+        u = Date.now,
+        s = 0,
+        c = !0,
+        a = 0;
+
+    function f() {
+      if (!c) {
+        if (s = t ? cn((u() - o) / t, 1) : 1, e && e(s), 1 <= s && (n(), o = u(), i && ++a >= i)) return l();
+        p(f);
+      }
+    }
+
+    function l() {
+      c = !0;
+    }
+
+    function d() {
+      r && cancelAnimationFrame(r), c = !(r = s = 0);
+    }
+
+    return {
+      start: function start(n) {
+        n || d(), o = u() - (n ? s * t : 0), c = !1, p(f);
+      },
+      rewind: function rewind() {
+        o = u(), s = 0, e && e(s);
+      },
+      pause: l,
+      cancel: d,
+      set: function set(n) {
+        t = n;
+      },
+      isPaused: function isPaused() {
+        return c;
+      }
+    };
+  }
+
+  function s(n) {
+    var t = n;
+    return {
+      set: function set(n) {
+        t = n;
+      },
+      is: function is(n) {
+        return b(m(n), t);
+      }
+    };
+  }
+
+  var e = "Arrow",
+      Bn = e + "Left",
+      Hn = e + "Right",
+      c = e + "Up",
+      a = e + "Down",
+      Yn = "ttb",
+      f = {
+    width: ["height"],
+    left: ["top", "right"],
+    right: ["bottom", "left"],
+    x: ["y"],
+    X: ["Y"],
+    Y: ["X"],
+    ArrowLeft: [c, Hn],
+    ArrowRight: [a, Bn]
+  };
+  var qn = "role",
+      Un = "tabindex",
+      e = "aria-",
+      Kn = e + "controls",
+      Jn = e + "current",
+      Qn = e + "selected",
+      Vn = e + "label",
+      Zn = e + "labelledby",
+      $n = e + "hidden",
+      nt = e + "orientation",
+      tt = e + "roledescription",
+      l = e + "live",
+      et = e + "busy",
+      it = e + "atomic",
+      ot = [qn, Un, "disabled", Kn, Jn, Vn, Zn, $n, nt, tt],
+      rt = un,
+      ut = un + "__track",
+      st = un + "__list",
+      ct = un + "__slide",
+      at = ct + "--clone",
+      ft = ct + "__container",
+      lt = un + "__arrows",
+      dt = un + "__arrow",
+      pt = dt + "--prev",
+      ht = dt + "--next",
+      vt = un + "__pagination",
+      gt = vt + "__page",
+      mt = un + "__progress" + "__bar",
+      yt = un + "__toggle",
+      bt = un + "__sr",
+      wt = "is-active",
+      Et = "is-prev",
+      St = "is-next",
+      xt = "is-visible",
+      _t = "is-loading",
+      Ct = "is-focus-in",
+      Pt = [wt, xt, Et, St, _t, Ct];
+  var kt = "touchstart mousedown",
+      Lt = "touchmove mousemove",
+      At = "touchend touchcancel mouseup click";
+  var Dt = "slide",
+      Mt = "loop",
+      zt = "fade";
+
+  function Nt(o, e, t, r) {
+    var i,
+        n = Gn(o),
+        u = n.on,
+        s = n.emit,
+        c = n.bind,
+        a = o.Components,
+        f = o.root,
+        l = o.options,
+        d = l.isNavigation,
+        p = l.updateOnMove,
+        h = l.i18n,
+        v = l.pagination,
+        g = l.slideFocus,
+        m = a.Direction.resolve,
+        y = K(r, "style"),
+        b = K(r, Vn),
+        w = -1 < t,
+        E = A(r, "." + ft),
+        S = tn(r, l.focusableNodes || "");
+
+    function x() {
+      var n = o.splides.map(function (n) {
+        n = n.splide.Components.Slides.getAt(e);
+        return n ? n.slide.id : "";
+      }).join(" ");
+      j(r, Vn, mn(h.slideX, (w ? t : e) + 1)), j(r, Kn, n), j(r, qn, g ? "button" : ""), g && F(r, tt);
+    }
+
+    function _() {
+      i || C();
+    }
+
+    function C() {
+      var n, t;
+      i || (n = o.index, (t = P()) !== J(r, wt) && (L(r, wt, t), j(r, Jn, d && t || ""), s(t ? Pn : kn, k)), function () {
+        var n = function () {
+          if (o.is(zt)) return P();
+          var n = Q(a.Elements.track),
+              t = Q(r),
+              e = m("left", !0),
+              i = m("right", !0);
+          return fn(n[e]) <= ln(t[e]) && fn(t[i]) <= ln(n[i]);
+        }(),
+            t = !n && (!P() || w);
+
+        o.state.is([R, W]) || j(r, $n, t || "");
+        j(S, Un, t ? -1 : ""), g && j(r, Un, t ? -1 : 0);
+        n !== J(r, xt) && (L(r, xt, n), s(n ? Ln : An, k));
+        n || document.activeElement !== r || (n = a.Slides.getAt(o.index)) && U(n.slide);
+      }(), L(r, Et, e === n - 1), L(r, St, e === n + 1));
+    }
+
+    function P() {
+      var n = o.index;
+      return n === e || l.cloneStatus && n === t;
+    }
+
+    var k = {
+      index: e,
+      slideIndex: t,
+      slide: r,
+      container: E,
+      isClone: w,
+      mount: function mount() {
+        w || (r.id = f.id + "-slide" + yn(e + 1), j(r, qn, v ? "tabpanel" : "group"), j(r, tt, h.slide), j(r, Vn, b || mn(h.slideLabel, [e + 1, o.length]))), c(r, "click", D(s, Cn, k)), c(r, "keydown", D(s, Dn, k)), u([xn, _n, In], C), u(Fn, x), p && u(Sn, _);
+      },
+      destroy: function destroy() {
+        i = !0, n.destroy(), en(r, Pt), F(r, ot), j(r, "style", y), j(r, Vn, b || "");
+      },
+      update: C,
+      style: function style(n, t, e) {
+        Y(e && E || r, n, t);
+      },
+      isWithin: function isWithin(n, t) {
+        return n = dn(n - e), (n = !w && (l.rewind || o.is(Mt)) ? cn(n, o.length - n) : n) <= t;
+      }
+    };
+    return k;
+  }
+
+  var Tt = i + "-interval";
+  var Ot = {
+    passive: !1,
+    capture: !0
+  };
+  var It = {
+    Spacebar: " ",
+    Right: Hn,
+    Left: Bn,
+    Up: c,
+    Down: a
+  };
+
+  function Ft(n) {
+    return n = M(n) ? n : n.key, It[n] || n;
+  }
+
+  var jt = "keydown";
+  var Rt = i + "-lazy",
+      Wt = Rt + "-srcset",
+      Gt = "[" + Rt + "], [" + Wt + "]";
+  var Xt = [" ", "Enter"];
+  var Bt = Object.freeze({
+    __proto__: null,
+    Media: function Media(i, n, o) {
+      var r = i.state,
+          t = o.breakpoints || {},
+          u = o.reducedMotion || {},
+          e = wn(),
+          s = [];
+
+      function c(n) {
+        n && e.destroy();
+      }
+
+      function a(n, t) {
+        t = matchMedia(t);
+        e.bind(t, "change", f), s.push([n, t]);
+      }
+
+      function f() {
+        var n = r.is(7),
+            t = o.direction,
+            e = s.reduce(function (n, t) {
+          return O(n, t[1].matches ? t[0] : {});
+        }, {});
+        I(o), l(e), o.destroy ? i.destroy("completely" === o.destroy) : n ? (c(!0), i.mount()) : t !== o.direction && i.refresh();
+      }
+
+      function l(n, t) {
+        O(o, n), t && O(Object.getPrototypeOf(o), n), r.is(1) || i.emit(zn, o);
+      }
+
+      return {
+        setup: function setup() {
+          var e = "min" === o.mediaQuery;
+          h(t).sort(function (n, t) {
+            return e ? +n - +t : +t - +n;
+          }).forEach(function (n) {
+            a(t[n], "(" + (e ? "min" : "max") + "-width:" + n + "px)");
+          }), a(u, d), f();
+        },
+        destroy: c,
+        reduce: function reduce(n) {
+          matchMedia(d).matches && (n ? O(o, u) : I(o, h(u)));
+        },
+        set: l
+      };
+    },
+    Direction: function Direction(n, t, o) {
+      return {
+        resolve: function resolve(n, t, e) {
+          var i = "rtl" !== (e = e || o.direction) || t ? e === Yn ? 0 : -1 : 1;
+          return f[n] && f[n][i] || n.replace(/width|left|right/i, function (n, t) {
+            n = f[n.toLowerCase()][i] || n;
+            return 0 < t ? n.charAt(0).toUpperCase() + n.slice(1) : n;
+          });
+        },
+        orient: function orient(n) {
+          return n * ("rtl" === o.direction ? 1 : -1);
+        }
+      };
+    },
+    Elements: function Elements(n, t, e) {
+      var i,
+          o,
+          r,
+          u = Gn(n),
+          s = u.on,
+          c = u.bind,
+          a = n.root,
+          f = e.i18n,
+          l = {},
+          d = [],
+          p = [],
+          h = [];
+
+      function v() {
+        i = y("." + ut), o = A(i, "." + st), sn(i && o, "A track/list element is missing."), E(d, S(o, "." + ct + ":not(." + at + ")")), N({
+          arrows: lt,
+          pagination: vt,
+          prev: pt,
+          next: ht,
+          bar: mt,
+          toggle: yt
+        }, function (n, t) {
+          l[t] = y("." + n);
+        }), T(l, {
+          root: a,
+          track: i,
+          list: o,
+          slides: d
+        }), function () {
+          var n = a.id || function (n) {
+            return "" + n + yn(bn[n] = (bn[n] || 0) + 1);
+          }(un),
+              t = e.role;
+
+          a.id = n, i.id = i.id || n + "-track", o.id = o.id || n + "-list", !K(a, qn) && "SECTION" !== a.tagName && t && j(a, qn, t);
+          j(a, tt, f.carousel), j(o, qn, "presentation");
+        }(), m();
+      }
+
+      function g(n) {
+        var t = ot.concat("style");
+        x(d), en(a, p), en(i, h), F([i, o], t), F(a, n ? t : ["style", tt]);
+      }
+
+      function m() {
+        en(a, p), en(i, h), p = b(rt), h = b(ut), C(a, p), C(i, h), j(a, Vn, e.label), j(a, Zn, e.labelledby);
+      }
+
+      function y(n) {
+        n = nn(a, n);
+        return n && function (n, t) {
+          if (w(n.closest)) return n.closest(t);
+
+          for (var e = n; e && 1 === e.nodeType && !B(e, t);) {
+            e = e.parentElement;
+          }
+
+          return e;
+        }(n, "." + rt) === a ? n : void 0;
+      }
+
+      function b(n) {
+        return [n + "--" + e.type, n + "--" + e.direction, e.drag && n + "--draggable", e.isNavigation && n + "--nav", n === rt && wt];
+      }
+
+      return T(l, {
+        setup: v,
+        mount: function mount() {
+          s(Mn, g), s(Mn, v), s(zn, m), c(document, kt + " keydown", function (n) {
+            r = "keydown" === n.type;
+          }, {
+            capture: !0
+          }), c(a, "focusin", function () {
+            L(a, Ct, !!r);
+          });
+        },
+        destroy: g
+      });
+    },
+    Slides: function Slides(i, o, r) {
+      var n = Gn(i),
+          t = n.on,
+          u = n.emit,
+          s = n.bind,
+          c = (n = o.Elements).slides,
+          a = n.list,
+          f = [];
+
+      function e() {
+        c.forEach(function (n, t) {
+          d(n, t, -1);
+        });
+      }
+
+      function l() {
+        h(function (n) {
+          n.destroy();
+        }), x(f);
+      }
+
+      function d(n, t, e) {
+        n = Nt(i, t, e, n);
+        n.mount(), f.push(n);
+      }
+
+      function p(n) {
+        return n ? v(function (n) {
+          return !n.isClone;
+        }) : f;
+      }
+
+      function h(n, t) {
+        p(t).forEach(n);
+      }
+
+      function v(t) {
+        return f.filter(w(t) ? t : function (n) {
+          return M(t) ? B(n.slide, t) : b(m(t), n.index);
+        });
+      }
+
+      return {
+        mount: function mount() {
+          e(), t(Mn, l), t(Mn, e), t([En, Mn], function () {
+            f.sort(function (n, t) {
+              return n.index - t.index;
+            });
+          });
+        },
+        destroy: l,
+        update: function update() {
+          h(function (n) {
+            n.update();
+          });
+        },
+        register: d,
+        get: p,
+        getIn: function getIn(n) {
+          var t = o.Controller,
+              e = t.toIndex(n),
+              i = t.hasFocus() ? 1 : r.perPage;
+          return v(function (n) {
+            return hn(n.index, e, e + i - 1);
+          });
+        },
+        getAt: function getAt(n) {
+          return v(n)[0];
+        },
+        add: function add(n, o) {
+          y(n, function (n) {
+            var t, e, i;
+            g(n = M(n) ? Z(n) : n) && ((t = c[o]) ? k(n, t) : P(a, n), C(n, r.classes.slide), n = n, e = D(u, Nn), n = tn(n, "img"), (i = n.length) ? n.forEach(function (n) {
+              s(n, "load error", function () {
+                --i || e();
+              });
+            }) : e());
+          }), u(Mn);
+        },
+        remove: function remove(n) {
+          V(v(n).map(function (n) {
+            return n.slide;
+          })), u(Mn);
+        },
+        forEach: h,
+        filter: v,
+        style: function style(t, e, i) {
+          h(function (n) {
+            n.style(t, e, i);
+          });
+        },
+        getLength: function getLength(n) {
+          return (n ? c : f).length;
+        },
+        isEnough: function isEnough() {
+          return f.length > r.perPage;
+        }
+      };
+    },
+    Layout: function Layout(n, t, e) {
+      var i,
+          o,
+          r = (c = Gn(n)).on,
+          u = c.bind,
+          s = c.emit,
+          c = t.Slides,
+          a = t.Direction.resolve,
+          f = (t = t.Elements).root,
+          l = t.track,
+          d = t.list,
+          p = c.getAt,
+          h = c.style;
+
+      function v() {
+        o = null, i = e.direction === Yn, Y(f, "maxWidth", rn(e.width)), Y(l, a("paddingLeft"), m(!1)), Y(l, a("paddingRight"), m(!0)), g();
+      }
+
+      function g() {
+        var n = Q(f);
+        o && o.width === n.width && o.height === n.height || (Y(l, "height", function () {
+          var n = "";
+          i && (sn(n = y(), "height or heightRatio is missing."), n = "calc(" + n + " - " + m(!1) + " - " + m(!0) + ")");
+          return n;
+        }()), h(a("marginRight"), rn(e.gap)), h("width", e.autoWidth ? null : rn(e.fixedWidth) || (i ? "" : b())), h("height", rn(e.fixedHeight) || (i ? e.autoHeight ? null : b() : y()), !0), o = n, s(Tn));
+      }
+
+      function m(n) {
+        var t = e.padding,
+            n = a(n ? "right" : "left");
+        return t && rn(t[n] || (X(t) ? 0 : t)) || "0px";
+      }
+
+      function y() {
+        return rn(e.height || Q(d).width * e.heightRatio);
+      }
+
+      function b() {
+        var n = rn(e.gap);
+        return "calc((100%" + (n && " + " + n) + ")/" + (e.perPage || 1) + (n && " - " + n) + ")";
+      }
+
+      function w(n, t) {
+        var e = p(n);
+
+        if (e) {
+          n = Q(e.slide)[a("right")], e = Q(d)[a("left")];
+          return dn(n - e) + (t ? 0 : E());
+        }
+
+        return 0;
+      }
+
+      function E() {
+        var n = p(0);
+        return n && parseFloat(Y(n.slide, a("marginRight"))) || 0;
+      }
+
+      return {
+        mount: function mount() {
+          var n, t, e;
+          v(), u(window, "resize load", (n = D(s, Nn), function () {
+            e || (e = Xn(t || 0, function () {
+              n(), e = null;
+            }, null, 1)).start();
+          })), r([zn, Mn], v), r(Nn, g);
+        },
+        listSize: function listSize() {
+          return Q(d)[a("width")];
+        },
+        slideSize: function slideSize(n, t) {
+          return (n = p(n || 0)) ? Q(n.slide)[a("width")] + (t ? 0 : E()) : 0;
+        },
+        sliderSize: function sliderSize() {
+          return w(n.length - 1, !0) - w(-1, !0);
+        },
+        totalSize: w,
+        getPadding: function getPadding(n) {
+          return parseFloat(Y(l, a("padding" + (n ? "Right" : "Left")))) || 0;
+        }
+      };
+    },
+    Clones: function Clones(s, e, c) {
+      var n,
+          t = Gn(s),
+          i = t.on,
+          o = t.emit,
+          a = e.Elements,
+          f = e.Slides,
+          r = e.Direction.resolve,
+          l = [];
+
+      function u() {
+        (n = h()) && (function (o) {
+          var r = f.get().slice(),
+              u = r.length;
+
+          if (u) {
+            for (; r.length < o;) {
+              E(r, r);
+            }
+
+            E(r.slice(-o), r.slice(0, o)).forEach(function (n, t) {
+              var e = t < o,
+                  i = function (n, t) {
+                n = n.cloneNode(!0);
+                return C(n, c.classes.clone), n.id = s.root.id + "-clone" + yn(t + 1), n;
+              }(n.slide, t);
+
+              e ? k(i, r[0].slide) : P(a.list, i), E(l, i), f.register(i, t - o + (e ? 0 : u), n.index);
+            });
+          }
+        }(n), o(Nn));
+      }
+
+      function d() {
+        V(l), x(l);
+      }
+
+      function p() {
+        n < h() && o(Mn);
+      }
+
+      function h() {
+        var n,
+            t = c.clones;
+        return s.is(Mt) ? t || (t = (n = c[r("fixedWidth")] && e.Layout.slideSize(0)) && ln(Q(a.track)[r("width")] / n) || c[r("autoWidth")] && s.length || 2 * c.perPage) : t = 0, t;
+      }
+
+      return {
+        mount: function mount() {
+          u(), i(Mn, d), i(Mn, u), i([zn, Nn], p);
+        },
+        destroy: d
+      };
+    },
+    Move: function Move(i, s, o) {
+      var u,
+          n = Gn(i),
+          t = n.on,
+          c = n.emit,
+          a = i.state.set,
+          r = (n = s.Layout).slideSize,
+          e = n.getPadding,
+          f = n.totalSize,
+          l = n.listSize,
+          d = n.sliderSize,
+          p = (n = s.Direction).resolve,
+          h = n.orient,
+          v = (n = s.Elements).list,
+          g = n.track;
+
+      function m() {
+        s.Controller.isBusy() || (s.Scroll.cancel(), y(i.index), s.Slides.update());
+      }
+
+      function y(n) {
+        b(x(n, !0));
+      }
+
+      function b(n, t) {
+        i.is(zt) || (t = t ? n : function (n) {
+          {
+            var t, e;
+            i.is(Mt) && (t = S(n), e = t > s.Controller.getEnd(), (t < 0 || e) && (n = w(n, e)));
+          }
+          return n;
+        }(n), Y(v, "transform", "translate" + p("X") + "(" + t + "px)"), n !== t && c(_n));
+      }
+
+      function w(n, t) {
+        var e = n - C(t),
+            i = d();
+        return n -= h(i * (ln(dn(e) / i) || 1)) * (t ? 1 : -1);
+      }
+
+      function E() {
+        b(_()), u.cancel();
+      }
+
+      function S(n) {
+        for (var t = s.Slides.get(), e = 0, i = 1 / 0, o = 0; o < t.length; o++) {
+          var r = t[o].index,
+              u = dn(x(r, !0) - n);
+          if (!(u <= i)) break;
+          i = u, e = r;
+        }
+
+        return e;
+      }
+
+      function x(n, t) {
+        var e = h(f(n - 1) - (e = n, "center" === (n = o.focus) ? (l() - r(e, !0)) / 2 : +n * r(e) || 0));
+        return t ? function (n) {
+          o.trimSpace && i.is(Dt) && (n = vn(n, 0, h(d() - l())));
+          return n;
+        }(e) : e;
+      }
+
+      function _() {
+        var n = p("left");
+        return Q(v)[n] - Q(g)[n] + h(e(!1));
+      }
+
+      function C(n) {
+        return x(n ? s.Controller.getEnd() : 0, !!o.trimSpace);
+      }
+
+      return {
+        mount: function mount() {
+          u = s.Transition, t([En, Tn, zn, Mn], m);
+        },
+        move: function move(n, t, e, i) {
+          var o, r;
+          n !== t && (o = e < n, r = h(w(_(), o)), o ? 0 <= r : r <= v[p("scrollWidth")] - Q(g)[p("width")]) && (E(), b(w(_(), e < n), !0)), a(R), c(Sn, t, e, n), u.start(t, function () {
+            a(3), c(xn, t, e, n), i && i();
+          });
+        },
+        jump: y,
+        translate: b,
+        shift: w,
+        cancel: E,
+        toIndex: S,
+        toPosition: x,
+        getPosition: _,
+        getLimit: C,
+        exceededLimit: function exceededLimit(n, t) {
+          t = z(t) ? _() : t;
+          var e = !0 !== n && h(t) < h(C(!1)),
+              t = !1 !== n && h(t) > h(C(!0));
+          return e || t;
+        },
+        reposition: m
+      };
+    },
+    Controller: function Controller(r, o, u) {
+      var s,
+          c,
+          a,
+          n = Gn(r).on,
+          f = o.Move,
+          l = f.getPosition,
+          i = f.getLimit,
+          d = f.toPosition,
+          t = o.Slides,
+          p = t.isEnough,
+          e = t.getLength,
+          h = r.is(Mt),
+          v = r.is(Dt),
+          g = D(E, !1),
+          m = D(E, !0),
+          y = u.start || 0,
+          b = y;
+
+      function w() {
+        s = e(!0), c = u.perMove, a = u.perPage;
+        var n = vn(y, 0, s - 1);
+        n !== y && (y = n, f.reposition());
+      }
+
+      function E(n, t) {
+        var e = c || (L() ? 1 : a),
+            e = S(y + e * (n ? -1 : 1), y, !(c || L()));
+        return -1 === e && v && !pn(l(), i(!n), 1) ? n ? 0 : _() : t ? e : x(e);
+      }
+
+      function S(n, t, e) {
+        var i, o;
+        return p() ? (i = _(), (o = function (n) {
+          if (v && "move" === u.trimSpace && n !== y) for (var t = l(); t === d(n, !0) && hn(n, 0, r.length - 1, !u.rewind);) {
+            n < y ? --n : ++n;
+          }
+          return n;
+        }(n)) !== n && (t = n, n = o, e = !1), n < 0 || i < n ? n = c || !hn(0, n, t, !0) && !hn(i, t, n, !0) ? h ? e ? n < 0 ? -(s % a || a) : s : n : u.rewind ? n < 0 ? i : 0 : -1 : C(P(n)) : e && n !== t && (n = C(P(t) + (n < t ? -1 : 1)))) : n = -1, n;
+      }
+
+      function x(n) {
+        return h ? (n + s) % s || 0 : n;
+      }
+
+      function _() {
+        return an(s - (L() || h && c ? 1 : a), 0);
+      }
+
+      function C(n) {
+        return vn(L() ? n : a * n, 0, _());
+      }
+
+      function P(n) {
+        return L() ? n : fn((n >= _() ? s - 1 : n) / a);
+      }
+
+      function k(n) {
+        n !== y && (b = y, y = n);
+      }
+
+      function L() {
+        return !z(u.focus) || u.isNavigation;
+      }
+
+      function A() {
+        return r.state.is([R, W]) && !!u.waitForTransition;
+      }
+
+      return {
+        mount: function mount() {
+          w(), n([zn, Mn], w);
+        },
+        go: function go(n, t, e) {
+          var i;
+          A() || -1 < (n = x(i = function (n) {
+            var t = y;
+            {
+              var e, i;
+              M(n) ? (i = n.match(/([+\-<>])(\d+)?/) || [], e = i[1], i = i[2], "+" === e || "-" === e ? t = S(y + +("" + e + (+i || 1)), y) : ">" === e ? t = i ? C(+i) : g(!0) : "<" === e && (t = m(!0))) : t = h ? n : vn(n, 0, _());
+            }
+            return t;
+          }(n))) && (t || n !== y) && (k(n), f.move(i, n, b, e));
+        },
+        scroll: function scroll(n, t, e, i) {
+          o.Scroll.scroll(n, t, e, function () {
+            k(x(f.toIndex(l()))), i && i();
+          });
+        },
+        getNext: g,
+        getPrev: m,
+        getAdjacent: E,
+        getEnd: _,
+        setIndex: k,
+        getIndex: function getIndex(n) {
+          return n ? b : y;
+        },
+        toIndex: C,
+        toPage: P,
+        toDest: function toDest(n) {
+          return n = f.toIndex(n), v ? vn(n, 0, _()) : n;
+        },
+        hasFocus: L,
+        isBusy: A
+      };
+    },
+    Arrows: function Arrows(o, n, t) {
+      var e,
+          i,
+          r = Gn(o),
+          u = r.on,
+          s = r.bind,
+          c = r.emit,
+          a = t.classes,
+          f = t.i18n,
+          l = n.Elements,
+          d = n.Controller,
+          p = l.arrows,
+          h = l.track,
+          v = p,
+          g = l.prev,
+          m = l.next,
+          y = {};
+
+      function b() {
+        !function () {
+          var n = t.arrows;
+          !n || g && m || (v = p || H("div", a.arrows), g = x(!0), m = x(!1), e = !0, P(v, [g, m]), p || k(v, h));
+          g && m && (T(y, {
+            prev: g,
+            next: m
+          }), q(v, n ? "" : "none"), C(v, i = lt + "--" + t.direction), n && (u([xn, Mn, In], _), s(m, "click", D(S, ">")), s(g, "click", D(S, "<")), _(), j([g, m], Kn, h.id), c("arrows:mounted", g, m)));
+        }(), u(zn, w);
+      }
+
+      function w() {
+        E(), b();
+      }
+
+      function E() {
+        r.destroy(), en(v, i), e ? (V(p ? [g, m] : v), g = m = null) : F([g, m], ot);
+      }
+
+      function S(n) {
+        d.go(n, !0);
+      }
+
+      function x(n) {
+        return Z('<button class="' + a.arrow + " " + (n ? a.prev : a.next) + '" type="button"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" width="40" height="40" focusable="false"><path d="' + (t.arrowPath || "m15.5 0.932-4.3 4.38 14.5 14.6-14.5 14.5 4.3 4.4 14.6-14.6 4.4-4.3-4.4-4.4-14.6-14.6z") + '" />');
+      }
+
+      function _() {
+        var n = o.index,
+            t = d.getPrev(),
+            e = d.getNext(),
+            i = -1 < t && n < t ? f.last : f.prev,
+            n = -1 < e && e < n ? f.first : f.next;
+        g.disabled = t < 0, m.disabled = e < 0, j(g, Vn, i), j(m, Vn, n), c("arrows:updated", g, m, t, e);
+      }
+
+      return {
+        arrows: y,
+        mount: b,
+        destroy: E
+      };
+    },
+    Autoplay: function Autoplay(n, t, e) {
+      var i,
+          o,
+          r = Gn(n),
+          u = r.on,
+          s = r.bind,
+          c = r.emit,
+          a = Xn(e.interval, n.go.bind(n, ">"), function (n) {
+        var t = l.bar;
+        t && Y(t, "width", 100 * n + "%"), c("autoplay:playing", n);
+      }),
+          f = a.isPaused,
+          l = t.Elements,
+          d = (n = t.Elements).root,
+          p = n.toggle,
+          h = e.autoplay,
+          v = "pause" === h;
+
+      function g() {
+        f() && t.Slides.isEnough() && (a.start(!e.resetProgress), o = i = v = !1, b(), c(jn));
+      }
+
+      function m(n) {
+        v = !!(n = void 0 === n ? !0 : n), b(), f() || (a.pause(), c(Rn));
+      }
+
+      function y() {
+        v || (i || o ? m(!1) : g());
+      }
+
+      function b() {
+        p && (L(p, wt, !v), j(p, Vn, e.i18n[v ? "play" : "pause"]));
+      }
+
+      function w(n) {
+        n = t.Slides.getAt(n);
+        a.set(n && +K(n.slide, Tt) || e.interval);
+      }
+
+      return {
+        mount: function mount() {
+          h && (function () {
+            e.pauseOnHover && s(d, "mouseenter mouseleave", function (n) {
+              i = "mouseenter" === n.type, y();
+            });
+            e.pauseOnFocus && s(d, "focusin focusout", function (n) {
+              o = "focusin" === n.type, y();
+            });
+            p && s(p, "click", function () {
+              v ? g() : m(!0);
+            });
+            u([Sn, On, Mn], a.rewind), u(Sn, w);
+          }(), p && j(p, Kn, l.track.id), v || g(), b());
+        },
+        destroy: a.cancel,
+        play: g,
+        pause: m,
+        isPaused: f
+      };
+    },
+    Cover: function Cover(n, t, e) {
+      var i = Gn(n).on;
+
+      function o(e) {
+        t.Slides.forEach(function (n) {
+          var t = A(n.container || n.slide, "img");
+          t && t.src && r(e, t, n);
+        });
+      }
+
+      function r(n, t, e) {
+        e.style("background", n ? 'center/cover no-repeat url("' + t.src + '")' : "", !0), q(t, n ? "none" : "");
+      }
+
+      return {
+        mount: function mount() {
+          e.cover && (i(Wn, D(r, !0)), i([En, zn, Mn], D(o, !0)));
+        },
+        destroy: D(o, !1)
+      };
+    },
+    Scroll: function Scroll(r, s, u) {
+      var c,
+          a,
+          n = Gn(r),
+          t = n.on,
+          f = n.emit,
+          l = r.state.set,
+          d = s.Move,
+          p = d.getPosition,
+          h = d.getLimit,
+          v = d.exceededLimit,
+          g = d.translate,
+          m = 1;
+
+      function y(n, t, e, i, o) {
+        var r = p();
+        E(), e && (e = s.Layout.sliderSize(), u = gn(n) * e * fn(dn(n) / e) || 0, n = d.toPosition(s.Controller.toDest(n % e)) + u);
+        var u = pn(r, n, 1);
+        m = 1, t = u ? 0 : t || an(dn(n - r) / 1.5, 800), a = i, c = Xn(t, b, D(w, r, n, o), 1), l(W), f(On), c.start();
+      }
+
+      function b() {
+        l(3), a && a(), f(In);
+      }
+
+      function w(n, t, e, i) {
+        var o = p(),
+            n = (n + (t - n) * (n = i, (i = u.easingFunc) ? i(n) : 1 - Math.pow(1 - n, 4)) - o) * m;
+        g(o + n), r.is(Dt) && !e && v() && (m *= .6, dn(n) < 10 && y(h(v(!0)), 600, !1, a, !0));
+      }
+
+      function E() {
+        c && c.cancel();
+      }
+
+      function e() {
+        c && !c.isPaused() && (E(), b());
+      }
+
+      return {
+        mount: function mount() {
+          t(Sn, E), t([zn, Mn], e);
+        },
+        destroy: E,
+        scroll: y,
+        cancel: e
+      };
+    },
+    Drag: function Drag(r, i, u) {
+      var s,
+          t,
+          o,
+          c,
+          a,
+          f,
+          l,
+          d,
+          n = Gn(r),
+          e = n.on,
+          p = n.emit,
+          h = n.bind,
+          v = n.unbind,
+          g = r.state,
+          m = i.Move,
+          y = i.Scroll,
+          b = i.Controller,
+          w = i.Elements.track,
+          E = i.Media.reduce,
+          S = (n = i.Direction).resolve,
+          x = n.orient,
+          _ = m.getPosition,
+          C = m.exceededLimit,
+          P = !1;
+
+      function k() {
+        var n = u.drag;
+        j(!n), c = "free" === n;
+      }
+
+      function L(n) {
+        var t, e, i;
+        f = !1, l || (t = F(n), e = n.target, i = u.noDrag, B(e, "." + gt + ", ." + dt) || i && B(e, i) || !t && n.button || (b.isBusy() ? $(n, !0) : (d = t ? w : window, a = g.is([R, W]), o = null, h(d, Lt, A, Ot), h(d, At, D, Ot), m.cancel(), y.cancel(), z(n))));
+      }
+
+      function A(n) {
+        var t, e, i, o;
+        g.is(6) || (g.set(6), p("drag")), n.cancelable && (a ? (m.translate(s + N(n) / (P && r.is(Dt) ? 5 : 1)), e = 200 < T(n), i = P !== (P = C()), (e || i) && z(n), f = !0, p("dragging"), $(n)) : dn(N(o = n)) > dn(N(o, !0)) && (t = n, e = u.dragMinThreshold, i = X(e), o = i && e.mouse || 0, e = (i ? e.touch : +e) || 10, a = dn(N(t)) > (F(t) ? e : o), $(n)));
+      }
+
+      function D(n) {
+        g.is(6) && (g.set(3), p("dragged")), a && (function (n) {
+          var t = function (n) {
+            if (r.is(Mt) || !P) {
+              var t = T(n);
+              if (t && t < 200) return N(n) / t;
+            }
+
+            return 0;
+          }(n),
+              e = function (n) {
+            return _() + gn(n) * cn(dn(n) * (u.flickPower || 600), c ? 1 / 0 : i.Layout.listSize() * (u.flickMaxPages || 1));
+          }(t),
+              n = u.rewind && u.rewindByDrag;
+
+          E(!1), c ? b.scroll(e, 0, u.snap) : r.is(zt) ? b.go(x(gn(t)) < 0 ? n ? "<" : "-" : n ? ">" : "+") : r.is(Dt) && P && n ? b.go(C(!0) ? ">" : "<") : b.go(b.toDest(e), !0);
+          E(!0);
+        }(n), $(n)), v(d, Lt, A), v(d, At, D), a = !1;
+      }
+
+      function M(n) {
+        !l && f && $(n, !0);
+      }
+
+      function z(n) {
+        o = t, t = n, s = _();
+      }
+
+      function N(n, t) {
+        return I(n, t) - I(O(n), t);
+      }
+
+      function T(n) {
+        return on(n) - on(O(n));
+      }
+
+      function O(n) {
+        return t === n && o || t;
+      }
+
+      function I(n, t) {
+        return (F(n) ? n.changedTouches[0] : n)["page" + S(t ? "Y" : "X")];
+      }
+
+      function F(n) {
+        return "undefined" != typeof TouchEvent && n instanceof TouchEvent;
+      }
+
+      function j(n) {
+        l = n;
+      }
+
+      return {
+        mount: function mount() {
+          h(w, Lt, G, Ot), h(w, At, G, Ot), h(w, kt, L, Ot), h(w, "click", M, {
+            capture: !0
+          }), h(w, "dragstart", $), e([En, zn], k);
+        },
+        disable: j,
+        isDragging: function isDragging() {
+          return a;
+        }
+      };
+    },
+    Keyboard: function Keyboard(t, n, e) {
+      var i,
+          o,
+          r = Gn(t),
+          u = r.on,
+          s = r.bind,
+          c = r.unbind,
+          a = t.root,
+          f = n.Direction.resolve;
+
+      function l() {
+        var n = e.keyboard;
+        n && (i = "global" === n ? window : a, s(i, jt, h));
+      }
+
+      function d() {
+        c(i, jt);
+      }
+
+      function p() {
+        var n = o;
+        o = !0, v(function () {
+          o = n;
+        });
+      }
+
+      function h(n) {
+        o || ((n = Ft(n)) === f(Bn) ? t.go("<") : n === f(Hn) && t.go(">"));
+      }
+
+      return {
+        mount: function mount() {
+          l(), u(zn, d), u(zn, l), u(Sn, p);
+        },
+        destroy: d,
+        disable: function disable(n) {
+          o = n;
+        }
+      };
+    },
+    LazyLoad: function LazyLoad(e, n, o) {
+      var t = Gn(e),
+          i = t.on,
+          r = t.off,
+          u = t.bind,
+          s = t.emit,
+          c = "sequential" === o.lazyLoad,
+          a = [En, Mn, xn, In],
+          f = [];
+
+      function l() {
+        x(f), n.Slides.forEach(function (i) {
+          tn(i.slide, Gt).forEach(function (n) {
+            var t = K(n, Rt),
+                e = K(n, Wt);
+            t === n.src && e === n.srcset || (t = o.classes.spinner, e = A(e = n.parentElement, "." + t) || H("span", t, e), f.push([n, i, e]), n.src || q(n, "none"));
+          });
+        }), c && v();
+      }
+
+      function d() {
+        (f = f.filter(function (n) {
+          var t = o.perPage * ((o.preloadPages || 1) + 1) - 1;
+          return !n[1].isWithin(e.index, t) || p(n);
+        })).length || r(a);
+      }
+
+      function p(n) {
+        var t = n[0];
+        C(n[1].slide, _t), u(t, "load error", D(h, n)), j(t, "src", K(t, Rt)), j(t, "srcset", K(t, Wt)), F(t, Rt), F(t, Wt);
+      }
+
+      function h(n, t) {
+        var e = n[0],
+            i = n[1];
+        en(i.slide, _t), "error" !== t.type && (V(n[2]), q(e, ""), s(Wn, e, i), s(Nn)), c && v();
+      }
+
+      function v() {
+        f.length && p(f.shift());
+      }
+
+      return {
+        mount: function mount() {
+          o.lazyLoad && (l(), i(Mn, l), c || i(a, d));
+        },
+        destroy: D(x, f)
+      };
+    },
+    Pagination: function Pagination(f, n, l) {
+      var d,
+          p,
+          t = Gn(f),
+          e = t.on,
+          i = t.emit,
+          h = t.bind,
+          v = n.Slides,
+          g = n.Elements,
+          o = n.Controller,
+          m = o.hasFocus,
+          r = o.getIndex,
+          u = o.go,
+          s = n.Direction.resolve,
+          y = [];
+
+      function c() {
+        d && (V(g.pagination ? _(d.children) : d), en(d, p), x(y), d = null), t.destroy();
+      }
+
+      function b(n) {
+        u(">" + n, !0);
+      }
+
+      function w(n, t) {
+        var e = y.length,
+            i = Ft(t),
+            o = E(),
+            r = -1;
+        i === s(Hn, !1, o) ? r = ++n % e : i === s(Bn, !1, o) ? r = (--n + e) % e : "Home" === i ? r = 0 : "End" === i && (r = e - 1);
+        e = y[r];
+        e && (U(e.button), u(">" + r), $(t, !0));
+      }
+
+      function E() {
+        return l.paginationDirection || l.direction;
+      }
+
+      function a(n) {
+        return y[o.toPage(n)];
+      }
+
+      function S() {
+        var n,
+            t = a(r(!0)),
+            e = a(r());
+        t && (en(n = t.button, wt), F(n, Qn), j(n, Un, -1)), e && (C(n = e.button, wt), j(n, Qn, !0), j(n, Un, "")), i("pagination:updated", {
+          list: d,
+          items: y
+        }, t, e);
+      }
+
+      return {
+        items: y,
+        mount: function n() {
+          c(), e([zn, Mn], n), l.pagination && v.isEnough() && (e([Sn, On, In], S), function () {
+            var n = f.length,
+                t = l.classes,
+                e = l.i18n,
+                i = l.perPage,
+                o = m() ? n : ln(n / i);
+            C(d = g.pagination || H("ul", t.pagination, g.track.parentElement), p = vt + "--" + E()), j(d, qn, "tablist"), j(d, Vn, e.select), j(d, nt, E() === Yn ? "vertical" : "");
+
+            for (var r = 0; r < o; r++) {
+              var u = H("li", null, d),
+                  s = H("button", {
+                "class": t.page,
+                type: "button"
+              }, u),
+                  c = v.getIn(r).map(function (n) {
+                return n.slide.id;
+              }),
+                  a = !m() && 1 < i ? e.pageX : e.slideX;
+              h(s, "click", D(b, r)), l.paginationKeyboard && h(s, "keydown", D(w, r)), j(u, qn, "presentation"), j(s, qn, "tab"), j(s, Kn, c.join(" ")), j(s, Vn, mn(a, r + 1)), j(s, Un, -1), y.push({
+                li: u,
+                button: s,
+                page: r
+              });
+            }
+          }(), S(), i("pagination:mounted", {
+            list: d,
+            items: y
+          }, a(f.index)));
+        },
+        destroy: c,
+        getAt: a,
+        update: S
+      };
+    },
+    Sync: function Sync(e, n, t) {
+      var i = t.isNavigation,
+          o = t.slideFocus,
+          r = [];
+
+      function u() {
+        var n, t;
+        e.splides.forEach(function (n) {
+          n.isParent || (c(e, n.splide), c(n.splide, e));
+        }), i && (n = Gn(e), (t = n.on)(Cn, f), t(Dn, l), t([En, zn], a), r.push(n), n.emit(Fn, e.splides));
+      }
+
+      function s() {
+        r.forEach(function (n) {
+          n.destroy();
+        }), x(r);
+      }
+
+      function c(n, i) {
+        n = Gn(n);
+        n.on(Sn, function (n, t, e) {
+          i.go(i.is(Mt) ? e : n);
+        }), r.push(n);
+      }
+
+      function a() {
+        j(n.Elements.list, nt, t.direction === Yn ? "vertical" : "");
+      }
+
+      function f(n) {
+        e.go(n.index);
+      }
+
+      function l(n, t) {
+        b(Xt, Ft(t)) && (f(n), $(t));
+      }
+
+      return {
+        setup: function setup() {
+          e.options = {
+            slideFocus: z(o) ? i : o
+          };
+        },
+        mount: u,
+        destroy: s,
+        remount: function remount() {
+          s(), u();
+        }
+      };
+    },
+    Wheel: function Wheel(u, s, c) {
+      var n = Gn(u).bind,
+          a = 0;
+
+      function t(n) {
+        var t, e, i, o, r;
+        n.cancelable && (r = (t = n.deltaY) < 0, e = on(n), i = c.wheelMinThreshold || 0, o = c.wheelSleep || 0, dn(t) > i && o < e - a && (u.go(r ? "<" : ">"), a = e), r = r, c.releaseWheel && !u.state.is(R) && -1 === s.Controller.getAdjacent(r) || $(n));
+      }
+
+      return {
+        mount: function mount() {
+          c.wheel && n(s.Elements.track, "wheel", t, Ot);
+        }
+      };
+    },
+    Live: function Live(n, t, e) {
+      var i = Gn(n).on,
+          o = t.Elements.track,
+          r = e.live && !e.isNavigation,
+          u = H("span", bt),
+          s = Xn(90, D(c, !1));
+
+      function c(n) {
+        j(o, et, n), n ? (P(o, u), s.start()) : V(u);
+      }
+
+      function a(n) {
+        r && j(o, l, n ? "off" : "polite");
+      }
+
+      return {
+        mount: function mount() {
+          r && (a(!t.Autoplay.isPaused()), j(o, it, !0), u.textContent = "…", i(jn, D(a, !0)), i(Rn, D(a, !1)), i([xn, In], D(c, !0)));
+        },
+        disable: a,
+        destroy: function destroy() {
+          F(o, [l, it, et]), V(u);
+        }
+      };
+    }
+  }),
+      Ht = {
+    type: "slide",
+    role: "region",
+    speed: 400,
+    perPage: 1,
+    cloneStatus: !0,
+    arrows: !0,
+    pagination: !0,
+    paginationKeyboard: !0,
+    interval: 5e3,
+    pauseOnHover: !0,
+    pauseOnFocus: !0,
+    resetProgress: !0,
+    easing: "cubic-bezier(0.25, 1, 0.5, 1)",
+    drag: !0,
+    direction: "ltr",
+    trimSpace: !0,
+    focusableNodes: "a, button, textarea, input, select, iframe",
+    live: !0,
+    classes: {
+      slide: ct,
+      clone: at,
+      arrows: lt,
+      arrow: dt,
+      prev: pt,
+      next: ht,
+      pagination: vt,
+      page: gt,
+      spinner: un + "__spinner"
+    },
+    i18n: {
+      prev: "Previous slide",
+      next: "Next slide",
+      first: "Go to first slide",
+      last: "Go to last slide",
+      slideX: "Go to slide %s",
+      pageX: "Go to page %s",
+      play: "Start autoplay",
+      pause: "Pause autoplay",
+      carousel: "carousel",
+      slide: "slide",
+      select: "Select a slide to show",
+      slideLabel: "%s of %s"
+    },
+    reducedMotion: {
+      speed: 0,
+      rewindSpeed: 0,
+      autoplay: "pause"
+    }
+  };
+
+  function Yt(n, i, t) {
+    var e = Gn(n).on;
+    return {
+      mount: function mount() {
+        e([En, Mn], function () {
+          v(function () {
+            i.Slides.style("transition", "opacity " + t.speed + "ms " + t.easing);
+          });
+        });
+      },
+      start: function start(n, t) {
+        var e = i.Elements.track;
+        Y(e, "height", rn(Q(e).height)), v(function () {
+          t(), Y(e, "height", "");
+        });
+      },
+      cancel: G
+    };
+  }
+
+  function qt(r, n, u) {
+    var s,
+        t = Gn(r).bind,
+        c = n.Move,
+        a = n.Controller,
+        f = n.Scroll,
+        e = n.Elements.list,
+        l = D(Y, e, "transition");
+
+    function i() {
+      l(""), f.cancel();
+    }
+
+    return {
+      mount: function mount() {
+        t(e, "transitionend", function (n) {
+          n.target === e && s && (i(), s());
+        });
+      },
+      start: function start(n, t) {
+        var e = c.toPosition(n, !0),
+            i = c.getPosition(),
+            o = function (n) {
+          var t = u.rewindSpeed;
+
+          if (r.is(Dt) && t) {
+            var e = a.getIndex(!0),
+                i = a.getEnd();
+            if (0 === e && i <= n || i <= e && 0 === n) return t;
+          }
+
+          return u.speed;
+        }(n);
+
+        1 <= dn(e - i) && 1 <= o ? u.useScroll ? f.scroll(e, o, !1, t) : (l("transform " + o + "ms " + u.easing), c.translate(e, !0), s = t) : (c.jump(n), t());
+      },
+      cancel: i
+    };
+  }
+
+  a = function () {
+    function e(n, t) {
+      this.event = Gn(), this.Components = {}, this.state = s(1), this.splides = [], this._o = {}, this._E = {};
+      n = M(n) ? nn(document, n) : n;
+      sn(n, n + " is invalid."), t = O({
+        label: K(this.root = n, Vn) || "",
+        labelledby: K(n, Zn) || ""
+      }, Ht, e.defaults, t || {});
+
+      try {
+        O(t, JSON.parse(K(n, i)));
+      } catch (n) {
+        sn(!1, "Invalid JSON");
+      }
+
+      this._o = Object.create(O({}, t));
+    }
+
+    var n = e.prototype;
+    return n.mount = function (n, t) {
+      var e = this,
+          i = this.state,
+          o = this.Components;
+      return sn(i.is([1, 7]), "Already mounted!"), i.set(1), this._C = o, this._T = t || this._T || (this.is(zt) ? Yt : qt), this._E = n || this._E, N(T({}, Bt, this._E, {
+        Transition: this._T
+      }), function (n, t) {
+        n = n(e, o, e._o);
+        (o[t] = n).setup && n.setup();
+      }), N(o, function (n) {
+        n.mount && n.mount();
+      }), this.emit(En), C(this.root, "is-initialized"), i.set(3), this.emit("ready"), this;
+    }, n.sync = function (n) {
+      return this.splides.push({
+        splide: n
+      }), n.splides.push({
+        splide: this,
+        isParent: !0
+      }), this.state.is(3) && (this._C.Sync.remount(), n.Components.Sync.remount()), this;
+    }, n.go = function (n) {
+      return this._C.Controller.go(n), this;
+    }, n.on = function (n, t) {
+      return this.event.on(n, t), this;
+    }, n.off = function (n) {
+      return this.event.off(n), this;
+    }, n.emit = function (n) {
+      var t;
+      return (t = this.event).emit.apply(t, [n].concat(_(arguments, 1))), this;
+    }, n.add = function (n, t) {
+      return this._C.Slides.add(n, t), this;
+    }, n.remove = function (n) {
+      return this._C.Slides.remove(n), this;
+    }, n.is = function (n) {
+      return this._o.type === n;
+    }, n.refresh = function () {
+      return this.emit(Mn), this;
+    }, n.destroy = function (t) {
+      void 0 === t && (t = !0);
+      var n = this.event,
+          e = this.state;
+      return e.is(1) ? Gn(this).on("ready", this.destroy.bind(this, t)) : (N(this._C, function (n) {
+        n.destroy && n.destroy(t);
+      }, !0), n.emit(u), n.destroy(), t && x(this.splides), e.set(7)), this;
+    }, _createClass(e, [{
+      key: "options",
+      get: function get() {
+        return this._o;
+      },
+      set: function set(n) {
+        this._C.Media.set(n, !0);
+      }
+    }, {
+      key: "length",
+      get: function get() {
+        return this._C.Slides.getLength(!0);
+      }
+    }, {
+      key: "index",
+      get: function get() {
+        return this._C.Controller.getIndex();
+      }
+    }]), e;
+  }();
+
+  return a.defaults = {}, a.STATES = n, a;
+});
 
 /***/ }),
 
-/***/ "./src/js/tagList.js":
-/*!***************************!*\
-  !*** ./src/js/tagList.js ***!
-  \***************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 809:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _components_header__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./components/header */ \"./src/js/components/header.js\");\n/* harmony import */ var _css_tagList_css__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/css/tagList.css */ \"./src/css/tagList.css\");\n/* harmony import */ var _images_Ad_01_jpg__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/images/Ad-01.jpg */ \"./src/images/Ad-01.jpg\");\n/* harmony import */ var _images_Ad_02_jpg__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/images/Ad-02.jpg */ \"./src/images/Ad-02.jpg\");\n/* harmony import */ var _images_Ad_03_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @/images/Ad-03.jpg */ \"./src/images/Ad-03.jpg\");\n/* harmony import */ var _images_Ad_05_jpg__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @/images/Ad-05.jpg */ \"./src/images/Ad-05.jpg\");\n/* harmony import */ var _images_Ad_07_jpg__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @/images/Ad-07.jpg */ \"./src/images/Ad-07.jpg\");\n/* harmony import */ var _images_Ad_08_jpg__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @/images/Ad-08.jpg */ \"./src/images/Ad-08.jpg\");\n/* harmony import */ var _images_img_03_jpg__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @/images/img-03.jpg */ \"./src/images/img-03.jpg\");\n/* harmony import */ var _images_img_04_jpg__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @/images/img-04.jpg */ \"./src/images/img-04.jpg\");\n/* harmony import */ var _images_img_05_jpg__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @/images/img-05.jpg */ \"./src/images/img-05.jpg\");\n/* harmony import */ var _images_img_06_jpg__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @/images/img-06.jpg */ \"./src/images/img-06.jpg\");\n/* harmony import */ var _images_img_07_jpg__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @/images/img-07.jpg */ \"./src/images/img-07.jpg\");\n/* harmony import */ var _images_img_08_jpg__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @/images/img-08.jpg */ \"./src/images/img-08.jpg\");\n/* harmony import */ var _images_img_10_jpg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @/images/img-10.jpg */ \"./src/images/img-10.jpg\");\n/* harmony import */ var _images_img_11_jpg__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @/images/img-11.jpg */ \"./src/images/img-11.jpg\");\n/* harmony import */ var _images_img_12_jpg__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @/images/img-12.jpg */ \"./src/images/img-12.jpg\");\n/* harmony import */ var _images_img_13_jpg__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @/images/img-13.jpg */ \"./src/images/img-13.jpg\");\n/* harmony import */ var _images_img_14_jpg__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @/images/img-14.jpg */ \"./src/images/img-14.jpg\");\n/* harmony import */ var _images_img_15_jpg__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @/images/img-15.jpg */ \"./src/images/img-15.jpg\");\n/* harmony import */ var _images_img_16_jpg__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! @/images/img-16.jpg */ \"./src/images/img-16.jpg\");\n/* harmony import */ var _images_img_17_jpg__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @/images/img-17.jpg */ \"./src/images/img-17.jpg\");\n/* harmony import */ var _images_img_18_jpg__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @/images/img-18.jpg */ \"./src/images/img-18.jpg\");\n/* harmony import */ var _images_img_19_jpg__WEBPACK_IMPORTED_MODULE_23__ = __webpack_require__(/*! @/images/img-19.jpg */ \"./src/images/img-19.jpg\");\n/* harmony import */ var _images_img_20_jpg__WEBPACK_IMPORTED_MODULE_24__ = __webpack_require__(/*! @/images/img-20.jpg */ \"./src/images/img-20.jpg\");\n/* harmony import */ var _images_img_21_jpg__WEBPACK_IMPORTED_MODULE_25__ = __webpack_require__(/*! @/images/img-21.jpg */ \"./src/images/img-21.jpg\");\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n // gotop\n\nvar requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;\ndocument.addEventListener(\"DOMContentLoaded\", function () {\n  var goTopButton = document.querySelector(\"#gotop\");\n  var windowViewPortHeight = window.innerHeight;\n  var isRequestingAnimationFrame = false;\n\n  if (!goTopButton) {\n    return;\n  }\n\n  goTopButton.addEventListener(\"click\", function () {\n    window.scrollTo({\n      top: 0,\n      behavior: \"smooth\"\n    });\n  });\n  window.addEventListener(\"scroll\", function () {\n    if (!isRequestingAnimationFrame) {\n      requestAnimationFrame(filterGoTopButtonVisibility);\n      isRequestingAnimationFrame = true;\n    }\n  });\n\n  function filterGoTopButtonVisibility() {\n    var windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;\n\n    if (windowPageYOffset > windowViewPortHeight) {\n      goTopButton.classList.add(\"show\");\n      isRequestingAnimationFrame = false;\n    } else {\n      goTopButton.classList.remove(\"show\");\n      requestAnimationFrame(filterGoTopButtonVisibility);\n    }\n  }\n}); // gotop end\n\n//# sourceURL=webpack://webpack-demo/./src/js/tagList.js?");
+module.exports = __webpack_require__.p + "images/Ad-01.jpg";
 
 /***/ }),
 
-/***/ "./src/css/plugins/splide.min.css":
-/*!****************************************!*\
-  !*** ./src/css/plugins/splide.min.css ***!
-  \****************************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 158:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-demo/./src/css/plugins/splide.min.css?");
+module.exports = __webpack_require__.p + "images/Ad-02.jpg";
 
 /***/ }),
 
-/***/ "./src/css/tagList.css":
-/*!*****************************!*\
-  !*** ./src/css/tagList.css ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ 209:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extract-plugin\n\n\n//# sourceURL=webpack://webpack-demo/./src/css/tagList.css?");
+module.exports = __webpack_require__.p + "images/Ad-03.jpg";
 
 /***/ }),
 
-/***/ "./src/images/Ad-01.jpg":
-/*!******************************!*\
-  !*** ./src/images/Ad-01.jpg ***!
-  \******************************/
-/***/ ((module) => {
+/***/ 309:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/Ad-01.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/Ad-01.jpg?");
+module.exports = __webpack_require__.p + "images/Ad-05.jpg";
 
 /***/ }),
 
-/***/ "./src/images/Ad-02.jpg":
-/*!******************************!*\
-  !*** ./src/images/Ad-02.jpg ***!
-  \******************************/
-/***/ ((module) => {
+/***/ 252:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/Ad-02.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/Ad-02.jpg?");
+module.exports = __webpack_require__.p + "images/Ad-07.jpg";
 
 /***/ }),
 
-/***/ "./src/images/Ad-03.jpg":
-/*!******************************!*\
-  !*** ./src/images/Ad-03.jpg ***!
-  \******************************/
-/***/ ((module) => {
+/***/ 869:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/Ad-03.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/Ad-03.jpg?");
+module.exports = __webpack_require__.p + "images/Ad-08.jpg";
 
 /***/ }),
 
-/***/ "./src/images/Ad-05.jpg":
-/*!******************************!*\
-  !*** ./src/images/Ad-05.jpg ***!
-  \******************************/
-/***/ ((module) => {
+/***/ 42:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/Ad-05.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/Ad-05.jpg?");
+module.exports = __webpack_require__.p + "images/img-03.jpg";
 
 /***/ }),
 
-/***/ "./src/images/Ad-07.jpg":
-/*!******************************!*\
-  !*** ./src/images/Ad-07.jpg ***!
-  \******************************/
-/***/ ((module) => {
+/***/ 576:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/Ad-07.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/Ad-07.jpg?");
+module.exports = __webpack_require__.p + "images/img-04.jpg";
 
 /***/ }),
 
-/***/ "./src/images/Ad-08.jpg":
-/*!******************************!*\
-  !*** ./src/images/Ad-08.jpg ***!
-  \******************************/
-/***/ ((module) => {
+/***/ 270:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/Ad-08.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/Ad-08.jpg?");
+module.exports = __webpack_require__.p + "images/img-05.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-03.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-03.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 102:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-03.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-03.jpg?");
+module.exports = __webpack_require__.p + "images/img-06.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-04.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-04.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 399:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-04.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-04.jpg?");
+module.exports = __webpack_require__.p + "images/img-07.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-05.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-05.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 601:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-05.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-05.jpg?");
+module.exports = __webpack_require__.p + "images/img-08.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-06.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-06.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 463:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-06.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-06.jpg?");
+module.exports = __webpack_require__.p + "images/img-10.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-07.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-07.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 561:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-07.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-07.jpg?");
+module.exports = __webpack_require__.p + "images/img-11.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-08.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-08.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 589:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-08.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-08.jpg?");
+module.exports = __webpack_require__.p + "images/img-12.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-10.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-10.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 787:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-10.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-10.jpg?");
+module.exports = __webpack_require__.p + "images/img-13.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-11.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-11.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 164:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-11.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-11.jpg?");
+module.exports = __webpack_require__.p + "images/img-14.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-12.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-12.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 779:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-12.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-12.jpg?");
+module.exports = __webpack_require__.p + "images/img-15.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-13.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-13.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 117:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-13.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-13.jpg?");
+module.exports = __webpack_require__.p + "images/img-16.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-14.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-14.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 979:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-14.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-14.jpg?");
+module.exports = __webpack_require__.p + "images/img-17.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-15.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-15.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 649:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-15.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-15.jpg?");
+module.exports = __webpack_require__.p + "images/img-18.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-16.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-16.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 931:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-16.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-16.jpg?");
+module.exports = __webpack_require__.p + "images/img-19.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-17.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-17.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 375:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-17.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-17.jpg?");
+module.exports = __webpack_require__.p + "images/img-20.jpg";
 
 /***/ }),
 
-/***/ "./src/images/img-18.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-18.jpg ***!
-  \*******************************/
-/***/ ((module) => {
+/***/ 550:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-eval("module.exports = \"./images/img-18.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-18.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/img-19.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-19.jpg ***!
-  \*******************************/
-/***/ ((module) => {
-
-"use strict";
-eval("module.exports = \"./images/img-19.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-19.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/img-20.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-20.jpg ***!
-  \*******************************/
-/***/ ((module) => {
-
-"use strict";
-eval("module.exports = \"./images/img-20.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-20.jpg?");
-
-/***/ }),
-
-/***/ "./src/images/img-21.jpg":
-/*!*******************************!*\
-  !*** ./src/images/img-21.jpg ***!
-  \*******************************/
-/***/ ((module) => {
-
-"use strict";
-eval("module.exports = \"./images/img-21.jpg\";\n\n//# sourceURL=webpack://webpack-demo/./src/images/img-21.jpg?");
+module.exports = __webpack_require__.p + "images/img-21.jpg";
 
 /***/ })
 
@@ -383,23 +2183,214 @@ eval("module.exports = \"./images/img-21.jpg\";\n\n//# sourceURL=webpack://webpa
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/make namespace object */
+/******/ 	/* webpack/runtime/publicPath */
 /******/ 	(() => {
-/******/ 		// define __esModule on exports
-/******/ 		__webpack_require__.r = (exports) => {
-/******/ 			if(typeof Symbol !== 'undefined' && Symbol.toStringTag) {
-/******/ 				Object.defineProperty(exports, Symbol.toStringTag, { value: 'Module' });
-/******/ 			}
-/******/ 			Object.defineProperty(exports, '__esModule', { value: true });
-/******/ 		};
+/******/ 		__webpack_require__.p = "./";
 /******/ 	})();
 /******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module can't be inlined because the eval devtool is used.
-/******/ 	var __webpack_exports__ = __webpack_require__("./src/js/tagList.js");
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+
+// EXTERNAL MODULE: ./src/js/plugins/splide.min.js
+var splide_min = __webpack_require__(459);
+var splide_min_default = /*#__PURE__*/__webpack_require__.n(splide_min);
+;// CONCATENATED MODULE: ./src/js/components/header.js
+
+
+var bodyClass = document.querySelector("body").classList;
+var menuButton = document.querySelector("#menuButton");
+var searchButton = document.querySelector("#searchButton");
+var menuShadow = document.querySelector("#menuShadow");
+var searchButtonClass = searchButton.classList;
+var navbarClass = document.querySelector("#navbarWrapper").classList;
+var menuShadowClass = document.querySelector("#menuShadow").classList;
+var hamburgerIconClass = document.querySelector("#hamburgerIcon").classList;
+var closeIconClass = document.querySelector("#closeIcon").classList;
+var pcSeach = document.querySelector("#pcSeach");
+var searchMenuClass = document.querySelector("#searchMenu").classList;
+var searchMenuShadow = document.querySelector("#searchMenuShadow");
+var searchMenuShadowClass = document.querySelector("#searchMenuShadow").classList;
+var mbSearchMenuClass = document.querySelector("#mbSearchMenu").classList;
+var cancelButton = document.querySelector("#cancelButton"); // mb 選單按鈕
+
+menuButton.addEventListener("click", function () {
+  searchButtonClass.toggle("hidden");
+  navbarClass.toggle("openMenu");
+  bodyClass.toggle("overflow-hidden");
+  menuShadowClass.toggle("openMenuShadow");
+  menuShadowClass.toggle("!z-10");
+  hamburgerIconClass.toggle("!hidden");
+  closeIconClass.toggle("!block");
+}); // mb 選單按鈕 end
+// mb 陰影
+
+menuShadow.addEventListener("click", function () {
+  searchButtonClass.toggle("hidden");
+  navbarClass.toggle("openMenu");
+  bodyClass.toggle("overflow-hidden");
+  menuShadowClass.toggle("openMenuShadow");
+  menuShadowClass.toggle("!z-10");
+  hamburgerIconClass.toggle("!hidden");
+  closeIconClass.toggle("!block");
+}); // mb 陰影 end
+// pc 搜尋
+
+pcSeach.addEventListener("focus", function () {
+  searchMenuClass.add("!block");
+  searchMenuShadowClass.add("!block");
+}); // pc 搜尋陰影
+
+searchMenuShadow.addEventListener("click", function () {
+  searchMenuClass.remove("!block");
+  searchMenuShadowClass.remove("!block");
+}); // pc 搜尋 end
+// mb 搜尋
+
+searchButton.addEventListener("click", function () {
+  mbSearchMenuClass.add("!block");
+});
+cancelButton.addEventListener("click", function () {
+  mbSearchMenuClass.remove("!block");
+}); // mb 搜尋 end
+// 導覽列
+
+var navbarSplide = new (splide_min_default())(".navbar", {
+  autoWidth: true,
+  perMove: 16,
+  drag: "free",
+  pagination: false,
+  breakpoints: {
+    1100: {
+      destroy: true
+    }
+  }
+});
+navbarSplide.mount(); // 導覽列 end
+// Header 滾動收縮效果
+
+var mainHeader = document.querySelector("#mainHeader");
+window.addEventListener("scroll", function () {
+  if (window.scrollY > 50) {
+    mainHeader.classList.add("scrolled");
+  } else {
+    mainHeader.classList.remove("scrolled");
+  }
+}); // Header 滾動收縮效果 end
+// EXTERNAL MODULE: ./src/images/Ad-01.jpg
+var Ad_01 = __webpack_require__(809);
+// EXTERNAL MODULE: ./src/images/Ad-02.jpg
+var Ad_02 = __webpack_require__(158);
+// EXTERNAL MODULE: ./src/images/Ad-03.jpg
+var Ad_03 = __webpack_require__(209);
+// EXTERNAL MODULE: ./src/images/Ad-05.jpg
+var Ad_05 = __webpack_require__(309);
+// EXTERNAL MODULE: ./src/images/Ad-07.jpg
+var Ad_07 = __webpack_require__(252);
+// EXTERNAL MODULE: ./src/images/Ad-08.jpg
+var Ad_08 = __webpack_require__(869);
+// EXTERNAL MODULE: ./src/images/img-03.jpg
+var img_03 = __webpack_require__(42);
+// EXTERNAL MODULE: ./src/images/img-04.jpg
+var img_04 = __webpack_require__(576);
+// EXTERNAL MODULE: ./src/images/img-05.jpg
+var img_05 = __webpack_require__(270);
+// EXTERNAL MODULE: ./src/images/img-06.jpg
+var img_06 = __webpack_require__(102);
+// EXTERNAL MODULE: ./src/images/img-07.jpg
+var img_07 = __webpack_require__(399);
+// EXTERNAL MODULE: ./src/images/img-08.jpg
+var img_08 = __webpack_require__(601);
+// EXTERNAL MODULE: ./src/images/img-10.jpg
+var img_10 = __webpack_require__(463);
+// EXTERNAL MODULE: ./src/images/img-11.jpg
+var img_11 = __webpack_require__(561);
+// EXTERNAL MODULE: ./src/images/img-12.jpg
+var img_12 = __webpack_require__(589);
+// EXTERNAL MODULE: ./src/images/img-13.jpg
+var img_13 = __webpack_require__(787);
+// EXTERNAL MODULE: ./src/images/img-14.jpg
+var img_14 = __webpack_require__(164);
+// EXTERNAL MODULE: ./src/images/img-15.jpg
+var img_15 = __webpack_require__(779);
+// EXTERNAL MODULE: ./src/images/img-16.jpg
+var img_16 = __webpack_require__(117);
+// EXTERNAL MODULE: ./src/images/img-17.jpg
+var img_17 = __webpack_require__(979);
+// EXTERNAL MODULE: ./src/images/img-18.jpg
+var img_18 = __webpack_require__(649);
+// EXTERNAL MODULE: ./src/images/img-19.jpg
+var img_19 = __webpack_require__(931);
+// EXTERNAL MODULE: ./src/images/img-20.jpg
+var img_20 = __webpack_require__(375);
+// EXTERNAL MODULE: ./src/images/img-21.jpg
+var img_21 = __webpack_require__(550);
+;// CONCATENATED MODULE: ./src/js/tagList.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ // gotop
+
+var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame;
+document.addEventListener("DOMContentLoaded", function () {
+  var goTopButton = document.querySelector("#gotop");
+  var windowViewPortHeight = window.innerHeight;
+  var isRequestingAnimationFrame = false;
+
+  if (!goTopButton) {
+    return;
+  }
+
+  goTopButton.addEventListener("click", function () {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth"
+    });
+  });
+  window.addEventListener("scroll", function () {
+    if (!isRequestingAnimationFrame) {
+      requestAnimationFrame(filterGoTopButtonVisibility);
+      isRequestingAnimationFrame = true;
+    }
+  });
+
+  function filterGoTopButtonVisibility() {
+    var windowPageYOffset = window.pageYOffset || document.documentElement.scrollTop;
+
+    if (windowPageYOffset > windowViewPortHeight) {
+      goTopButton.classList.add("show");
+      isRequestingAnimationFrame = false;
+    } else {
+      goTopButton.classList.remove("show");
+      requestAnimationFrame(filterGoTopButtonVisibility);
+    }
+  }
+}); // gotop end
+})();
+
 /******/ })()
 ;
