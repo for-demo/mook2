@@ -27,6 +27,8 @@ import "@/images/img-17.jpg";
 import "@/images/img-18.jpg";
 import "@/images/img-19.jpg";
 import "@/images/img-20.jpg";
+import "@/images/img-23.png";
+import "@/images/img-24.png";
 
 // gotop
 let requestAnimationFrame =
@@ -79,8 +81,73 @@ const mainBannerSplide = new Splide(".main-banner", {
   autoplay: true,
 });
 
+mainBannerSplide.on("mounted move", function () {
+  const slides = document.querySelectorAll(".main-banner .splide__slide");
+  slides.forEach((slide) => {
+    const title = slide.querySelector("p");
+    if (title) {
+      // 移除顯示狀態，添加隱藏狀態
+      title.classList.remove("banner-title-show");
+      title.classList.add("banner-title-hidden");
+    }
+  });
+
+  // 延遲一點點讓當前活動的幻燈片標題出現
+  setTimeout(() => {
+    const activeSlide = document.querySelector(
+      ".main-banner .splide__slide.is-active"
+    );
+    if (activeSlide) {
+      const activeTitle = activeSlide.querySelector("p");
+      if (activeTitle) {
+        // 移除隱藏狀態，添加顯示狀態
+        activeTitle.classList.remove("banner-title-hidden");
+        activeTitle.classList.add("banner-title-show");
+      }
+    }
+  }, 50);
+});
+
 mainBannerSplide.mount();
 // 主輪播 end
+
+// 特別企劃輪播
+const specialProjectSplide = new Splide(".special-project", {
+  type: "slide",
+  rewind: true,
+  autoplay: true,
+  perPage: 1,
+  gap: 0,
+  pagination: true,
+  arrows: false,
+  breakpoints: {
+    1280: {
+      perPage: 1,
+      pagination: true,
+    },
+  },
+});
+
+specialProjectSplide.mount();
+// 特別企劃輪播 end
+
+// 焦點情報
+const focusSplide = new Splide(".focus", {
+  gap: "2rem",
+  rewind: true,
+  perPage: 3,
+  pagination: false,
+  breakpoints: {
+    1100: {
+      autoWidth: true,
+      perPage: 1,
+      perMove: 1,
+    },
+  },
+});
+
+focusSplide.mount();
+// 焦點情報 end
 
 // 景編精選
 const sceneSplide = new Splide(".scene", {

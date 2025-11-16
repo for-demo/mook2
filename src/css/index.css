@@ -1,11 +1,26 @@
 @import url("./tailwind.css");
 
+.banner-title-hidden {
+  @apply opacity-0;
+  transform: translate(-50%, 30px);
+}
+
+.banner-title-show {
+  @apply opacity-100 delay-300;
+  transform: translate(-50%, 0);
+}
+
+/* 主輪播分頁 */
 .main-banner .splide__pagination {
-  @apply bottom-[-22px] space-x-3;
+  @apply -bottom-5 space-x-3;
+}
+
+.main-banner .splide__pagination li {
+  @apply flex;
 }
 
 .main-banner .splide__pagination__page {
-  @apply bg-gray-500 !w-[8px] !h-[8px];
+  @apply bg-gray-500 !w-[8px] !h-[8px] m-0;
 }
 
 .main-banner .splide__pagination__page.is-active {
@@ -14,15 +29,34 @@
 
 @screen xl {
   .main-banner .splide__pagination {
-    @apply bottom-[-22px] space-x-4;
-  }
-
-  .main-banner .splide__pagination__page {
-    @apply !w-[10px] !h-[10px] !m-0;
+    @apply hidden;
   }
 
   .video iframe {
     @apply object-cover;
+  }
+}
+
+/* 特別企劃 */
+.special-project .splide__pagination {
+  @apply -bottom-6 space-x-3;
+}
+
+.special-project .splide__pagination li {
+  @apply flex;
+}
+
+.special-project .splide__pagination__page {
+  @apply bg-gray-500 !w-[8px] !h-[8px] m-0;
+}
+
+.special-project .splide__pagination__page.is-active {
+  @apply bg-gray-800 !scale-100;
+}
+
+@screen xl {
+  .special-project .splide__pagination {
+    @apply -bottom-8;
   }
 }
 

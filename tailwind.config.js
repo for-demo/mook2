@@ -68,6 +68,10 @@ module.exports = {
         DEFAULT: "0 0 12px 0 rgba(0, 0, 0, 0.1)",
         16: "0 0 16px 0 rgba(0, 0, 0, 0.16)",
         "8-16": "0 8px 16px rgba(0, 0, 0, 0.16)",
+        "6-6": "6px 6px 0px rgba(218, 218, 218, 1)",
+      },
+      dropShadow: {
+        "8-8": "8px 8px 6px rgba(0, 0, 0, 0.48)",
       },
       backgroundImage: {
         banner:

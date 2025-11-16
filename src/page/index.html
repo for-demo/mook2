@@ -12,13 +12,13 @@
   <h1 class="sr-only">景點+</h1>
   <!-- header -->
   <%= require('html-loader!../components/header.html').default %>
-    <main class="xl:pb-[72px] pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]">
+    <main class="mb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]">
       <!-- 大輪播 -->
       <section class="w-full h-full main-banner splide">
         <!-- 左右按鈕 -->
         <div class="splide__arrows splide__arrows--ltr">
           <button
-            class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !left-[25px] xl:!flex !hidden splide__arrow splide__arrow--prev"
+            class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !left-[32px] xl:!flex !hidden splide__arrow splide__arrow--prev"
             type="button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#kft993jrqa)">
@@ -34,7 +34,7 @@
             </svg>
           </button>
           <button
-            class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !right-[25px] xl:!flex !hidden splide__arrow splide__arrow--next"
+            class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !right-[32px] xl:!flex !hidden splide__arrow splide__arrow--next"
             type="button">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#kft993jrqa)">
@@ -51,17 +51,27 @@
           </button>
         </div>
         <div class="splide__track">
+          <!-- 遮罩 -->
+          <div
+            class="absolute left-0 bottom-0 from-black from-30% to-transparent bg-gradient-to-t xl:h-[100px] h-[88px] w-full z-10 pointer-events-none">
+          </div>
+
           <ul class="splide__list">
             <!-- 輪播卡片 start (可跑迴圈) -->
             <li class="splide__slide">
               <a href="#">
                 <picture class="block w-full h-full">
                   <!-- PC 圖 -->
-                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1060/1440/600" />
+                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1060/1920/600" />
                   <!-- MB 圖 -->
-                  <img class="object-cover w-full h-full max-h-[600px]" src="https://picsum.photos/id/1060/390/220"
+                  <img class="object-cover w-full xl:h-[600px] h-[450px]" src="https://picsum.photos/id/1060/390/450"
                     alt="" />
                 </picture>
+
+                <!-- 前台沒有文字時，還要顯示圖片，加 !hidden class 隱藏文字 -->
+                <p
+                  class="text-white xl:text-4xl text-2xl xl:leading-10 leading-8 font-bold line-clamp-2 max-w-[720px] w-full xl:px-0 px-4 drop-shadow-8-8 absolute xl:bottom-12 bottom-4 left-1/2 transition-all duration-[600ms] ease-out banner-title-hidden">
+                  標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一標題文字一</p>
               </a>
             </li>
             <!-- 輪播卡片 end -->
@@ -69,55 +79,70 @@
               <a href="#">
                 <picture class="block w-full h-full">
                   <!-- PC 圖 -->
-                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1040/1440/600" />
+                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1040/1920/600" />
                   <!-- MB 圖 -->
-                  <img class="object-cover w-full h-full max-h-[600px]" src="https://picsum.photos/id/1040/390/220"
+                  <img class="object-cover w-full xl:h-[600px] h-[450px]" src="https://picsum.photos/id/1040/390/450"
                     alt="" />
                 </picture>
+                <p
+                  class="text-white xl:text-4xl text-2xl xl:leading-10 leading-8 font-bold line-clamp-2 max-w-[720px] w-full xl:px-0 px-4 drop-shadow-8-8 absolute xl:bottom-12 bottom-4 left-1/2 transition-all duration-[600ms] ease-out banner-title-hidden">
+                  標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二標題文字二</p>
               </a>
             </li>
             <li class="splide__slide">
               <a href="#">
                 <picture class="block w-full h-full">
                   <!-- PC 圖 -->
-                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1059/1440/600" />
+                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1059/1920/600" />
                   <!-- MB 圖 -->
-                  <img class="object-cover w-full h-full max-h-[600px]" src="https://picsum.photos/id/1059/390/220"
+                  <img class="object-cover w-full xl:h-[600px] h-[450px]" src="https://picsum.photos/id/1059/390/450"
                     alt="" />
                 </picture>
+                <p
+                  class="text-white xl:text-4xl text-2xl xl:leading-10 leading-8 font-bold line-clamp-2 max-w-[720px] w-full xl:px-0 px-4 drop-shadow-8-8 absolute xl:bottom-12 bottom-4 left-1/2 transition-all duration-[600ms] ease-out banner-title-hidden">
+                  標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三標題文字三</p>
               </a>
             </li>
             <li class="splide__slide">
               <a href="#">
                 <picture class="block w-full h-full">
                   <!-- PC 圖 -->
-                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1067/1440/600" />
+                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1067/1920/600" />
                   <!-- MB 圖 -->
-                  <img class="object-cover w-full h-full max-h-[600px]" src="https://picsum.photos/id/1067/390/220"
+                  <img class="object-cover w-full xl:h-[600px] h-[450px]" src="https://picsum.photos/id/1067/390/450"
                     alt="" />
                 </picture>
+                <p
+                  class="text-white xl:text-4xl text-2xl xl:leading-10 leading-8 font-bold line-clamp-2 max-w-[720px] w-full xl:px-0 px-4 drop-shadow-8-8 absolute xl:bottom-12 bottom-4 left-1/2 transition-all duration-[600ms] ease-out banner-title-hidden">
+                  標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四標題文字四</p>
               </a>
             </li>
             <li class="splide__slide">
               <a href="#">
                 <picture class="block w-full h-full">
                   <!-- PC 圖 -->
-                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/119/1440/600" />
+                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/119/1920/600" />
                   <!-- MB 圖 -->
-                  <img class="object-cover w-full h-full max-h-[600px]" src="https://picsum.photos/id/119/390/220"
+                  <img class="object-cover w-full xl:h-[600px] h-[450px]" src="https://picsum.photos/id/119/390/450"
                     alt="" />
                 </picture>
+                <p
+                  class="text-white xl:text-4xl text-2xl xl:leading-10 leading-8 font-bold line-clamp-2 max-w-[720px] w-full xl:px-0 px-4 drop-shadow-8-8 absolute xl:bottom-12 bottom-4 left-1/2 transition-all ease-out banner-title-hidden">
+                  標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五標題文字五</p>
               </a>
             </li>
             <li class="splide__slide">
               <a href="#">
                 <picture class="block w-full h-full">
                   <!-- PC 圖 -->
-                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1018/1440/600" />
+                  <source media="(min-width: 640px)" srcset="https://picsum.photos/id/1018/1920/600" />
                   <!-- MB 圖 -->
-                  <img class="object-cover w-full h-full max-h-[600px]" src="https://picsum.photos/id/1018/390/220"
+                  <img class="object-cover w-full xl:h-[600px] h-[450px]" src="https://picsum.photos/id/1018/390/450"
                     alt="" />
                 </picture>
+                <p
+                  class="text-white xl:text-4xl text-2xl xl:leading-10 leading-8 font-bold line-clamp-2 max-w-[720px] w-full xl:px-0 px-4 drop-shadow-8-8 absolute xl:bottom-12 bottom-4 left-1/2 transition-all duration-[600ms] ease-out banner-title-hidden">
+                  標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六標題文字六</p>
               </a>
             </li>
           </ul>
@@ -125,175 +150,479 @@
       </section>
       <!-- 大輪播 end -->
 
-      <!-- 最新文章 -->
-      <section class="container px-5 mx-auto mt-10 xl:px-0">
-        <h2 class="inline-flex items-center space-x-1">
-          <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M20.62 8.45c-1.05-4.62-5.08-6.7-8.62-6.7h-.01c-3.53 0-7.57 2.07-8.62 6.69-1.17 5.16 1.99 9.53 4.85 12.28A5.436 5.436 0 0 0 12 22.25c1.36 0 2.72-.51 3.77-1.53 2.86-2.75 6.02-7.11 4.85-12.27zM12 13.46a3.15 3.15 0 1 1 0-6.3 3.15 3.15 0 0 1 0 6.3z"
-              fill="#000" />
-          </svg>
-          <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark">最新文章</span>
-        </h2>
-        <div
-          class="flex overflow-x-auto flex-nowrap mt-4 space-x-8 xl:gap-8 xl:mt-6 xl:grid-cols-3 xl:grid xl:space-x-0">
-          <!-- 最新文章卡片 start (可跑迴圈) -->
-          <a class="flex flex-col flex-0 xl:max-w-full max-w-[251px]" href="#">
-            <picture class="inline-block overflow-hidden rounded" href="#">
-              <img class="xl:aspect-[345/230] aspect-[251/167] object-cover w-full h-full duration-500 hover:scale-125"
-                src="./images/img-15.jpg" loading="lazy" alt="" />
-            </picture>
-            <p class="inline-block mt-3 text-lg leading-[28px] text-dark xl:mt-4 line-clamp-2 hover:underline" href="#">
-              出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-            </p>
-            <p
-              class="text-light-dark text-base leading-[24px] font-light xl:line-clamp-2 line-clamp-3 xl:mt-2 mt-[6px]">
-              土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
-            </p>
-          </a>
-          <!-- 最新文章卡片 end -->
-          <a class="flex flex-col flex-0 xl:max-w-full max-w-[251px]" href="#">
-            <picture class="inline-block overflow-hidden rounded" href="#">
-              <img class="xl:aspect-[345/230] aspect-[251/167] object-cover w-full h-full duration-500 hover:scale-125"
-                src="./images/img-14.jpg" loading="lazy" alt="" />
-            </picture>
-            <p class="inline-block mt-3 text-lg leading-[28px] text-dark xl:mt-4 line-clamp-2 hover:underline" href="#">
-              出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-            </p>
-            <p
-              class="text-light-dark text-base leading-[24px] font-light xl:line-clamp-2 line-clamp-3 xl:mt-2 mt-[6px]">
-              土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
-            </p>
-          </a>
-          <a class="flex flex-col flex-0 xl:max-w-full max-w-[251px]" href="#">
-            <picture class="inline-block overflow-hidden rounded" href="#">
-              <img class="xl:aspect-[345/230] aspect-[251/167] object-cover w-full h-full duration-500 hover:scale-125"
-                src="./images/img-13.jpg" loading="lazy" alt="" />
-            </picture>
-            <p class="inline-block mt-3 text-lg leading-[28px] text-dark xl:mt-4 line-clamp-2 hover:underline" href="#">
-              出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-            </p>
-            <p
-              class="text-light-dark text-base leading-[24px] font-light xl:line-clamp-2 line-clamp-3 xl:mt-2 mt-[6px]">
-              土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
-            </p>
-          </a>
-          <a class="flex flex-col flex-0 xl:max-w-full max-w-[251px]" href="#">
-            <picture class="inline-block overflow-hidden rounded" href="#">
-              <img class="xl:aspect-[345/230] aspect-[251/167] object-cover w-full h-full duration-500 hover:scale-125"
-                src="./images/img-12.jpg" loading="lazy" alt="" />
-            </picture>
-            <p class="inline-block mt-3 text-lg leading-[28px] text-dark xl:mt-4 line-clamp-2 hover:underline" href="#">
-              出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-            </p>
-            <p
-              class="text-light-dark text-base leading-[24px] font-light xl:line-clamp-2 line-clamp-3 xl:mt-2 mt-[6px]">
-              土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
-            </p>
-          </a>
-          <a class="flex flex-col flex-0 xl:max-w-full max-w-[251px]" href="#">
-            <picture class="inline-block overflow-hidden rounded" href="#">
-              <img class="xl:aspect-[345/230] aspect-[251/167] object-cover w-full h-full duration-500 hover:scale-125"
-                src="./images/img-11.jpg" loading="lazy" alt="" />
-            </picture>
-            <p class="inline-block mt-3 text-lg leading-[28px] text-dark xl:mt-4 line-clamp-2 hover:underline" href="#">
-              出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-            </p>
-            <p
-              class="text-light-dark text-base leading-[24px] font-light xl:line-clamp-2 line-clamp-3 xl:mt-2 mt-[6px]">
-              土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
-            </p>
-          </a>
-          <a class="flex flex-col flex-0 xl:max-w-full max-w-[251px]" href="#">
-            <picture class="inline-block overflow-hidden rounded" href="#">
-              <img class="xl:aspect-[345/230] aspect-[251/167] object-cover w-full h-full duration-500 hover:scale-125"
-                src="./images/img-10.jpg" loading="lazy" alt="" />
-            </picture>
-            <p class="inline-block mt-3 text-lg leading-[28px] text-dark xl:mt-4 line-clamp-2 hover:underline" href="#">
-              出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-            </p>
-            <p
-              class="text-light-dark text-base leading-[24px] font-light xl:line-clamp-2 line-clamp-3 xl:mt-2 mt-[6px]">
-              土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
-            </p>
-          </a>
-        </div>
-        <div class="mt-4 text-center xl:mt-6">
-          <a class="inline-block text-center text-sm leading-[20px] text-primary-dark border border-primary-dark rounded xl:w-[245px] w-full py-[10px] duration-200 hover:bg-primary-dark hover:text-white"
-            href="#">
-            閱讀更多
-          </a>
-        </div>
-      </section>
-      <!-- 最新文章 end -->
-
       <!-- AD -->
-      <div class="container hidden justify-center m-10 mx-auto xl:flex">
+      <div class="container xl:max-w-[970px] max-w-[300px] mx-auto xl:mt-12 mt-[60px]">
         <a href="#">
-          <img src="./images/Ad-02.jpg" loading="lazy" alt="" />
+          <!-- pc 圖片 -->
+          <img class="xl:block hidden xl:aspect-[970/250] aspect-[251/167]" src="./images/Ad-01.jpg" loading="lazy"
+            alt="" />
+          <!-- mb 圖片 -->
+          <img class="xl:hidden aspect-[300/250]" src="./images/Ad-03.jpg" loading="lazy" alt="" />
         </a>
       </div>
 
-      <!-- banner 文 -->
-      <section
-        class="container mx-auto relative mt-10 before:content-[''] before:absolute before:left-0 before:top-0 xl:before:ml-0.5 before:bg-light xl:before:w-[925px] before:w-full before:h-full">
-        <div class="flex relative flex-col-reverse px-5 py-8 xl:flex-row xl:pl-16 xl:pr-0 xl:py-8 xl:space-x-16">
-          <div class="flex flex-col flex-1 space-y-2 xl:py-[18px] pt-[18px]">
-            <span
-              class="xl:block hidden bg-primary-dark self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">每日精選</span>
-            <a class="xl:text-xl xl:leading-[32px] tracking-[0.5px] text-lg leading-[28px] text-dark font-medium line-clamp-2 hover:underline"
-              href="#">
-              茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
-            </a>
-            <p class="text-light-dark line-clamp-4 xl:leading-[32px] leading-[28px]">
-              想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
-            </p>
-            <a class="inline-block text-center text-sm leading-[20px] text-primary-dark border border-primary-dark rounded xl:w-[135px] w-full xl:mt-2 !mt-4 py-[10px] duration-200 hover:bg-primary-dark hover:text-white"
-              href="#">
-              繼續閱讀
-            </a>
+      <!-- 特別企劃 -->
+      <section class="mt-12 bg-gray-200">
+        <div class="container px-5 pt-8 pb-16 mx-auto xl:pt-12 xl:pb-[90px] xl:px-0">
+          <div class="flex flex-col gap-5 justify-center items-start xl:gap-6 xl:items-center">
+            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#Topic 特別企劃</p>
+            <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
           </div>
-          <!-- 圖片 -->
-          <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
-            <span
-              class="block xl:hidden absolute left-0 top-0 bg-primary-dark self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">每日精選</span>
-            <img class="xl:aspect-[486/324] aspect-[350/232] object-cover w-full h-full duration-500 hover:scale-125"
-              src="./images/img-18.jpg" loading="lazy" alt="" />
-          </a>
 
-          <!-- 影片 -->
-          <!-- <div
-            class="video xl:aspect-[486/324] aspect-[350/232] overflow-hidden flex-1 rounded inline-block shadow-16"
-          >
-            <iframe
-              width="800"
-              height="600"
-              src="https://www.youtube.com/embed/6UbFvAlqv58?controls=0"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div> -->
+          <!-- Splide 輪播 -->
+          <div class="mt-6 splide special-project xl:mt-8">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <!-- 輪播項目 1 -->
+                <li class="splide__slide">
+                  <div
+                    class="flex relative flex-col-reverse p-0 xl:flex-row xl:pl-12 xl:pr-0 xl:py-6 xl:space-x-12 xl:before:content-[''] xl:before:absolute xl:before:left-0 xl:before:top-0 xl:before:w-[925px] xl:before:h-full xl:before:bg-white xl:before:rounded-lg xl:before:shadow-6-6">
+                    <div class="flex relative flex-col justify-center space-y-4 xl:flex-1">
+                      <span
+                        class="xl:block hidden bg-secondary self-start text-sm leading-[20px] text-white font-bold rounded px-2.5 py-[6px]">MOOK
+                        玩什麼</span>
+                      <div class="flex flex-col space-y-2">
+                        <a class="xl:text-xl xl:leading-8 tracking-[0.5px] text-[18px] leading-7 text-black font-bold line-clamp-2 hover:underline"
+                          href="#">
+                          大阪世博台灣玉山館亮點必看！TECH WORLD 4大展演空間展現自然科技互動體驗絕讚好評
+                        </a>
+                        <p class="text-base leading-6 text-black xl:line-clamp-5 line-clamp-4 xl:leading-7">
+                          2025年大阪世界萬國博覽會觀展遊客相當踴躍，其中，國人前往觀展時，除了主辦城市國家日本館最多人想要參觀，台灣的玉山館TECH
+                          WORLD也深受國人喜愛與好評，透過台灣自然風土與科技人文等元素讓國際認識台灣，展場
+                          以「生命」、「自然」與「未來」為3大主題，也透過沉浸式劇場、互動體驗展現台灣的魅力，也讓展覽充滿可看性！
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 影片區塊 -->
+                    <div
+                      class="video relative xl:aspect-[510/340] aspect-[350/233] overflow-hidden xl:w-[510px] xl:flex-shrink-0 rounded shadow-16">
+                      <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/kEE3STefCec?si=l17rRp3lzJHz350C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 圖片 -->
+                    <!-- <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
+                      <span
+                        class="block xl:hidden absolute left-0 top-0 bg-secondary self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">MOOK
+                        玩什麼</span>
+                      <img
+                        class="xl:aspect-[510/340] aspect-[350/233] object-cover w-full h-full duration-500 hover:scale-125"
+                        src="./images/img-18.jpg" loading="lazy" alt="" />
+                    </a> -->
+                  </div>
+                </li>
+
+                <!-- 輪播項目 2 -->
+                <li class="splide__slide">
+                  <div
+                    class="flex relative flex-col-reverse p-0 xl:flex-row xl:pl-12 xl:pr-0 xl:py-6 xl:space-x-12 xl:before:content-[''] xl:before:absolute xl:before:left-0 xl:before:top-0 xl:before:w-[925px] xl:before:h-full xl:before:bg-white xl:before:rounded-lg xl:before:shadow-6-6">
+                    <div class="flex relative flex-col justify-center space-y-4 xl:flex-1">
+                      <span
+                        class="xl:block hidden bg-secondary self-start text-sm leading-[20px] text-white font-bold rounded px-2.5 py-[6px]">MOOK
+                        玩什麼</span>
+                      <div class="flex flex-col space-y-2">
+                        <a class="xl:text-xl xl:leading-8 tracking-[0.5px] text-[18px] leading-7 text-black font-bold line-clamp-2 hover:underline"
+                          href="#">
+                          大阪世博台灣玉山館亮點必看！TECH WORLD 4大展演空間展現自然科技互動體驗絕讚好評
+                        </a>
+                        <p class="text-base leading-6 text-black xl:line-clamp-5 line-clamp-4 xl:leading-7">
+                          2025年大阪世界萬國博覽會觀展遊客相當踴躍，其中，國人前往觀展時，除了主辦城市國家日本館最多人想要參觀，台灣的玉山館TECH
+                          WORLD也深受國人喜愛與好評，透過台灣自然風土與科技人文等元素讓國際認識台灣，展場
+                          以「生命」、「自然」與「未來」為3大主題，也透過沉浸式劇場、互動體驗展現台灣的魅力，也讓展覽充滿可看性！
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 影片區塊 -->
+                    <div
+                      class="video relative xl:aspect-[510/340] aspect-[350/233] overflow-hidden xl:w-[510px] xl:flex-shrink-0 rounded shadow-16">
+                      <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/kEE3STefCec?si=l17rRp3lzJHz350C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 圖片 -->
+                    <!-- <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
+                      <span
+                        class="block xl:hidden absolute left-0 top-0 bg-secondary self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">MOOK
+                        玩什麼</span>
+                      <img
+                        class="xl:aspect-[510/340] aspect-[350/233] object-cover w-full h-full duration-500 hover:scale-125"
+                        src="./images/img-18.jpg" loading="lazy" alt="" />
+                    </a> -->
+                  </div>
+                </li>
+
+                <!-- 輪播項目 3 -->
+                <li class="splide__slide">
+                  <div
+                    class="flex relative flex-col-reverse p-0 xl:flex-row xl:pl-12 xl:pr-0 xl:py-6 xl:space-x-12 xl:before:content-[''] xl:before:absolute xl:before:left-0 xl:before:top-0 xl:before:w-[925px] xl:before:h-full xl:before:bg-white xl:before:rounded-lg xl:before:shadow-6-6">
+                    <div class="flex relative flex-col justify-center space-y-4 xl:flex-1">
+                      <span
+                        class="xl:block hidden bg-secondary self-start text-sm leading-[20px] text-white font-bold rounded px-2.5 py-[6px]">MOOK
+                        玩什麼</span>
+                      <div class="flex flex-col space-y-2">
+                        <a class="xl:text-xl xl:leading-8 tracking-[0.5px] text-[18px] leading-7 text-black font-bold line-clamp-2 hover:underline"
+                          href="#">
+                          大阪世博台灣玉山館亮點必看！TECH WORLD 4大展演空間展現自然科技互動體驗絕讚好評
+                        </a>
+                        <p class="text-base leading-6 text-black xl:line-clamp-5 line-clamp-4 xl:leading-7">
+                          2025年大阪世界萬國博覽會觀展遊客相當踴躍，其中，國人前往觀展時，除了主辦城市國家日本館最多人想要參觀，台灣的玉山館TECH
+                          WORLD也深受國人喜愛與好評，透過台灣自然風土與科技人文等元素讓國際認識台灣，展場
+                          以「生命」、「自然」與「未來」為3大主題，也透過沉浸式劇場、互動體驗展現台灣的魅力，也讓展覽充滿可看性！
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 影片區塊 -->
+                    <div
+                      class="video relative xl:aspect-[510/340] aspect-[350/233] overflow-hidden xl:w-[510px] xl:flex-shrink-0 rounded shadow-16">
+                      <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/kEE3STefCec?si=l17rRp3lzJHz350C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 圖片 -->
+                    <!-- <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
+                      <span
+                        class="block xl:hidden absolute left-0 top-0 bg-secondary self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">MOOK
+                        玩什麼</span>
+                      <img
+                        class="xl:aspect-[510/340] aspect-[350/233] object-cover w-full h-full duration-500 hover:scale-125"
+                        src="./images/img-18.jpg" loading="lazy" alt="" />
+                    </a> -->
+                  </div>
+                </li>
+
+                <!-- 輪播項目 4 -->
+                <li class="splide__slide">
+                  <div
+                    class="flex relative flex-col-reverse p-0 xl:flex-row xl:pl-12 xl:pr-0 xl:py-6 xl:space-x-12 xl:before:content-[''] xl:before:absolute xl:before:left-0 xl:before:top-0 xl:before:w-[925px] xl:before:h-full xl:before:bg-white xl:before:rounded-lg xl:before:shadow-6-6">
+                    <div class="flex relative flex-col justify-center space-y-4 xl:flex-1">
+                      <span
+                        class="xl:block hidden bg-secondary self-start text-sm leading-[20px] text-white font-bold rounded px-2.5 py-[6px]">MOOK
+                        玩什麼</span>
+                      <div class="flex flex-col space-y-2">
+                        <a class="xl:text-xl xl:leading-8 tracking-[0.5px] text-[18px] leading-7 text-black font-bold line-clamp-2 hover:underline"
+                          href="#">
+                          大阪世博台灣玉山館亮點必看！TECH WORLD 4大展演空間展現自然科技互動體驗絕讚好評
+                        </a>
+                        <p class="text-base leading-6 text-black xl:line-clamp-5 line-clamp-4 xl:leading-7">
+                          2025年大阪世界萬國博覽會觀展遊客相當踴躍，其中，國人前往觀展時，除了主辦城市國家日本館最多人想要參觀，台灣的玉山館TECH
+                          WORLD也深受國人喜愛與好評，透過台灣自然風土與科技人文等元素讓國際認識台灣，展場
+                          以「生命」、「自然」與「未來」為3大主題，也透過沉浸式劇場、互動體驗展現台灣的魅力，也讓展覽充滿可看性！
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 影片區塊 -->
+                    <div
+                      class="video relative xl:aspect-[510/340] aspect-[350/233] overflow-hidden xl:w-[510px] xl:flex-shrink-0 rounded shadow-16">
+                      <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/kEE3STefCec?si=l17rRp3lzJHz350C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 圖片 -->
+                    <!-- <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
+                      <span
+                        class="block xl:hidden absolute left-0 top-0 bg-secondary self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">MOOK
+                        玩什麼</span>
+                      <img
+                        class="xl:aspect-[510/340] aspect-[350/233] object-cover w-full h-full duration-500 hover:scale-125"
+                        src="./images/img-18.jpg" loading="lazy" alt="" />
+                    </a> -->
+                  </div>
+                </li>
+
+                <!-- 輪播項目 5 -->
+                <li class="splide__slide">
+                  <div
+                    class="flex relative flex-col-reverse p-0 xl:flex-row xl:pl-12 xl:pr-0 xl:py-6 xl:space-x-12 xl:before:content-[''] xl:before:absolute xl:before:left-0 xl:before:top-0 xl:before:w-[925px] xl:before:h-full xl:before:bg-white xl:before:rounded-lg xl:before:shadow-6-6">
+                    <div class="flex relative flex-col justify-center space-y-4 xl:flex-1">
+                      <span
+                        class="xl:block hidden bg-secondary self-start text-sm leading-[20px] text-white font-bold rounded px-2.5 py-[6px]">MOOK
+                        玩什麼</span>
+                      <div class="flex flex-col space-y-2">
+                        <a class="xl:text-xl xl:leading-8 tracking-[0.5px] text-[18px] leading-7 text-black font-bold line-clamp-2 hover:underline"
+                          href="#">
+                          大阪世博台灣玉山館亮點必看！TECH WORLD 4大展演空間展現自然科技互動體驗絕讚好評
+                        </a>
+                        <p class="text-base leading-6 text-black xl:line-clamp-5 line-clamp-4 xl:leading-7">
+                          2025年大阪世界萬國博覽會觀展遊客相當踴躍，其中，國人前往觀展時，除了主辦城市國家日本館最多人想要參觀，台灣的玉山館TECH
+                          WORLD也深受國人喜愛與好評，透過台灣自然風土與科技人文等元素讓國際認識台灣，展場
+                          以「生命」、「自然」與「未來」為3大主題，也透過沉浸式劇場、互動體驗展現台灣的魅力，也讓展覽充滿可看性！
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 影片區塊 -->
+                    <div
+                      class="video relative xl:aspect-[510/340] aspect-[350/233] overflow-hidden xl:w-[510px] xl:flex-shrink-0 rounded shadow-16">
+                      <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/kEE3STefCec?si=l17rRp3lzJHz350C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 圖片 -->
+                    <!-- <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
+                      <span
+                        class="block xl:hidden absolute left-0 top-0 bg-secondary self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">MOOK
+                        玩什麼</span>
+                      <img
+                        class="xl:aspect-[510/340] aspect-[350/233] object-cover w-full h-full duration-500 hover:scale-125"
+                        src="./images/img-18.jpg" loading="lazy" alt="" />
+                    </a> -->
+                  </div>
+                </li>
+
+                <!-- 輪播項目 6 -->
+                <li class="splide__slide">
+                  <div
+                    class="flex relative flex-col-reverse p-0 xl:flex-row xl:pl-12 xl:pr-0 xl:py-6 xl:space-x-12 xl:before:content-[''] xl:before:absolute xl:before:left-0 xl:before:top-0 xl:before:w-[925px] xl:before:h-full xl:before:bg-white xl:before:rounded-lg xl:before:shadow-6-6">
+                    <div class="flex relative flex-col justify-center space-y-4 xl:flex-1">
+                      <span
+                        class="xl:block hidden bg-secondary self-start text-sm leading-[20px] text-white font-bold rounded px-2.5 py-[6px]">MOOK
+                        玩什麼</span>
+                      <div class="flex flex-col space-y-2">
+                        <a class="xl:text-xl xl:leading-8 tracking-[0.5px] text-[18px] leading-7 text-black font-bold line-clamp-2 hover:underline"
+                          href="#">
+                          大阪世博台灣玉山館亮點必看！TECH WORLD 4大展演空間展現自然科技互動體驗絕讚好評
+                        </a>
+                        <p class="text-base leading-6 text-black xl:line-clamp-5 line-clamp-4 xl:leading-7">
+                          2025年大阪世界萬國博覽會觀展遊客相當踴躍，其中，國人前往觀展時，除了主辦城市國家日本館最多人想要參觀，台灣的玉山館TECH
+                          WORLD也深受國人喜愛與好評，透過台灣自然風土與科技人文等元素讓國際認識台灣，展場
+                          以「生命」、「自然」與「未來」為3大主題，也透過沉浸式劇場、互動體驗展現台灣的魅力，也讓展覽充滿可看性！
+                        </p>
+                      </div>
+                    </div>
+                    <!-- 影片區塊 -->
+                    <div
+                      class="video relative xl:aspect-[510/340] aspect-[350/233] overflow-hidden xl:w-[510px] xl:flex-shrink-0 rounded shadow-16">
+                      <iframe class="w-full h-full"
+                        src="https://www.youtube-nocookie.com/embed/kEE3STefCec?si=l17rRp3lzJHz350C"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+
+                    <!-- 圖片 -->
+                    <!-- <a class="inline-block overflow-hidden relative flex-1 rounded shadow-16" href="#">
+                      <span
+                        class="block xl:hidden absolute left-0 top-0 bg-secondary self-start text-sm leading-[20px] text-white rounded px-2 py-[6px]">MOOK
+                        玩什麼</span>
+                      <img
+                        class="xl:aspect-[510/340] aspect-[350/233] object-cover w-full h-full duration-500 hover:scale-125"
+                        src="./images/img-18.jpg" loading="lazy" alt="" />
+                    </a> -->
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
-      <!-- banner 文 end -->
+      <!-- 特別企劃 end -->
 
-      <!-- 熱門文章 -->
+      <!-- 熱門影音 -->
+      <section class="container px-5 py-10 mx-auto xl:py-12">
+        <div class="flex flex-col gap-5 justify-center items-start xl:gap-6 xl:items-center">
+          <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#Watch 熱門影音</p>
+          <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
+        </div>
+
+        <div class="flex flex-col gap-8 mt-6 xl:flex-row xl:gap-12 xl:mt-8">
+          <!-- YouTube -->
+          <div class="max-w-[750px] w-full flex flex-col gap-4 flex-shrink-0">
+            <div class="xl:aspect-[750/422] aspect-[350/197] overflow-hidden rounded-2xl">
+              <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/y_lDc_QtI9s?si=b7p5miXNvHTy4zr4"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="flex flex-col space-y-2">
+              <p class="text-lg leading-7 text-black font-bold tracking-[0.5px] line-clamp-2">這些東西原來不能帶！血拚2萬就要申報！！！🎁
+                會被海關沒收的伴手禮｜託運·隨身行李怎麼分？超快速分辨法</p>
+              <p class="text-base leading-6 text-dark line-clamp-2">
+                土耳其近日開放國境管制，加上土耳其里拉匯率走低，旅行土耳其正是時候；土耳其航空與雄獅旅遊合作，推出抗疫不漲價的機加酒專案，不僅可入住五星飯店，也能暢玩伊斯坦堡與卡帕多其亞兩大城，旅客還可享45美元加購當地7日遊的超值行程，如此優惠的機加酒方案，景編很推薦喔！
+              </p>
+            </div>
+          </div>
+
+          <!-- Shorts -->
+          <div
+            class="overflow-hidden xl:aspect-[302/537] aspect-[275/520] xl:max-w-[302px] max-w-[275px] w-full mx-auto rounded-2xl">
+            <iframe class="w-full h-full" src="https://www.youtube-nocookie.com/embed/fZY3haglYzI?si=hIZl_nz9fu5W1wI2"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+        </div>
+      </section>
+      <!-- 熱門影音 end -->
+
+      <!-- 焦點情報 -->
+      <section class="mt-12 bg-gray-200">
+        <div class="container px-5 pt-8 pb-4 mx-auto xl:pt-12 xl:pb-8 xl:px-0">
+          <div class="flex flex-col gap-5 justify-center items-start xl:gap-6 xl:items-center">
+            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#Focus 焦點情報</p>
+            <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
+          </div>
+
+          <div class="flex flex-col gap-8 mt-6 xl:flex-row xl:gap-12 xl:mt-8">
+            <a class="flex overflow-hidden relative flex-col flex-1 gap-2 xl:rounded-2xl" href="#">
+              <img class="object-cover w-full h-full rounded-2xl duration-500 xl:rounded-none hover:scale-125"
+                src="./images/img-23.png" loading="lazy" alt="" />
+              <p
+                class="xl:absolute xl:left-0 xl:bottom-0 xl:bg-black xl:bg-opacity-[64%] text-lg leading-7 font-bold tracking-[0.5px] xl:text-white text-black w-full xl:px-6 xl:py-3">
+                朝聖韓劇淚之女王取景地櫻花隧道！日韓賞櫻絕美櫻花海5大推薦</p>
+            </a>
+            <a class="flex overflow-hidden relative flex-col flex-1 gap-2 xl:rounded-2xl" href="#">
+              <img class="object-cover w-full h-full rounded-2xl duration-500 xl:rounded-none hover:scale-125"
+                src="./images/img-24.png" loading="lazy" alt="" />
+              <p
+                class="xl:absolute xl:left-0 xl:bottom-0 xl:bg-black xl:bg-opacity-[64%] text-lg leading-7 font-bold tracking-[0.5px] xl:text-white text-black w-full xl:px-6 xl:py-3">
+                朝聖韓劇淚之女王取景地櫻花隧道！日韓賞櫻絕美櫻花海5大推薦</p>
+            </a>
+          </div>
+
+          <div class="mt-4 xl:mt-8 splide focus">
+            <!-- 左右按鈕 -->
+            <div class="splide__arrows splide__arrows--ltr">
+              <button
+                class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !left-[-25px] xl:!flex !hidden splide__arrow splide__arrow--prev"
+                type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#kft993jrqa)">
+                    <path
+                      d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                      fill="#000" />
+                  </g>
+                  <defs>
+                    <clipPath id="kft993jrqa">
+                      <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button
+                class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !right-[-25px] xl:!flex !hidden splide__arrow splide__arrow--next"
+                type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#kft993jrqa)">
+                    <path
+                      d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                      fill="#000" />
+                  </g>
+                  <defs>
+                    <clipPath id="kft993jrqa">
+                      <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
+            <div class="py-4 splide__track">
+              <ul class="splide__list">
+                <!-- 焦點情報卡片 (可跑迴圈) -->
+                <li class="splide__slide">
+                  <a class="inline-block overflow-hidden w-[250px] h-[246px] xl:w-[345px] xl:h-[310px] rounded-2xl duration-200 bg-white bg-opacity-[88%] hover:shadow-8-16"
+                    href="#">
+                    <img class="aspect-[345/230] object-cover w-full" src="./images/img-01.jpg" loading="lazy" alt="" />
+                    <div class="p-3">
+                      <div class="text-black text-lg leading-[28px] tracking-[0.5px] font-bold line-clamp-2 h-[56px]">
+                        1. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                        出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <!-- 焦點情報卡片 end -->
+                <li class="splide__slide">
+                  <a class="inline-block overflow-hidden w-[250px] h-[246px] xl:w-[345px] xl:h-[310px] rounded-2xl duration-200 bg-white bg-opacity-[88%] hover:shadow-8-16"
+                    href="#">
+                    <img class="aspect-[345/230] object-cover w-full" src="./images/img-02.jpg" loading="lazy" alt="" />
+                    <div class="p-3">
+                      <div class="text-black text-lg leading-[28px] tracking-[0.5px] font-bold line-clamp-2 h-[56px]">
+                        2. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                        出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a class="inline-block overflow-hidden w-[250px] h-[246px] xl:w-[345px] xl:h-[310px] rounded-2xl duration-200 bg-white bg-opacity-[88%] hover:shadow-8-16"
+                    href="#">
+                    <img class="aspect-[345/230] object-cover w-full" src="./images/img-03.jpg" loading="lazy" alt="" />
+                    <div class="p-3">
+                      <div class="text-black text-lg leading-[28px] tracking-[0.5px] font-bold line-clamp-2 h-[56px]">
+                        3. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                        出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a class="inline-block overflow-hidden w-[250px] h-[246px] xl:w-[345px] xl:h-[310px] rounded-2xl duration-200 bg-white bg-opacity-[88%] hover:shadow-8-16"
+                    href="#">
+                    <img class="aspect-[345/230] object-cover w-full" src="./images/img-04.jpg" loading="lazy" alt="" />
+                    <div class="p-3">
+                      <div class="text-black text-lg leading-[28px] tracking-[0.5px] font-bold line-clamp-2 h-[56px]">
+                        4. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                        出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a class="inline-block overflow-hidden w-[250px] h-[246px] xl:w-[345px] xl:h-[310px] rounded-2xl duration-200 bg-white bg-opacity-[88%] hover:shadow-8-16"
+                    href="#">
+                    <img class="aspect-[345/230] object-cover w-full" src="./images/img-05.jpg" loading="lazy" alt="" />
+                    <div class="p-3">
+                      <div class="text-black text-lg leading-[28px] tracking-[0.5px] font-bold line-clamp-2 h-[56px]">
+                        5. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                        出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      </div>
+                    </div>
+                  </a>
+                </li>
+                <li class="splide__slide">
+                  <a class="inline-block overflow-hidden w-[250px] h-[246px] xl:w-[345px] xl:h-[310px] rounded-2xl duration-200 bg-white bg-opacity-[88%] hover:shadow-8-16"
+                    href="#">
+                    <img class="aspect-[345/230] object-cover w-full" src="./images/img-06.jpg" loading="lazy" alt="" />
+                    <div class="p-3">
+                      <div class="text-black text-lg leading-[28px] tracking-[0.5px] font-bold line-clamp-2 h-[56px]">
+                        6. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                        出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
+                      </div>
+                    </div>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- 焦點情報 end -->
+
+      <!-- 最新文章 -->
       <section
-        class="container mx-auto  mt-10 flex xl:flex-row flex-col-reverse xl:px-0 px-5 xl:space-x-[72px] xl:space-y-0 space-y-10">
+        class="container mx-auto xl:mt-12 mt-10 flex xl:flex-row flex-col xl:px-0 px-5 xl:space-x-[72px] xl:space-y-0 space-y-10">
         <!-- 左側主題 -->
-        <div class="max-w-[728px] xl:mt-0 mt-10">
-          <h2 class="inline-flex items-center mb-4 space-x-1 xl:mb-6">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path
-                d="M8.39 18.49V8.33c0-.4.12-.79.34-1.12l2.73-4.06c.43-.65 1.5-1.11 2.41-.77.98.33 1.63 1.43 1.42 2.41l-.52 3.27c-.04.3.04.57.21.78.17.19.42.31.69.31h4.11c.79 0 1.47.32 1.87.88.38.54.45 1.24.2 1.95l-2.46 7.49c-.31 1.24-1.66 2.25-3 2.25h-3.9c-.67 0-1.61-.23-2.04-.66l-1.28-.99c-.49-.37-.78-.96-.78-1.58zM5.21 6.38H4.18C2.63 6.38 2 6.98 2 8.46v10.06c0 1.48.63 2.08 2.18 2.08h1.03c1.55 0 2.18-.6 2.18-2.08V8.46c0-1.48-.63-2.08-2.18-2.08z"
-                fill="#000" />
-            </svg>
-            <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark">熱門文章</span>
-          </h2>
-          <div class="flex flex-col space-y-6 xl:space-y-8">
-            <!-- 熱門文章卡片 start (可跑迴圈) -->
+        <div class="max-w-[728px]">
+          <div class="flex flex-col gap-5 justify-center items-start xl:gap-6">
+            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#News 最新文章</p>
+            <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
+          </div>
+          <div class="flex flex-col mt-4 space-y-6 xl:mt-8 xl:space-y-8">
+            <!-- 最新文章卡片 start (可跑迴圈) -->
             <div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0">
               <a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#">
                 <img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
@@ -310,17 +639,16 @@
                   <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
                     href="#">國內</a>
                 </div>
-                <a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                <a class="inline-block text-black xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-bold line-clamp-2 xl:mt-2 mt-1 hover:underline hover:text-secondary"
                   href="#">
                   南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
                 </a>
-                <p
-                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">
+                <p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-black mt-2">
                   想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
                 </p>
               </div>
             </div>
-            <!-- 熱門文章卡片 end -->
+            <!-- 最新文章卡片 end -->
             <div class="flex items-center xl:space-x-6 space-x-4 xl:pb-8 pb-6 border-b border-gray-200 last:!border-0">
               <a class="xl:max-w-[255px] max-w-[125px] flex-1 overflow-hidden rounded inline-block self-start" href="#">
                 <img class="xl:aspect-[255/170] aspect-[125/83] object-cover w-full h-full duration-500 hover:scale-125"
@@ -335,12 +663,11 @@
                   <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
                     href="#">國內</a>
                 </div>
-                <a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                <a class="inline-block text-black xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-bold line-clamp-2 xl:mt-2 mt-1 hover:underline hover:text-secondary"
                   href="#">
                   南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
                 </a>
-                <p
-                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">
+                <p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-black mt-2">
                   想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
                 </p>
               </div>
@@ -359,12 +686,11 @@
                   <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
                     href="#">國內</a>
                 </div>
-                <a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                <a class="inline-block text-black xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-bold line-clamp-2 xl:mt-2 mt-1 hover:underline hover:text-secondary"
                   href="#">
                   南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
                 </a>
-                <p
-                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">
+                <p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-black mt-2">
                   想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
                 </p>
               </div>
@@ -383,12 +709,11 @@
                   <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
                     href="#">國內</a>
                 </div>
-                <a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                <a class="inline-block text-black xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-bold line-clamp-2 xl:mt-2 mt-1 hover:underline hover:text-secondary"
                   href="#">
                   南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
                 </a>
-                <p
-                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">
+                <p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-black mt-2">
                   想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
                 </p>
               </div>
@@ -407,12 +732,11 @@
                   <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
                     href="#">國內</a>
                 </div>
-                <a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                <a class="inline-block text-black xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-bold line-clamp-2 xl:mt-2 mt-1 hover:underline hover:text-secondary"
                   href="#">
                   南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
                 </a>
-                <p
-                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">
+                <p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-black mt-2">
                   想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
                 </p>
               </div>
@@ -431,12 +755,11 @@
                   <a class="inline-block text-secondary xl:text-sm text-xs xl:leading-[20px] leading-[18px] px-1 first:!pl-0"
                     href="#">國內</a>
                 </div>
-                <a class="inline-block text-dark xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-medium line-clamp-2 xl:mt-2 mt-1 hover:underline"
+                <a class="inline-block text-black xl:text-lg xl:leading-[28px] leading-[24px] tracking-[0.5px] font-bold line-clamp-2 xl:mt-2 mt-1 hover:underline hover:text-secondary"
                   href="#">
                   南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！南山寺步道順訪韓式餐廳秘境茶園雲海大景在眼前！
                 </a>
-                <p
-                  class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-light-dark font-light mt-2">
+                <p class="xl:line-clamp-3 xl:block hidden xl:text-base text-sm leading-[24px] text-black mt-2">
                   想輕鬆走步道賞雲海大景，那就不能錯過新北坪林區的南山寺步道！這裡的雲海觀賞點可以將整片山巒與茶園的景色盡收眼底，附近小路內還有一間韓國人開的秘境餐廳，賞完景想找地方坐下來填肚子最適合了。
                 </p>
               </div>
@@ -445,37 +768,17 @@
         </div>
 
         <!-- 右側主題 -->
-        <div class="flex flex-col space-y-8 xl:max-w-[300px] mx-auto">
-          <!-- AD -->
-          <div class="mx-auto">
-            <!-- pc 圖片 -->
-            <a href="#">
-              <img class="xl:block hidden xl:aspect-[300/598] aspect-[251/167]" src="./images/Ad-07.jpg" loading="lazy"
-                alt="" />
-              <!-- mb 圖片 -->
-              <img class="xl:hidden aspect-[300/250]" src="./images/Ad-05.jpg" loading="lazy" alt="" />
-            </a>
-          </div>
-          <!-- AD -->
-          <div class="mx-auto">
-            <a href="#">
-              <img src="./images/Ad-05.jpg" loading="lazy" alt="" />
-            </a>
-          </div>
+        <div class="flex flex-col space-y-10 xl:max-w-[300px] mx-auto">
           <div>
             <h2 class="inline-flex items-center space-x-1">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M16.82 1.91H7.18c-2.12 0-3.86 1.74-3.86 3.86v14.09c0 1.8 1.29 2.56 2.87 1.69l4.88-2.71c.52-.29 1.36-.29 1.87 0l4.88 2.71c1.58.88 2.87.12 2.87-1.69V5.77c-.01-2.12-1.74-3.86-3.87-3.86zm-1.2 7.12-4 4c-.15.15-.34.22-.53.22s-.38-.07-.53-.22l-1.5-1.5a.754.754 0 0 1 0-1.06c.29-.29.77-.29 1.06 0l.97.97 3.47-3.47c.29-.29.77-.29 1.06 0 .29.29.29.77 0 1.06z"
-                  fill="#000" />
-              </svg>
-              <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark">主題區塊名稱</span>
+              <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-black">主題區塊名稱</span>
             </h2>
             <div class="grid grid-cols-1 mt-4 space-y-6 xl:space-y-4">
               <!-- 主題區塊 start (可跑迴圈) -->
               <div class="flex space-x-3 pb-4 border-b border-gray-200 last:!border-b-0">
-                <span class="font-semibold font-inter text-gray-500 text-[22px] min-w-[11px]">1</span>
-                <a class="text-dark leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-primary-dark" href="#">
+                <span class="font-semibold font-inter text-secondary text-[22px] min-w-[11px]">1</span>
+                <a class="text-black font-bold leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-secondary"
+                  href="#">
                   星宇航空 X Hello
                   Kitty七夕限定微旅行！環島列車熱氣球一次全體驗星宇航空 X Hello
                   Kitty七夕限定微旅行！環島列車熱氣球一次全體驗
@@ -483,204 +786,60 @@
               </div>
               <!-- 主題區塊 end -->
               <div class="flex space-x-3 pb-4 border-b border-gray-200 last:!border-b-0">
-                <span class="font-semibold font-inter text-gray-500 text-[22px] min-w-[11px]">2</span>
-                <a class="text-dark leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-primary-dark" href="#">
+                <span class="font-semibold font-inter text-secondary text-[22px] min-w-[11px]">2</span>
+                <a class="text-black font-bold leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-secondary"
+                  href="#">
                   200年古道小火車美景！塘湖步道秘境級O形縱走
                 </a>
               </div>
               <div class="flex space-x-3 pb-4 border-b border-gray-200 last:!border-b-0">
-                <span class="font-semibold font-inter text-gray-500 text-[22px] min-w-[11px]">3</span>
-                <a class="text-dark leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-primary-dark" href="#">
+                <span class="font-semibold font-inter text-secondary text-[22px] min-w-[11px]">3</span>
+                <a class="text-black font-bold leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-secondary"
+                  href="#">
                   小百岳森林空靈美境！都蘭山步道走訪部落聖山
                 </a>
               </div>
               <div class="flex space-x-3 pb-4 border-b border-gray-200 last:!border-b-0">
-                <span class="font-semibold font-inter text-gray-500 text-[22px] min-w-[11px]">4</span>
-                <a class="text-dark leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-primary-dark" href="#">
+                <span class="font-semibold font-inter text-secondary text-[22px] min-w-[11px]">4</span>
+                <a class="text-black font-bold leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-secondary"
+                  href="#">
                   向日葵奇幻鏡屋新場景！梵谷光影體驗展暑期必訪
                 </a>
               </div>
               <div class="flex space-x-3 pb-4 border-b border-gray-200 last:!border-b-0">
-                <span class="font-semibold font-inter text-gray-500 text-[22px] min-w-[11px]">5</span>
-                <a class="text-dark leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-primary-dark" href="#">
+                <span class="font-semibold font-inter text-secondary text-[22px] min-w-[11px]">5</span>
+                <a class="text-black font-bold leading-[24px] line-clamp-2 pt-1 duration-200 hover:text-secondary"
+                  href="#">
                   彩虹斗笠步道必拍！桃園蓮花季五大造景賞花美拍
                 </a>
               </div>
             </div>
 
             <div class="mt-4 text-center">
-              <a class="inline-block text-center text-sm leading-[20px] text-primary-dark border border-primary-dark rounded w-full py-[10px] duration-200 hover:bg-primary-dark hover:text-white"
+              <a class="inline-block text-center text-sm leading-[20px] text-secondary border border-secondary bg-secondary-light rounded w-full py-[10px] duration-200 hover:bg-secondary hover:text-white"
                 href="#">
                 閱讀更多
               </a>
             </div>
           </div>
-        </div>
-      </section>
-      <!-- 熱門文章 end -->
-
-      <!-- AD -->
-      <div class="container xl:max-w-[970px] max-w-[300px] mx-auto mt-10">
-        <a href="#">
-          <!-- pc 圖片 -->
-          <img class="xl:block hidden xl:aspect-[970/250] aspect-[251/167]" src="./images/Ad-01.jpg" loading="lazy"
-            alt="" />
-          <!-- mb 圖片 -->
-          <img class="xl:hidden aspect-[300/250]" src="./images/Ad-03.jpg" loading="lazy" alt="" />
-        </a>
-      </div>
-
-      <!-- 景編精選 -->
-      <section class="container px-5 mx-auto mt-10 xl:px-0">
-        <h2 class="inline-flex items-center space-x-1">
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path
-              d="M11.997 2.25c.986 0 1.75.744 2.23 1.717l1.586 3.199c.042.085.146.216.311.338.165.123.321.187.417.203l2.87.48c1.05.177 1.953.696 2.248 1.62.294.922-.14 1.869-.895 2.625l-.001.001-2.23 2.249a1.073 1.073 0 0 0-.23.443c-.06.208-.064.393-.039.506l.639 2.783c.266 1.164.186 2.355-.669 2.983-.858.631-2.016.343-3.039-.266l-2.69-1.607a1.034 1.034 0 0 0-.504-.111c-.222 0-.406.052-.512.113l-.002.002-2.685 1.602c-1.022.612-2.179.895-3.037.264-.854-.629-.938-1.817-.671-2.98l.638-2.783a1.114 1.114 0 0 0-.038-.506 1.073 1.073 0 0 0-.23-.443l-2.233-2.25c-.75-.757-1.182-1.703-.89-2.624.292-.924 1.193-1.444 2.244-1.62l2.869-.481c.09-.016.245-.079.409-.202a1.06 1.06 0 0 0 .31-.34l.003-.005 1.585-3.195c.485-.972 1.25-1.715 2.236-1.715z"
-              fill="#000" />
-          </svg>
-          <span class="font-bold xl:text-[22px] text-xl leading-[30px] text-dark">景編精選</span>
-        </h2>
-        <div class="splide scene">
-          <!-- 左右按鈕 -->
-          <div class="splide__arrows splide__arrows--ltr">
-            <button
-              class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !left-[-25px] xl:!flex !hidden splide__arrow splide__arrow--prev"
-              type="button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#kft993jrqa)">
-                  <path
-                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
-                    fill="#000" />
-                </g>
-                <defs>
-                  <clipPath id="kft993jrqa">
-                    <path fill="#fff" d="M0 0h24v24H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
-            <button
-              class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !right-[-25px] xl:!flex !hidden splide__arrow splide__arrow--next"
-              type="button">
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <g clip-path="url(#kft993jrqa)">
-                  <path
-                    d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
-                    fill="#000" />
-                </g>
-                <defs>
-                  <clipPath id="kft993jrqa">
-                    <path fill="#fff" d="M0 0h24v24H0z" />
-                  </clipPath>
-                </defs>
-              </svg>
-            </button>
+          <!-- AD -->
+          <div class="mx-auto">
+            <a href="#">
+              <img class="block aspect-[300/600] object-cover xl:max-w-max max-w-[300px] w-full h-full"
+                src="./images/Ad-07.jpg" loading="lazy" alt="" />
+            </a>
           </div>
-          <div class="pt-4 splide__track xl:pt-6">
-            <ul class="splide__list">
-              <!-- 景編精選卡片 (可跑迴圈) -->
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-01.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      1. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <!-- 景編精選卡片 end -->
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-02.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      2. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-03.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      3. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-04.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      4. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-05.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      5. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-06.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      6. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-07.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      7. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-              <li class="splide__slide !w-auto">
-                <a class="w-[251px] h-[244px] overflow-hidden rounded inline-block border duration-200 hover:shadow-8-16 hover:-translate-y-4"
-                  href="#">
-                  <img class="aspect-[251/167] object-cover w-full" src="./images/img-08.jpg" loading="lazy" alt="" />
-                  <div class="p-2 px-[10px] pb-3 overflow-hidden line-clamp-2">
-                    <div class="text-dark text-lg leading-[28px] tracking-[0.5px] font-medium line-clamp-2 h-[56px]">
-                      8. 出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                      出國玩土耳其不漲價！熱氣球歐亞美景暢玩兩大城超推
-                    </div>
-                  </div>
-                </a>
-              </li>
-            </ul>
+          <!-- AD -->
+          <div class="mx-auto">
+            <a href="#">
+              <img class="block aspect-[300/250] object-cover xl:max-w-max max-w-[300px] w-full h-full"
+                src="./images/Ad-05.jpg" loading="lazy" alt="" />
+            </a>
           </div>
         </div>
       </section>
-      <!-- 景編精選 end -->
+      <!-- 最新文章 end -->
+
     </main>
 
     <!-- footer -->
