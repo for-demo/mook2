@@ -5,11 +5,11 @@
 }
 
 .article h2 {
-  @apply text-dark text-xl leading-normal mb-8;
+  @apply text-black text-xl leading-normal mb-8;
 }
 
 .article p {
-  @apply text-dark text-lg leading-[28px];
+  @apply text-black text-lg leading-[28px];
 }
 
 .article img {
