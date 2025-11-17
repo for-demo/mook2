@@ -148,21 +148,3 @@ const focusSplide = new Splide(".focus", {
 
 focusSplide.mount();
 // 焦點情報 end
-
-// 景編精選
-const sceneSplide = new Splide(".scene", {
-  gap: "2rem",
-  rewind: true,
-  perPage: 4,
-  pagination: false,
-  breakpoints: {
-    1100: {
-      autoWidth: true,
-      perPage: 1,
-      perMove: 1,
-    },
-  },
-});
-
-sceneSplide.mount();
-// 景編精選 end

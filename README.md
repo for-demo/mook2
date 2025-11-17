@@ -3,6 +3,7 @@
 ## 頁面
 
 - [home page](https://for-demo.github.io/mook2/)
+- [list page](https://for-demo.github.io/mook2/list.html)
 
 ## 用到的套件
 

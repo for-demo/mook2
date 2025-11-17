@@ -1146,6 +1146,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-bg-opacity: 1;
   background-color: rgb(236 248 252 / var(--tw-bg-opacity));
 }
+.\!bg-secondary {
+  --tw-bg-opacity: 1 !important;
+  background-color: rgb(35 83 120 / var(--tw-bg-opacity)) !important;
+}
 .bg-opacity-\[88\%\] {
   --tw-bg-opacity: 88%;
 }
@@ -1173,6 +1177,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .fill-light-dark {
   fill: #807B75;
+}
+.fill-black {
+  fill: #000000;
 }
 .object-cover {
   -o-object-fit: cover;
@@ -1422,6 +1429,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-dark {
   --tw-text-opacity: 1;
   color: rgb(28 27 25 / var(--tw-text-opacity));
+}
+.\!text-white {
+  --tw-text-opacity: 1 !important;
+  color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
 }
 .opacity-0 {
   opacity: 0;
