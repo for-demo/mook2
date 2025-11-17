@@ -4,7 +4,7 @@ const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const path = require("path");
 
 // 判斷是否為生產環境
-const isProduction = process.env.NODE_ENV === 'production';
+const isProduction = process.env.NODE_ENV === "production";
 
 module.exports = {
   mode: isProduction ? "production" : "development",
@@ -13,6 +13,7 @@ module.exports = {
     list: "./src/js/list.js",
     tagList: "./src/js/tagList.js",
     article: "./src/js/article.js",
+    searchList: "./src/js/searchList.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -30,7 +31,7 @@ module.exports = {
     },
     hot: true,
     port: 3000,
-    open: ['index.html'],
+    open: ["index.html"],
   },
   resolve: {
     alias: {
@@ -97,6 +98,12 @@ module.exports = {
       chunks: ["vendor", "article"],
       filename: "article.html",
       template: "src/page/article.html",
+      minify: false,
+    }),
+    new HtmlWebpackPlugin({
+      chunks: ["vendor", "searchList"],
+      filename: "searchList.html",
+      template: "src/page/searchList.html",
       minify: false,
     }),
     new MiniCssExtractPlugin({

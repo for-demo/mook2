@@ -2,8 +2,11 @@
 
 ## 頁面
 
-- [home page](https://for-demo.github.io/mook2/)
-- [list page](https://for-demo.github.io/mook2/list.html)
+- [Home Page](https://for-demo.github.io/mook2/)
+- [List Page](https://for-demo.github.io/mook2/list.html)
+- [Tag List Page](https://for-demo.github.io/mook2/tagList.html)
+- [Article Page](https://for-demo.github.io/mook2/article.html)
+- [Search List Page](https://for-demo.github.io/mook2/searchList.html)
 
 ## 用到的套件
 
