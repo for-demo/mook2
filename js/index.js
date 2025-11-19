@@ -2486,7 +2486,7 @@ var focusSplide = new (splide_min_default())(".focus", {
   pagination: false,
   breakpoints: {
     1100: {
-      autoWidth: true,
+      fixedWidth: "250px",
       perPage: 1,
       perMove: 1
     }
