@@ -139,7 +139,7 @@ const focusSplide = new Splide(".focus", {
   pagination: false,
   breakpoints: {
     1100: {
-      autoWidth: true,
+      fixedWidth: "250px",
       perPage: 1,
       perMove: 1,
     },

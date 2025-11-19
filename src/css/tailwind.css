@@ -62,6 +62,10 @@
 
   /* Header 滾動收縮效果 */
   @media (min-width: 1280px) {
+    #mainHeader.scrolled {
+      @apply border-b border-gray-200;
+    }
+
     #mainHeader.scrolled > div {
       @apply !py-1.5;
     }

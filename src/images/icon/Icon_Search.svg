@@ -1,21 +1,10 @@
-<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <g clip-path="url(#3335lvcnna)">
-        <mask id="aqjyk76ppb" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="3" y="3" width="17" height="17">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.477 3.477h16.362V19.84H3.477V3.477z" fill="#fff"/>
-        </mask>
-        <g mask="url(#aqjyk76ppb)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M11.658 4.737a6.929 6.929 0 0 0-6.921 6.92 6.93 6.93 0 0 0 6.921 6.922c3.816 0 6.92-3.105 6.92-6.921a6.928 6.928 0 0 0-6.92-6.921zm0 15.102c-4.511 0-8.181-3.67-8.181-8.181 0-4.512 3.67-8.181 8.181-8.181 4.511 0 8.181 3.67 8.181 8.18 0 4.512-3.67 8.182-8.18 8.182z" fill="#000"/>
-        </g>
-        <mask id="liusdmedlc" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="16" y="17" width="6" height="5">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.724 17.173h4.835V22h-4.835v-4.827z" fill="#fff"/>
-        </mask>
-        <g mask="url(#liusdmedlc)">
-            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.838 22a.723.723 0 0 1-.51-.21l-3.392-3.383a.722.722 0 0 1 1.02-1.023l3.392 3.383a.721.721 0 0 1-.51 1.233z" fill="#000"/>
-        </g>
-    </g>
-    <defs>
-        <clipPath id="3335lvcnna">
-            <path fill="#fff" d="M0 0h24v24H0z"/>
-        </clipPath>
-    </defs>
+<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_6022_2702)">
+<path d="M14.9023 9.11817C14.9023 5.92365 12.3123 3.33376 9.11783 3.33366C5.92324 3.33366 3.33332 5.92358 3.33332 9.11817C3.33343 12.3127 5.9233 14.9027 9.11783 14.9027C12.3123 14.9026 14.9022 12.3126 14.9023 9.11817ZM16.569 9.11817C16.569 10.8754 15.9589 12.4894 14.9414 13.7634L18.0892 16.9111C18.4146 17.2366 18.4146 17.7641 18.0892 18.0895C17.7637 18.415 17.2362 18.415 16.9108 18.0895L13.763 14.9417C12.4891 15.9593 10.875 16.5693 9.11783 16.5693C5.00283 16.5693 1.66676 13.2331 1.66666 9.11817C1.66666 5.00311 5.00277 1.66699 9.11783 1.66699C13.2328 1.6671 16.569 5.00317 16.569 9.11817Z" fill="#828282"/>
+</g>
+<defs>
+<clipPath id="clip0_6022_2702">
+<rect width="20" height="20" fill="white"/>
+</clipPath>
+</defs>
 </svg>
