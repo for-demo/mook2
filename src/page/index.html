@@ -11,7 +11,7 @@
 <body>
   <h1 class="sr-only">景點+</h1>
   <!-- header -->
-  <%= require('html-loader!../components/header.html').default %>
+  <%= require('html-loader?{"minimize":false,"sources":false}!../components/header.html').default %>
     <main class="mb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]">
       <!-- 大輪播 -->
       <section class="w-full h-full main-banner splide">
@@ -879,10 +879,10 @@
     </main>
 
     <!-- footer -->
-    <%= require('html-loader!../components/footer.html').default %>
+    <%= require('html-loader?{"minimize":false,"sources":false}!../components/footer.html').default %>
 
       <!-- gotop -->
-      <%= require('html-loader!../components/gotop.html').default %>
+      <%= require('html-loader?{"minimize":false,"sources":false}!../components/gotop.html').default %>
 </body>
 
 </html>

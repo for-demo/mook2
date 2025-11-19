@@ -10,7 +10,7 @@
 
 <body>
   <!-- header -->
-  <%= require('html-loader!../components/header.html').default %>
+  <%= require('html-loader?{"minimize":false,"sources":false}!../components/header.html').default %>
     <main class="container mx-auto xl:pb-[72px] xl:pt-6 pt-4 pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)]">
       <!-- 麵包屑 -->
       <nav class="flex px-5 xl:px-0">
@@ -664,10 +664,10 @@
     </main>
 
     <!-- footer -->
-    <%= require('html-loader!../components/footer.html').default %>
+    <%= require('html-loader?{"minimize":false,"sources":false}!../components/footer.html').default %>
 
       <!-- gotop -->
-      <%= require('html-loader!../components/gotop.html').default %>
+      <%= require('html-loader?{"minimize":false,"sources":false}!../components/gotop.html').default %>
 </body>
 
 </html>

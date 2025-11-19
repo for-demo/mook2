@@ -81,30 +81,35 @@ module.exports = {
       filename: "index.html",
       template: "src/page/index.html",
       minify: false,
+      inject: 'body',
     }),
     new HtmlWebpackPlugin({
       chunks: ["vendor", "list"],
       filename: "list.html",
       template: "src/page/list.html",
       minify: false,
+      inject: 'body',
     }),
     new HtmlWebpackPlugin({
       chunks: ["vendor", "tagList"],
       filename: "tagList.html",
       template: "src/page/tagList.html",
       minify: false,
+      inject: 'body',
     }),
     new HtmlWebpackPlugin({
       chunks: ["vendor", "article"],
       filename: "article.html",
       template: "src/page/article.html",
       minify: false,
+      inject: 'body',
     }),
     new HtmlWebpackPlugin({
       chunks: ["vendor", "searchList"],
       filename: "searchList.html",
       template: "src/page/searchList.html",
       minify: false,
+      inject: 'body',
     }),
     new MiniCssExtractPlugin({
       // filename: 'main.[hash].css'
