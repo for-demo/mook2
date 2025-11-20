@@ -647,6 +647,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-\[56px\] {
   margin-top: 56px;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .ml-\[6px\] {
   margin-left: 6px;
 }
@@ -1066,9 +1069,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .rounded-lg {
   border-radius: 0.5rem;
 }
-.rounded-2xl {
-  border-radius: 1rem;
-}
 .\!border-0 {
   border-width: 0px !important;
 }
@@ -1118,10 +1118,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .\!bg-transparent {
   background-color: transparent !important;
-}
-.\!bg-black {
-  --tw-bg-opacity: 1 !important;
-  background-color: rgb(0 0 0 / var(--tw-bg-opacity)) !important;
 }
 .bg-secondary {
   --tw-bg-opacity: 1;
@@ -1290,6 +1286,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .pt-6 {
   padding-top: 1.5rem;
 }
+.pt-3 {
+  padding-top: 0.75rem;
+}
 .pt-8 {
   padding-top: 2rem;
 }
@@ -1304,9 +1303,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .pt-1 {
   padding-top: 0.25rem;
-}
-.pt-3 {
-  padding-top: 0.75rem;
 }
 .text-center {
   text-align: center;
@@ -1624,8 +1620,20 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 60px;
   }
 
+  .xl\:\!mt-\[48px\] {
+    margin-top: 48px !important;
+  }
+
+  .xl\:mb-\[46px\] {
+    margin-bottom: 46px;
+  }
+
   .xl\:mt-5 {
     margin-top: 1.25rem;
+  }
+
+  .xl\:mb-5 {
+    margin-bottom: 1.25rem;
   }
 
   .xl\:mt-8 {
@@ -1748,6 +1756,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 970px;
   }
 
+  .xl\:max-w-max {
+    max-width: -moz-max-content;
+    max-width: max-content;
+  }
+
   .xl\:max-w-\[302px\] {
     max-width: 302px;
   }
@@ -1758,11 +1771,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:max-w-\[300px\] {
     max-width: 300px;
-  }
-
-  .xl\:max-w-max {
-    max-width: -moz-max-content;
-    max-width: max-content;
   }
 
   .xl\:max-w-\[730px\] {
@@ -2063,14 +2071,14 @@ Ensure the default browser behavior of the `hidden` attribute.
     line-height: 28px;
   }
 
-  .xl\:text-white {
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
   .xl\:\!text-white {
     --tw-text-opacity: 1 !important;
     color: rgb(255 255 255 / var(--tw-text-opacity)) !important;
+  }
+
+  .xl\:text-white {
+    --tw-text-opacity: 1;
+    color: rgb(255 255 255 / var(--tw-text-opacity));
   }
 
   .xl\:line-clamp-1 {
@@ -2151,6 +2159,16 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .hover\:xl\:bg-opacity-\[32\%\]:hover {
     --tw-bg-opacity: 32%;
+  }
+}
+@media (min-width: 640px) {
+
+  .sm\:mt-\[104px\] {
+    margin-top: 104px;
+  }
+
+  .sm\:rounded-lg {
+    border-radius: 0.5rem;
   }
 }
 

@@ -1,6 +1,7 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const { CleanWebpackPlugin } = require("clean-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 const path = require("path");
 
 // 判斷是否為生產環境
@@ -118,5 +119,17 @@ module.exports = {
       // chunkFilename: 'css/vendor.css'
     }),
     new CleanWebpackPlugin(),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "src/images/icon",
+          to: "images/icon",
+        },
+        {
+          from: "src/images/static",
+          to: "images/static",
+        },
+      ],
+    }),
   ],
 };
