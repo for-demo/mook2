@@ -2268,8 +2268,19 @@ var navbarSplide = new (splide_min_default())(".navbar", {
     }
   }
 });
-navbarSplide.mount(); // 導覽列 end
+navbarSplide.mount(); // 少於10個時置中
+
+var navItems = document.querySelectorAll(".navItem");
+
+if (navItems.length < 11) {
+  var navbarList = document.querySelector(".navbar .splide__list");
+
+  if (navbarList) {
+    navbarList.classList.add("nav-centered");
+  }
+} // 導覽列 end
 // Header 滾動收縮效果
+
 
 var mainHeader = document.querySelector("#mainHeader");
 window.addEventListener("scroll", function () {
