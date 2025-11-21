@@ -71,7 +71,7 @@ const navbarSplide = new Splide(".navbar", {
   drag: "free",
   pagination: false,
   breakpoints: {
-    1100: {
+    1099: {
       destroy: true,
     },
   },

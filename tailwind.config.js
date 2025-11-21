@@ -11,12 +11,7 @@ module.exports = {
         "NotoSansTC",
         ...defaultTheme.fontFamily.sans,
       ],
-      inter: [
-        "Arial",
-        "Microsoft JhengHei",
-        "Inter",
-        ...defaultTheme.fontFamily.sans,
-      ],
+      inter: ["Inter", "Microsoft JhengHei", ...defaultTheme.fontFamily.sans],
     },
     screens: {
       xl: "1100px",

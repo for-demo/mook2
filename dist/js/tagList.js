@@ -2263,7 +2263,7 @@ var navbarSplide = new (splide_min_default())(".navbar", {
   drag: "free",
   pagination: false,
   breakpoints: {
-    1100: {
+    1099: {
       destroy: true
     }
   }
