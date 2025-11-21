@@ -78,6 +78,15 @@ const navbarSplide = new Splide(".navbar", {
 });
 
 navbarSplide.mount();
+
+// 少於10個時置中
+const navItems = document.querySelectorAll(".navItem");
+if (navItems.length < 11) {
+  const navbarList = document.querySelector(".navbar .splide__list");
+  if (navbarList) {
+    navbarList.classList.add("nav-centered");
+  }
+}
 // 導覽列 end
 
 // Header 滾動收縮效果

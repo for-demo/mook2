@@ -40,6 +40,10 @@
     @apply xl:border-l xl:border-l-gray-200;
   }
 
+  .nav-centered {
+    @apply xl:justify-center;
+  }
+
   .openMenu {
     @apply !translate-x-0 !visible;
   }
