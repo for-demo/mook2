@@ -1959,6 +1959,14 @@ module.exports = __webpack_require__.p + "images/Ad-05.jpg";
 
 /***/ }),
 
+/***/ 751:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/Ad-09.jpg";
+
+/***/ }),
+
 /***/ 413:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -2184,6 +2192,8 @@ var Ad_01 = __webpack_require__(809);
 var Ad_03 = __webpack_require__(209);
 // EXTERNAL MODULE: ./src/images/Ad-05.jpg
 var Ad_05 = __webpack_require__(309);
+// EXTERNAL MODULE: ./src/images/Ad-09.jpg
+var Ad_09 = __webpack_require__(751);
 // EXTERNAL MODULE: ./src/images/img-02.jpg
 var img_02 = __webpack_require__(166);
 // EXTERNAL MODULE: ./src/images/img-15.jpg
@@ -2199,6 +2209,7 @@ var article_03 = __webpack_require__(523);
 // EXTERNAL MODULE: ./src/images/article-04.jpg
 var article_04 = __webpack_require__(634);
 ;// CONCATENATED MODULE: ./src/js/article.js
+
 
 
 
