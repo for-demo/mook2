@@ -870,9 +870,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .max-w-\[125px\] {
   max-width: 125px;
 }
-.max-w-\[352px\] {
-  max-width: 352px;
-}
 .max-w-\[390px\] {
   max-width: 390px;
 }
@@ -1099,6 +1096,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   --tw-border-opacity: 1;
   border-color: rgb(195 195 195 / var(--tw-border-opacity));
 }
+.border-gray-500 {
+  --tw-border-opacity: 1;
+  border-color: rgb(130 130 130 / var(--tw-border-opacity));
+}
 .border-secondary {
   --tw-border-opacity: 1;
   border-color: rgb(35 83 120 / var(--tw-border-opacity));
@@ -1284,11 +1285,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .\!pt-14 {
   padding-top: 3.5rem !important;
 }
-.pt-4 {
-  padding-top: 1rem;
+.pt-2 {
+  padding-top: 0.5rem;
 }
 .pb-12 {
   padding-bottom: 3rem;
+}
+.pt-4 {
+  padding-top: 1rem;
 }
 .pb-3 {
   padding-bottom: 0.75rem;
@@ -1777,6 +1781,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:max-w-\[255px\] {
     max-width: 255px;
+  }
+
+  .xl\:max-w-\[352px\] {
+    max-width: 352px;
   }
 
   .xl\:max-w-\[300px\] {
