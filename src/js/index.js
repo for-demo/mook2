@@ -29,6 +29,8 @@ import "@/images/img-19.jpg";
 import "@/images/img-20.jpg";
 import "@/images/img-23.png";
 import "@/images/img-24.png";
+import "@/images/1920x800-1.jpg";
+import "@/images/1920x800-2.jpg";
 
 // gotop
 let requestAnimationFrame =

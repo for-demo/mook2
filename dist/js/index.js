@@ -1935,6 +1935,22 @@ function _createClass(n, t, e) {
 
 /***/ }),
 
+/***/ 741:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1920x800-1.jpg";
+
+/***/ }),
+
+/***/ 879:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/1920x800-2.jpg";
+
+/***/ }),
+
 /***/ 809:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -2368,7 +2384,13 @@ var img_20 = __webpack_require__(375);
 var img_23 = __webpack_require__(572);
 // EXTERNAL MODULE: ./src/images/img-24.png
 var img_24 = __webpack_require__(335);
+// EXTERNAL MODULE: ./src/images/1920x800-1.jpg
+var _1920x800_1 = __webpack_require__(741);
+// EXTERNAL MODULE: ./src/images/1920x800-2.jpg
+var _1920x800_2 = __webpack_require__(879);
 ;// CONCATENATED MODULE: ./src/js/index.js
+
+
 
 
 
