@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>error page</title>
+</head>
+
+<body>
+  <!-- header -->
+  <%= require('html-loader?{"minimize":false,"sources":false}!../components/header.html').default %>
+    <main
+      class="container mx-auto xl:pb-[72px] xl:pt-6 pb-12 xl:mt-0 mt-[56px] xl:min-h-[calc(100vh-292px)] min-h-[calc(100vh-250px)]">
+      <p class="mt-32 text-2xl text-center xl:mt-16">
+        404 Page Not Found<br />
+        找不到您要的頁面
+      </p>
+    </main>
+
+    <!-- footer -->
+    <%= require('html-loader?{"minimize":false,"sources":false}!../components/footer.html').default %>
+
+      <!-- gotop -->
+      <%= require('html-loader?{"minimize":false,"sources":false}!../components/gotop.html').default %>
+</body>
+
+</html>

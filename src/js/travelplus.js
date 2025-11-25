@@ -1,5 +1,5 @@
 import "./components/header";
-import "@/css/index.css";
+import "@/css/travelplus.css";
 import "@/css/plugins/splide.min.css";
 import Splide from "./plugins/splide.min.js";
 import "@/images/Ad-01.jpg";
