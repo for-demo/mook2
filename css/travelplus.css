@@ -1524,6 +1524,94 @@ Ensure the default browser behavior of the `hidden` attribute.
   -webkit-line-clamp: 4;
 }
 /* 基礎共用 */
+.banner-title-hidden {
+  opacity: 0;
+  transform: translate(-50%, 30px);
+}
+.banner-title-show {
+  opacity: 1;
+  transition-delay: 300ms;
+  transform: translate(-50%, 0);
+}
+/* 主輪播分頁 */
+.main-banner .splide__pagination {
+  bottom: -1.25rem;
+}
+.main-banner .splide__pagination > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.main-banner .splide__pagination li {
+  display: flex;
+}
+.main-banner .splide__pagination__page {
+  margin: 0px;
+  height: 8px !important;
+  width: 8px !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+}
+.main-banner .splide__pagination__page.is-active {
+  --tw-scale-x: 1 !important;
+  --tw-scale-y: 1 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
+}
+@media (min-width: 1100px) {
+  .main-banner .splide__pagination {
+    display: none;
+  }
+
+  .video iframe {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+/* 特別企劃 */
+.special-project .splide__pagination {
+  bottom: -1.5rem;
+}
+.special-project .splide__pagination > :not([hidden]) ~ :not([hidden]) {
+  --tw-space-x-reverse: 0;
+  margin-right: calc(0.75rem * var(--tw-space-x-reverse));
+  margin-left: calc(0.75rem * calc(1 - var(--tw-space-x-reverse)));
+}
+.special-project .splide__pagination li {
+  display: flex;
+}
+.special-project .splide__pagination__page {
+  margin: 0px;
+  height: 8px !important;
+  width: 8px !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(130 130 130 / var(--tw-bg-opacity));
+}
+.special-project .splide__pagination__page.is-active {
+  --tw-scale-x: 1 !important;
+  --tw-scale-y: 1 !important;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y)) !important;
+  --tw-bg-opacity: 1;
+  background-color: rgb(45 45 45 / var(--tw-bg-opacity));
+}
+@media (min-width: 1100px) {
+  .special-project .splide__pagination {
+    bottom: -2rem;
+  }
+}
+.video iframe {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: none;
+     object-fit: none;
+}
+.news > *:not(:nth-child(3n + 3)) {
+  padding-right: 2rem;
+}
+.news > *:nth-child(3n + 3) {
+  padding-left: 2rem;
+}
 .placeholder\:text-gray-500::-moz-placeholder {
   --tw-text-opacity: 1;
   color: rgb(130 130 130 / var(--tw-text-opacity));

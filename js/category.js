@@ -1943,6 +1943,14 @@ module.exports = __webpack_require__.p + "images/Ad-01.jpg";
 
 /***/ }),
 
+/***/ 9158:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/Ad-02.jpg";
+
+/***/ }),
+
 /***/ 3209:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -1959,43 +1967,27 @@ module.exports = __webpack_require__.p + "images/Ad-05.jpg";
 
 /***/ }),
 
-/***/ 3751:
+/***/ 3252:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/Ad-09.jpg";
+module.exports = __webpack_require__.p + "images/Ad-07.jpg";
 
 /***/ }),
 
-/***/ 413:
+/***/ 5869:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/article-01.jpg";
+module.exports = __webpack_require__.p + "images/Ad-08.jpg";
 
 /***/ }),
 
-/***/ 3676:
+/***/ 5430:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/article-02.jpg";
-
-/***/ }),
-
-/***/ 9523:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "images/article-03.jpg";
-
-/***/ }),
-
-/***/ 8634:
-/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
-
-"use strict";
-module.exports = __webpack_require__.p + "images/article-04.jpg";
+module.exports = __webpack_require__.p + "images/img-01.jpg";
 
 /***/ }),
 
@@ -2007,6 +1999,94 @@ module.exports = __webpack_require__.p + "images/img-02.jpg";
 
 /***/ }),
 
+/***/ 7042:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-03.jpg";
+
+/***/ }),
+
+/***/ 5042:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-04.jpg";
+
+/***/ }),
+
+/***/ 2270:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-05.jpg";
+
+/***/ }),
+
+/***/ 7102:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-06.jpg";
+
+/***/ }),
+
+/***/ 6399:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-07.jpg";
+
+/***/ }),
+
+/***/ 2601:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-08.jpg";
+
+/***/ }),
+
+/***/ 7463:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-10.jpg";
+
+/***/ }),
+
+/***/ 8561:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-11.jpg";
+
+/***/ }),
+
+/***/ 5589:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-12.jpg";
+
+/***/ }),
+
+/***/ 1787:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-13.jpg";
+
+/***/ }),
+
+/***/ 7164:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-14.jpg";
+
+/***/ }),
+
 /***/ 2779:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
@@ -2015,11 +2095,43 @@ module.exports = __webpack_require__.p + "images/img-15.jpg";
 
 /***/ }),
 
-/***/ 4689:
+/***/ 2117:
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
 "use strict";
-module.exports = __webpack_require__.p + "images/img-22.jpg";
+module.exports = __webpack_require__.p + "images/img-16.jpg";
+
+/***/ }),
+
+/***/ 9979:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-17.jpg";
+
+/***/ }),
+
+/***/ 9649:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-18.jpg";
+
+/***/ }),
+
+/***/ 1931:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-19.jpg";
+
+/***/ }),
+
+/***/ 8375:
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+"use strict";
+module.exports = __webpack_require__.p + "images/img-20.jpg";
 
 /***/ })
 
@@ -2188,27 +2300,70 @@ window.addEventListener("scroll", function () {
 }); // Header 滾動收縮效果 end
 // EXTERNAL MODULE: ./src/images/Ad-01.jpg
 var Ad_01 = __webpack_require__(2809);
+// EXTERNAL MODULE: ./src/images/Ad-02.jpg
+var Ad_02 = __webpack_require__(9158);
 // EXTERNAL MODULE: ./src/images/Ad-03.jpg
 var Ad_03 = __webpack_require__(3209);
 // EXTERNAL MODULE: ./src/images/Ad-05.jpg
 var Ad_05 = __webpack_require__(309);
-// EXTERNAL MODULE: ./src/images/Ad-09.jpg
-var Ad_09 = __webpack_require__(3751);
+// EXTERNAL MODULE: ./src/images/Ad-07.jpg
+var Ad_07 = __webpack_require__(3252);
+// EXTERNAL MODULE: ./src/images/Ad-08.jpg
+var Ad_08 = __webpack_require__(5869);
+// EXTERNAL MODULE: ./src/images/img-01.jpg
+var img_01 = __webpack_require__(5430);
 // EXTERNAL MODULE: ./src/images/img-02.jpg
 var img_02 = __webpack_require__(8166);
+// EXTERNAL MODULE: ./src/images/img-03.jpg
+var img_03 = __webpack_require__(7042);
+// EXTERNAL MODULE: ./src/images/img-04.jpg
+var img_04 = __webpack_require__(5042);
+// EXTERNAL MODULE: ./src/images/img-05.jpg
+var img_05 = __webpack_require__(2270);
+// EXTERNAL MODULE: ./src/images/img-06.jpg
+var img_06 = __webpack_require__(7102);
+// EXTERNAL MODULE: ./src/images/img-07.jpg
+var img_07 = __webpack_require__(6399);
+// EXTERNAL MODULE: ./src/images/img-08.jpg
+var img_08 = __webpack_require__(2601);
+// EXTERNAL MODULE: ./src/images/img-10.jpg
+var img_10 = __webpack_require__(7463);
+// EXTERNAL MODULE: ./src/images/img-11.jpg
+var img_11 = __webpack_require__(8561);
+// EXTERNAL MODULE: ./src/images/img-12.jpg
+var img_12 = __webpack_require__(5589);
+// EXTERNAL MODULE: ./src/images/img-13.jpg
+var img_13 = __webpack_require__(1787);
+// EXTERNAL MODULE: ./src/images/img-14.jpg
+var img_14 = __webpack_require__(7164);
 // EXTERNAL MODULE: ./src/images/img-15.jpg
 var img_15 = __webpack_require__(2779);
-// EXTERNAL MODULE: ./src/images/img-22.jpg
-var img_22 = __webpack_require__(4689);
-// EXTERNAL MODULE: ./src/images/article-01.jpg
-var article_01 = __webpack_require__(413);
-// EXTERNAL MODULE: ./src/images/article-02.jpg
-var article_02 = __webpack_require__(3676);
-// EXTERNAL MODULE: ./src/images/article-03.jpg
-var article_03 = __webpack_require__(9523);
-// EXTERNAL MODULE: ./src/images/article-04.jpg
-var article_04 = __webpack_require__(8634);
-;// CONCATENATED MODULE: ./src/js/article.js
+// EXTERNAL MODULE: ./src/images/img-16.jpg
+var img_16 = __webpack_require__(2117);
+// EXTERNAL MODULE: ./src/images/img-17.jpg
+var img_17 = __webpack_require__(9979);
+// EXTERNAL MODULE: ./src/images/img-18.jpg
+var img_18 = __webpack_require__(9649);
+// EXTERNAL MODULE: ./src/images/img-19.jpg
+var img_19 = __webpack_require__(1931);
+// EXTERNAL MODULE: ./src/images/img-20.jpg
+var img_20 = __webpack_require__(8375);
+;// CONCATENATED MODULE: ./src/js/category.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -2259,6 +2414,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 }); // gotop end
+// 景編精選
+
+var sceneSplide = new (splide_min_default())(".scene", {
+  gap: "2rem",
+  rewind: true,
+  perPage: 4,
+  pagination: false,
+  breakpoints: {
+    1100: {
+      autoWidth: true,
+      perPage: 1,
+      perMove: 1
+    }
+  }
+});
+sceneSplide.mount(); // 景編精選 end
 })();
 
 /******/ })()
