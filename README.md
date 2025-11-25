@@ -2,13 +2,14 @@
 
 ## 頁面
 
+- [Home Page](https://for-demo.github.io/mook2/index.html) (原 mook)
 - [Travelplus Page](https://for-demo.github.io/mook2/travelplus.html) (原 index)
 - [List Page](https://for-demo.github.io/mook2/list.html)
 - [Tag List Page](https://for-demo.github.io/mook2/tagList.html)
 - [Article Page](https://for-demo.github.io/mook2/article.html)
 - [Search List Page](https://for-demo.github.io/mook2/searchList.html)
 - [About Page](https://for-demo.github.io/mook2/about.html)
-- [Category Page](https://for-demo.github.io/mook2/category.html)
+- [Category Page](https://for-demo.github.io/mook2/category.html) (原 list)
 - [Copyright Page](https://for-demo.github.io/mook2/copyright.html)
 - [Privacy Page](https://for-demo.github.io/mook2/privacy.html)
 - [Error Page](https://for-demo.github.io/mook2/error.html)

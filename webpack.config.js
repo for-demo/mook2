@@ -10,6 +10,7 @@ const isProduction = process.env.NODE_ENV === "production";
 module.exports = {
   mode: isProduction ? "production" : "development",
   entry: {
+    index: "./src/js/index.js",
     travelplus: "./src/js/travelplus.js",
     list: "./src/js/list.js",
     tagList: "./src/js/tagList.js",
@@ -82,6 +83,13 @@ module.exports = {
   },
   // devtool: 'source-map',
   plugins: [
+    new HtmlWebpackPlugin({
+      chunks: ["vendor", "index"],
+      filename: "index.html",
+      template: "src/page/index.html",
+      minify: false,
+      inject: "body",
+    }),
     new HtmlWebpackPlugin({
       chunks: ["vendor", "travelplus"],
       filename: "travelplus.html",
@@ -161,6 +169,13 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyWebpackPlugin({
       patterns: [
+        {
+          from: "src/images",
+          to: "images",
+          globOptions: {
+            ignore: ["**/icon/**", "**/static/**"],
+          },
+        },
         {
           from: "src/images/icon",
           to: "images/icon",
