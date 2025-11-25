@@ -765,9 +765,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[56px\] {
   height: 56px;
 }
-.h-\[450px\] {
-  height: 450px;
-}
 .h-\[88px\] {
   height: 88px;
 }
@@ -824,9 +821,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 .w-\[250px\] {
   width: 250px;
-}
-.\!w-auto {
-  width: auto !important;
 }
 .min-w-\[11px\] {
   min-width: 11px;
@@ -1812,10 +1806,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:h-auto {
     height: auto;
-  }
-
-  .xl\:h-\[600px\] {
-    height: 600px;
   }
 
   .xl\:h-\[100px\] {
