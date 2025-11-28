@@ -5,7 +5,7 @@
 }
 
 .article h2 {
-  @apply text-black text-xl leading-normal mb-8;
+  @apply text-black text-2xl font-bold leading-normal mb-8;
 }
 
 .article p {
