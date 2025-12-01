@@ -183,13 +183,48 @@
       <!-- 特別企劃 -->
       <section class="mt-12 bg-gray-200">
         <div class="container px-5 pt-8 pb-16 mx-auto xl:pt-12 xl:pb-[90px] xl:px-0">
-          <div class="flex flex-col gap-5 justify-center items-start xl:gap-6 xl:items-center">
-            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#Topic 特別企劃</p>
+          <div class="flex flex-col gap-3 justify-center items-start xl:items-center">
+            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-secondary font-bold">Topic 特別企劃</p>
             <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
           </div>
 
           <!-- Splide 輪播 -->
           <div class="mt-6 splide special-project xl:mt-8">
+            <!-- 左右按鈕 -->
+            <div class="splide__arrows splide__arrows--ltr">
+              <button
+                class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !left-[-20px] xl:!flex !hidden splide__arrow splide__arrow--prev"
+                type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#special-project-prev)">
+                    <path
+                      d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                      fill="#000" />
+                  </g>
+                  <defs>
+                    <clipPath id="special-project-prev">
+                      <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+              <button
+                class="!bg-white !opacity-100 !w-10 !h-10 shadow-16 !right-[-20px] xl:!flex !hidden splide__arrow splide__arrow--next"
+                type="button">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#special-project-next)">
+                    <path
+                      d="M8.97 19.53a.75.75 0 0 1-.073-.976l.073-.084L15.439 12l-6.47-6.47a.75.75 0 0 1-.072-.976l.073-.084a.75.75 0 0 1 .976-.073l.084.073 7 7a.75.75 0 0 1 .073.976l-.073.084-7 7a.75.75 0 0 1-1.06 0z"
+                      fill="#000" />
+                  </g>
+                  <defs>
+                    <clipPath id="special-project-next">
+                      <path fill="#fff" d="M0 0h24v24H0z" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </div>
             <div class="splide__track">
               <ul class="splide__list">
                 <!-- 輪播項目 1 -->
@@ -452,8 +487,8 @@
 
       <!-- 熱門影音 -->
       <section class="container px-5 py-10 mx-auto xl:py-12">
-        <div class="flex flex-col gap-5 justify-center items-start xl:gap-6 xl:items-center">
-          <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#Watch 熱門影音</p>
+        <div class="flex flex-col gap-3 justify-center items-start xl:items-center">
+          <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-secondary font-bold">Watch 熱門影音</p>
           <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
         </div>
 
@@ -492,8 +527,8 @@
       <!-- 焦點情報 -->
       <section class="mt-12 bg-gray-200">
         <div class="container px-5 pt-8 pb-4 mx-auto xl:pt-12 xl:pb-8 xl:px-0">
-          <div class="flex flex-col gap-5 justify-center items-start xl:gap-6 xl:items-center">
-            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#Focus 焦點情報</p>
+          <div class="flex flex-col gap-3 justify-center items-start xl:items-center">
+            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-secondary font-bold">Focus 焦點情報</p>
             <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
           </div>
 
@@ -642,8 +677,8 @@
         class="container mx-auto xl:mt-12 mt-10 flex xl:flex-row flex-col xl:px-0 px-5 xl:space-x-[72px] xl:space-y-0 space-y-10">
         <!-- 左側主題 -->
         <div class="max-w-[728px]">
-          <div class="flex flex-col gap-5 justify-center items-start xl:gap-6">
-            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-black font-bold">#News 最新文章</p>
+          <div class="flex flex-col gap-3 justify-center items-start">
+            <p class="xl:text-[32px] text-[22px] xl:leading-10 leading-[30px] text-secondary font-bold">News 最新文章</p>
             <span class="block w-14 h-1.5 rounded-lg bg-secondary"></span>
           </div>
           <div class="flex flex-col mt-4 space-y-6 xl:mt-8 xl:space-y-8">
