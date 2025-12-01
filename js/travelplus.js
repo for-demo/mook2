@@ -2589,7 +2589,7 @@ var specialProjectSplide = new (splide_min_default())(".special-project", {
   perPage: 1,
   gap: 0,
   pagination: true,
-  arrows: false,
+  arrows: true,
   breakpoints: {
     1280: {
       perPage: 1,
