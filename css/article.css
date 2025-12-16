@@ -2235,6 +2235,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     width: auto;
   }
 
+  .xl\:w-\[728px\] {
+    width: 728px;
+  }
+
   .xl\:w-14 {
     width: 3.5rem;
   }
