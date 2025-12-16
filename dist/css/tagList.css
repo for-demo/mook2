@@ -2523,10 +2523,10 @@ Ensure the default browser behavior of the `hidden` attribute.
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
+/* 
   .xl\:leading-\[20px\] {
     line-height: 20px;
-  }
+  } */
 
   .xl\:leading-\[48px\] {
     line-height: 48px;
