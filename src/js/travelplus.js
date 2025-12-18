@@ -85,123 +85,132 @@ document.addEventListener("DOMContentLoaded", function () {
 // gotop end
 
 // 主輪播
-const mainBannerSplide = new Splide(".main-banner", {
-  type: "fade",
-  rewind: true,
-  autoplay: true,
-});
+const mainBannerElement = document.querySelector(".main-banner");
+if (mainBannerElement) {
+  const mainBannerSplide = new Splide(".main-banner", {
+    type: "fade",
+    rewind: true,
+    autoplay: true,
+  });
 
-mainBannerSplide.on("mounted move", function () {
-  const slides = document.querySelectorAll(".main-banner .splide__slide");
-  slides.forEach((slide) => {
-    const title = slide.querySelector("p");
-    if (title) {
-      // 移除顯示狀態，添加隱藏狀態
-      title.classList.remove("banner-title-show");
-      title.classList.add("banner-title-hidden");
+  mainBannerSplide.on("mounted move", function () {
+    const slides = document.querySelectorAll(".main-banner .splide__slide");
+    slides.forEach((slide) => {
+      const title = slide.querySelector("p");
+      if (title) {
+        // 移除顯示狀態，添加隱藏狀態
+        title.classList.remove("banner-title-show");
+        title.classList.add("banner-title-hidden");
+      }
+    });
+
+    // 延遲一點點讓當前活動的幻燈片標題出現
+    setTimeout(() => {
+      const activeSlide = document.querySelector(
+        ".main-banner .splide__slide.is-active"
+      );
+      if (activeSlide) {
+        const activeTitle = activeSlide.querySelector("p");
+        if (activeTitle) {
+          // 移除隱藏狀態，添加顯示狀態
+          activeTitle.classList.remove("banner-title-hidden");
+          activeTitle.classList.add("banner-title-show");
+        }
+      }
+    }, 50);
+  });
+
+  mainBannerSplide.on("mounted", function () {
+    if (mainBannerSplide.length <= 1) {
+      const arrowsContainer = document.querySelector(
+        ".main-banner .splide__arrows"
+      );
+      if (arrowsContainer) {
+        arrowsContainer.style.display = "none";
+      }
     }
   });
 
-  // 延遲一點點讓當前活動的幻燈片標題出現
-  setTimeout(() => {
-    const activeSlide = document.querySelector(
-      ".main-banner .splide__slide.is-active"
-    );
-    if (activeSlide) {
-      const activeTitle = activeSlide.querySelector("p");
-      if (activeTitle) {
-        // 移除隱藏狀態，添加顯示狀態
-        activeTitle.classList.remove("banner-title-hidden");
-        activeTitle.classList.add("banner-title-show");
-      }
-    }
-  }, 50);
-});
-
-mainBannerSplide.on("mounted", function () {
-  if (mainBannerSplide.length <= 1) {
-    const arrowsContainer = document.querySelector(
-      ".main-banner .splide__arrows"
-    );
-    if (arrowsContainer) {
-      arrowsContainer.style.display = "none";
-    }
-  }
-});
-
-mainBannerSplide.mount();
+  mainBannerSplide.mount();
+}
 // 主輪播 end
 
 // 特別企劃輪播
-const specialProjectSplide = new Splide(".special-project", {
-  type: "slide",
-  rewind: true,
-  autoplay: true,
-  perPage: 1,
-  gap: 0,
-  pagination: true,
-  arrows: true,
-  breakpoints: {
-    1280: {
-      perPage: 1,
-      pagination: true,
+const specialProjectElement = document.querySelector(".special-project");
+if (specialProjectElement) {
+  const specialProjectSplide = new Splide(".special-project", {
+    type: "slide",
+    rewind: true,
+    autoplay: true,
+    perPage: 1,
+    gap: 0,
+    pagination: true,
+    arrows: true,
+    breakpoints: {
+      1280: {
+        perPage: 1,
+        pagination: true,
+      },
     },
-  },
-});
+  });
 
-specialProjectSplide.on("overflow", function (isOverflow) {
-  const arrowsContainer = document.querySelector(
-    ".special-project .splide__arrows"
-  );
-  if (arrowsContainer) {
-    arrowsContainer.style.display = isOverflow ? "" : "none";
-  }
-});
-
-specialProjectSplide.on("mounted", function () {
-  if (specialProjectSplide.length <= 1) {
+  specialProjectSplide.on("overflow", function (isOverflow) {
     const arrowsContainer = document.querySelector(
       ".special-project .splide__arrows"
     );
     if (arrowsContainer) {
-      arrowsContainer.style.display = "none";
+      arrowsContainer.style.display = isOverflow ? "" : "none";
     }
-  }
-});
+  });
 
-specialProjectSplide.mount();
+  specialProjectSplide.on("mounted", function () {
+    if (specialProjectSplide.length <= 1) {
+      const arrowsContainer = document.querySelector(
+        ".special-project .splide__arrows"
+      );
+      if (arrowsContainer) {
+        arrowsContainer.style.display = "none";
+      }
+    }
+  });
+
+  specialProjectSplide.mount();
+}
 // 特別企劃輪播 end
 
 // 焦點情報
-const focusSplide = new Splide(".focus", {
-  gap: "2rem",
-  rewind: true,
-  perPage: 3,
-  pagination: false,
-  breakpoints: {
-    1100: {
-      fixedWidth: "250px",
-      perPage: 1,
-      perMove: 1,
+const focusElement = document.querySelector(".focus");
+if (focusElement) {
+  const focusSplide = new Splide(".focus", {
+    gap: "2rem",
+    rewind: true,
+    perPage: 3,
+    pagination: false,
+    breakpoints: {
+      1100: {
+        fixedWidth: "250px",
+        perPage: 1,
+        perMove: 1,
+      },
     },
-  },
-});
+  });
 
-focusSplide.on("overflow", function (isOverflow) {
-  const arrowsContainer = document.querySelector(".focus .splide__arrows");
-  if (arrowsContainer) {
-    arrowsContainer.style.display = isOverflow ? "" : "none";
-  }
-});
-
-focusSplide.on("mounted", function () {
-  if (focusSplide.length <= 1) {
+  focusSplide.on("overflow", function (isOverflow) {
     const arrowsContainer = document.querySelector(".focus .splide__arrows");
     if (arrowsContainer) {
-      arrowsContainer.style.display = "none";
+      arrowsContainer.style.display = isOverflow ? "" : "none";
     }
-  }
-});
+  });
 
-focusSplide.mount();
+  focusSplide.on("mounted", function () {
+    if (focusSplide.length <= 1) {
+      const arrowsContainer = document.querySelector(".focus .splide__arrows");
+      if (arrowsContainer) {
+        arrowsContainer.style.display = "none";
+      }
+    }
+  });
+
+  focusSplide.mount();
+}
 // 焦點情報 end
