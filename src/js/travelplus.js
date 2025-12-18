@@ -118,6 +118,17 @@ mainBannerSplide.on("mounted move", function () {
   }, 50);
 });
 
+mainBannerSplide.on("mounted", function () {
+  if (mainBannerSplide.length <= 1) {
+    const arrowsContainer = document.querySelector(
+      ".main-banner .splide__arrows"
+    );
+    if (arrowsContainer) {
+      arrowsContainer.style.display = "none";
+    }
+  }
+});
+
 mainBannerSplide.mount();
 // 主輪播 end
 
@@ -138,6 +149,26 @@ const specialProjectSplide = new Splide(".special-project", {
   },
 });
 
+specialProjectSplide.on("overflow", function (isOverflow) {
+  const arrowsContainer = document.querySelector(
+    ".special-project .splide__arrows"
+  );
+  if (arrowsContainer) {
+    arrowsContainer.style.display = isOverflow ? "" : "none";
+  }
+});
+
+specialProjectSplide.on("mounted", function () {
+  if (specialProjectSplide.length <= 1) {
+    const arrowsContainer = document.querySelector(
+      ".special-project .splide__arrows"
+    );
+    if (arrowsContainer) {
+      arrowsContainer.style.display = "none";
+    }
+  }
+});
+
 specialProjectSplide.mount();
 // 特別企劃輪播 end
 
@@ -154,6 +185,22 @@ const focusSplide = new Splide(".focus", {
       perMove: 1,
     },
   },
+});
+
+focusSplide.on("overflow", function (isOverflow) {
+  const arrowsContainer = document.querySelector(".focus .splide__arrows");
+  if (arrowsContainer) {
+    arrowsContainer.style.display = isOverflow ? "" : "none";
+  }
+});
+
+focusSplide.on("mounted", function () {
+  if (focusSplide.length <= 1) {
+    const arrowsContainer = document.querySelector(".focus .splide__arrows");
+    if (arrowsContainer) {
+      arrowsContainer.style.display = "none";
+    }
+  }
 });
 
 focusSplide.mount();
