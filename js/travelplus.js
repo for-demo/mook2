@@ -2366,6 +2366,12 @@ var navbarSplide = new (splide_min_default())(".navbar", {
   perMove: 16,
   drag: "free",
   pagination: false,
+  dragMinThreshold: {
+    mouse: 9999,
+    // PC 版禁用滑鼠拖曳
+    touch: 10 // 行動版保留觸控拖曳
+
+  },
   breakpoints: {
     1099: {
       destroy: true
