@@ -1834,14 +1834,11 @@ Ensure the default browser behavior of the `hidden` attribute.
     max-width: 800px;
   }
 }
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .article iframe {
-    height: auto;
+    @apply w-full h-auto;
   }
-  .article iframe {
-    width: 100%;
-  }
-}
+} */
 .img {
   text-align: center;
 }

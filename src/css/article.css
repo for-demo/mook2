@@ -38,11 +38,11 @@
   }
 }
 
-@media (max-width: 800px) {
+/* @media (max-width: 800px) {
   .article iframe {
     @apply w-full h-auto;
   }
-}
+} */
 
 .img {
   @apply text-center;
