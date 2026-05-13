@@ -901,11 +901,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[300px\] {
   width: 300px;
 }
-.w-\[175px\] {
-  width: 175px;
-}
 .w-\[245px\] {
   width: 245px;
+}
+.w-\[175px\] {
+  width: 175px;
 }
 .w-\[158px\] {
   width: 158px;
