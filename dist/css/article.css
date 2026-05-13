@@ -499,6 +499,7 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 /* Header 滾動收縮效果 */
 #mainHeader.scrolled {
+  height: auto !important;
   border-bottom-width: 1px;
   --tw-border-opacity: 1;
   border-color: rgb(225 225 225 / var(--tw-border-opacity));
@@ -672,6 +673,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-10 {
   margin-top: 2.5rem;
 }
+.mb-6 {
+  margin-bottom: 1.5rem;
+}
 .mb-10 {
   margin-bottom: 2.5rem;
 }
@@ -771,11 +775,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .h-\[36px\] {
   height: 36px;
 }
-.h-6 {
-  height: 1.5rem;
+.h-14 {
+  height: 3.5rem;
 }
 .h-full {
   height: 100%;
+}
+.h-6 {
+  height: 1.5rem;
 }
 .\!h-10 {
   height: 2.5rem !important;
@@ -897,8 +904,8 @@ Ensure the default browser behavior of the `hidden` attribute.
 .w-\[175px\] {
   width: 175px;
 }
-.w-\[237px\] {
-  width: 237px;
+.w-\[245px\] {
+  width: 245px;
 }
 .w-\[158px\] {
   width: 158px;
@@ -1384,10 +1391,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 .px-4 {
   padding-left: 1rem;
   padding-right: 1rem;
-}
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
 }
 .px-2\.5 {
   padding-left: 0.625rem;
@@ -2060,8 +2063,8 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-top: 0.5rem;
   }
 
-  .xl\:mt-16 {
-    margin-top: 4rem;
+  .xl\:mt-\[60px\] {
+    margin-top: 60px;
   }
 
   .xl\:mt-8 {
@@ -2090,6 +2093,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:mt-6 {
     margin-top: 1.5rem;
+  }
+
+  .xl\:mt-16 {
+    margin-top: 4rem;
   }
 
   .xl\:ml-\[-15px\] {
@@ -2178,6 +2185,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .xl\:aspect-\[302\/537\] {
     aspect-ratio: 302 / 537;
+  }
+
+  .xl\:h-\[60px\] {
+    height: 60px;
   }
 
   .xl\:h-auto {
