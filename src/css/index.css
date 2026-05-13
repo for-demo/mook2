@@ -1857,3 +1857,13 @@ body {
     color: rgba(255, 255, 255, var(--tw-text-opacity));
   }
 }
+
+.card-lift {
+  @apply duration-300 hover:shadow-lift;
+  position: relative;
+  will-change: transform;
+}
+
+.card-lift:hover {
+  transform: rotate(0.01deg) translateY(-0.5rem);
+}

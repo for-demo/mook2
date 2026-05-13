@@ -64,6 +64,16 @@
     background: linear-gradient(to right, transparent 0%, transparent 30%, #235378 70%) !important;
   }
 
+  .card-lift {
+    @apply duration-300 hover:shadow-lift;
+    position: relative;
+    will-change: transform;
+  }
+
+  .card-lift:hover {
+    transform: rotate(0.01deg) translateY(-0.5rem);
+  }
+
   /* Header 滾動收縮效果 */
   #mainHeader.scrolled {
     @apply border-b border-gray-200 !h-auto;
