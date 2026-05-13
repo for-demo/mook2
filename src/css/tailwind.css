@@ -75,7 +75,7 @@
     }
 
     #mainHeader.scrolled .logoImg {
-      @apply !max-w-[100px];
+      @apply !max-w-[200px];
     }
   }
 }
