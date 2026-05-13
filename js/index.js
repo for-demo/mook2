@@ -2645,8 +2645,6 @@ var menuIconClass = document.querySelector("#menuIcon").classList;
 var navbarClass = document.querySelector("#navbar").classList;
 var scrollButton = document.querySelector("#scrollButton");
 var about = document.querySelector("#about");
-var world = document.querySelector("#world");
-var worldTarget = document.querySelector("#worldTarget");
 window.addEventListener("scroll", function () {
   if (document.documentElement.scrollTop > 0) {
     header.classList.add("header-scrolled");
@@ -2665,16 +2663,6 @@ scrollButton.addEventListener("click", function () {
     behavior: "smooth",
     block: "start"
   });
-});
-world.addEventListener("click", function () {
-  worldTarget.scrollIntoView({
-    behavior: "smooth",
-    block: "start"
-  });
-  bodyClass.remove("overflow-hidden");
-  headerClass.remove("header-active");
-  menuIconClass.remove("menuIcon-active");
-  navbarClass.remove("navbar-active");
 }); // gotop
 
 if (window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame) {
